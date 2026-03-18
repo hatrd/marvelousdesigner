@@ -51,10 +51,10 @@ nav:
     - 文件格式的理解: basics/file-formats.md
     - 术语表: basics/terminology.md
   - 工作流程:
-    - 导入头像: workflows/avatar-import.md
+    - 导入模型: workflows/avatar-import.md
     - 现有服装适配: workflows/garment-fitting.md
     - 模块化服装系统: workflows/modular-garments.md
-    - 非兼容头像改造: workflows/avatar-modification.md
+    - 非兼容模型改造: workflows/avatar-modification.md
     - 新建服装制作: workflows/new-garment-creation.md
     - 常见问题与处理: workflows/common-issues.md
   - 分类服装制作指南:
@@ -78,7 +78,7 @@ nav:
   - Unity 集成:
     - Unity 项目设置: unity/project-setup.md
     - 从 FBX 到 VRChat 的完整工作流: unity/fbx-to-vrchat-complete-guide.md
-    - 头像上传: unity/avatar-upload.md
+    - 模型上传: unity/avatar-upload.md
   - 资源与参考资料:
     - 实用链接集: resources/useful-links.md
     - CLO-SET Connect 与 EveryWear: resources/clo-set-connect.md

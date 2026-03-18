@@ -218,7 +218,7 @@ entries:
     source_refs:
       - docs/workflows/modular-garments.md
   - source_term: 非対応アバター改変
-    canonical_zh_cn: 非兼容头像改造
+    canonical_zh_cn: 非兼容模型改造
     domain: workflow
     preferred: true
     source_type: repo_context

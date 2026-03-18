@@ -48,7 +48,7 @@ Marvelous Designer 的主界面分为 **5 个主要区域**：
 !!! example "3D Garment Window 的作用"
 
     **这里可以确认的内容**:
-- 头像（人形模型）
+- 模型（人形模型）
 - 3D 化后的服装
 - 布料物理模拟结果
 - 实际穿着状态
@@ -66,14 +66,14 @@ Marvelous Designer 的主界面分为 **5 个主要区域**：
 - **`4`** 键: 渲染显示
 
     !!! tip "视角操作技巧"
-        按住右键移动鼠标后，可以围绕头像进行旋转。刚开始可能需要稍微练习一下。
+        按住右键移动鼠标后，可以围绕模型进行旋转。刚开始可能需要稍微练习一下。
 
 ### 🎛️ 3. 3D Object Browser（右下）
 
 !!! example "Object Browser 的用法"
 
     **显示内容**:
-- **Avatar**: 已导入的头像
+- **Avatar**: 已导入的模型
 - **Garments**: 已创建的服装列表
 - **Trims**: 纽扣、拉链等装饰
 
@@ -122,9 +122,9 @@ Marvelous Designer 的主界面分为 **5 个主要区域**：
 - **模拟设置**: 质量、精度
 - **显示设置**: 颜色、透明度
 
-**选中头像时**:
+**选中模型时**:
 - **姿势设置**: 调整姿态
-- **尺寸调整**: 调整头像比例
+- **尺寸调整**: 调整模型比例
 - **碰撞设置**: 与布料的碰撞判定
 
 **重要设置项**:
@@ -206,19 +206,19 @@ Marvelous Designer 的主界面分为 **5 个主要区域**：
 - **Simulation Properties**: 模拟详细设置
 - **Physical Properties**: 物理特性设置
 
-### Avatar（头像）菜单
-!!! example "头像管理功能"
+### Avatar（模型）菜单
+!!! example "模型管理功能"
 
-**头像操作**:
-- **Load Avatar**: 导入头像文件
-- **Edit Avatar**: 调整头像姿势与尺寸
-- **Show/Hide Avatar**: 切换头像显示
+**模型操作**:
+- **Load Avatar**: 导入模型文件
+- **Edit Avatar**: 调整模型姿势与尺寸
+- **Show/Hide Avatar**: 切换模型显示
 
 **姿势控制**:
 - **Pose**: 预设姿势
 - **Edit Pose**: 创建自定义姿势
 
-!!! tip "关于头像导入"
+!!! tip "关于模型导入"
     FBX 文件通过 **`Avatar`** → **`Load Avatar`** 导入。后面会详细说明。
 
 ## ⌨️ 重要键盘快捷键
@@ -349,7 +349,7 @@ Marvelous Designer 的主界面分为 **5 个主要区域**：
 !!! example "画面操作练习"
 
 **3D 视口练习**:
-1. 用右键拖拽从不同角度查看头像
+1. 用右键拖拽从不同角度查看模型
 2. 用鼠标滚轮缩放
 3. 按 **`F`** 键显示全体
 4. 用 **`1`**、**`2`**、**`3`**、**`4`** 键切换显示模式
@@ -452,9 +452,9 @@ Marvelous Designer 的主界面分为 **5 个主要区域**：
 
 你已经掌握了 Marvelous Designer 的基础界面。
 
-接下来，导入实际头像并进入服装制作实践：
+接下来，导入实际模型并进入服装制作实践：
 
-[前往头像导入指南 →](../workflows/avatar-import.md){ .md-button .md-button--primary }
+[前往模型导入指南 →](../workflows/avatar-import.md){ .md-button .md-button--primary }
 
 或者，如果想学习更详细的概念：
 

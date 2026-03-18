@@ -59,7 +59,7 @@
     - [VRChat Creator Hub](https://creators.vrchat.com/) - 创作者官方信息
     - [VRChat SDK Documentation](https://creators.vrchat.com/sdk/) - SDK 技术信息
     - [VRChat World Creation](https://creators.vrchat.com/worlds/) - 世界制作信息
-    - [VRChat Avatar Creation](https://creators.vrchat.com/avatars/) - 头像制作信息
+    - [VRChat Avatar Creation](https://creators.vrchat.com/avatars/) - 模型制作信息
 
     **社区**:
     - [VRChat 官方 Discord](https://discord.gg/vrchat) - 官方社区
@@ -112,7 +112,7 @@
 
     **Unity 扩展工具**:
     - VRChat Creator Companion (VCC) - 官方项目管理工具
-    - Pumkin's Avatar Tools - 头像调整整合工具
+    - Pumkin's Avatar Tools - 模型调整整合工具
     - Avatar 3.0 Manager - Avatar 3.0 管理工具
 
     **MD 扩展与插件**:
@@ -138,9 +138,9 @@
     - Pattern Libraries - 服装版型合集
     - Color Palette Tools - 配色参考工具
 
-    **3D 模型与基础头像**:
-    - VRChat Hub Avatar Gallery - 头像信息汇总站
-    - BOOTH 头像与服装 - 日本头像市场
+    **3D 模型与基础模型**:
+    - VRChat Hub Avatar Gallery - 模型信息汇总站
+    - BOOTH 模型与服装 - 日本模型市场
     - VRChat Community Assets - 社区共享素材
 
 ## 🌐 日语社区
@@ -152,7 +152,7 @@
     **VRChat 日本社区**:
     - VRChat 日本用户群 - 综合社区
     - VRChat 制作者社区 - 面向创作者
-    - 头像改装与服装制作服务器 - 专业技术讨论
+    - 模型改装与服装制作服务器 - 专业技术讨论
 
     **Unity 与 3D 制作社区**:
     - Unity 日本用户互助处 - Unity 技术支持
@@ -195,7 +195,7 @@
 
     **VRChat 专业书籍**:
     - 《VRChat入门》（技术书典） - 从基础到应用
-    - 《头像制作完整指南》 - 专注头像制作
+    - 《模型制作完整指南》 - 专注模型制作
     - 《VRChat 世界制作入门》 - 专注世界制作
 
     **Unity 学习书籍**:
@@ -260,7 +260,7 @@
 
     **在 VRChat 内公开**:
     - Public Avatar Upload - VRChat 内公开系统
-    - Avatar World 展示 - 在世界中展示头像
+    - Avatar World 展示 - 在世界中展示模型
     - Fashion Show Events - VRChat 内时装秀
 
     **外部平台**:
@@ -291,7 +291,7 @@
     **VRChat 相关**:
     - VRChat Mobile (计划中) - 移动版 VRChat
     - VRChat Companion Apps - 各类联动应用
-    - Avatar Preview Apps - 头像预览应用
+    - Avatar Preview Apps - 模型预览应用
 
     **制作辅助**:
     - Color Picker Apps - 调色板制作

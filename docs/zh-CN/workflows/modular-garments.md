@@ -56,7 +56,7 @@
 
 ## 面向 VRChat 的优化要点
 
-### 头像姿势推荐设置
+### 模型姿势推荐设置
 
 !!! warning "重要设置调整"
     VRC 对应模型通常以 T 姿势制作，但**强烈建议在 Marvelous Designer 中以 A 姿势进行作业**。
@@ -99,7 +99,7 @@
 ### Q: 模拟结果不自然
 
 **A:** 请确认以下几点：
-- 头像是否处于 A 姿势
+- 模型是否处于 A 姿势
 - 布料物理属性是否设置合适
 - 布料之间的干涉设置是否合理
 
@@ -117,7 +117,7 @@
 ### 社区资源
 
 - **BOOTH**: 《Marvelous Designer CG衣装制作讲座》（328 页详细指南）
-- **立花シキミ式 VRChat 头像改造工作流**
+- **立花シキミ式 VRChat 模型改造工作流**
 
 ## 下一步
 
@@ -125,7 +125,7 @@
 
 - [物理属性优化](../physics/fabric-properties.md)
 - [在 Unity 中进行最终调整](../unity/project-setup.md)
-- [头像上传](../unity/avatar-upload.md)
+- [模型上传](../unity/avatar-upload.md)
 
 ---
 

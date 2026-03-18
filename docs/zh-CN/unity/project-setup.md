@@ -3,13 +3,13 @@
 !!! note "指南信息"
     **预计耗时**: 约 60 分钟 | **难度**: 适合初学者 | **重要度**: 必须（VRChat 实用化）
 
-**本页目标**: 在 Unity 中集成使用 Marvelous Designer 制作的服装，并搭建可作为 VRChat 头像使用的基础环境。
+**本页目标**: 在 Unity 中集成使用 Marvelous Designer 制作的服装，并搭建可作为 VRChat 模型使用的基础环境。
 
 !!! success "本指南将实现的内容"
     - ✅ 让制作好的服装真正可以在 VRChat 中穿着
     - ✅ 获得 Unity + VRChat SDK3 的实战操作体验
-    - ✅ 理解完整的头像制作工作流
-    - ✅ 完成属于自己的自定义头像
+    - ✅ 理解完整的模型制作工作流
+    - ✅ 完成属于自己的自定义模型
 
 !!! info "事前准备"
     - [Unity・VRChat SDK 设置](../setup/unity-vrchat-setup.md)已完成
@@ -24,13 +24,13 @@
 !!! info "Marvelous Designer → Unity → VRChat 的流程"
 
     **1. Marvelous Designer 阶段**（已完成）
-    - 导入头像
+    - 导入模型
     - 制作并适配服装
     - 导出为 FBX 格式
 
     **2. Unity 集成阶段**（本次执行）
     - 项目设置
-    - 集成头像与服装
+    - 集成模型与服装
     - 配置 VRChat SDK3
 
     **3. VRChat 发布阶段**（下一步）
@@ -61,12 +61,12 @@
     在 Project 窗口中创建以下文件夹：
     ```
     Assets/
-    ├── Avatars/           (原始头像 FBX)
+    ├── Avatars/           (原始模型 FBX)
     ├── Garments/          (MD 制作的服装 FBX)
     ├── Materials/         (材质)
     ├── Textures/          (纹理)
     ├── Scenes/            (工作场景)
-    └── Prefabs/           (完成头像 Prefab)
+    └── Prefabs/           (完成模型 Prefab)
     ```
 
     **创建文件夹的方法**:
@@ -76,12 +76,12 @@
 
 ## 📁 步骤 2: 导入文件
 
-### 导入头像文件
+### 导入模型文件
 
-!!! example "步骤 2-1: 导入原始头像"
+!!! example "步骤 2-1: 导入原始模型"
 
-    **导入原始头像（FBX）**:
-    1. 在资源管理器中选择原始头像 FBX 文件
+    **导入原始模型（FBX）**:
+    1. 在资源管理器中选择原始模型 FBX 文件
     2. 拖放到 Unity 的 **“Assets/Avatars/”** 文件夹中
     3. 等待导入完成（约 30 秒到 1 分钟）
 
@@ -133,29 +133,29 @@
 
     **场景内设置**:
     1. 删除不需要的默认对象（保留 Main Camera）
-    2. 调整 **Main Camera** 位置，让头像更容易查看
+    2. 调整 **Main Camera** 位置，让模型更容易查看
     3. 通过 **“Window”** → **“Lighting”** → **“Settings”** 调整灯光
 
-### 放置并集成头像
+### 放置并集成模型
 
-!!! example "步骤 3-2: 放置头像"
+!!! example "步骤 3-2: 放置模型"
 
-    **放置原始头像**:
-    1. 从 **“Assets/Avatars/”** 将头像 FBX 拖放到场景中
+    **放置原始模型**:
+    1. 从 **“Assets/Avatars/”** 将模型 FBX 拖放到场景中
     2. 通过 Transform 将位置设置为原点（0, 0, 0）
-    3. 确认头像显示正常
+    3. 确认模型显示正常
 
     **放置服装**:
     1. 从 **“Assets/Garments/”** 将服装 FBX 拖放到场景中
-    2. 将其放置在与头像相同的位置（0, 0, 0）
-    3. 确认服装与头像重叠显示
+    2. 将其放置在与模型相同的位置（0, 0, 0）
+    3. 确认服装与模型重叠显示
 
 !!! example "步骤 3-3: 构建对象层级"
 
     **设置正确的父子关系**:
-    1. 在 **Hierarchy** 中选择头像的根对象
-    2. 将服装对象作为头像的子对象放置：
-       - 把服装拖动到头像对象下方
+    1. 在 **Hierarchy** 中选择模型的根对象
+    2. 将服装对象作为模型的子对象放置：
+       - 把服装拖动到模型对象下方
     3. 层级结构示例：
     ```
     Avatar_Root
@@ -173,18 +173,18 @@
 !!! example "步骤 4-1: 添加 VRChat Avatar Descriptor"
 
     **添加 Avatar Descriptor 组件**:
-    1. 在 Hierarchy 中选择头像的根对象
+    1. 在 Hierarchy 中选择模型的根对象
     2. 在 **Inspector** 中点击 **“Add Component”**
     3. 搜索并添加 **“VRC Avatar Descriptor”**
 
     **输入基础设置**:
     1. 设置 **View Position**：
-       - 将 View 球（绿色球）移动到头像眼睛位置
+       - 将 View 球（绿色球）移动到模型眼睛位置
        - 一般可设为 X: 0, Y: 1.6～1.8, Z: 0
     2. 设置 **Lip Sync**：
        - 指定 **“Jaw Bone”**（通常是头部骨骼）
 
-!!! example "步骤 4-2: 设置头像层"
+!!! example "步骤 4-2: 设置模型层"
 
     **Playable Layers 的基础设置**:
     1. **“VRChat SDK”** → **“Show Control Panel”**
@@ -197,16 +197,16 @@
 
 ### 集成骨骼结构与绑定骨架
 
-!!! example "步骤 4-3: 集成服装与头像骨骼"
+!!! example "步骤 4-3: 集成服装与模型骨骼"
 
     **确认骨骼权重**:
     1. 选择服装对象
     2. 在 **Inspector** 中确认 **“Skinned Mesh Renderer”** 组件
-    3. 确认 **Root Bone** 引用了头像的根骨骼
+    3. 确认 **Root Bone** 引用了模型的根骨骼
 
     **手动设置骨骼引用**（必要时）:
     1. 选择服装的 **“Skinned Mesh Renderer”**
-    2. 在 **“Root Bone”** 中指定头像的 Root Bone
+    2. 在 **“Root Bone”** 中指定模型的 Root Bone
     3. 确认 **“Bones”** 数组设置正确
 
 !!! info "Marvelous Designer 2025 的绑定骨架功能"
@@ -222,7 +222,7 @@
 
 !!! warning "传递权重时的注意点"
     - 腋下或胯部有时会被映射到不合适的骨骼
-    - 如果头像不是标准 A-Pose，需要特别注意
+    - 如果模型不是标准 A-Pose，需要特别注意
     - 必要时可先用紧身版本处理，再替换成最终版本
 
 ## 🧪 步骤 5: 测试与质量确认
@@ -232,13 +232,13 @@
 !!! example "步骤 5-1: 在 Unity 内测试"
 
     **确认外观**:
-    1. 在 **Scene View** 中从多个角度查看头像
-    2. 确认服装是否正确贴合头像
+    1. 在 **Scene View** 中从多个角度查看模型
+    2. 确认服装是否正确贴合模型
     3. 检查是否存在不自然的穿插或悬空
 
     **使用 Animation Controller 测试动作**（可选）:
     1. **“Window”** → **“Animation”** → **“Animator”**
-    2. 确认头像在基础动作下是否正常运动
+    2. 确认模型在基础动作下是否正常运动
 
 ### VRChat SDK Build & Test
 
@@ -255,7 +255,7 @@
     - 在 **Console Window** 中查看详细错误
 
 !!! success "测试成功的确认"
-    如果 VRChat 启动，并在本地测试世界中显示穿着服装的头像，就说明成功了。
+    如果 VRChat 启动，并在本地测试世界中显示穿着服装的模型，就说明成功了。
 
 ## 🎨 步骤 6: 最终调整与优化
 
@@ -281,7 +281,7 @@
 !!! example "步骤 6-2: 评估 VRChat 性能"
 
     **确认 Performance 评估**:
-    1. 在 VRChat SDK Control Panel 中选择头像
+    1. 在 VRChat SDK Control Panel 中选择模型
     2. 查看 **“Performance”** 信息：
        - **Triangle Count**: PC 低于 20,000，Quest 低于 7,500
        - **Material Count**: 尽量少
@@ -294,12 +294,12 @@
 
 ## 💾 步骤 7: 制作 Prefab 并保存
 
-### 为完成的头像创建 Prefab
+### 为完成的模型创建 Prefab
 
 !!! example "步骤 7-1: 保存为 Prefab"
 
     **创建 Prefab**:
-    1. 在 Hierarchy 中选择整个头像
+    1. 在 Hierarchy 中选择整个模型
     2. 拖放到 **“Assets/Prefabs/”** 文件夹
     3. Prefab 名称建议使用 “MyAvatar_withGarments” 这类易懂名称
 
@@ -324,13 +324,13 @@
 !!! note "Unity 集成完成检查清单"
 
     **文件集成**:
-    - [ ] 原始头像 FBX 已正常导入
+    - [ ] 原始模型 FBX 已正常导入
     - [ ] 服装 FBX 已正常导入
     - [ ] 纹理与材质已正确设置
     - [ ] 文件夹结构已整理好
 
     **Unity 设置**:
-    - [ ] 头像与服装在场景中正确显示
+    - [ ] 模型与服装在场景中正确显示
     - [ ] VRChat Avatar Descriptor 已设置
     - [ ] View Position 已正确设置
     - [ ] 骨骼结构已正确集成
@@ -353,22 +353,22 @@
        - 确认 Shader 设置是否正确
 
     2. **缩放问题**:
-       - 确认头像与服装的缩放一致
+       - 确认模型与服装的缩放一致
        - 查看 Transform 的 Scale 值
 
     3. **导入设置**:
        - 重新确认 FBX 导入时的设置
        - 必要时重新导入
 
-??? question "“服装不会跟着头像一起动”"
+??? question "“服装不会跟着模型一起动”"
     **处理方法**:
 
     1. **确认骨骼设置**:
        - 确认 Skinned Mesh Renderer 的 Root Bone 是否设置正确
-       - 确认 Bones 数组是否引用了头像骨骼结构
+       - 确认 Bones 数组是否引用了模型骨骼结构
 
     2. **确认父子关系**:
-       - 确认服装对象是否是头像的子对象
+       - 确认服装对象是否是模型的子对象
        - 确认层级结构是否正确
 
 ??? question "“Build & Test 出错”"
@@ -382,7 +382,7 @@
        - 在 VCC 中确认 SDK 是否为最新版本
        - 必要时更新
 
-    3. **确认头像设置**:
+    3. **确认模型设置**:
        - 重新检查 Avatar Descriptor 设置
        - 确认所有必填项都已设置
 
@@ -425,7 +425,7 @@ Unity 集成已经完成。
 - 错误处理与调试方法
 
 !!! success "Unity 集成完成！"
-    这是很扎实的成果。你制作的服装现在已经成为可在 VRChat 中使用的实用头像。下一步就是在 VRChat 中实际测试并上传。
+    这是很扎实的成果。你制作的服装现在已经成为可在 VRChat 中使用的实用模型。下一步就是在 VRChat 中实际测试并上传。
 
 ## 💡 应用与进阶
 

@@ -1,7 +1,7 @@
 version: 1
 entries:
   - source_term: アバター
-    canonical_zh_cn: 头像
+    canonical_zh_cn: 模型
     domain: vrchat
     preferred: true
     source_type: repo_glossary
@@ -190,28 +190,28 @@ entries:
     source_refs:
       - docs/basics/terminology.md
   - source_term: パブリックアバター
-    canonical_zh_cn: 公开头像
+    canonical_zh_cn: 公开模型
     domain: vrchat
     preferred: true
     source_type: repo_glossary
     source_refs:
       - docs/basics/terminology.md
   - source_term: プライベートアバター
-    canonical_zh_cn: 私有头像
+    canonical_zh_cn: 私有模型
     domain: vrchat
     preferred: true
     source_type: repo_glossary
     source_refs:
       - docs/basics/terminology.md
   - source_term: クローンアバター
-    canonical_zh_cn: 克隆头像
+    canonical_zh_cn: 克隆模型
     domain: vrchat
     preferred: true
     source_type: repo_glossary
     source_refs:
       - docs/basics/terminology.md
   - source_term: フォールバックアバター
-    canonical_zh_cn: Fallback 头像
+    canonical_zh_cn: Fallback 模型
     domain: vrchat
     preferred: true
     source_type: official_en
@@ -225,7 +225,7 @@ entries:
     source_refs:
       - docs/basics/terminology.md
   - source_term: アバターパフォーマンス
-    canonical_zh_cn: 头像性能
+    canonical_zh_cn: 模型性能
     domain: vrchat
     preferred: true
     source_type: official_en

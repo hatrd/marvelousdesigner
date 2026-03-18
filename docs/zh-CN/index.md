@@ -29,7 +29,7 @@
 - **不怕出错**: 会同时告诉你如何回退和修正
 
 ### ⏰ 现实可行的学习节奏
-- **第一次完整体验**: 2 到 3 小时（把现成服装适配到你的头像上）
+- **第一次完整体验**: 2 到 3 小时（把现成服装适配到你的模型上）
 - **制作一件 T 恤**: 4 到 6 小时（基础原创服装）
 - **制作一件礼服**: 8 到 12 小时（更复杂的服装）
 
@@ -52,7 +52,7 @@
 
     **阶段 2: 第一次成功体验（第 2 天）**
 
-    4. [导入头像](workflows/avatar-import.md) <span class="time-estimate">30 分钟</span>
+    4. [导入模型](workflows/avatar-import.md) <span class="time-estimate">30 分钟</span>
     5. [适配现有服装](workflows/garment-fitting.md) <span class="time-estimate">2 小时</span>
 
     **阶段 3: 开始原创制作（第 3 到 4 天）**
@@ -104,7 +104,7 @@
 - [VRChat Creator Companion](https://vcc.docs.vrchat.com/) - 用于管理 SDK
 
 ### 📁 必要文件
-- **VRChat 头像的 FBX 文件** ← 你已经持有
+- **VRChat 模型的 FBX 文件** ← 你已经持有
 - **服装的 PZIP 文件** ← 你已经持有
 
 !!! info "关于文件"
@@ -149,7 +149,7 @@
 
 - [ ] 已完成软件确认
 - [ ] 已成功启动 Marvelous Designer
-- [ ] 已成功导入头像
+- [ ] 已成功导入模型
 - [ ] 已完成现有服装适配
 - [ ] 已完成第一次 Unity 集成
 - [ ] 已成功上传到 VRChat

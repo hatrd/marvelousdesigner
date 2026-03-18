@@ -93,17 +93,17 @@
     - 在重要阶段额外保存导出的 FBX
     ```
 
-### VRChat 头像与服装集成的严重错误
+### VRChat 模型与服装集成的严重错误
 
-??? question "🔴“无法将布置点与头像对齐。仅在 A pose 或 T pose 下可正常运行”"
-    **症状**: 在 Marvelous Designer 2025 中，头像布置点自动生成失败，无法创建适配套装
+??? question "🔴“无法将布置点与模型对齐。仅在 A pose 或 T pose 下可正常运行”"
+    **症状**: 在 Marvelous Designer 2025 中，模型布置点自动生成失败，无法创建适配套装
 
     **原因分析与处理方法**:
 
     **1. T-pose/A-pose 识别问题**:
     ```
     诊断项目:
-    □ 头像是否准确处于 T-pose（双臂水平、手掌朝下）
+    □ 模型是否准确处于 T-pose（双臂水平、手掌朝下）
     □ 肩膀角度是否完全水平（90 度）
     □ 手腕是否自然伸直
     □ 双脚是否大致与肩同宽
@@ -114,11 +114,11 @@
     3. 在 MD 中使用 Avatar Editor 手动调整姿势
     ```
 
-    **2. 头像尺寸与结构问题**:
+    **2. 模型尺寸与结构问题**:
     ```
     确认事项:
-    - 头像高度低于 2 米
-    - 与内置头像（Feifei）比较尺寸
+    - 模型高度低于 2 米
+    - 与内置模型（Feifei）比较尺寸
     - 骨骼命名规则符合 MD 标准
 
     修复步骤:
@@ -138,13 +138,13 @@
 
     **MD 2025 特有注意点**:
     ```
-    - 自 2024.0.149 之后的版本起，有自定义头像布置点问题的报告
+    - 自 2024.0.149 之后的版本起，有自定义模型布置点问题的报告
     - FBX 文件内若存在重复关节名，会导致 IK Mapping 功能异常
     - DAZ Genesis 8/9、Mixamo、Metahuman 等可自动对应
     ```
 
-??? question "🔴“EveryWear 无法将头像的绑定骨架信息传输到服装”"
-    **症状**: EveryWear 的骨骼权重传输失败，服装无法跟随头像动作
+??? question "🔴“EveryWear 无法将模型的绑定骨架信息传输到服装”"
+    **症状**: EveryWear 的骨骼权重传输失败，服装无法跟随模型动作
 
     **原因与分阶段处理方法**:
 
@@ -152,8 +152,8 @@
     ```
     必要条件检查:
     □ 已正常创建适配套装
-    □ 头像保留了合适的 Humanoid 绑定骨架
-    □ 服装网格已正确放置到头像上
+    □ 模型保留了合适的 Humanoid 绑定骨架
+    □ 服装网格已正确放置到模型上
     □ MD 中的物理模拟运行稳定
 
     EveryWear 要求:
@@ -163,14 +163,14 @@
 
     **Level 2: 确认绑定质量**:
     ```
-    头像骨架诊断:
+    模型骨架诊断:
     1. 确认存在必需骨骼（Head、Hand、Foot）
     2. 确认骨骼层级结构（Shoulder 直接位于 Chest 下）
     3. 确认 Neck 直接位于 Chest 下
     4. 确认未分配 Upper Chest 骨骼（面向 VRChat）
 
     服装网格质量:
-    - 拓扑与头像网格匹配
+    - 拓扑与模型网格匹配
     - 没有极端变形或拉伸区域
     - 没有 Self-collision 问题
     ```
@@ -179,7 +179,7 @@
     ```
     手动绑定步骤:
     1. 以 OBJ 文件导出（不带绑定）
-    2. 在 Blender/Maya 等软件中传输头像骨架
+    2. 在 Blender/Maya 等软件中传输模型骨架
     3. 手动执行权重绘制
     4. 以 FBX 重新导入 Unity
 
@@ -205,13 +205,13 @@
     ```
     诊断检查:
     □ 存在 Skinned Mesh Renderer 组件
-    □ Root Bone 正确引用头像骨骼
-    □ Bones 列表已设置头像骨骼组
+    □ Root Bone 正确引用模型骨骼
+    □ Bones 列表已设置模型骨骼组
     □ Mesh 包含合适的 Bone Weights
 
     修复步骤:
     1. Inspector → Skinned Mesh Renderer
-    2. Root Bone → 设置为头像的 Hips/Pelvis
+    2. Root Bone → 设置为模型的 Hips/Pelvis
     3. Bounds → 正确调整 Center and Extents
     4. Update When Offscreen → 勾选后临时测试
     ```
@@ -219,13 +219,13 @@
     **2. Modular Avatar Armature Link 问题**:
     ```
     设置确认:
-    - 服装的 Armature 骨骼名称与头像完全一致
+    - 服装的 Armature 骨骼名称与模型完全一致
     - Armature Link → Merge Type 设置正确
     - Advanced Options → Align Rotation 的勾选状态
 
     常见解决方法:
     1. 取消勾选 Align Rotation（保留现有骨骼旋转）
-    2. 复制头像骨骼供服装专用使用
+    2. 复制模型骨骼供服装专用使用
     3. 改用 VRCFury 的 Linking Clothes 功能
     ```
 
@@ -245,7 +245,7 @@
     ```
     推荐工作流:
     1. 在 MD 中导出 OBJ（不带绑定）
-    2. 在 Blender 中传输头像骨架结构
+    2. 在 Blender 中传输模型骨架结构
     3. 执行权重绘制
     4. 为 Modular Avatar 导出 FBX
     5. 在 Unity 中设置 Armature Link
@@ -306,13 +306,13 @@
 
 ### 服装适配问题
 
-??? question "🟡“服装无法贴合头像”"
+??? question "🟡“服装无法贴合模型”"
     **症状**: 尺寸不合适、形状崩坏、出现不自然的悬浮
 
     **诊断与处理**:
     ```
     问题诊断检查清单:
-    □ 头像尺寸是否标准？
+    □ 模型尺寸是否标准？
     □ 服装版型尺寸是否合适？
     □ Particle Distance 是否合适？
     □ 物理设置是否适合该服装类型？
@@ -321,7 +321,7 @@
     1. 调整整体缩放 (Transform→Scale)
     2. 调整各个版型尺寸
     3. 重新检查物理设置 (Bend/Stretch)
-    4. 调整头像姿势
+    4. 调整模型姿势
     ```
 
     **具体调整示例**:
@@ -430,7 +430,7 @@
     **善用模板**:
     ```
     1. 将常用物理设置保存为 Preset
-    2. 保存基础头像布置 Scene
+    2. 保存基础模型布置 Scene
     3. 创建材质设置模板
     4. 统一项目文件夹结构
     ```

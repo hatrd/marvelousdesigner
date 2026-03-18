@@ -2,7 +2,7 @@
 
 <span class="time-estimate">预计耗时: 约 45 分钟</span> <span class="difficulty-beginner">适合初学者</span>
 
-**本页目标**: 正确设置 Unity 和 VRChat SDK3，完成头像制作与上传前的准备工作。
+**本页目标**: 正确设置 Unity 和 VRChat SDK3，完成模型制作与上传前的准备工作。
 
 !!! info "开始之前"
     - 已完成[软件确认指南](software-check.md)
@@ -14,8 +14,8 @@
 1. ✅ 正确设置 VRChat Creator Companion
 2. ✅ 使用 Unity 2022.3.22f1 创建 VRChat 项目
 3. ✅ 安装 VRChat SDK3
-4. ✅ 准备头像开发环境
-5. ✅ 上传一个用于测试的简单头像
+4. ✅ 准备模型开发环境
+5. ✅ 上传一个用于测试的简单模型
 
 ## 🚀 设置步骤
 
@@ -44,7 +44,7 @@
 <div class="step-container">
 <div class="step-number">创建新的 VRChat 项目</div>
 
-**创建用于头像制作的项目**:
+**创建用于模型制作的项目**:
 
 1. 在 VCC 主界面点击 **「Create New Project」**
 2. 选择 **「Avatar」** 项目类型
@@ -115,7 +115,7 @@
 1. **「VRChat SDK」** → **「Show Control Panel」**
 2. 在 **「Authentication」** 标签页中登录 VRChat 账号
 
-**确认头像设置**:
+**确认模型设置**:
 1. 选择 **「Builder」** 标签页
 2. 确认显示 **「Build & Publish for Windows」** 区块
 
@@ -125,34 +125,34 @@
 - **Test Avatar**: 用于本地测试
 
 !!! info "关于 Trust Rank"
-    想要向 VRChat 上传头像，需要拥有 **「New User」** 及以上的 Trust Rank。
+    想要向 VRChat 上传模型，需要拥有 **「New User」** 及以上的 Trust Rank。
 </div>
 
-### 步骤 4: 使用测试头像确认运行
+### 步骤 4: 使用测试模型确认运行
 
 <div class="step-container">
-<div class="step-number">创建简单的测试头像</div>
+<div class="step-number">创建简单的测试模型</div>
 
-**用基础头像测试 VRChat 集成**:
+**用基础模型测试 VRChat 集成**:
 
-**使用默认头像**:
+**使用默认模型**:
 1. 在 Project 窗口中确认 VRChat SDK samples
 2. **「VRChat SDK」** → **「Samples」** → **「Avatar Dynamics Robot Avatar」**
-3. 将机器人头像拖放到场景中
+3. 将机器人模型拖放到场景中
 
 **确认 VRChat Avatar Descriptor**:
-1. 在 Hierarchy 中选择头像
+1. 在 Hierarchy 中选择模型
 2. 在 Inspector 中确认 VRChat Avatar Descriptor 组件
 3. 确认 **View Position**（视角位置）已设置
 
-!!! tip "如果想使用自定义头像"
-    你也可以用同样的拖放方式添加自己的 FBX 文件，但建议一开始先用测试头像确认流程正常。
+!!! tip "如果想使用自定义模型"
+    你也可以用同样的拖放方式添加自己的 FBX 文件，但建议一开始先用测试模型确认流程正常。
 </div>
 
 <div class="step-container">
 <div class="step-number">使用 Build & Test 进行本地测试</div>
 
-**在本地测试已创建的头像**:
+**在本地测试已创建的模型**:
 
 1. 打开 VRChat SDK Control Panel 的 **「Builder」** 标签页
 2. 点击 **「Build & Test」**
@@ -161,10 +161,10 @@
 **构建完成后**:
 1. VRChat 会自动启动（如果已安装）
 2. 会打开用于本地测试的世界
-3. 你制作的头像将可供使用
+3. 你制作的模型将可供使用
 
 !!! success "测试成功！"
-    如果能在 VRChat 中确认头像，就说明基础集成环境已经搭建完成。
+    如果能在 VRChat 中确认模型，就说明基础集成环境已经搭建完成。
 </div>
 
 ### 步骤 5: 理解项目结构
@@ -177,7 +177,7 @@
 **推荐的文件夹结构**:
 ```
 Assets/
-├── Avatars/           (头像文件)
+├── Avatars/           (模型文件)
 ├── Materials/         (材质)
 ├── Textures/          (纹理)
 ├── Garments/          (来自 Marvelous Designer 的服装)
@@ -260,7 +260,7 @@ Assets/
 - [ ] VRChat SDK3 已正确安装
 - [ ] 可以打开 VRChat SDK Control Panel
 - [ ] 已能登录 VRChat 账号
-- [ ] 使用测试头像的 Build & Test 已成功
+- [ ] 使用测试模型的 Build & Test 已成功
 - [ ] 已理解项目文件夹结构
 - [ ] 已能在 VRChat 中进行本地测试
 </div>
@@ -275,7 +275,7 @@ Unity・VRChat 集成环境已经准备好了！
 
 或者如果想直接进入实战:
 
-[前往头像导入指南 →](../workflows/avatar-import.md){ .md-button }
+[前往模型导入指南 →](../workflows/avatar-import.md){ .md-button }
 
 ## 📚 参考信息
 

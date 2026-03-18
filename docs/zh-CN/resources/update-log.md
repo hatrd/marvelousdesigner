@@ -35,7 +35,7 @@
     - `basics/md-interface.md` - MD 基础界面说明
 
     **🛠️ 实践制作指南**:
-    - `workflows/avatar-import.md` - 导入头像步骤
+    - `workflows/avatar-import.md` - 导入模型步骤
     - `workflows/garment-fitting.md` - 现有服装适配（第一次成功体验）
     - `garments/t-shirt.md` - T 恤制作（面向初学者，建立基础技能）
     - `garments/skirt.md` - 裙子制作（从初级到中级，逐步增加复杂度）
@@ -47,7 +47,7 @@
 
     **🔧 Unity 集成与实用化**:
     - `unity/project-setup.md` - Unity 项目设置
-    - `unity/avatar-upload.md` - VRChat 头像上传
+    - `unity/avatar-upload.md` - VRChat 模型上传
 
     **🆘 支持部分**:
     - `workflows/common-issues.md` - 常见问题与处理方法（综合 FAQ）
@@ -233,7 +233,7 @@
     **内容方面**:
     - 视频内容不足（依赖外部链接）
     - 对更高级技术（如 Shader）的讲解不足
-    - 对特殊体型与头像的适配信息不足
+    - 对特殊体型与模型的适配信息不足
 
     **多语言支持**:
     - 尚未实现完整多语言支持

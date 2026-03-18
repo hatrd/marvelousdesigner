@@ -25,7 +25,7 @@
 **Discord**
 - [VRChat 官方 Discord](https://discord.gg/vrchat)
   - 约 310,000 名成员
-  - 头像开发频道
+  - 模型开发频道
   - 技术支持
 
 ## 日语社区
