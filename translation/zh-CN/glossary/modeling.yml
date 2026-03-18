@@ -1,0 +1,247 @@
+version: 1
+entries:
+  - source_term: メッシュ
+    canonical_zh_cn: 网格
+    domain: modeling
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/mesh-introduction.html
+  - source_term: ポリゴン
+    canonical_zh_cn: 多边形
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: トライアングル
+    canonical_zh_cn: 三角面
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: 頂点（Vertex）
+    canonical_zh_cn: 顶点
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: Vertex
+    canonical_zh_cn: 顶点
+    domain: modeling
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: エッジ
+    canonical_zh_cn: 边
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: フェイス
+    canonical_zh_cn: 面
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ボックスモデリング
+    canonical_zh_cn: 盒式建模
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: エクストルード
+    canonical_zh_cn: 挤出
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: インセット
+    canonical_zh_cn: 内插
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ベベル
+    canonical_zh_cn: 倒角
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ループカット
+    canonical_zh_cn: 环切
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: マージ
+    canonical_zh_cn: 合并
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: スカルプティング
+    canonical_zh_cn: 雕刻
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: リトポロジー
+    canonical_zh_cn: 重拓扑
+    domain: modeling
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/hc/en-us/articles/47358347315481-Remeshing
+  - source_term: デシメーション
+    canonical_zh_cn: 抽面
+    domain: modeling
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: スムージング
+    canonical_zh_cn: 平滑
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: サブディビジョン
+    canonical_zh_cn: 细分
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: UVマッピング
+    canonical_zh_cn: UV 映射
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: UV座標
+    canonical_zh_cn: UV 坐标
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: シーム
+    canonical_zh_cn: 接缝
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: アイランド
+    canonical_zh_cn: UV 岛
+    domain: modeling
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: パッキング
+    canonical_zh_cn: 打包排布
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: テクセル密度
+    canonical_zh_cn: 纹素密度
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: レンダリング
+    canonical_zh_cn: 渲染
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ライティング
+    canonical_zh_cn: 灯光
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: テクスチャマッピング
+    canonical_zh_cn: 纹理映射
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: UV展開
+    canonical_zh_cn: UV 展开
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: 法線マップ
+    canonical_zh_cn: 法线贴图
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: HDRIライティング
+    canonical_zh_cn: HDRI 灯光
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: FBXエクスポート
+    canonical_zh_cn: 导出 FBX
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: OBJエクスポート
+    canonical_zh_cn: 导出 OBJ
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: GLTFエクスポート
+    canonical_zh_cn: 导出 glTF
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: PZIPファイル
+    canonical_zh_cn: PZIP 文件
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: DXFエクスポート
+    canonical_zh_cn: 导出 DXF
+    domain: modeling
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md

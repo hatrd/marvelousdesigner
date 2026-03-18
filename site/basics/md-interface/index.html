@@ -1,18 +1,18 @@
 
 <!doctype html>
-<html lang="ja" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Marvelous DesignerとUnityを使ったVRChat衣装制作の完全初心者向けガイド">
+        <meta name="description" content="使用 Marvelous Designer 和 Unity 制作 VRChat 服装的简体中文入门指南">
       
       
         <meta name="author" content="VRChat Garment Creation Team">
       
       
-        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/basics/md-interface/">
+        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/zh-CN/basics/md-interface/">
       
       
         <link rel="prev" href="../../setup/unity-vrchat-setup/">
@@ -21,19 +21,22 @@
         <link rel="next" href="../ai-features/">
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>Marvelous Designerインターフェース - VRChat衣装制作完全ガイド</title>
+        <title>Marvelous Designer 界面 - VRChat 服装制作完整指南</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,8 +50,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Noto Sans JP";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -57,18 +60,7 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
 
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
-
-    
     
     
   <meta name="google-site-verification" content="2MW4wZaZsAsSzYUYyh514GoRY2nDaBF1VcITV1P3xSk" />
@@ -93,7 +85,7 @@
       
         
         <a href="#marvelous-designer" class="md-skip">
-          コンテンツにスキップ
+          跳转至
         </a>
       
     </div>
@@ -101,16 +93,12 @@
       
     </div>
     
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-      </div>
-    
     
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-header__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-header__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -124,13 +112,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            VRChat衣装制作完全ガイド
+            VRChat 服装制作完整指南
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Marvelous Designerインターフェース
+              Marvelous Designer 界面
             
           </span>
         </div>
@@ -143,9 +131,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -153,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -178,16 +166,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="検索">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -200,7 +188,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            検索を初期化
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -212,10 +200,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+        <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -233,7 +221,7 @@
         
           
             
-<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -249,7 +237,7 @@
   
     
   
-  ホーム
+  首页
 
       </a>
     </li>
@@ -268,7 +256,7 @@
           
   
   
-  環境設定
+  环境设置
 
         </a>
       </li>
@@ -290,7 +278,7 @@
           
   
   
-  基礎知識
+  基础知识
 
         </a>
       </li>
@@ -310,7 +298,7 @@
           
   
   
-  作業手順
+  工作流程
 
         </a>
       </li>
@@ -330,7 +318,7 @@
           
   
   
-  衣装別制作ガイド
+  分类服装制作指南
 
         </a>
       </li>
@@ -350,7 +338,7 @@
           
   
   
-  物理設定・最適化
+  物理设置与优化
 
         </a>
       </li>
@@ -370,7 +358,7 @@
           
   
   
-  最適化・品質向上
+  优化与质量提升
 
         </a>
       </li>
@@ -390,7 +378,7 @@
           
   
   
-  高度な技術・MD2025
+  高级技术与 MD2025
 
         </a>
       </li>
@@ -410,7 +398,7 @@
           
   
   
-  Unity統合
+  Unity 集成
 
         </a>
       </li>
@@ -430,7 +418,7 @@
           
   
   
-  リソース・参考資料
+  资源与参考资料
 
         </a>
       </li>
@@ -460,22 +448,22 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-nav__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-nav__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    VRChat衣装制作完全ガイド
+    VRChat 服装制作完整指南
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+      <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -497,9 +485,14 @@
   
   
   <span class="md-ellipsis">
-    ホーム
+    
+  
+    首页
+  
+
     
   </span>
+  
   
 
       </a>
@@ -537,9 +530,14 @@
   
   
   <span class="md-ellipsis">
-    環境設定
+    
+  
+    环境设置
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -548,7 +546,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            環境設定
+            
+  
+    环境设置
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -564,9 +566,14 @@
   
   
   <span class="md-ellipsis">
-    ソフトウェア確認
+    
+  
+    软件确认
+  
+
     
   </span>
+  
   
 
       </a>
@@ -587,9 +594,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designer初回起動
+    
+  
+    Marvelous Designer 首次启动
+  
+
     
   </span>
+  
   
 
       </a>
@@ -610,9 +622,14 @@
   
   
   <span class="md-ellipsis">
-    Unity・VRChat SDK設定
+    
+  
+    Unity 与 VRChat SDK 设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -661,9 +678,14 @@
   
   
   <span class="md-ellipsis">
-    基礎知識
+    
+  
+    基础知识
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -672,7 +694,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            基礎知識
+            
+  
+    基础知识
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -697,9 +723,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designerインターフェース
+    
+  
+    Marvelous Designer 界面
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -710,9 +741,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designerインターフェース
+    
+  
+    Marvelous Designer 界面
+  
+
     
   </span>
+  
   
 
       </a>
@@ -721,7 +757,7 @@
 
   
 
-<nav class="md-nav md-nav--secondary" aria-label="このページの内容">
+<nav class="md-nav md-nav--secondary" aria-label="本页内容">
   
   
   
@@ -730,14 +766,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      このページの内容
+      本页内容
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 今回達成する目標
+      
+        🎯 本次要达成的目标
+      
     </span>
   </a>
   
@@ -746,17 +784,21 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      📐 メイン画面の構成
+      
+        📐 主界面的构成
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📐 メイン画面の構成">
+    <nav class="md-nav" aria-label="📐 主界面的构成">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#1-2d" class="md-nav__link">
     <span class="md-ellipsis">
-      🎨 1. 2Dパターンウィンドウ（左側）
+      
+        🎨 1. 2D 版型窗口（左侧）
+      
     </span>
   </a>
   
@@ -765,7 +807,9 @@
           <li class="md-nav__item">
   <a href="#2-3d" class="md-nav__link">
     <span class="md-ellipsis">
-      🎭 2. 3Dビューポート（右側上部）
+      
+        🎭 2. 3D 视口（右上）
+      
     </span>
   </a>
   
@@ -774,7 +818,9 @@
           <li class="md-nav__item">
   <a href="#3-3d-object-browser" class="md-nav__link">
     <span class="md-ellipsis">
-      🎛️ 3. 3D Object Browser（右側下部）
+      
+        🎛️ 3. 3D Object Browser（右下）
+      
     </span>
   </a>
   
@@ -783,7 +829,9 @@
           <li class="md-nav__item">
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠️ 4. ツールバー（上部）
+      
+        🛠️ 4. 工具栏（顶部）
+      
     </span>
   </a>
   
@@ -792,7 +840,9 @@
           <li class="md-nav__item">
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ 5. プロパティパネル（右端または下部）
+      
+        ⚙️ 5. 属性面板（右侧或下方）
+      
     </span>
   </a>
   
@@ -806,17 +856,21 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      📋 メニューバー詳細解説
+      
+        📋 菜单栏详细说明
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📋 メニューバー詳細解説">
+    <nav class="md-nav" aria-label="📋 菜单栏详细说明">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#file" class="md-nav__link">
     <span class="md-ellipsis">
-      File（ファイル）メニュー
+      
+        File（文件）菜单
+      
     </span>
   </a>
   
@@ -825,7 +879,9 @@
           <li class="md-nav__item">
   <a href="#edit" class="md-nav__link">
     <span class="md-ellipsis">
-      Edit（編集）メニュー
+      
+        Edit（编辑）菜单
+      
     </span>
   </a>
   
@@ -834,7 +890,9 @@
           <li class="md-nav__item">
   <a href="#2d-pattern2d" class="md-nav__link">
     <span class="md-ellipsis">
-      2D Pattern（2Dパターン）メニュー
+      
+        2D Pattern（2D 版型）菜单
+      
     </span>
   </a>
   
@@ -843,7 +901,9 @@
           <li class="md-nav__item">
   <a href="#3d-garment3d" class="md-nav__link">
     <span class="md-ellipsis">
-      3D Garment（3D衣装）メニュー
+      
+        3D Garment（3D 服装）菜单
+      
     </span>
   </a>
   
@@ -852,7 +912,9 @@
           <li class="md-nav__item">
   <a href="#avatar" class="md-nav__link">
     <span class="md-ellipsis">
-      Avatar（アバター）メニュー
+      
+        Avatar（头像）菜单
+      
     </span>
   </a>
   
@@ -866,26 +928,32 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      ⌨️ 重要なキーボードショートカット
+      
+        ⌨️ 重要键盘快捷键
+      
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#blenderunity" class="md-nav__link">
+  <a href="#blender-unity" class="md-nav__link">
     <span class="md-ellipsis">
-      🔄 BlenderやUnityとの操作統一設定
+      
+        🔄 与 Blender 和 Unity 统一操作设置
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔄 BlenderやUnityとの操作統一設定">
+    <nav class="md-nav" aria-label="🔄 与 Blender 和 Unity 统一操作设置">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#blender" class="md-nav__link">
     <span class="md-ellipsis">
-      Blenderとの操作統一
+      
+        与 Blender 统一操作
+      
     </span>
   </a>
   
@@ -894,7 +962,9 @@
           <li class="md-nav__item">
   <a href="#unity" class="md-nav__link">
     <span class="md-ellipsis">
-      Unityとの連携設定
+      
+        与 Unity 的联动设置
+      
     </span>
   </a>
   
@@ -903,7 +973,9 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      専用キーパッド活用
+      
+        使用专用键盘
+      
     </span>
   </a>
   
@@ -917,17 +989,21 @@
         <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      🎨 インターフェースカスタマイズ
+      
+        🎨 界面自定义
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎨 インターフェースカスタマイズ">
+    <nav class="md-nav" aria-label="🎨 界面自定义">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      レイアウトの調整
+      
+        调整布局
+      
     </span>
   </a>
   
@@ -936,7 +1012,9 @@
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      ツールバーのカスタマイズ
+      
+        自定义工具栏
+      
     </span>
   </a>
   
@@ -950,17 +1028,21 @@
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 実践練習: インターフェース操作
+      
+        🔧 实践练习：界面操作
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔧 実践練習: インターフェース操作">
+    <nav class="md-nav" aria-label="🔧 实践练习：界面操作">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      練習1: 基本操作の確認
+      
+        练习1：确认基本操作
+      
     </span>
   </a>
   
@@ -969,7 +1051,9 @@
           <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      練習2: 簡単なパターン作成
+      
+        练习2：创建简单版型
+      
     </span>
   </a>
   
@@ -978,7 +1062,9 @@
           <li class="md-nav__item">
   <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      練習3: プロパティ編集
+      
+        练习3：编辑属性
+      
     </span>
   </a>
   
@@ -992,7 +1078,9 @@
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 理解度チェック
+      
+        ✅ 理解度检查
+      
     </span>
   </a>
   
@@ -1001,17 +1089,21 @@
         <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 トラブルシューティング
+      
+        🔧 故障排查
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔧 トラブルシューティング">
+    <nav class="md-nav" aria-label="🔧 故障排查">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      インターフェース関連
+      
+        界面相关
+      
     </span>
   </a>
   
@@ -1020,7 +1112,9 @@
           <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      操作関連
+      
+        操作相关
+      
     </span>
   </a>
   
@@ -1034,7 +1128,9 @@
         <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      🌟 次のステップ
+      
+        🌟 下一步
+      
     </span>
   </a>
   
@@ -1043,17 +1139,21 @@
         <li class="md-nav__item">
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 参考情報
+      
+        📚 参考信息
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📚 参考情報">
+    <nav class="md-nav" aria-label="📚 参考信息">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      ショートカット早見表
+      
+        快捷键速查表
+      
     </span>
   </a>
   
@@ -1062,7 +1162,9 @@
           <li class="md-nav__item">
   <a href="#_17" class="md-nav__link">
     <span class="md-ellipsis">
-      表示モード一覧
+      
+        显示模式一览
+      
     </span>
   </a>
   
@@ -1071,7 +1173,9 @@
           <li class="md-nav__item">
   <a href="#3dcg" class="md-nav__link">
     <span class="md-ellipsis">
-      他の3DCGソフトウェアとの互換性
+      
+        与其他 3DCG 软件的兼容性
+      
     </span>
   </a>
   
@@ -1103,9 +1207,14 @@
   
   
   <span class="md-ellipsis">
-    AI機能ガイド
+    
+  
+    AI 功能指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1126,9 +1235,14 @@
   
   
   <span class="md-ellipsis">
-    3Dモデリング基本概念
+    
+  
+    3D 建模基础概念
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1149,9 +1263,14 @@
   
   
   <span class="md-ellipsis">
-    制作工程全体像
+    
+  
+    制作流程全貌
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1172,9 +1291,14 @@
   
   
   <span class="md-ellipsis">
-    ファイル形式の理解
+    
+  
+    文件格式的理解
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1195,9 +1319,14 @@
   
   
   <span class="md-ellipsis">
-    専門用語集
+    
+  
+    术语表
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1243,9 +1372,14 @@
   
   
   <span class="md-ellipsis">
-    作業手順
+    
+  
+    工作流程
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1254,7 +1388,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            作業手順
+            
+  
+    工作流程
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1270,9 +1408,14 @@
   
   
   <span class="md-ellipsis">
-    アバターの読み込み
+    
+  
+    导入头像
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1293,9 +1436,14 @@
   
   
   <span class="md-ellipsis">
-    衣装のフィッティング
+    
+  
+    现有服装适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1316,9 +1464,14 @@
   
   
   <span class="md-ellipsis">
-    モジュラー衣装システム
+    
+  
+    模块化服装系统
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1339,9 +1492,14 @@
   
   
   <span class="md-ellipsis">
-    非対応アバター改変
+    
+  
+    非兼容头像改造
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1362,9 +1520,14 @@
   
   
   <span class="md-ellipsis">
-    新規衣装制作手順
+    
+  
+    新建服装制作
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1385,9 +1548,14 @@
   
   
   <span class="md-ellipsis">
-    よくある問題と対処
+    
+  
+    常见问题与处理
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1433,9 +1601,14 @@
   
   
   <span class="md-ellipsis">
-    衣装別制作ガイド
+    
+  
+    分类服装制作指南
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1444,7 +1617,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            衣装別制作ガイド
+            
+  
+    分类服装制作指南
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1460,9 +1637,14 @@
   
   
   <span class="md-ellipsis">
-    Tシャツ（初心者向け）
+    
+  
+    T 恤（适合初学者）
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1483,9 +1665,14 @@
   
   
   <span class="md-ellipsis">
-    スカート
+    
+  
+    裙子
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1506,9 +1693,14 @@
   
   
   <span class="md-ellipsis">
-    ドレス
+    
+  
+    礼服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1529,9 +1721,14 @@
   
   
   <span class="md-ellipsis">
-    カジュアル服
+    
+  
+    休闲服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1552,9 +1749,14 @@
   
   
   <span class="md-ellipsis">
-    ワンピース
+    
+  
+    连衣裙
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1575,9 +1777,14 @@
   
   
   <span class="md-ellipsis">
-    水着
+    
+  
+    泳装
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1623,9 +1830,14 @@
   
   
   <span class="md-ellipsis">
-    物理設定・最適化
+    
+  
+    物理设置与优化
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1634,7 +1846,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            物理設定・最適化
+            
+  
+    物理设置与优化
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1650,9 +1866,14 @@
   
   
   <span class="md-ellipsis">
-    布の物理特性設定
+    
+  
+    布料物理特性设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1673,9 +1894,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス最適化
+    
+  
+    性能优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1721,9 +1947,14 @@
   
   
   <span class="md-ellipsis">
-    最適化・品質向上
+    
+  
+    优化与质量提升
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1732,7 +1963,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            最適化・品質向上
+            
+  
+    优化与质量提升
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1748,9 +1983,14 @@
   
   
   <span class="md-ellipsis">
-    Very Poor脱却完全ガイド
+    
+  
+    摆脱 Very Poor 完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1771,9 +2011,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス分析ツール
+    
+  
+    性能分析工具
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1794,9 +2039,14 @@
   
   
   <span class="md-ellipsis">
-    モバイル完全対応
+    
+  
+    移动端完全适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1842,9 +2092,14 @@
   
   
   <span class="md-ellipsis">
-    高度な技術・MD2025
+    
+  
+    高级技术与 MD2025
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1853,7 +2108,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            高度な技術・MD2025
+            
+  
+    高级技术与 MD2025
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1869,9 +2128,14 @@
   
   
   <span class="md-ellipsis">
-    MD2025新機能完全ガイド
+    
+  
+    MD2025 新功能完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1892,9 +2156,14 @@
   
   
   <span class="md-ellipsis">
-    EveryWear統合ワークフロー
+    
+  
+    EveryWear 集成工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1915,9 +2184,14 @@
   
   
   <span class="md-ellipsis">
-    IK-Joint最適化
+    
+  
+    IK-Joint 优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1963,9 +2237,14 @@
   
   
   <span class="md-ellipsis">
-    Unity統合
+    
+  
+    Unity 集成
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1974,7 +2253,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Unity統合
+            
+  
+    Unity 集成
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1990,9 +2273,14 @@
   
   
   <span class="md-ellipsis">
-    Unityプロジェクト設定
+    
+  
+    Unity 项目设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2013,9 +2301,14 @@
   
   
   <span class="md-ellipsis">
-    FBXからVRChatまでの完全ワークフロー
+    
+  
+    从 FBX 到 VRChat 的完整工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2036,9 +2329,14 @@
   
   
   <span class="md-ellipsis">
-    アバターアップロード
+    
+  
+    头像上传
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2084,9 +2382,14 @@
   
   
   <span class="md-ellipsis">
-    リソース・参考資料
+    
+  
+    资源与参考资料
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2095,7 +2398,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            リソース・参考資料
+            
+  
+    资源与参考资料
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2111,9 +2418,14 @@
   
   
   <span class="md-ellipsis">
-    有用なリンク集
+    
+  
+    实用链接集
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2134,9 +2446,14 @@
   
   
   <span class="md-ellipsis">
-    CLO-SET Connect・EveryWear
+    
+  
+    CLO-SET Connect 与 EveryWear
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2157,9 +2474,14 @@
   
   
   <span class="md-ellipsis">
-    コミュニティ情報
+    
+  
+    社区信息
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2180,9 +2502,14 @@
   
   
   <span class="md-ellipsis">
-    上級者向けリソース
+    
+  
+    进阶资源
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2203,9 +2530,14 @@
   
   
   <span class="md-ellipsis">
-    更新履歴
+    
+  
+    更新记录
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2231,6 +2563,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2240,458 +2573,458 @@
   
 
 
-<h1 id="marvelous-designer">Marvelous Designer 基本インターフェースガイド<a class="headerlink" href="#marvelous-designer" title="Permanent link">&para;</a></h1>
+<h1 id="marvelous-designer">Marvelous Designer 基础界面指南<a class="headerlink" href="#marvelous-designer" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
-<p class="admonition-title">ガイド情報</p>
-<p><strong>所要時間</strong>: 約60分 | <strong>難易度</strong>: 初心者向け | <strong>重要度</strong>: 基礎習得必須</p>
+<p class="admonition-title">指南信息</p>
+<p><strong>预计用时</strong>: 约60分钟 | <strong>难度</strong>: 适合初学者 | <strong>重要度</strong>: 必须掌握基础操作</p>
 </div>
-<p><strong>このページの目的</strong>: Marvelous Designerのインターフェースを完全に理解し、効率的に作業できるようになります。</p>
+<p><strong>本页目的</strong>: 彻底理解 Marvelous Designer 的界面，从而能够高效地开展作业。</p>
 <div class="admonition info">
-<p class="admonition-title">事前準備</p>
+<p class="admonition-title">准备事项</p>
 <ul>
-<li><a href="../../setup/md-first-launch/">Marvelous Designer初回起動ガイド</a>を完了していること</li>
-<li>Marvelous Designerが正常に動作すること</li>
-<li>新規プロジェクトを作成できること</li>
+<li>已完成 <a href="../../setup/md-first-launch/">Marvelous Designer 首次启动指南</a></li>
+<li>Marvelous Designer 能正常运行</li>
+<li>可以创建新项目</li>
 </ul>
 </div>
-<h2 id="_1">🎯 今回達成する目標<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">🎯 本次要达成的目标<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ol>
-<li>✅ メイン画面の全エリアを理解する</li>
-<li>✅ 基本的なツールの場所と役割を覚える</li>
-<li>✅ 効率的な操作方法を身につける</li>
-<li>✅ カスタマイズ方法を理解する</li>
-<li>✅ 実際に基本操作を実践する</li>
+<li>✅ 理解主界面的全部区域</li>
+<li>✅ 记住基础工具的位置与作用</li>
+<li>✅ 掌握高效的操作方法</li>
+<li>✅ 理解自定义方式</li>
+<li>✅ 实际练习基础操作</li>
 </ol>
-<h2 id="_2">📐 メイン画面の構成<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>Marvelous Designerのメイン画面は<strong>5つの主要エリア</strong>に分かれています:</p>
-<h3 id="1-2d">🎨 1. 2Dパターンウィンドウ（左側）<a class="headerlink" href="#1-2d" title="Permanent link">&para;</a></h3>
+<h2 id="_2">📐 主界面的构成<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>Marvelous Designer 的主界面分为 <strong>5 个主要区域</strong>：</p>
+<h3 id="1-2d">🎨 1. 2D 版型窗口（左侧）<a class="headerlink" href="#1-2d" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">Pattern Window の役割</p>
-<p><strong>ここで行う作業</strong>:</p>
+<p class="admonition-title">Pattern Window 的作用</p>
+<p><strong>在这里进行的作业</strong>:</p>
 </div>
 <ul>
-<li>衣装の型紙（パターン）を作成・編集</li>
-<li>平面的な作業（線描画、形状編集）</li>
-<li>縫い線の設定</li>
-<li>型紙のレイアウト調整</li>
+<li>创建与编辑服装纸样（版型）</li>
+<li>平面作业（绘线、编辑形状）</li>
+<li>设置缝线</li>
+<li>调整纸样布局</li>
 </ul>
-<p><strong>表示されるもの</strong>:
-- ✅ <strong>グリッド</strong>: 作業の基準線
-- ✅ <strong>パターンピース</strong>: 衣装の各パーツ
-- ✅ <strong>縫い線</strong>: 赤い線（Internal Line）
-- ✅ <strong>外周線</strong>: 青い線（Outline）</p>
+<p><strong>显示内容</strong>:
+- ✅ <strong>网格</strong>: 作业参考线
+- ✅ <strong>版型片</strong>: 服装的各个部件
+- ✅ <strong>缝线</strong>: 红线（Internal Line）
+- ✅ <strong>外轮廓线</strong>: 蓝线（Outline）</p>
 <p><strong>基本操作</strong>:
-- <strong>ズーム</strong>: マウスホイール
-- <strong>パン（移動）</strong>: 中ボタンドラッグ
-    - <strong>全体表示</strong>: <strong>「Ctrl + A」</strong> → <strong>「F」</strong></p>
-<h3 id="2-3d">🎭 2. 3Dビューポート（右側上部）<a class="headerlink" href="#2-3d" title="Permanent link">&para;</a></h3>
+- <strong>缩放</strong>: 鼠标滚轮
+- <strong>平移（移动）</strong>: 中键拖拽
+    - <strong>显示全体</strong>: <strong><code>Ctrl + A</code></strong> → <strong><code>F</code></strong></p>
+<h3 id="2-3d">🎭 2. 3D 视口（右上）<a class="headerlink" href="#2-3d" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">3D Garment Window の役割</p>
-<p><strong>ここで確認できること</strong>:</p>
+<p class="admonition-title">3D Garment Window 的作用</p>
+<p><strong>这里可以确认的内容</strong>:</p>
 </div>
 <ul>
-<li>アバター（人型モデル）</li>
-<li>3D化された衣装</li>
-<li>布の物理シミュレーション結果</li>
-<li>実際の着用状態</li>
+<li>头像（人形模型）</li>
+<li>3D 化后的服装</li>
+<li>布料物理模拟结果</li>
+<li>实际穿着状态</li>
 </ul>
-<p><strong>視点操作</strong>:
-- <strong>回転</strong>: 右ボタンドラッグ
-- <strong>パン（移動）</strong>: 中ボタンドラッグ
-- <strong>ズーム</strong>: マウスホイール
-- <strong>フィット表示</strong>: <strong>「F」</strong> キー</p>
-<p><strong>表示モード切り替え</strong>:
-- <strong>「1」</strong> キー: ワイヤーフレーム
-- <strong>「2」</strong> キー: シェーディング
-- <strong>「3」</strong> キー: テクスチャ表示
-- <strong>「4」</strong> キー: レンダリング表示</p>
-<div class="highlight"><pre><span></span><code>!!! tip &quot;視点操作のコツ&quot;
-    右クリックしながらマウスを動かすと、アバターを中心に回転できます。慣れるまで少し練習してみましょう。
+<p><strong>视角操作</strong>:
+- <strong>旋转</strong>: 右键拖拽
+- <strong>平移（移动）</strong>: 中键拖拽
+- <strong>缩放</strong>: 鼠标滚轮
+- <strong>聚焦显示</strong>: <strong><code>F</code></strong> 键</p>
+<p><strong>显示模式切换</strong>:
+- <strong><code>1</code></strong> 键: 线框
+- <strong><code>2</code></strong> 键: 着色
+- <strong><code>3</code></strong> 键: 纹理显示
+- <strong><code>4</code></strong> 键: 渲染显示</p>
+<div class="highlight"><pre><span></span><code>!!! tip &quot;视角操作技巧&quot;
+    按住右键移动鼠标后，可以围绕头像进行旋转。刚开始可能需要稍微练习一下。
 </code></pre></div>
-<h3 id="3-3d-object-browser">🎛️ 3. 3D Object Browser（右側下部）<a class="headerlink" href="#3-3d-object-browser" title="Permanent link">&para;</a></h3>
+<h3 id="3-3d-object-browser">🎛️ 3. 3D Object Browser（右下）<a class="headerlink" href="#3-3d-object-browser" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">Object Browser の使い方</p>
-<p><strong>表示されるもの</strong>:</p>
+<p class="admonition-title">Object Browser 的用法</p>
+<p><strong>显示内容</strong>:</p>
 </div>
 <ul>
-<li><strong>Avatar</strong>: 読み込まれたアバター</li>
-<li><strong>Garments</strong>: 作成した衣装一覧</li>
-<li><strong>Trims</strong>: ボタンやファスナーなどの装飾</li>
+<li><strong>Avatar</strong>: 已导入的头像</li>
+<li><strong>Garments</strong>: 已创建的服装列表</li>
+<li><strong>Trims</strong>: 纽扣、拉链等装饰</li>
 </ul>
 <p><strong>基本操作</strong>:
-- <strong>選択</strong>: オブジェクト名をクリック
-- <strong>表示/非表示</strong>: 👁️ アイコンをクリック
-- <strong>ロック</strong>: 🔒 アイコンで編集をロック</p>
-<p><strong>重要な機能</strong>:
-- オブジェクトの階層管理
-- 表示・非表示の制御
-- 選択状態の管理</p>
-<h3 id="4">🛠️ 4. ツールバー（上部）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+- <strong>选择</strong>: 点击对象名称
+- <strong>显示/隐藏</strong>: 点击 👁️ 图标
+- <strong>锁定</strong>: 用 🔒 图标锁定编辑</p>
+<p><strong>重要功能</strong>:
+- 管理对象层级
+- 控制显示与隐藏
+- 管理选中状态</p>
+<h3 id="4">🛠️ 4. 工具栏（顶部）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">主要ツールの配置</p>
+<p class="admonition-title">主要工具的位置</p>
 </div>
-<p><strong>左側: ファイル操作</strong>
-- <strong>New</strong> (新規): 新しいプロジェクト
-- <strong>Open</strong> (開く): 既存ファイルを開く
-- <strong>Save</strong> (保存): プロジェクトを保存</p>
-<p><strong>中央: 2D描画ツール</strong>
-- <strong>Arrow</strong> (選択): オブジェクト選択・移動
-- <strong>Rectangle</strong> (四角形): 長方形パターン作成
-- <strong>Circle</strong> (円): 円形パターン作成
-- <strong>Polygon</strong> (多角形): 複雑な形状作成
-- <strong>Curve</strong> (曲線): カーブラインツール</p>
-<p><strong>右側: シミュレーション制御</strong>
-- <strong>▶️ Simulate</strong>: シミュレーション開始/停止
-- <strong>⏸️ Pause</strong>: シミュレーション一時停止
-- <strong>🔄 Reset</strong>: 初期状態にリセット</p>
+<p><strong>左侧: 文件操作</strong>
+- <strong>New</strong>（新建）: 创建新项目
+- <strong>Open</strong>（打开）: 打开现有文件
+- <strong>Save</strong>（保存）: 保存项目</p>
+<p><strong>中间: 2D 绘图工具</strong>
+- <strong>Arrow</strong>（选择）: 选择与移动对象
+- <strong>Rectangle</strong>（矩形）: 创建矩形版型
+- <strong>Circle</strong>（圆）: 创建圆形版型
+- <strong>Polygon</strong>（多边形）: 创建复杂形状
+- <strong>Curve</strong>（曲线）: 曲线工具</p>
+<p><strong>右侧: 模拟控制</strong>
+- <strong>▶️ Simulate</strong>: 开始/停止模拟
+- <strong>⏸️ Pause</strong>: 暂停模拟
+- <strong>🔄 Reset</strong>: 重置到初始状态</p>
 <div class="admonition info">
-<p class="admonition-title">ツールの選択方法</p>
+<p class="admonition-title">工具的选择方式</p>
 <ul>
-<li>マウスでクリック</li>
-<li>キーボードショートカット（各ツールにマウスを載せると表示）</li>
-<li>右クリックメニューからアクセス</li>
+<li>用鼠标点击</li>
+<li>使用键盘快捷键（鼠标悬停在各工具上时会显示）</li>
+<li>从右键菜单访问</li>
 </ul>
 </div>
-<h3 id="5">⚙️ 5. プロパティパネル（右端または下部）<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<h3 id="5">⚙️ 5. 属性面板（右侧或下方）<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">Property Editor の活用</p>
+<p class="admonition-title">Property Editor 的使用</p>
 </div>
-<p><strong>表示される設定内容</strong>（選択したオブジェクトによって変化）:</p>
-<p><strong>パターン選択時</strong>:
-- <strong>物理特性</strong>: 布の硬さ、重さなど
-- <strong>シミュレーション設定</strong>: 品質、精度
-- <strong>表示設定</strong>: 色、透明度</p>
-<p><strong>アバター選択時</strong>:
-- <strong>姿勢設定</strong>: ポーズの調整
-- <strong>サイズ調整</strong>: アバターのスケール
-- <strong>衝突設定</strong>: 布との当たり判定</p>
-<p><strong>重要な設定項目</strong>:
-- <strong>Fabric Preset</strong>: 布の種類（Cotton、Silk、Denimなど）
-- <strong>Particle Distance</strong>: シミュレーション精度
-- <strong>Internal Lines</strong>: 縫い線の設定</p>
+<p><strong>显示的设置内容</strong>（会根据当前选中的对象变化）:</p>
+<p><strong>选中版型时</strong>:
+- <strong>物理特性</strong>: 布料的硬度、重量等
+- <strong>模拟设置</strong>: 质量、精度
+- <strong>显示设置</strong>: 颜色、透明度</p>
+<p><strong>选中头像时</strong>:
+- <strong>姿势设置</strong>: 调整姿态
+- <strong>尺寸调整</strong>: 调整头像比例
+- <strong>碰撞设置</strong>: 与布料的碰撞判定</p>
+<p><strong>重要设置项</strong>:
+- <strong>Fabric Preset</strong>: 布料种类（Cotton、Silk、Denim 等）
+- <strong>Particle Distance</strong>: 模拟精度
+- <strong>Internal Lines</strong>: 缝线设置</p>
 <div class="admonition warning">
-<p class="admonition-title">プロパティパネルの場所</p>
-<p>バージョンやレイアウト設定により、右側または下部に表示されます。見つからない場合は <strong>「Window」</strong> メニューから <strong>「Property Editor」</strong> を選択してください。</p>
+<p class="admonition-title">属性面板的位置</p>
+<p>根据版本或布局设置不同，它可能显示在右侧或下方。如果找不到，请从 <strong><code>Window</code></strong> 菜单选择 <strong><code>Property Editor</code></strong>。</p>
 </div>
-<h2 id="_3">📋 メニューバー詳細解説<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="file">File（ファイル）メニュー<a class="headerlink" href="#file" title="Permanent link">&para;</a></h3>
+<h2 id="_3">📋 菜单栏详细说明<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="file">File（文件）菜单<a class="headerlink" href="#file" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">よく使うFileメニュー項目</p>
+<p class="admonition-title">常用的 File 菜单项</p>
 </div>
 <p><strong>基本操作</strong>:
-- <strong>New Project</strong>: 新規プロジェクト作成
-- <strong>Open</strong>: 既存プロジェクトを開く（.zprj形式）
-- <strong>Save</strong>: 現在の作業を保存
-- <strong>Save As</strong>: 名前を付けて保存</p>
-<p><strong>インポート/エクスポート</strong>:
-- <strong>Import</strong>: 外部ファイル読み込み（FBX、OBJなど）
-- <strong>Export</strong>: 他の形式で出力（FBX、OBJ、Alembicなど）</p>
-<p><strong>最近使ったファイル</strong>:
-- <strong>Recent Files</strong>: 最近開いたプロジェクト一覧</p>
+- <strong>New Project</strong>: 创建新项目
+- <strong>Open</strong>: 打开现有项目（<code>.zprj</code> 格式）
+- <strong>Save</strong>: 保存当前作业
+- <strong>Save As</strong>: 另存为</p>
+<p><strong>导入/导出</strong>:
+- <strong>Import</strong>: 导入外部文件（FBX、OBJ 等）
+- <strong>Export</strong>: 导出为其他格式（FBX、OBJ、Alembic 等）</p>
+<p><strong>最近使用的文件</strong>:
+- <strong>Recent Files</strong>: 最近打开的项目列表</p>
 <div class="admonition tip">
-<p class="admonition-title">ファイル管理のコツ</p>
-<p>作業の節目では必ず <strong>「Ctrl + S」</strong> で保存する習慣をつけましょう。</p>
+<p class="admonition-title">文件管理技巧</p>
+<p>在每个作业节点都养成使用 <strong><code>Ctrl + S</code></strong> 保存的习惯。</p>
 </div>
-<h3 id="edit">Edit（編集）メニュー<a class="headerlink" href="#edit" title="Permanent link">&para;</a></h3>
+<h3 id="edit">Edit（编辑）菜单<a class="headerlink" href="#edit" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">編集機能の活用</p>
+<p class="admonition-title">编辑功能的使用</p>
 </div>
-<p><strong>基本編集</strong>:
-- <strong>Undo</strong> (Ctrl+Z): 操作を元に戻す
-- <strong>Redo</strong> (Ctrl+Y): やり直し
-- <strong>Cut/Copy/Paste</strong>: カット・コピー・ペースト</p>
-<p><strong>環境設定</strong>:
-- <strong>Preferences</strong>: 全体設定（言語、単位、自動保存など）</p>
-<p><strong>選択機能</strong>:
-- <strong>Select All</strong>: 全て選択
-- <strong>Deselect All</strong>: 選択解除</p>
-<h3 id="2d-pattern2d">2D Pattern（2Dパターン）メニュー<a class="headerlink" href="#2d-pattern2d" title="Permanent link">&para;</a></h3>
+<p><strong>基本编辑</strong>:
+- <strong>Undo</strong> (<code>Ctrl+Z</code>): 撤销操作
+- <strong>Redo</strong> (<code>Ctrl+Y</code>): 重做
+- <strong>Cut/Copy/Paste</strong>: 剪切、复制、粘贴</p>
+<p><strong>环境设置</strong>:
+- <strong>Preferences</strong>: 全局设置（语言、单位、自动保存等）</p>
+<p><strong>选择功能</strong>:
+- <strong>Select All</strong>: 全选
+- <strong>Deselect All</strong>: 取消选择</p>
+<h3 id="2d-pattern2d">2D Pattern（2D 版型）菜单<a class="headerlink" href="#2d-pattern2d" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">パターン作成専用機能</p>
+<p class="admonition-title">专用于版型制作的功能</p>
 </div>
-<p><strong>形状作成</strong>:
-- <strong>Add Rectangle</strong>: 四角形追加
-- <strong>Add Circle</strong>: 円形追加
-- <strong>Add Polygon</strong>: 多角形追加</p>
-<p><strong>パターン編集</strong>:
-- <strong>Edit Pattern</strong>: パターンの形状編集
-- <strong>Transform</strong>: 変形（移動、回転、スケール）</p>
-<p><strong>縫製設定</strong>:
-- <strong>Sewing</strong>: 縫い線の設定と実行
-- <strong>Free Sew</strong>: 自動縫製</p>
+<p><strong>形状创建</strong>:
+- <strong>Add Rectangle</strong>: 添加矩形
+- <strong>Add Circle</strong>: 添加圆形
+- <strong>Add Polygon</strong>: 添加多边形</p>
+<p><strong>版型编辑</strong>:
+- <strong>Edit Pattern</strong>: 编辑版型形状
+- <strong>Transform</strong>: 变形（移动、旋转、缩放）</p>
+<p><strong>缝合设置</strong>:
+- <strong>Sewing</strong>: 设置并执行缝线
+- <strong>Free Sew</strong>: 自动缝合</p>
 <div class="admonition info">
-<p class="admonition-title">パターン作成の基本流れ</p>
-<p>形状作成 → 編集・調整 → 縫い線設定 → シミュレーション実行</p>
+<p class="admonition-title">版型制作的基本流程</p>
+<p>创建形状 → 编辑与调整 → 设置缝线 → 执行模拟</p>
 </div>
-<h3 id="3d-garment3d">3D Garment（3D衣装）メニュー<a class="headerlink" href="#3d-garment3d" title="Permanent link">&para;</a></h3>
+<h3 id="3d-garment3d">3D Garment（3D 服装）菜单<a class="headerlink" href="#3d-garment3d" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">3D表示と制御</p>
+<p class="admonition-title">3D 显示与控制</p>
 </div>
-<p><strong>シミュレーション制御</strong>:
-- <strong>Simulate</strong>: シミュレーション開始/停止
-- <strong>Reset 3D Arrangement</strong>: 3D配置リセット
-- <strong>Reset 2D Arrangement</strong>: 2D配置リセット</p>
-<p><strong>表示設定</strong>:
-- <strong>Display</strong>: 表示モード切り替え
-- <strong>Show/Hide</strong>: オブジェクトの表示切り替え</p>
-<p><strong>物理設定</strong>:
-- <strong>Simulation Properties</strong>: シミュレーション詳細設定
-- <strong>Physical Properties</strong>: 物理特性設定</p>
-<h3 id="avatar">Avatar（アバター）メニュー<a class="headerlink" href="#avatar" title="Permanent link">&para;</a></h3>
+<p><strong>模拟控制</strong>:
+- <strong>Simulate</strong>: 开始/停止模拟
+- <strong>Reset 3D Arrangement</strong>: 重置 3D 排列
+- <strong>Reset 2D Arrangement</strong>: 重置 2D 排列</p>
+<p><strong>显示设置</strong>:
+- <strong>Display</strong>: 切换显示模式
+- <strong>Show/Hide</strong>: 切换对象显示</p>
+<p><strong>物理设置</strong>:
+- <strong>Simulation Properties</strong>: 模拟详细设置
+- <strong>Physical Properties</strong>: 物理特性设置</p>
+<h3 id="avatar">Avatar（头像）菜单<a class="headerlink" href="#avatar" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">アバター管理機能</p>
+<p class="admonition-title">头像管理功能</p>
 </div>
-<p><strong>アバター操作</strong>:
-- <strong>Load Avatar</strong>: アバターファイル読み込み
-- <strong>Edit Avatar</strong>: アバターの姿勢・サイズ調整
-- <strong>Show/Hide Avatar</strong>: アバター表示切り替え</p>
-<p><strong>姿勢制御</strong>:
-- <strong>Pose</strong>: 事前定義された姿勢
-- <strong>Edit Pose</strong>: カスタムポーズ作成</p>
+<p><strong>头像操作</strong>:
+- <strong>Load Avatar</strong>: 导入头像文件
+- <strong>Edit Avatar</strong>: 调整头像姿势与尺寸
+- <strong>Show/Hide Avatar</strong>: 切换头像显示</p>
+<p><strong>姿势控制</strong>:
+- <strong>Pose</strong>: 预设姿势
+- <strong>Edit Pose</strong>: 创建自定义姿势</p>
 <div class="admonition tip">
-<p class="admonition-title">アバター読み込みについて</p>
-<p>FBXファイルは <strong>「Avatar」</strong> → <strong>「Load Avatar」</strong> から読み込みます。後で詳しく説明します。</p>
+<p class="admonition-title">关于头像导入</p>
+<p>FBX 文件通过 <strong><code>Avatar</code></strong> → <strong><code>Load Avatar</code></strong> 导入。后面会详细说明。</p>
 </div>
-<h2 id="_4">⌨️ 重要なキーボードショートカット<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h2 id="_4">⌨️ 重要键盘快捷键<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <div class="admonition example">
-<p class="admonition-title">覚えておくべき基本ショートカット</p>
+<p class="admonition-title">应当记住的基础快捷键</p>
 </div>
 <p><strong>基本操作</strong>:
-- <strong>Ctrl + N</strong>: 新規プロジェクト
-- <strong>Ctrl + O</strong>: ファイルを開く
+- <strong>Ctrl + N</strong>: 新建项目
+- <strong>Ctrl + O</strong>: 打开文件
 - <strong>Ctrl + S</strong>: 保存
-- <strong>Ctrl + Z</strong>: 元に戻す
-- <strong>Ctrl + Y</strong>: やり直し</p>
-<p><strong>表示制御</strong>:
-- <strong>F</strong>: 選択オブジェクトにフィット表示
-- <strong>Ctrl + A</strong>: 全選択
-- <strong>1, 2, 3, 4</strong>: 表示モード切り替え</p>
-<p><strong>シミュレーション</strong>:
-- <strong>Space</strong>: シミュレーション開始/停止
-- <strong>Ctrl + R</strong>: シミュレーションリセット</p>
-<p><strong>ツール選択</strong>:
-- <strong>A</strong>: Arrow（選択ツール）
-- <strong>R</strong>: Rectangle（四角形ツール）
-- <strong>C</strong>: Circle（円ツール）</p>
+- <strong>Ctrl + Z</strong>: 撤销
+- <strong>Ctrl + Y</strong>: 重做</p>
+<p><strong>显示控制</strong>:
+- <strong>F</strong>: 聚焦显示到选中对象
+- <strong>Ctrl + A</strong>: 全选
+- <strong>1, 2, 3, 4</strong>: 切换显示模式</p>
+<p><strong>模拟</strong>:
+- <strong>Space</strong>: 开始/停止模拟
+- <strong>Ctrl + R</strong>: 重置模拟</p>
+<p><strong>工具选择</strong>:
+- <strong>A</strong>: Arrow（选择工具）
+- <strong>R</strong>: Rectangle（矩形工具）
+- <strong>C</strong>: Circle（圆形工具）</p>
 <div class="admonition success">
-<p class="admonition-title">ショートカットのメリット</p>
-<p>ショートカットを覚えると作業効率が大幅に向上します。最初は基本的なものから覚えていきましょう。</p>
+<p class="admonition-title">快捷键的优势</p>
+<p>记住快捷键后，作业效率会大幅提升。先从最基础的几个开始记就够了。</p>
 </div>
-<h2 id="blenderunity">🔄 BlenderやUnityとの操作統一設定<a class="headerlink" href="#blenderunity" title="Permanent link">&para;</a></h2>
-<h3 id="blender">Blenderとの操作統一<a class="headerlink" href="#blender" title="Permanent link">&para;</a></h3>
+<h2 id="blender-unity">🔄 与 Blender 和 Unity 统一操作设置<a class="headerlink" href="#blender-unity" title="Permanent link">&para;</a></h2>
+<h3 id="blender">与 Blender 统一操作<a class="headerlink" href="#blender" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">Blenderライクな操作感にする設定</p>
+<p class="admonition-title">设置成更接近 Blender 的操作手感</p>
 </div>
-<p><strong>Blenderの業界互換キーマップ設定</strong>:</p>
-<p>BlenderでMarvelous Designerに近い操作感を得るには:
-1. <strong>「Edit」</strong> → <strong>「Preferences」</strong> → <strong>「Keymap」</strong>
-2. <strong>「Industry Compatible」</strong> を選択
-3. これによりMayaやUnrealEngineなど他の3DCGソフトとの互換性が向上</p>
-<p><strong>統一可能な操作</strong>:
-- <strong>Alt + 左ボタンドラッグ</strong>: 3Dビュー回転（両ソフト共通）
-- <strong>Alt + 中ボタンドラッグ</strong>: パン移動（両ソフト共通）
-- <strong>Alt + 右ボタンドラッグ</strong>: ズーム（両ソフト共通）
-- <strong>Space</strong>: シミュレーション制御（MD）／再生制御（Blender）
-- <strong>F</strong>: フィット表示（両ソフト共通）</p>
+<p><strong>Blender 的 Industry Compatible 键位设置</strong>:</p>
+<p>如果想在 Blender 中获得更接近 Marvelous Designer 的操作手感：
+1. <strong><code>Edit</code></strong> → <strong><code>Preferences</code></strong> → <strong><code>Keymap</code></strong>
+2. 选择 <strong><code>Industry Compatible</code></strong>
+3. 这样可以提升与 Maya、Unreal Engine 等其他 3DCG 软件的兼容性</p>
+<p><strong>可统一的操作</strong>:
+- <strong>Alt + 左键拖拽</strong>: 3D 视图旋转（两款软件通用）
+- <strong>Alt + 中键拖拽</strong>: 平移（两款软件通用）
+- <strong>Alt + 右键拖拽</strong>: 缩放（两款软件通用）
+- <strong>Space</strong>: 模拟控制（MD）/ 播放控制（Blender）
+- <strong>F</strong>: 聚焦显示（两款软件通用）</p>
 <div class="admonition tip">
-<p class="admonition-title">効率的なワークフロー</p>
-<p>Marvelous DesignerからBlenderに移る際は、OBJエクスポート時に「単一オブジェクト」「結合しない頂点」「薄い厚み」「統合UV座標ON」の設定を使用し、Blenderでスケールをdefaultキューブ（2m³）基準で調整します。</p>
+<p class="admonition-title">高效工作流</p>
+<p>从 Marvelous Designer 切换到 Blender 时，建议在导出 OBJ 时使用“单一对象”“不合并顶点”“薄厚度”“启用统一 UV 坐标”等设置，并在 Blender 中以默认立方体（2m³）为基准调整比例。</p>
 </div>
-<h3 id="unity">Unityとの連携設定<a class="headerlink" href="#unity" title="Permanent link">&para;</a></h3>
+<h3 id="unity">与 Unity 的联动设置<a class="headerlink" href="#unity" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">Unity向けの最適化設定</p>
+<p class="admonition-title">面向 Unity 的优化设置</p>
 </div>
-<p><strong>共通操作要素</strong>:
-- <strong>中ボタンドラッグ</strong>: 3Dビューの移動（両ソフト共通）
-- <strong>Alt + 左ボタン</strong>: オービット回転操作
-- <strong>ズーム操作</strong>: マウスホイール（両ソフト共通）
-- <strong>F</strong>: フォーカス表示（Object focus）</p>
-<p><strong>Marvelous Designer → Unity パイプライン</strong>:
-1. <strong>FBX形式でエクスポート</strong>: Unity互換性を考慮
-2. <strong>スケール統一</strong>: Unity標準（1unit = 1m）に合わせる
-3. <strong>UV座標保持</strong>: テクスチャマッピングの整合性確保
-4. <strong>ボーン構造保持</strong>: アニメーション対応</p>
-<p><strong>推奨設定</strong>:
-- エクスポート時の単位統一（メートル基準）
-- マテリアル設定の互換性確保
-- 物理プロパティの適切な変換</p>
-<h3 id="_5">専用キーパッド活用<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><strong>通用操作要素</strong>:
+- <strong>中键拖拽</strong>: 移动 3D 视图（两款软件通用）
+- <strong>Alt + 左键</strong>: 轨道旋转操作
+- <strong>缩放操作</strong>: 鼠标滚轮（两款软件通用）
+- <strong>F</strong>: 聚焦显示（Object focus）</p>
+<p><strong>Marvelous Designer → Unity 工作流</strong>:
+1. <strong>以 FBX 格式导出</strong>: 考虑 Unity 兼容性
+2. <strong>统一比例</strong>: 对齐 Unity 标准（<code>1unit = 1m</code>）
+3. <strong>保留 UV 坐标</strong>: 确保纹理映射一致
+4. <strong>保留骨骼结构</strong>: 兼容动画</p>
+<p><strong>推荐设置</strong>:
+- 导出时统一单位（以米为基准）
+- 确保材质设置兼容
+- 正确转换物理属性</p>
+<h3 id="_5">使用专用键盘<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">効率化のための外部デバイス設定</p>
+<p class="admonition-title">用于提效的外部设备设置</p>
 </div>
-<p><strong>推奨キーパッド設定</strong>:
-専門ユーザーの間では、<strong>Razer Tartarus V2</strong>などのキーパッドを活用し、Marvelous Designer特有の操作を効率化する事例があります。</p>
-<p><strong>設定例</strong>:
-- よく使うツール（Rectangle、Circle、Arrow）を専用キーに割り当て
-- シミュレーション制御を親指で操作可能な位置に配置
-- レイヤー切り替えで2D/3D操作の切り替えを簡単に</p>
+<p><strong>推荐键盘设置</strong>:
+部分高级用户会使用 <strong>Razer Tartarus V2</strong> 等键盘设备来提升 Marvelous Designer 特有操作的效率。</p>
+<p><strong>设置示例</strong>:
+- 把常用工具（Rectangle、Circle、Arrow）分配到专用按键
+- 把模拟控制放在拇指容易按到的位置
+- 通过切换图层快速在 2D / 3D 操作间切换</p>
 <div class="admonition info">
-<p class="admonition-title">カスタマイズの利点</p>
-<p>複数の3DCGソフトウェアを使う場合、共通の操作感を維持することで作業効率と学習効果が大幅に向上します。</p>
+<p class="admonition-title">自定义的优势</p>
+<p>如果你同时使用多款 3DCG 软件，保持统一的操作手感可以大幅提升作业效率与学习效果。</p>
 </div>
-<h2 id="_6">🎨 インターフェースカスタマイズ<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<h3 id="_7">レイアウトの調整<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h2 id="_6">🎨 界面自定义<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">调整布局<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">作業しやすい画面にする</p>
+<p class="admonition-title">把画面调整到更适合作业的状态</p>
 </div>
-<p><strong>パネルサイズの調整</strong>:
-1. パネル間の境界線にマウスを載せる
-2. カーソルが変わったらドラッグしてサイズ変更
-3. 作業内容に応じて最適なサイズに調整</p>
-<p><strong>推奨レイアウト</strong>:
-- <strong>2Dパターンウィンドウ</strong>: 画面の40-50%
-- <strong>3Dビューポート</strong>: 画面の40-50%
-- <strong>Object Browser</strong>: 適度なサイズ
-- <strong>Property Editor</strong>: 必要時に表示</p>
-<p><strong>レイアウトの保存</strong>:
-1. <strong>「Window」</strong> → <strong>「Save Layout」</strong>
-2. 名前を付けて保存（例: "衣装制作用"）
-3. <strong>「Window」</strong> → <strong>「Load Layout」</strong> で呼び出し可能</p>
+<p><strong>调整面板大小</strong>:
+1. 将鼠标移到面板之间的分隔线
+2. 光标变化后拖拽以调整大小
+3. 根据作业内容调整到合适的尺寸</p>
+<p><strong>推荐布局</strong>:
+- <strong>2D 版型窗口</strong>: 占屏幕的 40-50%
+- <strong>3D 视口</strong>: 占屏幕的 40-50%
+- <strong>Object Browser</strong>: 保持适中大小
+- <strong>Property Editor</strong>: 需要时显示</p>
+<p><strong>保存布局</strong>:
+1. <strong><code>Window</code></strong> → <strong><code>Save Layout</code></strong>
+2. 输入名称保存（例如：<code>服装制作</code>）
+3. 可通过 <strong><code>Window</code></strong> → <strong><code>Load Layout</code></strong> 调出</p>
 <div class="admonition tip">
-<p class="admonition-title">画面サイズ別の推奨設定</p>
+<p class="admonition-title">不同屏幕尺寸的推荐设置</p>
 <ul>
-<li><strong>小さな画面</strong>: 3Dビューポートを大きめに</li>
-<li><strong>大きな画面</strong>: 2Dと3Dを同じ比率で</li>
-<li><strong>デュアルモニター</strong>: セカンドモニターに3D表示</li>
+<li><strong>小屏幕</strong>: 让 3D 视口稍大一些</li>
+<li><strong>大屏幕</strong>: 2D 和 3D 采用相同比例</li>
+<li><strong>双显示器</strong>: 在副屏显示 3D 视图</li>
 </ul>
 </div>
-<h3 id="_8">ツールバーのカスタマイズ<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h3 id="_8">自定义工具栏<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">効率的なツール配置</p>
+<p class="admonition-title">更高效的工具排列</p>
 </div>
-<p><strong>よく使うツールの配置</strong>:
-1. <strong>「Window」</strong> → <strong>「Customize Toolbar」</strong>
-2. よく使う機能をツールバーにドラッグ&amp;ドロップ
-3. 使わない機能は削除して整理</p>
-<p><strong>推奨カスタマイズ</strong>:
-- シミュレーション制御ボタンを見やすい位置に
-- よく使うパターン作成ツールをまとめて配置
-- ファイル操作を左端にまとめる</p>
-<h2 id="_9">🔧 実践練習: インターフェース操作<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<h3 id="1">練習1: 基本操作の確認<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<p><strong>常用工具的摆放</strong>:
+1. <strong><code>Window</code></strong> → <strong><code>Customize Toolbar</code></strong>
+2. 将常用功能拖放到工具栏中
+3. 删除不常用的功能，让布局更简洁</p>
+<p><strong>推荐自定义方式</strong>:
+- 把模拟控制按钮放在更容易看到的位置
+- 将常用的版型制作工具集中摆放
+- 把文件操作集中在左侧</p>
+<h2 id="_9">🔧 实践练习：界面操作<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="1">练习1：确认基本操作<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">画面操作の練習</p>
+<p class="admonition-title">画面操作练习</p>
 </div>
-<p><strong>3Dビューポートの練習</strong>:
-1. 右ボタンドラッグでアバターを色々な角度から見る
-2. マウスホイールでズームイン・アウト
-3. <strong>「F」</strong> キーで全体表示
-4. <strong>「1」「2」「3」「4」</strong> キーで表示モード変更</p>
-<p><strong>2Dパターンウィンドウの練習</strong>:
-1. 中ボタンドラッグで画面移動
-2. マウスホイールでズーム
-3. 空白部分をクリックして何も選択していない状態にする</p>
+<p><strong>3D 视口练习</strong>:
+1. 用右键拖拽从不同角度查看头像
+2. 用鼠标滚轮缩放
+3. 按 <strong><code>F</code></strong> 键显示全体
+4. 用 <strong><code>1</code></strong>、<strong><code>2</code></strong>、<strong><code>3</code></strong>、<strong><code>4</code></strong> 键切换显示模式</p>
+<p><strong>2D 版型窗口练习</strong>:
+1. 用中键拖拽移动画面
+2. 用鼠标滚轮缩放
+3. 点击空白区域，使其处于未选择任何内容的状态</p>
 <div class="admonition success">
-<p class="admonition-title">操作に慣れました</p>
-<p>これらの基本操作は今後の作業で頻繁に使います。スムーズにできるようになるまで練習しましょう。</p>
+<p class="admonition-title">已经熟悉操作</p>
+<p>这些基本操作在后续作业中会频繁使用。请练习到能够顺畅完成为止。</p>
 </div>
-<h3 id="2">練習2: 簡単なパターン作成<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h3 id="2">练习2：创建简单版型<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ツールを使った作業練習</p>
+<p class="admonition-title">使用工具进行作业练习</p>
 </div>
-<p><strong>四角形パターンの作成</strong>:
-1. <strong>Rectangle</strong> ツールを選択（ツールバーまたは <strong>「R」</strong> キー）
-2. 2Dパターンウィンドウでクリック&amp;ドラッグ
-3. 適当なサイズの四角形を作成
-4. <strong>Arrow</strong> ツール（<strong>「A」</strong> キー）に戻す</p>
-<p><strong>円形パターンの作成</strong>:
-1. <strong>Circle</strong> ツールを選択（<strong>「C」</strong> キー）
-2. 2Dパターンウィンドウでクリック&amp;ドラッグ
-3. 円を作成
-4. <strong>Arrow</strong> ツールに戻す</p>
-<p><strong>シミュレーション実行</strong>:
-1. <strong>Space</strong> キーを押す
-2. 作成したパターンが3Dビューポートに表示される
-3. 重力で落下する様子を確認
-4. 再度 <strong>Space</strong> キーでシミュレーション停止</p>
+<p><strong>创建矩形版型</strong>:
+1. 选择 <strong>Rectangle</strong> 工具（工具栏或按 <strong><code>R</code></strong> 键）
+2. 在 2D 版型窗口中点击并拖拽
+3. 创建一个合适大小的矩形
+4. 切回 <strong>Arrow</strong> 工具（按 <strong><code>A</code></strong> 键）</p>
+<p><strong>创建圆形版型</strong>:
+1. 选择 <strong>Circle</strong> 工具（按 <strong><code>C</code></strong> 键）
+2. 在 2D 版型窗口中点击并拖拽
+3. 创建圆形
+4. 切回 <strong>Arrow</strong> 工具</p>
+<p><strong>执行模拟</strong>:
+1. 按 <strong>Space</strong> 键
+2. 刚创建的版型会显示在 3D 视口中
+3. 确认它在重力作用下下落的状态
+4. 再次按 <strong>Space</strong> 键停止模拟</p>
 <div class="admonition success">
-<p class="admonition-title">基本操作完了</p>
-<p>これでMarvelous Designerの基本的な操作の流れが理解できました！</p>
+<p class="admonition-title">基础操作完成</p>
+<p>至此你已经理解了 Marvelous Designer 基本操作的整体流程。</p>
 </div>
-<h3 id="3">練習3: プロパティ編集<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<h3 id="3">练习3：编辑属性<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">設定変更の練習</p>
+<p class="admonition-title">修改设置的练习</p>
 </div>
-<p><strong>布の特性変更</strong>:
-1. 作成した四角形を選択
-2. Property Editorで <strong>「Physical Property」</strong> を確認
-3. <strong>「Fabric Preset」</strong> を変更してみる（例: Cotton → Silk）
-4. シミュレーションを実行して違いを確認</p>
-<p><strong>色の変更</strong>:
-1. パターンを選択した状態で
-2. Property Editorの <strong>「Color」</strong> で色を変更
-3. 3Dビューポートで色の変化を確認</p>
+<p><strong>修改布料特性</strong>:
+1. 选中已创建的矩形
+2. 在 Property Editor 中查看 <strong><code>Physical Property</code></strong>
+3. 尝试修改 <strong><code>Fabric Preset</code></strong>（例如：<code>Cotton → Silk</code>）
+4. 执行模拟，确认差异</p>
+<p><strong>更改颜色</strong>:
+1. 选中版型
+2. 在 Property Editor 的 <strong><code>Color</code></strong> 中修改颜色
+3. 在 3D 视口中确认颜色变化</p>
 <div class="admonition info">
-<p class="admonition-title">設定の効果</p>
-<p>異なる布の種類を選ぶと、硬さや重さが変わり、シミュレーション結果も変わります。</p>
+<p class="admonition-title">设置的效果</p>
+<p>选择不同的布料类型后，硬度和重量都会变化，模拟结果也会随之改变。</p>
 </div>
-<h2 id="_10">✅ 理解度チェック<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h2 id="_10">✅ 理解度检查<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <div class="admonition check">
-<p class="admonition-title">理解度チェックリスト</p>
-<p><strong>Marvelous Designer インターフェース理解完了</strong></p>
+<p class="admonition-title">理解度检查清单</p>
+<p><strong>Marvelous Designer 界面理解完成</strong></p>
 </div>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 5つの主要エリア（2D、3D、Object Browser、ツールバー、プロパティ）の場所と役割を理解した</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 3Dビューポートの視点操作（回転、ズーム、パン）ができる</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 2Dパターンウィンドウの基本操作ができる</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 主要なメニュー項目の場所と機能を把握した</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 基本的なキーボードショートカットを覚えた</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> レイアウトカスタマイズの方法を理解した</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Rectangle、Circle ツールでパターンを作成できた</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> シミュレーションの開始・停止ができた</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Property Editor でプロパティを変更できた</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 作成したレイアウトを保存した</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 已理解 5 个主要区域（2D、3D、Object Browser、工具栏、属性）的位置与作用</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 可以操作 3D 视口视角（旋转、缩放、平移）</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 可以完成 2D 版型窗口的基本操作</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 已掌握主要菜单项的位置与功能</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 已记住基础键盘快捷键</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 已理解布局自定义的方法</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 能用 Rectangle、Circle 工具创建版型</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 能开始与停止模拟</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 能在 Property Editor 中修改属性</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 已保存创建好的布局</li>
 </ul>
-<h2 id="_11">🔧 トラブルシューティング<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
-<h3 id="_12">インターフェース関連<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h2 id="_11">🔧 故障排查<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h3 id="_12">界面相关<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <details class="question">
-<summary>「パネルが見えなくなった」</summary>
-<p><strong>対処法</strong>:
-1. <strong>「Window」</strong> メニューから該当パネルを再表示
-2. <strong>「Window」</strong> → <strong>「Reset Layout」</strong> で初期状態に戻す
-3. パネルの境界をドラッグしてサイズを調整</p>
+<summary>“面板不见了”</summary>
+<p><strong>处理方法</strong>:
+1. 从 <strong><code>Window</code></strong> 菜单重新显示对应面板
+2. 通过 <strong><code>Window</code></strong> → <strong><code>Reset Layout</code></strong> 恢复初始布局
+3. 拖拽面板边界调整大小</p>
 </details>
 <details class="question">
-<summary>「ツールバーが表示されない」</summary>
-<p><strong>対処法</strong>:
-1. <strong>「View」</strong> → <strong>「Toolbars」</strong> で該当ツールバーを有効化
-2. <strong>「Window」</strong> → <strong>「Customize Toolbar」</strong> で再設定</p>
+<summary>“工具栏没有显示”</summary>
+<p><strong>处理方法</strong>:
+1. 在 <strong><code>View</code></strong> → <strong><code>Toolbars</code></strong> 中启用对应工具栏
+2. 通过 <strong><code>Window</code></strong> → <strong><code>Customize Toolbar</code></strong> 重新设置</p>
 </details>
 <details class="question">
-<summary>「操作が重い・遅い」</summary>
-<p><strong>対処法</strong>:
-1. <strong>「Edit」</strong> → <strong>「Preferences」</strong> → <strong>「3D Graphics」</strong> でグラフィック設定を下げる
-2. 表示品質を下げる（<strong>「2」</strong> キーでシェーディング表示）
-3. 不要なオブジェクトを非表示にする</p>
+<summary>“操作很卡、很慢”</summary>
+<p><strong>处理方法</strong>:
+1. 在 <strong><code>Edit</code></strong> → <strong><code>Preferences</code></strong> → <strong><code>3D Graphics</code></strong> 中降低图形设置
+2. 降低显示质量（按 <strong><code>2</code></strong> 键切换到着色显示）
+3. 隐藏不需要的对象</p>
 </details>
-<h3 id="_13">操作関連<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h3 id="_13">操作相关<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <details class="question">
-<summary>「シミュレーションが動かない」</summary>
-<p><strong>対処法</strong>:
-1. パターンが作成されているか確認
-2. <strong>「3D Garment」</strong> → <strong>「Simulation Properties」</strong> でGravity（重力）が有効になっているか確認
-3. パターンが適切なサイズで作成されているか確認</p>
+<summary>“模拟不运行”</summary>
+<p><strong>处理方法</strong>:
+1. 确认是否已创建版型
+2. 在 <strong><code>3D Garment</code></strong> → <strong><code>Simulation Properties</code></strong> 中确认 Gravity（重力）是否启用
+3. 确认版型尺寸是否合适</p>
 </details>
-<h2 id="_14">🌟 次のステップ<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
-<p>Marvelous Designerの基本インターフェースをマスターしました！</p>
-<p>次は実際にアバターを読み込んで、衣装制作の実践に入りましょう:</p>
-<p><a class="md-button md-button--primary" href="../../workflows/avatar-import/">アバター読み込みガイドに進む →</a></p>
-<p>または、より詳しい概念を学びたい場合は:</p>
-<p><a class="md-button" href="../../physics/fabric-properties/">3Dモデリング基本概念を学ぶ →</a></p>
+<h2 id="_14">🌟 下一步<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<p>你已经掌握了 Marvelous Designer 的基础界面。</p>
+<p>接下来，导入实际头像并进入服装制作实践：</p>
+<p><a class="md-button md-button--primary" href="../../workflows/avatar-import/">前往头像导入指南 →</a></p>
+<p>或者，如果想学习更详细的概念：</p>
+<p><a class="md-button" href="../../physics/fabric-properties/">学习 3D 建模基础概念 →</a></p>
 <div class="admonition success">
-<p class="admonition-title">インターフェースマスター完了！</p>
-<p>お疲れ様でした！これでMarvelous Designerを効率的に使うための基礎が完成しました。実際の衣装制作でこれらの知識を活用していきましょう！</p>
+<p class="admonition-title">界面掌握完成！</p>
+<p>辛苦了。现在你已经具备高效使用 Marvelous Designer 的基础，可以把这些知识应用到实际服装制作中。</p>
 </div>
-<h2 id="_15">📚 参考情報<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
-<h3 id="_16">ショートカット早見表<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<h2 id="_15">📚 参考信息<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<h3 id="_16">快捷键速查表<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>機能</th>
+<th>功能</th>
 <th>Marvelous Designer</th>
 <th>Blender</th>
 <th>Unity</th>
-<th>説明</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody>
@@ -2700,127 +3033,127 @@
 <td>Ctrl + S</td>
 <td>Ctrl + S</td>
 <td>Ctrl + S</td>
-<td>プロジェクトを保存</td>
+<td>保存项目</td>
 </tr>
 <tr>
-<td>元に戻す</td>
+<td>撤销</td>
 <td>Ctrl + Z</td>
 <td>Ctrl + Z</td>
 <td>Ctrl + Z</td>
-<td>直前の操作を取り消し</td>
+<td>取消上一条操作</td>
 </tr>
 <tr>
-<td>やり直し</td>
+<td>重做</td>
 <td>Ctrl + Y</td>
 <td>Ctrl + Y</td>
 <td>Ctrl + Y</td>
-<td>取り消した操作を再実行</td>
+<td>重新执行已撤销的操作</td>
 </tr>
 <tr>
-<td>全体表示</td>
+<td>显示全体</td>
 <td>F</td>
-<td>F（選択）/ Numpad .</td>
+<td>F（选择）/ Numpad .</td>
 <td>F</td>
-<td>選択オブジェクトを画面にフィット</td>
+<td>将选中对象聚焦到画面中</td>
 </tr>
 <tr>
-<td>シミュレーション/再生</td>
+<td>模拟/播放</td>
 <td>Space</td>
 <td>Space</td>
 <td>Space</td>
-<td>シミュレーション・再生制御</td>
+<td>控制模拟或播放</td>
 </tr>
 <tr>
-<td>選択ツール</td>
+<td>选择工具</td>
 <td>A</td>
 <td>A</td>
-<td>Q（統合ツール）</td>
-<td>選択・移動ツール</td>
+<td>Q（整合工具）</td>
+<td>选择与移动工具</td>
 </tr>
 <tr>
-<td>回転</td>
+<td>旋转</td>
 <td>-</td>
 <td>R</td>
 <td>E</td>
-<td>オブジェクト回転</td>
+<td>旋转对象</td>
 </tr>
 <tr>
-<td>スケール</td>
+<td>缩放</td>
 <td>-</td>
 <td>S</td>
 <td>R</td>
-<td>オブジェクトスケール</td>
+<td>缩放对象</td>
 </tr>
 <tr>
-<td>ビュー回転</td>
-<td>右ドラッグ</td>
-<td>Alt + 左ドラッグ</td>
-<td>Alt + 左ドラッグ</td>
-<td>3Dビューの回転</td>
+<td>视图旋转</td>
+<td>右键拖拽</td>
+<td>Alt + 左键拖拽</td>
+<td>Alt + 左键拖拽</td>
+<td>旋转 3D 视图</td>
 </tr>
 <tr>
-<td>パン移動</td>
-<td>中ドラッグ</td>
-<td>Alt + 中ドラッグ</td>
-<td>中ドラッグ</td>
-<td>3Dビューの移動</td>
+<td>平移</td>
+<td>中键拖拽</td>
+<td>Alt + 中键拖拽</td>
+<td>中键拖拽</td>
+<td>移动 3D 视图</td>
 </tr>
 <tr>
-<td>ズーム</td>
-<td>ホイール</td>
-<td>Alt + 右ドラッグ/ホイール</td>
-<td>ホイール</td>
-<td>3Dビューのズーム</td>
+<td>缩放</td>
+<td>滚轮</td>
+<td>Alt + 右键拖拽/滚轮</td>
+<td>滚轮</td>
+<td>缩放 3D 视图</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_17">表示モード一覧<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<h3 id="_17">显示模式一览<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>キー</th>
-<th>表示モード</th>
+<th>键位</th>
+<th>显示模式</th>
 <th>用途</th>
-<th>Blender対応</th>
+<th>Blender 对应</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
 <td>Wireframe</td>
-<td>線のみ表示（軽い）</td>
+<td>仅显示线框（更轻量）</td>
 <td>Z → 1（Wireframe）</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Shaded</td>
-<td>陰影付き表示（標準）</td>
+<td>带明暗的显示（标准）</td>
 <td>Z → 2（Solid）</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Textured</td>
-<td>テクスチャ表示</td>
+<td>纹理显示</td>
 <td>Z → 3（Material Preview）</td>
 </tr>
 <tr>
 <td>4</td>
 <td>Rendered</td>
-<td>高品質レンダリング</td>
+<td>高质量渲染</td>
 <td>Z → 4（Rendered）</td>
 </tr>
 </tbody>
 </table>
-<h3 id="3dcg">他の3DCGソフトウェアとの互換性<a class="headerlink" href="#3dcg" title="Permanent link">&para;</a></h3>
-<p><strong>データ形式の統一</strong>:
-- <strong>FBX</strong>: Unity、Maya、3ds Maxとの互換性が高い
-- <strong>OBJ</strong>: Blender、ZBrushなど幅広いソフトで対応
-- <strong>Alembic</strong>: 高精度アニメーション・シミュレーション用</p>
-<p><strong>推奨ワークフロー</strong>:
-1. Marvelous Designerで衣装制作・シミュレーション
-2. 適切な形式でエクスポート（用途に応じてFBX/OBJ選択）
-3. BlenderまたはUnityで最終調整・統合
-4. 必要に応じてVRChatやその他プラットフォーム向けに最適化</p>
+<h3 id="3dcg">与其他 3DCG 软件的兼容性<a class="headerlink" href="#3dcg" title="Permanent link">&para;</a></h3>
+<p><strong>统一数据格式</strong>:
+- <strong>FBX</strong>: 与 Unity、Maya、3ds Max 兼容性高
+- <strong>OBJ</strong>: 兼容 Blender、ZBrush 等广泛软件
+- <strong>Alembic</strong>: 用于高精度动画与模拟</p>
+<p><strong>推荐工作流</strong>:
+1. 在 Marvelous Designer 中制作服装并执行模拟
+2. 根据用途导出合适格式（按需选择 FBX / OBJ）
+3. 在 Blender 或 Unity 中进行最终调整与集成
+4. 根据需要，继续面向 VRChat 或其他平台进行优化</p>
 
 
 
@@ -2838,10 +3171,10 @@
     
       
   <span class="md-source-file__fact">
-    <span class="md-icon" title="最終更新日">
+    <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年8月12日 00:36:22 JST">2025年8月12日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年3月18日 20:54:59 CST">2026年3月18日</span>
   </span>
 
     
@@ -2850,8 +3183,6 @@
     
   </aside>
 
-
-  
 
 
 
@@ -2869,7 +3200,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  ページトップへ戻る
+  回到页面顶部
 </button>
         
       </main>
@@ -2887,14 +3218,15 @@
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
     
     
     <a href="https://github.com/username/vrchat-garment-guide" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -2911,10 +3243,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       

@@ -1,0 +1,141 @@
+site_name: VRChat 服装制作完整指南
+site_description: 使用 Marvelous Designer 和 Unity 制作 VRChat 服装的简体中文入门指南
+site_author: VRChat Garment Creation Team
+site_url: https://username.github.io/vrchat-garment-guide/zh-CN/
+docs_dir: docs/zh-CN
+
+theme:
+  name: material
+  language: zh
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - scheme: default
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  font:
+    text: Noto Sans SC
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - 首页: index.md
+  - 环境设置:
+    - 软件确认: setup/software-check.md
+    - Marvelous Designer 首次启动: setup/md-first-launch.md
+    - Unity 与 VRChat SDK 设置: setup/unity-vrchat-setup.md
+  - 基础知识:
+    - Marvelous Designer 界面: basics/md-interface.md
+    - AI 功能指南: basics/ai-features.md
+    - 3D 建模基础概念: basics/basic-concepts.md
+    - 制作流程全貌: basics/workflow-overview.md
+    - 文件格式的理解: basics/file-formats.md
+    - 术语表: basics/terminology.md
+  - 工作流程:
+    - 导入头像: workflows/avatar-import.md
+    - 现有服装适配: workflows/garment-fitting.md
+    - 模块化服装系统: workflows/modular-garments.md
+    - 非兼容头像改造: workflows/avatar-modification.md
+    - 新建服装制作: workflows/new-garment-creation.md
+    - 常见问题与处理: workflows/common-issues.md
+  - 分类服装制作指南:
+    - T 恤（适合初学者）: garments/t-shirt.md
+    - 裙子: garments/skirt.md
+    - 礼服: garments/dress.md
+    - 休闲服: garments/casual-wear.md
+    - 连衣裙: garments/one-piece.md
+    - 泳装: garments/swimwear.md
+  - 物理设置与优化:
+    - 布料物理特性设置: physics/fabric-properties.md
+    - 性能优化: physics/optimization.md
+  - 优化与质量提升:
+    - 摆脱 Very Poor 完整指南: optimization/very-poor-escape.md
+    - 性能分析工具: optimization/performance-analysis.md
+    - 移动端完全适配: optimization/mobile-compatibility.md
+  - 高级技术与 MD2025:
+    - MD2025 新功能完整指南: advanced/md2025-features.md
+    - EveryWear 集成工作流: advanced/everywear-integration.md
+    - IK-Joint 优化: advanced/ik-joint-mapping.md
+  - Unity 集成:
+    - Unity 项目设置: unity/project-setup.md
+    - 从 FBX 到 VRChat 的完整工作流: unity/fbx-to-vrchat-complete-guide.md
+    - 头像上传: unity/avatar-upload.md
+  - 资源与参考资料:
+    - 实用链接集: resources/useful-links.md
+    - CLO-SET Connect 与 EveryWear: resources/clo-set-connect.md
+    - 社区信息: resources/community.md
+    - 进阶资源: resources/advanced-resources.md
+    - 更新记录: resources/update-log.md
+
+plugins:
+  - search:
+      lang: zh
+  - git-revision-date-localized:
+      type: date
+      locale: zh
+      timezone: Asia/Shanghai
+      enable_parallel_processing: false
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      title: 本页内容
+  - tables
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/username/vrchat-garment-guide
+      name: GitHub Repository
+
+copyright: Copyright &copy; 2024-2025 VRChat Garment Creation Guide
+
+repo_url: https://github.com/username/vrchat-garment-guide
+repo_name: vrchat-garment-guide
+edit_uri: edit/main/docs/zh-CN/

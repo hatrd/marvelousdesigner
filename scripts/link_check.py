@@ -48,6 +48,8 @@ class InternalLinkChecker:
         self.log("Markdownファイルをスキャン中...")
         
         for md_file in self.docs_dir.rglob('*.md'):
+            if 'docs/zh-CN/' in md_file.as_posix():
+                continue
             self.all_md_files.add(md_file)
             self.all_headers[md_file] = self._extract_headers(md_file)
             

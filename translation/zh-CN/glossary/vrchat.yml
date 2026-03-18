@@ -1,0 +1,261 @@
+version: 1
+entries:
+  - source_term: アバター
+    canonical_zh_cn: 头像
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ワールド
+    canonical_zh_cn: 世界
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: インスタンス
+    canonical_zh_cn: 实例
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ルーム
+    canonical_zh_cn: 房间
+    domain: vrchat
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ボーン
+    canonical_zh_cn: 骨骼
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: リグ
+    canonical_zh_cn: 绑定骨架
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: Humanoid
+    canonical_zh_cn: Humanoid
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/ConfiguringtheAvatar.html
+  - source_term: アーマチュア
+    canonical_zh_cn: Armature
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: PhysBone
+    canonical_zh_cn: PhysBone
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/common-components/physbones
+  - source_term: DynamicBone
+    canonical_zh_cn: Dynamic Bone
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: コリジョン
+    canonical_zh_cn: 碰撞
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: コンストレイント
+    canonical_zh_cn: 约束
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: IK
+    canonical_zh_cn: IK
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: FK
+    canonical_zh_cn: FK
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: パフォーマンスランク
+    canonical_zh_cn: 性能等级
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars/avatar-performance-ranking-system
+  - source_term: Excellent
+    canonical_zh_cn: Excellent
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars/avatar-performance-ranking-system
+  - source_term: Good
+    canonical_zh_cn: Good
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars/avatar-performance-ranking-system
+  - source_term: Medium
+    canonical_zh_cn: Medium
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars/avatar-performance-ranking-system
+  - source_term: Poor
+    canonical_zh_cn: Poor
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars/avatar-performance-ranking-system
+  - source_term: Very Poor
+    canonical_zh_cn: Very Poor
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars/avatar-performance-ranking-system
+  - source_term: Quest互換性
+    canonical_zh_cn: Quest 兼容性
+    domain: vrchat
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ポリゴン数
+    canonical_zh_cn: 多边形数量
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: トライアングル数
+    canonical_zh_cn: 三角面数量
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ボーン数
+    canonical_zh_cn: 骨骼数量
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: マテリアルスロット数
+    canonical_zh_cn: 材质槽数量
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: テクスチャメモリ
+    canonical_zh_cn: 纹理内存
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ドローコール
+    canonical_zh_cn: Draw Call
+    domain: vrchat
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: パブリックアバター
+    canonical_zh_cn: 公开头像
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: プライベートアバター
+    canonical_zh_cn: 私有头像
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: クローンアバター
+    canonical_zh_cn: 克隆头像
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: フォールバックアバター
+    canonical_zh_cn: Fallback 头像
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars/avatar-fallback-system
+  - source_term: サムネイル
+    canonical_zh_cn: 缩略图
+    domain: vrchat
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: アバターパフォーマンス
+    canonical_zh_cn: 头像性能
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars/avatar-performance-ranking-system
+  - source_term: セーフティシステム
+    canonical_zh_cn: 安全系统
+    domain: vrchat
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: アバター3.0
+    canonical_zh_cn: Avatar 3.0
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars
+  - source_term: Expression Menu
+    canonical_zh_cn: Expression Menu
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars/expression-menu-and-controls/
+  - source_term: Parameters
+    canonical_zh_cn: Parameters
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/avatars/expression-menu-and-controls/

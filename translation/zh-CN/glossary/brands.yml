@@ -1,0 +1,68 @@
+version: 1
+entries:
+  - source_term: Unity
+    canonical_zh_cn: Unity
+    domain: brand
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+    notes: 品牌名不翻译。
+    aliases: []
+  - source_term: VRChat
+    canonical_zh_cn: VRChat
+    domain: brand
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/
+    notes: 品牌名不翻译。
+    aliases: []
+  - source_term: Marvelous Designer
+    canonical_zh_cn: Marvelous Designer
+    domain: brand
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/
+    notes: 品牌名不翻译。
+    aliases: []
+  - source_term: CLO-SET Connect
+    canonical_zh_cn: CLO-SET Connect
+    domain: brand
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://connect.clo-set.com/
+    notes: 产品名不翻译。
+    aliases: []
+  - source_term: EveryWear
+    canonical_zh_cn: EveryWear
+    domain: brand
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support-connect.clo-set.com/hc/en-us/articles/8579112368271-What-is-EveryWear
+    notes: 功能名不翻译。
+    aliases: []
+  - source_term: PhysBone
+    canonical_zh_cn: PhysBone
+    domain: vrchat
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/common-components/physbones
+    notes: VRChat 组件名，正文首次出现可补充“物理骨骼组件”说明。
+    aliases:
+      - PhysBones
+  - source_term: SDK
+    canonical_zh_cn: SDK
+    domain: technical
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+    notes: 通用缩写不翻译。
+    aliases:
+      - Software Development Kit

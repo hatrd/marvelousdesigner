@@ -1,0 +1,310 @@
+version: 1
+entries:
+  - source_term: パターン
+    canonical_zh_cn: 版型
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ガーメント
+    canonical_zh_cn: Garment
+    domain: marvelous-designer
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/
+  - source_term: シミュレーション
+    canonical_zh_cn: 模拟
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: フィッティング
+    canonical_zh_cn: 适配
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: 縫製
+    canonical_zh_cn: 缝合
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ドレーピング
+    canonical_zh_cn: 垂坠塑形
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: グレーディング
+    canonical_zh_cn: 放码
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: マーカー
+    canonical_zh_cn: 标记点
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: AIテクスチャジェネレーター
+    canonical_zh_cn: AI 纹理生成器
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: プロンプト
+    canonical_zh_cn: 提示词
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: リアルタイムプレビュー
+    canonical_zh_cn: 实时预览
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: シームレステクスチャ
+    canonical_zh_cn: 无缝纹理
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: パラメータ調整
+    canonical_zh_cn: 参数调整
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: キーフレーム
+    canonical_zh_cn: 关键帧
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: タイムライン
+    canonical_zh_cn: 时间轴
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: モーションキャプチャ
+    canonical_zh_cn: 动作捕捉
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ポーズエディター
+    canonical_zh_cn: Pose Editor
+    domain: marvelous-designer
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/
+  - source_term: ウォークサイクル
+    canonical_zh_cn: 行走循环
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: マテリアルエディター
+    canonical_zh_cn: 材质编辑器
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: コットン
+    canonical_zh_cn: 棉
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: リネン
+    canonical_zh_cn: 亚麻
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: シルク
+    canonical_zh_cn: 丝绸
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ウール
+    canonical_zh_cn: 羊毛
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ポリエステル
+    canonical_zh_cn: 涤纶
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: デニム
+    canonical_zh_cn: 牛仔布
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: レザー
+    canonical_zh_cn: 皮革
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ニット
+    canonical_zh_cn: 针织
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: パーティクルディスタンス
+    canonical_zh_cn: Particle Distance
+    domain: marvelous-designer
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/hc/en-us/articles/360037022752-Particle-Distance-Setting
+  - source_term: ベンド（Bend）
+    canonical_zh_cn: Bend
+    domain: marvelous-designer
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/
+  - source_term: Bend
+    canonical_zh_cn: Bend
+    domain: marvelous-designer
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/
+  - source_term: ストレッチ（Stretch）
+    canonical_zh_cn: Stretch
+    domain: marvelous-designer
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/
+  - source_term: Stretch
+    canonical_zh_cn: Stretch
+    domain: marvelous-designer
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/
+  - source_term: シア（Shear）
+    canonical_zh_cn: Shear
+    domain: marvelous-designer
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/
+  - source_term: Shear
+    canonical_zh_cn: Shear
+    domain: marvelous-designer
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://support.marvelousdesigner.com/
+  - source_term: 重力
+    canonical_zh_cn: 重力
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: 空気抵抗
+    canonical_zh_cn: 空气阻力
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: 摩擦係数
+    canonical_zh_cn: 摩擦系数
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: 縫い代
+    canonical_zh_cn: 缝份
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ノッチ
+    canonical_zh_cn: 对位记号
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ダーツ
+    canonical_zh_cn: 省道
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: プリーツ
+    canonical_zh_cn: 褶裥
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: ギャザー
+    canonical_zh_cn: 抽褶
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: バイアス
+    canonical_zh_cn: 斜裁
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: 裁断
+    canonical_zh_cn: 裁剪
+    domain: marvelous-designer
+    preferred: true
+    source_type: repo_glossary
+    source_refs:
+      - docs/basics/terminology.md

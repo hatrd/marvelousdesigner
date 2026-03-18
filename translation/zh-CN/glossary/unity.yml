@@ -1,0 +1,240 @@
+version: 1
+entries:
+  - source_term: ゲームオブジェクト
+    canonical_zh_cn: GameObject
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: コンポーネント
+    canonical_zh_cn: 组件
+    domain: unity
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Transform
+    canonical_zh_cn: Transform
+    domain: unity
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/class-Transform.html
+  - source_term: Hierarchy
+    canonical_zh_cn: Hierarchy
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Inspector
+    canonical_zh_cn: Inspector
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Scene
+    canonical_zh_cn: Scene
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Game
+    canonical_zh_cn: Game
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Project
+    canonical_zh_cn: Project
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Asset
+    canonical_zh_cn: Asset
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: プレハブ
+    canonical_zh_cn: Prefab
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Package
+    canonical_zh_cn: Package
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: スクリプト
+    canonical_zh_cn: 脚本
+    domain: unity
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: マテリアル
+    canonical_zh_cn: 材质
+    domain: unity
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/materials-introduction.html
+  - source_term: シェーダー
+    canonical_zh_cn: Shader
+    domain: unity
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/shader-objects.html
+  - source_term: Renderer
+    canonical_zh_cn: Renderer
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Mesh Renderer
+    canonical_zh_cn: Mesh Renderer
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/class-MeshRenderer.html
+  - source_term: Skinned Mesh Renderer
+    canonical_zh_cn: Skinned Mesh Renderer
+    domain: unity
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2021.3/Manual/class-SkinnedMeshRenderer.html
+  - source_term: Texture
+    canonical_zh_cn: 纹理
+    domain: unity
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Animator
+    canonical_zh_cn: Animator
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Animation Clip
+    canonical_zh_cn: Animation Clip
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Controller
+    canonical_zh_cn: Controller
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: State Machine
+    canonical_zh_cn: 状态机
+    domain: unity
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Blend Tree
+    canonical_zh_cn: Blend Tree
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Light
+    canonical_zh_cn: Light
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Directional Light
+    canonical_zh_cn: Directional Light
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/class-Light.html
+  - source_term: Point Light
+    canonical_zh_cn: Point Light
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/class-Light.html
+  - source_term: Spot Light
+    canonical_zh_cn: Spot Light
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/class-Light.html
+  - source_term: Global Illumination
+    canonical_zh_cn: 全局光照
+    domain: unity
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Lightmap
+    canonical_zh_cn: Lightmap
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Reflection Probe
+    canonical_zh_cn: Reflection Probe
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Build Settings
+    canonical_zh_cn: Build Settings
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Platform
+    canonical_zh_cn: 平台
+    domain: unity
+    preferred: true
+    source_type: official_zh
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/
+  - source_term: Target
+    canonical_zh_cn: 目标平台
+    domain: unity
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: Player Settings
+    canonical_zh_cn: Player Settings
+    domain: unity
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://docs.unity3d.com/cn/2022.3/Manual/class-PlayerSettings.html

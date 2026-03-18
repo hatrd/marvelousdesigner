@@ -1,18 +1,18 @@
 
 <!doctype html>
-<html lang="ja" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Marvelous DesignerとUnityを使ったVRChat衣装制作の完全初心者向けガイド">
+        <meta name="description" content="使用 Marvelous Designer 和 Unity 制作 VRChat 服装的简体中文入门指南">
       
       
         <meta name="author" content="VRChat Garment Creation Team">
       
       
-        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/garments/swimwear/">
+        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/zh-CN/garments/swimwear/">
       
       
         <link rel="prev" href="../one-piece/">
@@ -21,19 +21,22 @@
         <link rel="next" href="../../physics/fabric-properties/">
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>水着 - VRChat衣装制作完全ガイド</title>
+        <title>泳装 - VRChat 服装制作完整指南</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,8 +50,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Noto Sans JP";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -57,18 +60,7 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
 
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
-
-    
     
     
   <meta name="google-site-verification" content="2MW4wZaZsAsSzYUYyh514GoRY2nDaBF1VcITV1P3xSk" />
@@ -93,7 +85,7 @@
       
         
         <a href="#_1" class="md-skip">
-          コンテンツにスキップ
+          跳转至
         </a>
       
     </div>
@@ -101,16 +93,12 @@
       
     </div>
     
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-      </div>
-    
     
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-header__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-header__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -124,13 +112,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            VRChat衣装制作完全ガイド
+            VRChat 服装制作完整指南
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              水着
+              泳装
             
           </span>
         </div>
@@ -143,9 +131,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -153,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -178,16 +166,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="検索">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -200,7 +188,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            検索を初期化
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -212,10 +200,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+        <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -233,7 +221,7 @@
         
           
             
-<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -249,7 +237,7 @@
   
     
   
-  ホーム
+  首页
 
       </a>
     </li>
@@ -268,7 +256,7 @@
           
   
   
-  環境設定
+  环境设置
 
         </a>
       </li>
@@ -288,7 +276,7 @@
           
   
   
-  基礎知識
+  基础知识
 
         </a>
       </li>
@@ -308,7 +296,7 @@
           
   
   
-  作業手順
+  工作流程
 
         </a>
       </li>
@@ -330,7 +318,7 @@
           
   
   
-  衣装別制作ガイド
+  分类服装制作指南
 
         </a>
       </li>
@@ -350,7 +338,7 @@
           
   
   
-  物理設定・最適化
+  物理设置与优化
 
         </a>
       </li>
@@ -370,7 +358,7 @@
           
   
   
-  最適化・品質向上
+  优化与质量提升
 
         </a>
       </li>
@@ -390,7 +378,7 @@
           
   
   
-  高度な技術・MD2025
+  高级技术与 MD2025
 
         </a>
       </li>
@@ -410,7 +398,7 @@
           
   
   
-  Unity統合
+  Unity 集成
 
         </a>
       </li>
@@ -430,7 +418,7 @@
           
   
   
-  リソース・参考資料
+  资源与参考资料
 
         </a>
       </li>
@@ -460,22 +448,22 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-nav__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-nav__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    VRChat衣装制作完全ガイド
+    VRChat 服装制作完整指南
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+      <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -497,9 +485,14 @@
   
   
   <span class="md-ellipsis">
-    ホーム
+    
+  
+    首页
+  
+
     
   </span>
+  
   
 
       </a>
@@ -537,9 +530,14 @@
   
   
   <span class="md-ellipsis">
-    環境設定
+    
+  
+    环境设置
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -548,7 +546,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            環境設定
+            
+  
+    环境设置
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -564,9 +566,14 @@
   
   
   <span class="md-ellipsis">
-    ソフトウェア確認
+    
+  
+    软件确认
+  
+
     
   </span>
+  
   
 
       </a>
@@ -587,9 +594,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designer初回起動
+    
+  
+    Marvelous Designer 首次启动
+  
+
     
   </span>
+  
   
 
       </a>
@@ -610,9 +622,14 @@
   
   
   <span class="md-ellipsis">
-    Unity・VRChat SDK設定
+    
+  
+    Unity 与 VRChat SDK 设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -658,9 +675,14 @@
   
   
   <span class="md-ellipsis">
-    基礎知識
+    
+  
+    基础知识
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -669,7 +691,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            基礎知識
+            
+  
+    基础知识
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -685,9 +711,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designerインターフェース
+    
+  
+    Marvelous Designer 界面
+  
+
     
   </span>
+  
   
 
       </a>
@@ -708,9 +739,14 @@
   
   
   <span class="md-ellipsis">
-    AI機能ガイド
+    
+  
+    AI 功能指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -731,9 +767,14 @@
   
   
   <span class="md-ellipsis">
-    3Dモデリング基本概念
+    
+  
+    3D 建模基础概念
+  
+
     
   </span>
+  
   
 
       </a>
@@ -754,9 +795,14 @@
   
   
   <span class="md-ellipsis">
-    制作工程全体像
+    
+  
+    制作流程全貌
+  
+
     
   </span>
+  
   
 
       </a>
@@ -777,9 +823,14 @@
   
   
   <span class="md-ellipsis">
-    ファイル形式の理解
+    
+  
+    文件格式的理解
+  
+
     
   </span>
+  
   
 
       </a>
@@ -800,9 +851,14 @@
   
   
   <span class="md-ellipsis">
-    専門用語集
+    
+  
+    术语表
+  
+
     
   </span>
+  
   
 
       </a>
@@ -848,9 +904,14 @@
   
   
   <span class="md-ellipsis">
-    作業手順
+    
+  
+    工作流程
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -859,7 +920,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            作業手順
+            
+  
+    工作流程
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -875,9 +940,14 @@
   
   
   <span class="md-ellipsis">
-    アバターの読み込み
+    
+  
+    导入头像
+  
+
     
   </span>
+  
   
 
       </a>
@@ -898,9 +968,14 @@
   
   
   <span class="md-ellipsis">
-    衣装のフィッティング
+    
+  
+    现有服装适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -921,9 +996,14 @@
   
   
   <span class="md-ellipsis">
-    モジュラー衣装システム
+    
+  
+    模块化服装系统
+  
+
     
   </span>
+  
   
 
       </a>
@@ -944,9 +1024,14 @@
   
   
   <span class="md-ellipsis">
-    非対応アバター改変
+    
+  
+    非兼容头像改造
+  
+
     
   </span>
+  
   
 
       </a>
@@ -967,9 +1052,14 @@
   
   
   <span class="md-ellipsis">
-    新規衣装制作手順
+    
+  
+    新建服装制作
+  
+
     
   </span>
+  
   
 
       </a>
@@ -990,9 +1080,14 @@
   
   
   <span class="md-ellipsis">
-    よくある問題と対処
+    
+  
+    常见问题与处理
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1041,9 +1136,14 @@
   
   
   <span class="md-ellipsis">
-    衣装別制作ガイド
+    
+  
+    分类服装制作指南
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1052,7 +1152,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            衣装別制作ガイド
+            
+  
+    分类服装制作指南
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1068,9 +1172,14 @@
   
   
   <span class="md-ellipsis">
-    Tシャツ（初心者向け）
+    
+  
+    T 恤（适合初学者）
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1091,9 +1200,14 @@
   
   
   <span class="md-ellipsis">
-    スカート
+    
+  
+    裙子
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1114,9 +1228,14 @@
   
   
   <span class="md-ellipsis">
-    ドレス
+    
+  
+    礼服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1137,9 +1256,14 @@
   
   
   <span class="md-ellipsis">
-    カジュアル服
+    
+  
+    休闲服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1160,9 +1284,14 @@
   
   
   <span class="md-ellipsis">
-    ワンピース
+    
+  
+    连衣裙
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1192,9 +1321,14 @@
   
   
   <span class="md-ellipsis">
-    水着
+    
+  
+    泳装
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1205,9 +1339,14 @@
   
   
   <span class="md-ellipsis">
-    水着
+    
+  
+    泳装
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1216,7 +1355,7 @@
 
   
 
-<nav class="md-nav md-nav--secondary" aria-label="このページの内容">
+<nav class="md-nav md-nav--secondary" aria-label="本页内容">
   
   
   
@@ -1225,24 +1364,28 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      このページの内容
+      本页内容
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 制作する水着の仕様
+      
+        🎯 要制作的泳装规格
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎯 制作する水着の仕様">
+    <nav class="md-nav" aria-label="🎯 要制作的泳装规格">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      今回のプロジェクト目標
+      
+        本次项目目标
+      
     </span>
   </a>
   
@@ -1251,7 +1394,9 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      なぜ水着が最難関なのか？
+      
+        为什么泳装最难？
+      
     </span>
   </a>
   
@@ -1265,17 +1410,21 @@
         <li class="md-nav__item">
   <a href="#phase-1-45-60" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Phase 1: 高度な設計と計画（45-60分）
+      
+        🚀 Phase 1: 高级设计与规划（45-60 分钟）
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🚀 Phase 1: 高度な設計と計画（45-60分）">
+    <nav class="md-nav" aria-label="🚀 Phase 1: 高级设计与规划（45-60 分钟）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      体型測定と分析
+      
+        测量与分析体型
+      
     </span>
   </a>
   
@@ -1284,7 +1433,9 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      フィット戦略の計画
+      
+        规划贴合策略
+      
     </span>
   </a>
   
@@ -1293,7 +1444,9 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      素材戦略の決定
+      
+        确定材质策略
+      
     </span>
   </a>
   
@@ -1307,17 +1460,21 @@
         <li class="md-nav__item">
   <a href="#phase-2-90-120" class="md-nav__link">
     <span class="md-ellipsis">
-      🛠️ Phase 2: 高度パターン制作（90-120分）
+      
+        🛠️ Phase 2: 高级版型制作（90-120 分钟）
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🛠️ Phase 2: 高度パターン制作（90-120分）">
+    <nav class="md-nav" aria-label="🛠️ Phase 2: 高级版型制作（90-120 分钟）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      ベースパターンの構築
+      
+        构建基础版型
+      
     </span>
   </a>
   
@@ -1326,7 +1483,9 @@
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      高度な立体構築技術
+      
+        高级立体构建技术
+      
     </span>
   </a>
   
@@ -1340,17 +1499,21 @@
         <li class="md-nav__item">
   <a href="#phase-3-60-90" class="md-nav__link">
     <span class="md-ellipsis">
-      🧵 Phase 3: 特殊縫製と材質設定（60-90分）
+      
+        🧵 Phase 3: 特殊缝合与材质设置（60-90 分钟）
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧵 Phase 3: 特殊縫製と材質設定（60-90分）">
+    <nav class="md-nav" aria-label="🧵 Phase 3: 特殊缝合与材质设置（60-90 分钟）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      伸縮性素材の縫製技法
+      
+        弹性面料的缝合技术
+      
     </span>
   </a>
   
@@ -1359,7 +1522,9 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      高度な物理特性設定
+      
+        高级物理特性设置
+      
     </span>
   </a>
   
@@ -1368,7 +1533,9 @@
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      多層構造の実装（オプション）
+      
+        实现多层结构（可选）
+      
     </span>
   </a>
   
@@ -1382,17 +1549,21 @@
         <li class="md-nav__item">
   <a href="#phase-4-60-75" class="md-nav__link">
     <span class="md-ellipsis">
-      🎭 Phase 4: 複雑フィッティングと調整（60-75分）
+      
+        🎭 Phase 4: 复杂适配与调整（60-75 分钟）
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎭 Phase 4: 複雑フィッティングと調整（60-75分）">
+    <nav class="md-nav" aria-label="🎭 Phase 4: 复杂适配与调整（60-75 分钟）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      タイトフィット特有のシミュレーション
+      
+        紧身版型特有的模拟
+      
     </span>
   </a>
   
@@ -1401,7 +1572,9 @@
           <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      高度なフィッティング調整技法
+      
+        高级适配调整技法
+      
     </span>
   </a>
   
@@ -1410,7 +1583,9 @@
           <li class="md-nav__item">
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      動作テストとパフォーマンス確認
+      
+        动作测试与性能确认
+      
     </span>
   </a>
   
@@ -1419,7 +1594,9 @@
           <li class="md-nav__item">
   <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      最終品質チェックと微調整
+      
+        最终质量检查与微调
+      
     </span>
   </a>
   
@@ -1431,19 +1608,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#phase-5-vrchat30-45" class="md-nav__link">
+  <a href="#phase-5-vrchat-30-45" class="md-nav__link">
     <span class="md-ellipsis">
-      🎨 Phase 5: VRChat最適化とエクスポート（30-45分）
+      
+        🎨 Phase 5: VRChat 优化与导出（30-45 分钟）
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎨 Phase 5: VRChat最適化とエクスポート（30-45分）">
+    <nav class="md-nav" aria-label="🎨 Phase 5: VRChat 优化与导出（30-45 分钟）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#vrchat" class="md-nav__link">
     <span class="md-ellipsis">
-      VRChat専用パフォーマンス最適化
+      
+        面向 VRChat 的性能优化
+      
     </span>
   </a>
   
@@ -1452,7 +1633,9 @@
           <li class="md-nav__item">
   <a href="#_17" class="md-nav__link">
     <span class="md-ellipsis">
-      プロ仕様のエクスポート設定
+      
+        专业级导出设置
+      
     </span>
   </a>
   
@@ -1461,7 +1644,9 @@
           <li class="md-nav__item">
   <a href="#unity" class="md-nav__link">
     <span class="md-ellipsis">
-      Unity統合の準備
+      
+        为 Unity 集成做准备
+      
     </span>
   </a>
   
@@ -1475,17 +1660,21 @@
         <li class="md-nav__item">
   <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
-      🏆 完成と達成確認
+      
+        🏆 完成与成果确认
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🏆 完成と達成確認">
+    <nav class="md-nav" aria-label="🏆 完成与成果确认">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
-      学習目標の完全達成確認
+      
+        确认学习目标完全达成
+      
     </span>
   </a>
   
@@ -1499,17 +1688,21 @@
         <li class="md-nav__item">
   <a href="#_20" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 次のステップと更なる発展
+      
+        🚀 下一步与进一步发展
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🚀 次のステップと更なる発展">
+    <nav class="md-nav" aria-label="🚀 下一步与进一步发展">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_21" class="md-nav__link">
     <span class="md-ellipsis">
-      習得スキルの応用展開
+      
+        应用已掌握的技能
+      
     </span>
   </a>
   
@@ -1518,7 +1711,9 @@
           <li class="md-nav__item">
   <a href="#_22" class="md-nav__link">
     <span class="md-ellipsis">
-      推奨される継続学習
+      
+        推荐的持续学习方向
+      
     </span>
   </a>
   
@@ -1532,17 +1727,21 @@
         <li class="md-nav__item">
   <a href="#_23" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 高度なトラブルシューティング
+      
+        🔧 高级故障排查
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔧 高度なトラブルシューティング">
+    <nav class="md-nav" aria-label="🔧 高级故障排查">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_24" class="md-nav__link">
     <span class="md-ellipsis">
-      水着制作特有の問題と解決策
+      
+        泳装制作常见问题与解决方案
+      
     </span>
   </a>
   
@@ -1556,17 +1755,21 @@
         <li class="md-nav__item">
   <a href="#_25" class="md-nav__link">
     <span class="md-ellipsis">
-      💎 クリエイティブな発展アイデア
+      
+        💎 创意拓展思路
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="💎 クリエイティブな発展アイデア">
+    <nav class="md-nav" aria-label="💎 创意拓展思路">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_26" class="md-nav__link">
     <span class="md-ellipsis">
-      水着デザインのバリエーション展開
+      
+        展开泳装设计变体
+      
     </span>
   </a>
   
@@ -1575,7 +1778,9 @@
           <li class="md-nav__item">
   <a href="#_27" class="md-nav__link">
     <span class="md-ellipsis">
-      プロフェッショナルな活用
+      
+        专业化应用
+      
     </span>
   </a>
   
@@ -1589,17 +1794,21 @@
         <li class="md-nav__item">
   <a href="#_28" class="md-nav__link">
     <span class="md-ellipsis">
-      🌟 完成作品ギャラリーと次への挑戦
+      
+        🌟 成品展示与下一步挑战
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🌟 完成作品ギャラリーと次への挑戦">
+    <nav class="md-nav" aria-label="🌟 成品展示与下一步挑战">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_29" class="md-nav__link">
     <span class="md-ellipsis">
-      作品の記録と共有
+      
+        记录与分享作品
+      
     </span>
   </a>
   
@@ -1656,9 +1865,14 @@
   
   
   <span class="md-ellipsis">
-    物理設定・最適化
+    
+  
+    物理设置与优化
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1667,7 +1881,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            物理設定・最適化
+            
+  
+    物理设置与优化
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1683,9 +1901,14 @@
   
   
   <span class="md-ellipsis">
-    布の物理特性設定
+    
+  
+    布料物理特性设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1706,9 +1929,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス最適化
+    
+  
+    性能优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1754,9 +1982,14 @@
   
   
   <span class="md-ellipsis">
-    最適化・品質向上
+    
+  
+    优化与质量提升
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1765,7 +1998,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            最適化・品質向上
+            
+  
+    优化与质量提升
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1781,9 +2018,14 @@
   
   
   <span class="md-ellipsis">
-    Very Poor脱却完全ガイド
+    
+  
+    摆脱 Very Poor 完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1804,9 +2046,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス分析ツール
+    
+  
+    性能分析工具
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1827,9 +2074,14 @@
   
   
   <span class="md-ellipsis">
-    モバイル完全対応
+    
+  
+    移动端完全适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1875,9 +2127,14 @@
   
   
   <span class="md-ellipsis">
-    高度な技術・MD2025
+    
+  
+    高级技术与 MD2025
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1886,7 +2143,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            高度な技術・MD2025
+            
+  
+    高级技术与 MD2025
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1902,9 +2163,14 @@
   
   
   <span class="md-ellipsis">
-    MD2025新機能完全ガイド
+    
+  
+    MD2025 新功能完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1925,9 +2191,14 @@
   
   
   <span class="md-ellipsis">
-    EveryWear統合ワークフロー
+    
+  
+    EveryWear 集成工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1948,9 +2219,14 @@
   
   
   <span class="md-ellipsis">
-    IK-Joint最適化
+    
+  
+    IK-Joint 优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1996,9 +2272,14 @@
   
   
   <span class="md-ellipsis">
-    Unity統合
+    
+  
+    Unity 集成
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2007,7 +2288,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Unity統合
+            
+  
+    Unity 集成
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2023,9 +2308,14 @@
   
   
   <span class="md-ellipsis">
-    Unityプロジェクト設定
+    
+  
+    Unity 项目设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2046,9 +2336,14 @@
   
   
   <span class="md-ellipsis">
-    FBXからVRChatまでの完全ワークフロー
+    
+  
+    从 FBX 到 VRChat 的完整工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2069,9 +2364,14 @@
   
   
   <span class="md-ellipsis">
-    アバターアップロード
+    
+  
+    头像上传
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2117,9 +2417,14 @@
   
   
   <span class="md-ellipsis">
-    リソース・参考資料
+    
+  
+    资源与参考资料
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2128,7 +2433,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            リソース・参考資料
+            
+  
+    资源与参考资料
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2144,9 +2453,14 @@
   
   
   <span class="md-ellipsis">
-    有用なリンク集
+    
+  
+    实用链接集
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2167,9 +2481,14 @@
   
   
   <span class="md-ellipsis">
-    CLO-SET Connect・EveryWear
+    
+  
+    CLO-SET Connect 与 EveryWear
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2190,9 +2509,14 @@
   
   
   <span class="md-ellipsis">
-    コミュニティ情報
+    
+  
+    社区信息
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2213,9 +2537,14 @@
   
   
   <span class="md-ellipsis">
-    上級者向けリソース
+    
+  
+    进阶资源
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2236,9 +2565,14 @@
   
   
   <span class="md-ellipsis">
-    更新履歴
+    
+  
+    更新记录
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2264,6 +2598,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2273,751 +2608,751 @@
   
 
 
-<h1 id="_1">水着制作ガイド（中級～上級）<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="_1">泳装制作指南（中级～高级）<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
-<p class="admonition-title">ガイド情報</p>
-<p><strong>所要時間</strong>: 約4-6時間 | <strong>難易度</strong>: 中級～上級 | <strong>重要度</strong>: 高度技術習得の集大成</p>
+<p class="admonition-title">指南信息</p>
+<p><strong>预计用时</strong>：约 4-6 小时 | <strong>难度</strong>：中级～高级 | <strong>重要度</strong>：高级技术学习的集大成</p>
 </div>
-<p><strong>このページの目的</strong>: これまでに習得した基礎技術を統合し、最も技術的に挑戦的な水着制作を通じて、体にフィットする衣装制作の高度な技術をマスターします。</p>
+<p><strong>本页目标</strong>：整合到目前为止掌握的基础技术，通过制作最具技术挑战性的泳装，掌握贴身服装制作的高级技术。</p>
 <div class="admonition success">
-<p class="admonition-title">このガイドで身につくスキル</p>
+<p class="admonition-title">本指南能掌握的技能</p>
 <ul>
-<li>✅ 体型にぴったりフィットするパターン設計技術</li>
-<li>✅ 伸縮性素材の高度な物理設定</li>
-<li>✅ 複雑な体の曲線に沿った立体構築</li>
-<li>✅ VRChat用高性能フィット衣装最適化</li>
-<li>✅ 高度なトラブルシューティング技法</li>
-<li>✅ プロレベルの仕上げ技術</li>
+<li>✅ 与体型严丝合缝的版型设计技术</li>
+<li>✅ 弹性面料的高级物理设置</li>
+<li>✅ 顺着复杂身体曲线进行立体构建</li>
+<li>✅ 面向 VRChat 的高性能贴身服装优化</li>
+<li>✅ 高级故障排查方法</li>
+<li>✅ 专业级收尾技术</li>
 </ul>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">事前準備の重要性</p>
-<p>水着制作は非常に高度な技術を要します。以下の事前準備を完了してから始めることを強く推奨します：</p>
+<p class="admonition-title">前置准备的重要性</p>
+<p>泳装制作需要非常高级的技术。强烈建议在开始前完成以下前置准备：</p>
 </div>
 <div class="admonition info">
-<p class="admonition-title">必須の事前学習</p>
+<p class="admonition-title">必备的前置学习</p>
 <ul>
-<li><a href="../t-shirt/">Tシャツ制作ガイド</a>を完了し、基本パターンを理解</li>
-<li><a href="../skirt/">スカート制作ガイド</a>を完了し、曲線パターンを習得</li>
-<li><a href="../../physics/fabric-properties/">布の物理特性設定</a>を熟読し、伸縮性素材を理解</li>
-<li>アバターがMarvelous Designerに正常に読み込まれている</li>
-<li>4-6時間の集中作業時間を確保</li>
+<li>完成<a href="../t-shirt/">T 恤制作指南</a>并理解基础版型</li>
+<li>完成<a href="../skirt/">裙子制作指南</a>并掌握曲线版型</li>
+<li>仔细阅读<a href="../../physics/fabric-properties/">布料物理特性设置</a>，理解弹性面料</li>
+<li>头像已正常导入 Marvelous Designer</li>
+<li>预留 4-6 小时的连续专注时间</li>
 </ul>
 </div>
-<h2 id="_2">🎯 制作する水着の仕様<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="_3">今回のプロジェクト目標<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h2 id="_2">🎯 要制作的泳装规格<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">本次项目目标<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">完成目標</p>
-<p><strong>制作する水着の種類</strong>: ワンピース型競泳水着スタイル
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>デザイン仕様:
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── 前面: ラウンドネック、適度なカバレッジ
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── 背面: 背中開き、ストラップ付き
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── 素材感: 光沢のある伸縮性生地
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── フィット: 体にぴったり、でも動きやすい
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>└── 用途: VRChatでの水辺活動、写真撮影
+<p class="admonition-title">完成目标</p>
+<p><strong>要制作的泳装类型</strong>：连体竞泳泳装风格
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>设计规格:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── 正面: 圆领，覆盖范围适中
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── 背面: 露背，带肩带
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── 材质感: 具有光泽的弹性面料
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── 贴合: 紧贴身体，但仍易于活动
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>└── 用途: VRChat 水边活动、拍照
 </code></pre></div></p>
-<p><strong>技術的目標</strong>:
-- アバターの体型に完璧にフィット
-- 自然な伸縮と復元力を再現
-- VRChatでの快適な動作性能
-- 高品質な見た目とリアリティ</p>
+<p><strong>技术目标</strong>：
+- 完美贴合头像体型
+- 重现自然的伸缩与恢复力
+- 保证在 VRChat 中舒适动作
+- 实现高质量外观与真实感</p>
 </div>
-<h3 id="_4">なぜ水着が最難関なのか？<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_4">为什么泳装最难？<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">水着制作の特殊な挑戦</p>
-<p><strong>1. 極めてタイトなフィット要求</strong>
-- 体のあらゆる曲線に正確に追従
-- 隙間や浮きが許されない精密さ
-- 動作時も形状を維持</p>
-<p><strong>2. 特殊な素材特性</strong>
-- 4方向伸縮（縦横両方向）
-- 形状記憶と復元力
-- 光沢と透明感の表現</p>
-<p><strong>3. 複雑な立体構造</strong>
-- 3D曲面の正確な再現
-- バストライン、ウエストライン、ヒップラインの統合
-- 開口部（首、腕、脚）の自然な処理</p>
-<p><strong>4. VRChat特有の課題</strong>
-- タイト衣装での衝突判定問題
-- 物理演算の高負荷回避
-- 着脱時の安定性</p>
+<p class="admonition-title">泳装制作的特殊挑战</p>
+<p><strong>1. 极高的贴合要求</strong>
+- 精确跟随身体所有曲线
+- 不允许明显缝隙或悬空
+- 动作时也要保持形状</p>
+<p><strong>2. 特殊材质特性</strong>
+- 四向弹性（纵横都能拉伸）
+- 形状记忆与恢复力
+- 光泽与通透感的表现</p>
+<p><strong>3. 复杂立体结构</strong>
+- 精确再现 3D 曲面
+- 整合胸线、腰线、臀线
+- 自然处理开口部（颈部、手臂、腿部）</p>
+<p><strong>4. VRChat 特有课题</strong>
+- 紧身服装的碰撞判定问题
+- 避免物理演算负载过高
+- 在穿着状态下保持稳定</p>
 </div>
-<h2 id="phase-1-45-60">🚀 Phase 1: 高度な設計と計画（45-60分）<a class="headerlink" href="#phase-1-45-60" title="Permanent link">&para;</a></h2>
-<h3 id="_5">体型測定と分析<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h2 id="phase-1-45-60">🚀 Phase 1: 高级设计与规划（45-60 分钟）<a class="headerlink" href="#phase-1-45-60" title="Permanent link">&para;</a></h2>
+<h3 id="_5">测量与分析体型<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 1-1: 精密な体型測定</p>
-<p><strong>アバターの重要測定値取得</strong>:</p>
-<p>VRChat用アバターは個体差が大きいため、正確な測定が必須です。</p>
-<p><strong>測定箇所と一般的な数値</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>🔸 バスト周囲: 85-95cm（最も幅広い部分）
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>🔸 アンダーバスト: 75-85cm（胸の下）
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>🔸 ウエスト: 60-70cm（最も細い部分）
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>🔸 ヒップ: 90-100cm（最も幅広い部分）
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>🔸 肩幅: 40-45cm
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>🔸 着丈目安: 65-75cm（肩から股下まで）
+<p class="admonition-title">步骤 1-1：精确测量体型</p>
+<p><strong>获取头像的重要尺寸</strong>：</p>
+<p>由于 VRChat 头像差异很大，精确测量是必要前提。</p>
+<p><strong>测量部位与常见数值</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>🔸 胸围: 85-95cm（最宽处）
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>🔸 下胸围: 75-85cm（胸部下方）
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>🔸 腰围: 60-70cm（最细处）
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>🔸 臀围: 90-100cm（最宽处）
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>🔸 肩宽: 40-45cm
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>🔸 衣长参考: 65-75cm（从肩到裆下）
 </code></pre></div></p>
-<p><strong>Marvelous Designerでの測定方法</strong>:
-1. <strong>Measure</strong> ツールを選択
-2. 各測定箇所で正確に測定を実行
-3. 結果をメモ帳に記録（後で参照）
-4. アバターを多角度から観察し、特徴的な体型を把握</p>
+<p><strong>在 Marvelous Designer 中的测量方法</strong>：
+1. 选择 <strong>Measure</strong> 工具
+2. 在各个测量部位准确测量
+3. 将结果记录到记事本（后续参考）
+4. 从多个角度观察头像，掌握其体型特征</p>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">測定の精度向上のコツ</p>
+<p class="admonition-title">提高测量精度的技巧</p>
 <ul>
-<li>アバターを回転させて多角度から確認</li>
-<li>対称性があるかをチェック（左右差）</li>
-<li>特に曲線が急激に変化する部分に注意</li>
-<li>水着として露出する部分の形状を詳細に観察</li>
+<li>旋转头像，从多个角度确认</li>
+<li>检查是否对称（左右差异）</li>
+<li>特别关注曲线变化剧烈的区域</li>
+<li>仔细观察泳装会暴露出的部位轮廓</li>
 </ul>
 </div>
-<h3 id="_6">フィット戦略の計画<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h3 id="_6">规划贴合策略<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 1-2: フィットゾーンの設計</p>
-<p><strong>水着の重要なフィットゾーン分析</strong>:</p>
-<p><strong>Zone A: バストエリア（最重要）</strong>
-- 形状維持が最も重要
-- サポート構造が必要
-- 動作時の安定性が必須</p>
-<p><strong>Zone B: ウエストライン（設計の要）</strong>
-- 体型を美しく見せる重要部分
-- 適度な締め付けと快適さのバランス
-- 座る・曲がるなどの動作に対応</p>
-<p><strong>Zone C: ヒップライン（複雑な曲線）</strong>
-- 立体的な曲面を正確に追従
-- レッグオープニングの自然な処理
-- 座位での快適さを確保</p>
-<p><strong>Zone D: 開口部（技術的な難所）</strong>
-- 首回り、腕回り、脚回り
-- 締めつけすぎず、緩すぎない絶妙な調整
-- エッジの美しい仕上がり</p>
+<p class="admonition-title">步骤 1-2：设计贴合区域</p>
+<p><strong>分析泳装的关键贴合区域</strong>：</p>
+<p><strong>Zone A: 胸部区域（最重要）</strong>
+- 最重视保持形状
+- 需要支撑结构
+- 动作时必须稳定</p>
+<p><strong>Zone B: 腰线（设计核心）</strong>
+- 决定体型观感的重要部分
+- 需要在适度收紧与舒适之间平衡
+- 要适应坐下、弯腰等动作</p>
+<p><strong>Zone C: 臀线（复杂曲线）</strong>
+- 精确贴合立体曲面
+- 自然处理腿部开口
+- 确保坐姿舒适性</p>
+<p><strong>Zone D: 开口部（技术难点）</strong>
+- 颈部、手臂、腿部周围
+- 既不能太紧，也不能太松
+- 边缘要收得优美</p>
 </div>
-<h3 id="_7">素材戦略の決定<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="_7">确定材质策略<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 1-3: 水着用素材の選択</p>
-<p><strong>推奨する物理特性設定</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>基本設定:
+<p class="admonition-title">步骤 1-3：选择泳装材质</p>
+<p><strong>推荐物理特性设置</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>基础设置:
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>├── Fabric Type: Lycra/Spandex
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── Stretch-Weft: 40-50%（横方向伸縮）
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├── Stretch-Warp: 35-45%（縦方向伸縮）
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>├── Stretch-Weft: 40-50%（横向拉伸）
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├── Stretch-Warp: 35-45%（纵向拉伸）
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├── Thickness: 0.5-0.8mm
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>├── Weight: 150-200g/m²
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>└── Recovery: 95%以上
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>└── Recovery: 95% 以上
 </code></pre></div></p>
-<p><strong>色と質感の方向性</strong>:
-- <strong>ソリッドカラー</strong>: 深い青、黒、赤など定番色
-- <strong>光沢感</strong>: 水着らしいサテン調の反射
-- <strong>パターン</strong>: 将来的な展開を考慮（今回はシンプル）</p>
+<p><strong>颜色与质感方向</strong>：
+- <strong>纯色</strong>：深蓝、黑、红等经典色
+- <strong>光泽感</strong>：泳装常见的缎面反射
+- <strong>图案</strong>：考虑后续扩展，本次先保持简单</p>
 </div>
-<h2 id="phase-2-90-120">🛠️ Phase 2: 高度パターン制作（90-120分）<a class="headerlink" href="#phase-2-90-120" title="Permanent link">&para;</a></h2>
-<h3 id="_8">ベースパターンの構築<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h2 id="phase-2-90-120">🛠️ Phase 2: 高级版型制作（90-120 分钟）<a class="headerlink" href="#phase-2-90-120" title="Permanent link">&para;</a></h2>
+<h3 id="_8">构建基础版型<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 2-1: 前身頃の立体パターン作成</p>
-<p><strong>前身頃の複雑な形状構築</strong>:</p>
-<p>水着の前身頃は単純な長方形では実現できません。体の曲線に沿った複雑な形状が必要です。</p>
-<p><strong>アプローチ1: 測定値ベースの設計</strong>:
-1. <strong>Polygon ツール</strong> で基本形状をスケッチ
-2. 主要測定値を反映したラフ形状を作成:
-   - 上部: 肩幅の1/2 + ゆとり（22-25cm）
-   - バスト部: バスト周囲の1/2（42-47cm）
-   - ウエスト部: ウエスト周囲の1/2（30-35cm）
-   - 着丈: 測定値（65-75cm）
-3. <strong>Edit Pattern</strong> ツールで曲線に調整</p>
-<p><strong>重要な形状ポイント</strong>:
-- <strong>ネックライン</strong>: 首にフィットする適度なカーブ
-- <strong>アームホール</strong>: 腕の付け根に沿った立体的な曲線
-- <strong>バストライン</strong>: 自然な胸の形に沿った膨らみ
-- <strong>ウエストライン</strong>: 体の最も細い部分への集約
-- <strong>レッグオープニング</strong>: 脚の付け根に沿った自然なカーブ</p>
+<p class="admonition-title">步骤 2-1：创建前身片立体版型</p>
+<p><strong>构建前身片的复杂形状</strong>：</p>
+<p>泳装前身片不能用简单长方形完成，必须做出顺着身体曲线的复杂形状。</p>
+<p><strong>方法 1：基于测量值设计</strong>：
+1. 用 <strong>Polygon 工具</strong> 勾出基础轮廓
+2. 制作反映关键尺寸的草图形状：
+   - 上部：肩宽的一半 + 余量（22-25cm）
+   - 胸部：胸围的一半（42-47cm）
+   - 腰部：腰围的一半（30-35cm）
+   - 长度：按测量值（65-75cm）
+3. 用 <strong>Edit Pattern</strong> 工具调整为曲线</p>
+<p><strong>关键形状要点</strong>：
+- <strong>Neckline</strong>：贴合颈部但不过紧的曲线
+- <strong>Armhole</strong>：顺着手臂根部的立体曲线
+- <strong>胸线</strong>：顺着胸型自然隆起
+- <strong>腰线</strong>：向身体最细处收束
+- <strong>腿部开口</strong>：顺着腿根形成自然曲线</p>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">立体パターン作成のコツ</p>
-<p>最初から完璧を目指さず、基本形状を作って段階的に調整していきます。フィット確認は頻繁に行いましょう。</p>
+<p class="admonition-title">制作立体版型的技巧</p>
+<p>不要一开始就追求完美。先做出基础形状，再逐步调整。请频繁确认贴合效果。</p>
 </div>
 <div class="admonition example">
-<p class="admonition-title">ステップ 2-2: 後身頃の特殊構造</p>
-<p><strong>後身頃の設計上の注意点</strong>:</p>
-<p>水着の後身頃は前身頃とは大きく異なる特徴があります：</p>
-<p><strong>特殊な要素</strong>:
-- <strong>大幅な背中開き</strong>: 美しいシルエット創出
-- <strong>ストラップ構造</strong>: 肩への安定した接続
-- <strong>低いバックライン</strong>: 後ろから見た美しさ</p>
-<p><strong>制作手順</strong>:
-1. 前身頃をベースにコピー作成
-2. 背中部分を大胆にカット（背中開きの創出）:
-   - 上部: 肩甲骨の下まで（約15-20cmの開き）
-   - 下部: ウエストラインまで維持
-3. <strong>ストラップ部分の追加</strong>:
-   - 幅: 2-3cm
-   - 長さ: 肩から背中開きまで（約25-30cm）
-   - 左右対称に2本作成</p>
-<p><strong>後身頃のカーブ調整</strong>:
-- 背骨に沿った自然なライン
-- 肩甲骨の形状を意識
-- 脇から背中への自然な流れ</p>
+<p class="admonition-title">步骤 2-2：后身片的特殊结构</p>
+<p><strong>后身片设计时的注意点</strong>：</p>
+<p>泳装后身片与前身片有很大差异：</p>
+<p><strong>特殊要素</strong>：
+- <strong>大面积露背</strong>：创造优美轮廓
+- <strong>肩带结构</strong>：稳定连接肩部
+- <strong>低背线</strong>：增强背面观感</p>
+<p><strong>制作步骤</strong>：
+1. 以前身片为基础复制出后身片
+2. 大胆裁掉背部区域（做出露背）：
+   - 上部：开到肩胛骨下方（约 15-20cm 的开口）
+   - 下部：保持到腰线
+3. <strong>添加肩带部分</strong>：
+   - 宽度：2-3cm
+   - 长度：从肩部到露背处（约 25-30cm）
+   - 左右对称制作两条</p>
+<p><strong>调整后身片曲线</strong>：
+- 顺着脊柱形成自然线条
+- 注意肩胛骨形状
+- 让腋下到背部的过渡自然</p>
 </div>
-<h3 id="_9">高度な立体構築技術<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h3 id="_9">高级立体构建技术<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 2-3: ダーツと立体化技法</p>
-<p><strong>バストエリアの立体構築</strong>:</p>
-<p>平面パターンから立体的な水着を創るには、<strong>ダーツ（dart）</strong>技法が必須です。</p>
-<p><strong>バストダーツの設置</strong>:
-1. 前身頃パターンを選択
-2. <strong>Edit Pattern</strong> ツールで編集モード
-3. バストポイント（最も突出した部分）を基準に:
-   - <strong>サイドダーツ</strong>: 脇から中央に向かう三角形（約3-5cm）
-   - <strong>アンダーダーツ</strong>: 下から上に向かう三角形（約2-4cm）
-4. ダーツを<strong>閉じる</strong>操作で立体化</p>
-<p><strong>ダーツ配置の理論</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>バストダーツの配置法則:
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── サイドダーツ: 脇の余分な生地を処理
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── アンダーダーツ: 下側の余分な生地を処理
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── 角度: バストポイントに向かって収束
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>└── 深さ: 体型に応じて調整（通常3-5cm）
+<p class="admonition-title">步骤 2-3：Dart 与立体化技法</p>
+<p><strong>构建胸部区域立体感</strong>：</p>
+<p>要用平面版型做出立体泳装，<strong>Dart（省道）</strong> 技法必不可少。</p>
+<p><strong>设置胸 Dart</strong>：
+1. 选中前身片版型
+2. 用 <strong>Edit Pattern</strong> 工具进入编辑模式
+3. 以胸点（最突出的部分）为基准：
+   - <strong>侧 Dart</strong>：从侧边指向中部的三角形（约 3-5cm）
+   - <strong>下 Dart</strong>：从下往上指向胸点的三角形（约 2-4cm）
+4. 通过<strong>闭合 Dart</strong> 实现立体化</p>
+<p><strong>Dart 布置理论</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>胸 Dart 的布置原则:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├── 侧 Dart: 处理腋下多余布量
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├── 下 Dart: 处理下侧多余布量
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├── 角度: 向胸点收束
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>└── 深度: 按体型调整（通常 3-5cm）
 </code></pre></div></p>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">ダーツ作成時の注意</p>
-<p>ダーツは微調整が重要です。深すぎると不自然に、浅すぎるとフィット不足になります。</p>
+<p class="admonition-title">创建 Dart 时的注意点</p>
+<p>Dart 的微调非常关键。太深会不自然，太浅则贴合不足。</p>
 </div>
 <div class="admonition example">
-<p class="admonition-title">ステップ 2-4: エッジ処理と開口部</p>
-<p><strong>美しい開口部の作成</strong>:</p>
-<p>水着の品質は開口部（ネック、アーム、レッグ）の美しさで決まります。</p>
-<p><strong>ネックライン（首回り）</strong>:
-1. 前後身頃のネック部分を選択
-2. <strong>Curve</strong> ツールで滑らかな曲線に調整
-3. 首にフィットするが締めつけない程度（約1-2cmのゆとり）
-4. 前後で高さを変えて（前は少し高く、後ろは低く）</p>
-<p><strong>アームホール（腕回り）</strong>:
-1. 前後身頃の腕部分を結ぶ曲線を作成
-2. 腕の動作を阻害しない十分な開口
-3. しかし大きすぎて不安定にならない絶妙なサイズ</p>
-<p><strong>レッグオープニング（脚回り）</strong>:
-1. 最も技術的に難しい部分
-2. ヒップラインから脚への自然な移行
-3. 座位での快適さと美しいシルエットの両立</p>
+<p class="admonition-title">步骤 2-4：边缘处理与开口部</p>
+<p><strong>做出优美的开口部</strong>：</p>
+<p>泳装的质量，很大程度上由开口部（领口、袖口、腿口）的美观决定。</p>
+<p><strong>Neckline（颈部周围）</strong>：
+1. 选中前后身片的领口部分
+2. 用 <strong>Curve</strong> 工具调整成顺滑曲线
+3. 让其贴合颈部但不压迫（约留 1-2cm 余量）
+4. 调整前后高低（前面稍高，后面稍低）</p>
+<p><strong>Armhole（手臂周围）</strong>：
+1. 创建连接前后身片手臂区域的曲线
+2. 开口要足以保证手臂活动
+3. 同时又不能太大以免不稳定</p>
+<p><strong>Leg Opening（腿部周围）</strong>：
+1. 这是技术上最难的部分
+2. 实现从臀线到腿部的自然过渡
+3. 兼顾坐姿舒适性与优美轮廓</p>
 </div>
-<h2 id="phase-3-60-90">🧵 Phase 3: 特殊縫製と材質設定（60-90分）<a class="headerlink" href="#phase-3-60-90" title="Permanent link">&para;</a></h2>
-<h3 id="_10">伸縮性素材の縫製技法<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<h2 id="phase-3-60-90">🧵 Phase 3: 特殊缝合与材质设置（60-90 分钟）<a class="headerlink" href="#phase-3-60-90" title="Permanent link">&para;</a></h2>
+<h3 id="_10">弹性面料的缝合技术<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 3-1: ストレッチ対応縫製ライン</p>
-<p><strong>水着特有の縫製課題</strong>:</p>
-<p>一般衣装とは異なり、水着の縫製は常に伸縮を考慮する必要があります。</p>
-<p><strong>Internal Line の特殊設定</strong>:
-1. <strong>縫製ライン作成前の準備</strong>:
-   - 両パターンが適度に伸びた状態で配置
-   - 縫製予定部分の長さを事前測定
-   - 5-10%短めの縫製ラインで設定（伸縮余裕）</p>
-<p><strong>主要縫製ライン</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>優先順序での縫製:
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>1️⃣ サイドシーム（最も重要）
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>2️⃣ ショルダーシーム（安定性確保）
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>3️⃣ ストラップ接続（後身頃との統合）
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>4️⃣ エッジ処理（開口部の仕上げ）
+<p class="admonition-title">步骤 3-1：适应 Stretch 的缝合线</p>
+<p><strong>泳装特有的缝合课题</strong>：</p>
+<p>与一般服装不同，泳装缝合必须始终考虑拉伸。</p>
+<p><strong>Internal Line 的特殊设置</strong>：
+1. <strong>创建缝合线前的准备</strong>：
+   - 将两块版型摆放在适度拉伸状态
+   - 预先测量待缝部分长度
+   - 将缝合线设置得比实际短 5-10%（为伸缩预留空间）</p>
+<p><strong>主要缝合线</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>按优先顺序缝合:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>1️⃣ Side Seam（最重要）
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>2️⃣ Shoulder Seam（确保稳定）
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>3️⃣ 肩带连接（与后身片整合）
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>4️⃣ 边缘处理（完成开口部）
 </code></pre></div></p>
-<p><strong>縫製実行</strong>:
-1. <strong>Internal Line</strong> ツールで各縫製ラインを慎重に描画
-2. <strong>Free Sew</strong> 前に必ず長さの確認
-3. エラーが出た場合は長さ調整を優先
-4. 1つずつ縫製し、その都度フィット確認</p>
+<p><strong>执行缝合</strong>：
+1. 用 <strong>Internal Line</strong> 工具谨慎绘制各条缝合线
+2. 在 <strong>Free Sew</strong> 前务必确认长度
+3. 若报错，优先调整长度
+4. 一条一条缝合，并每次都确认贴合效果</p>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">ストレッチ縫製の成功のカギ</p>
-<p>焦らず一つずつ縫製し、各段階でシミュレーション確認を行うことが成功の秘訣です。</p>
+<p class="admonition-title">Stretch 缝合成功的关键</p>
+<p>不要着急，一条一条缝，并在每个阶段确认模拟结果，是成功的关键。</p>
 </div>
-<h3 id="_11">高度な物理特性設定<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h3 id="_11">高级物理特性设置<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 3-2: 水着用物理プロパティ</p>
-<p><strong>プロ仕様の物理設定</strong>:</p>
-<p>水着の物理設定は一般衣装より遥かに複雑です。</p>
-<p><strong>基本物理特性</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>水着用推奨設定:
+<p class="admonition-title">步骤 3-2：泳装用物理属性</p>
+<p><strong>专业级物理设置</strong>：</p>
+<p>泳装的物理设置比一般服装复杂得多。</p>
+<p><strong>基础物理特性</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>泳装推荐设置:
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>┌─ Fabric Properties ─┐
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>├─ Preset: Custom     │
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>├─ Stretch-Weft: 45%  │（横方向伸縮）
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>├─ Stretch-Warp: 40%  │（縦方向伸縮）
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>├─ Shear: 30°         │（斜め方向の変形）
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>├─ Bend: 0.1          │（曲げ硬さ：柔らか目）
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>├─ Density: 0.15      │（軽量設定）
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>└─ Thickness: 0.6mm   │（薄手のリアリティ）
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>├─ Stretch-Weft: 45%  │（横向拉伸）
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>├─ Stretch-Warp: 40%  │（纵向拉伸）
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>├─ Shear: 30°         │（斜向变形）
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>├─ Bend: 0.1          │（弯曲硬度：偏柔软）
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>├─ Density: 0.15      │（轻量设置）
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>└─ Thickness: 0.6mm   │（薄料的真实感）
 </code></pre></div></p>
-<p><strong>VRChat最適化のための調整</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>パフォーマンス設定:
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>├─ Particle Distance: 10（品質と軽量化のバランス）
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>├─ Self Collision: OFF（軽量化）
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>├─ Internal Collision: Layer分けで制御
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>└─ Simulation Quality: Medium（必要最小限）
+<p><strong>为 VRChat 优化而做的调整</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>性能设置:
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>├─ Particle Distance: 10（质量与轻量化平衡）
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>├─ Self Collision: OFF（轻量化）
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>├─ Internal Collision: 通过 Layer 控制
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>└─ Simulation Quality: Medium（保持最低必要水准）
 </code></pre></div></p>
-<p><strong>設定の適用手順</strong>:
-1. 全パターンを選択（<strong>Ctrl + A</strong>）
-2. <strong>Property Editor</strong> で各値を慎重に入力
-3. <strong>Preset Save</strong> で設定を保存（再利用のため）
-4. 小さな調整は後のシミュレーションで実施</p>
+<p><strong>应用设置的步骤</strong>：
+1. 选中所有版型（<strong>Ctrl + A</strong>）
+2. 在 <strong>Property Editor</strong> 中谨慎输入各项数值
+3. 使用 <strong>Preset Save</strong> 保存设置（便于复用）
+4. 细小调整放到后续模拟阶段进行</p>
 </div>
-<h3 id="_12">多層構造の実装（オプション）<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h3 id="_12">实现多层结构（可选）<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 3-3: ライニング（裏地）の追加</p>
-<p><strong>プロ品質のための裏地構造</strong>:</p>
-<p>本格的な水着には裏地（ライニング）があり、より自然で快適な着心地を実現します。</p>
-<p><strong>ライニングの役割</strong>:
-- 透明感の制御（透けの防止）
-- より柔らかい肌触り
-- 構造的な安定性向上
-- リアリティの向上</p>
-<p><strong>実装方法</strong>:
-1. <strong>表地の複製</strong>:
-   - 現在のパターンを全選択してコピー
-   - <strong>Layer</strong> を <strong>Lining</strong> に変更
-   - 表地より2-3mm小さいサイズに調整</p>
+<p class="admonition-title">步骤 3-3：添加 Lining（里布）</p>
+<p><strong>用于专业品质的里布结构</strong>：</p>
+<p>正式泳装通常有里布（Lining），它可以带来更自然、更舒适的穿着感。</p>
+<p><strong>里布的作用</strong>：
+- 控制通透感（防止透视）
+- 让贴肤触感更柔和
+- 提高结构稳定性
+- 提升真实感</p>
+<p><strong>实现方法</strong>：
+1. <strong>复制表布</strong>：
+   - 选中当前所有版型并复制
+   - 将 <strong>Layer</strong> 改为 <strong>Lining</strong>
+   - 调整为比表布小 2-3mm</p>
 <ol>
 <li>
-<p><strong>裏地用物理設定</strong>:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>ライニング用設定:
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>├─ より柔らかい設定（Bend: 0.05）
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>├─ 軽量化（Density: 0.1）
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>├─ 薄手（Thickness: 0.3mm）
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>└─ 肌色または白色
+<p><strong>里布专用物理设置</strong>：
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Lining 设置:
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>├─ 更柔软（Bend: 0.05）
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>├─ 更轻量（Density: 0.1）
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>├─ 更薄（Thickness: 0.3mm）
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>└─ 肤色或白色
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>表地との統合</strong>:</p>
+<p><strong>与表布整合</strong>：</p>
 </li>
-<li>エッジ部分で表地と裏地を接続</li>
-<li><strong>Binding</strong> 技法で美しい仕上げ</li>
-<li>シミュレーション時の相互作用を確認</li>
+<li>在边缘位置连接表布与里布</li>
+<li>用 <strong>Binding</strong> 技法收出更漂亮的成品边</li>
+<li>确认模拟时两者的相互作用</li>
 </ol>
 </div>
 <div class="admonition info">
-<p class="admonition-title">裏地は高度なテクニック</p>
-<p>ライニングは非常に高度な技法です。最初は表地のみで完成させ、慣れてから挑戦することをお勧めします。</p>
+<p class="admonition-title">里布属于高级技术</p>
+<p>Lining 是很高级的技法。建议先只用表布完成作品，熟悉后再挑战。</p>
 </div>
-<h2 id="phase-4-60-75">🎭 Phase 4: 複雑フィッティングと調整（60-75分）<a class="headerlink" href="#phase-4-60-75" title="Permanent link">&para;</a></h2>
-<h3 id="_13">タイトフィット特有のシミュレーション<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h2 id="phase-4-60-75">🎭 Phase 4: 复杂适配与调整（60-75 分钟）<a class="headerlink" href="#phase-4-60-75" title="Permanent link">&para;</a></h2>
+<h3 id="_13">紧身版型特有的模拟<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 4-1: 初回シミュレーション実行</p>
-<p><strong>水着シミュレーションの特殊性</strong>:</p>
-<p>水着のシミュレーションは一般衣装と異なる課題があります：</p>
-<p><strong>予想される初回結果</strong>:
-- ✅ <strong>理想的ケース</strong>: 適度にフィットし自然な形状
-- ⚠️ <strong>よくある状態</strong>: 部分的にきつい・緩い箇所
-- ❌ <strong>要調整ケース</strong>: 大幅な形状破綻や貫通</p>
-<p><strong>シミュレーション実行手順</strong>:
-1. <strong>パターン配置の最終確認</strong>:
-   - 全パターンがアバター周辺に正しく配置
-   - 縫製ラインが正しく処理済み
-   - レイヤー設定が適切</p>
+<p class="admonition-title">步骤 4-1：执行首次模拟</p>
+<p><strong>泳装模拟的特殊性</strong>：</p>
+<p>泳装模拟与一般服装有不同的课题：</p>
+<p><strong>预期的首次结果</strong>：
+- ✅ <strong>理想情况</strong>：适度贴合，形状自然
+- ⚠️ <strong>常见情况</strong>：局部过紧或过松
+- ❌ <strong>需要调整</strong>：明显变形或穿透</p>
+<p><strong>模拟执行步骤</strong>：
+1. <strong>最终确认版型摆放</strong>：
+   - 所有版型都正确摆放在头像周围
+   - 缝合线已正确处理
+   - Layer 设置正确</p>
 <ol>
-<li><strong>段階的シミュレーション</strong>:</li>
-<li><strong>第1段階</strong>: <strong>スペースキー</strong>で開始、30秒程度観察</li>
-<li><strong>第2段階</strong>: 一時停止し問題点の特定</li>
-<li><strong>第3段階</strong>: 必要に応じて調整後、再実行</li>
+<li><strong>分阶段模拟</strong>：</li>
+<li><strong>第一阶段</strong>：按 <strong>空格键</strong> 开始，观察约 30 秒</li>
+<li><strong>第二阶段</strong>：暂停并定位问题</li>
+<li><strong>第三阶段</strong>：按需调整后再次执行</li>
 </ol>
-<p><strong>初回評価のチェックポイント</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>シミュレーション評価項目:
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>🔸 全体フィット: 体にきちんと沿っているか
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>🔸 バストエリア: 自然な形状を保持しているか
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>🔸 ウエストライン: 適切な締まり具合か
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>🔸 開口部: エッジが自然で美しいか
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>🔸 ストラップ: 適切な張力で機能しているか
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>🔸 動作: アバターのポーズ変更に追従するか
+<p><strong>首次评估检查点</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>模拟评估项目:
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>🔸 整体贴合: 是否顺着身体曲线
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>🔸 胸部区域: 是否保持自然形状
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>🔸 腰线: 收紧程度是否合适
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>🔸 开口部: 边缘是否自然美观
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>🔸 肩带: 是否以适当张力发挥作用
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>🔸 动作: 是否能跟随头像姿势变化
 </code></pre></div></p>
 </div>
-<h3 id="_14">高度なフィッティング調整技法<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<h3 id="_14">高级适配调整技法<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 4-2: 部分的調整技術</p>
-<p><strong>タイト衣装特有の調整方法</strong>:</p>
-<p>水着のような体にフィットする衣装では、部分的な調整が非常に重要です。</p>
-<p><strong>バストエリアの調整</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>問題: バストがきつすぎる
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>対処法:
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>├─ バストダーツを浅くする（1-2mm調整）
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>├─ サイドシームを外側に移動（2-3mm）
-<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>└─ アンダーバンドを緩める
+<p class="admonition-title">步骤 4-2：局部调整技术</p>
+<p><strong>紧身服装特有的调整方法</strong>：</p>
+<p>像泳装这种贴身服装，局部调整极其重要。</p>
+<p><strong>胸部区域调整</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>问题: 胸部太紧
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>处理:
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>├─ 将 Bust Dart 调浅（调整 1-2mm）
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>├─ 将 Side Seam 向外移动（2-3mm）
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>└─ 放松 Under Band
 <a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
-<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>問題: バストが緩すぎる
-<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>対処法:
-<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>├─ バストダーツを深くする
-<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>├─ サイドシームを内側に移動
-<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>└─ アンダーバンドを締める
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>问题: 胸部太松
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>处理:
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>├─ 加深 Bust Dart
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>├─ 将 Side Seam 向内移动
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>└─ 收紧 Under Band
 </code></pre></div></p>
-<p><strong>ウエストラインの調整</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>問題: ウエストがきつい
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>対処法:
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>├─ 全体のScale調整（105-108%）
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>├─ ウエスト部分のみ部分拡大
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>└─ 縫製ラインの微調整
+<p><strong>腰线调整</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>问题: 腰部太紧
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>处理:
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>├─ 调整整体 Scale（105-108%）
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>├─ 仅对腰部局部放大
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>└─ 微调缝合线
 <a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>問題: ウエストが緩い
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>対処法:
-<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>├─ 全体のScale調整（95-98%）
-<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>├─ ウエスト部分のみ部分縮小
-<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>└─ ダーツの追加検討
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>问题: 腰部太松
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>处理:
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>├─ 调整整体 Scale（95-98%）
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>├─ 仅对腰部局部缩小
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>└─ 考虑追加 Dart
 </code></pre></div></p>
-<p><strong>開口部の調整</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>ネック/アーム/レッグオープニング調整:
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>├─ Edge Length調整（±2-5mm程度の微調整）
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>├─ Curve Shape微調整（より自然な曲線）
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>└─ Tension調整（締めつけ感の最適化）
+<p><strong>开口部调整</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Neck / Arm / Leg Opening 调整:
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>├─ 调整 Edge Length（约 ±2-5mm 的微调）
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>├─ 微调 Curve Shape（更自然的曲线）
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>└─ 调整 Tension（优化束缚感）
 </code></pre></div></p>
 </div>
-<h3 id="_15">動作テストとパフォーマンス確認<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<h3 id="_15">动作测试与性能确认<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 4-3: 複合動作での検証</p>
-<p><strong>VRChat想定動作での検証</strong>:</p>
-<p>水着は様々な動作で使用されるため、多角的な動作検証が必須です。</p>
-<p><strong>テスト動作シーケンス</strong>:
-1. <strong>基本姿勢</strong>:
-   - 直立姿勢での全体バランス
-   - 左右対称性の確認
-   - 自然な落ち感の確認</p>
+<p class="admonition-title">步骤 4-3：在复合动作中验证</p>
+<p><strong>按 VRChat 预期动作进行验证</strong>：</p>
+<p>泳装会在多种动作下使用，因此必须从多个维度验证。</p>
+<p><strong>测试动作序列</strong>：
+1. <strong>基础姿势</strong>：
+   - 站姿下的整体平衡
+   - 确认左右对称
+   - 确认自然下垂感</p>
 <ol>
-<li><strong>腕の動作</strong>:</li>
-<li>両腕を上に上げる（バンザイポーズ）</li>
-<li>肩回り、脇周りの追従性確認</li>
-<li>腕を前に伸ばす動作</li>
+<li><strong>手臂动作</strong>：</li>
+<li>双臂上举（万岁姿势）</li>
+<li>确认肩部与腋下的跟随性</li>
+<li>双臂向前伸</li>
 <li>
-<p>アームホールの適切さ確認</p>
+<p>确认 Armhole 是否合适</p>
 </li>
 <li>
-<p><strong>体幹の動作</strong>:</p>
+<p><strong>躯干动作</strong>：</p>
 </li>
-<li>前かがみ（お辞儀）のポーズ</li>
-<li>ウエスト部分の伸縮性確認</li>
-<li>左右への体ひねり</li>
+<li>前倾（鞠躬）姿势</li>
+<li>确认腰部弹性</li>
+<li>身体左右扭转</li>
 <li>
-<p>背中開きの美しさ確認</p>
+<p>确认露背部分是否依然优美</p>
 </li>
 <li>
-<p><strong>座位のテスト</strong>（重要）:</p>
+<p><strong>坐姿测试</strong>（重要）：</p>
 </li>
-<li>椅子に座った状態のシミュレーション</li>
-<li>ヒップ・ウエスト部分の快適性</li>
-<li>不自然な突っ張りがないか確認</li>
+<li>模拟坐在椅子上的状态</li>
+<li>检查臀部与腰部舒适性</li>
+<li>确认没有不自然的拉扯</li>
 </ol>
-<p><strong>パフォーマンス監視</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>VRChat性能チェック:
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>├─ シミュレーション負荷: 安定60FPS維持
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>├─ ポリゴン数: 適正範囲内（&lt;2000ポリゴン）
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>├─ 物理演算負荷: Mediumレベル以下
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>└─ 衝突検出: 問題なく機能
+<p><strong>性能监控</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>VRChat 性能检查:
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>├─ 模拟负载: 稳定保持 60FPS
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>├─ 多边形数: 在合理范围内（&lt;2000 polygon）
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>├─ 物理演算负载: Medium 以下
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>└─ 碰撞检测: 正常工作
 </code></pre></div></p>
 </div>
-<h3 id="_16">最終品質チェックと微調整<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<h3 id="_16">最终质量检查与微调<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 4-4: プロ品質への仕上げ</p>
-<p><strong>最終調整のチェックリスト</strong>:</p>
+<p class="admonition-title">步骤 4-4：收尾到专业品质</p>
+<p><strong>最终调整检查清单</strong>：</p>
 <div class="admonition note">
-<p class="admonition-title">水着完成品質基準</p>
-<p><strong>構造・技術面</strong>:
-- [ ] 全体が自然で美しいシルエット
-- [ ] バストエリアが適切にサポートされている
-- [ ] ウエストラインが体型を美しく見せている
-- [ ] 開口部（ネック/アーム/レッグ）が自然で快適
-- [ ] 縫製ラインが目立たず綺麗
-- [ ] 後ろの背中開きが美しい</p>
-<p><strong>フィット品質</strong>:
-- [ ] 体にぴったりフィットしているが圧迫感がない
-- [ ] 動作時に不自然な引っ張りや緩みがない
-- [ ] 座位でも快適性を維持
-- [ ] アバターの個性を活かしたフィット感</p>
-<p><strong>VRChatパフォーマンス</strong>:
-- [ ] 安定した60FPSでシミュレーション実行
-- [ ] 他オブジェクトとの衝突が適切
-- [ ] 長時間の使用に耐える安定性
-- [ ] 軽量で他の衣装との組み合わせが可能</p>
+<p class="admonition-title">泳装完成质量标准</p>
+<p><strong>结构与技术面</strong>：
+- [ ] 整体轮廓自然且优美
+- [ ] 胸部区域得到适当支撑
+- [ ] 腰线能让体型显得更美观
+- [ ] 开口部（Neck / Arm / Leg）自然且舒适
+- [ ] 缝合线整洁且不突兀
+- [ ] 背部露背设计优美</p>
+<p><strong>贴合质量</strong>：
+- [ ] 紧贴身体但无压迫感
+- [ ] 动作时不会出现不自然拉扯或松垮
+- [ ] 坐姿下仍保持舒适
+- [ ] 贴合方式能体现头像本身特点</p>
+<p><strong>VRChat 性能</strong>：
+- [ ] 模拟在稳定 60FPS 下运行
+- [ ] 与其他对象的碰撞处理得当
+- [ ] 长时间使用仍保持稳定
+- [ ] 轻量，且可与其他服装组合</p>
 </div>
-<p><strong>最後の微調整テクニック</strong>:
-- <strong>色の最終調整</strong>: 肌の色と調和する色合いに
-- <strong>光沢の調整</strong>: 水着らしい適度なサテン調
-- <strong>エッジの滑らか化</strong>: すべての境界線を美しく
-- <strong>対称性の確認</strong>: 左右の完全な対称性</p>
+<p><strong>最后的微调技巧</strong>：
+- <strong>最终调整颜色</strong>：让颜色与肤色更协调
+- <strong>调整光泽</strong>：做出泳装特有的适度缎面感
+- <strong>平滑边缘</strong>：让所有边界都更优美
+- <strong>确认对称性</strong>：左右完全对称</p>
 </div>
-<h2 id="phase-5-vrchat30-45">🎨 Phase 5: VRChat最適化とエクスポート（30-45分）<a class="headerlink" href="#phase-5-vrchat30-45" title="Permanent link">&para;</a></h2>
-<h3 id="vrchat">VRChat専用パフォーマンス最適化<a class="headerlink" href="#vrchat" title="Permanent link">&para;</a></h3>
+<h2 id="phase-5-vrchat-30-45">🎨 Phase 5: VRChat 优化与导出（30-45 分钟）<a class="headerlink" href="#phase-5-vrchat-30-45" title="Permanent link">&para;</a></h2>
+<h3 id="vrchat">面向 VRChat 的性能优化<a class="headerlink" href="#vrchat" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 5-1: 高性能設定への調整</p>
-<p><strong>VRChatでの水着特有の最適化</strong>:</p>
-<p>タイトフィット衣装はVRChatで特別な配慮が必要です：</p>
-<p><strong>物理演算の最適化</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>VRChat用最適化設定:
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>┌─ パフォーマンス重視設定 ─┐
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>├─ Particle Distance: 12   │（軽量化）
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>├─ Bend: 0.2              │（適度な柔軟性）
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>├─ Self Collision: OFF     │（負荷軽減）
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>├─ Air Damping: 0.05       │（安定化）
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>└─ Simulation Quality: Mid  │（バランス型）
+<p class="admonition-title">步骤 5-1：调整到高性能设置</p>
+<p><strong>泳装在 VRChat 中的专用优化</strong>：</p>
+<p>紧身服装在 VRChat 中需要特别留意：</p>
+<p><strong>物理演算优化</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>VRChat 优化设置:
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>┌─ 注重性能的设置 ─┐
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>├─ Particle Distance: 12   │（轻量化）
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>├─ Bend: 0.2              │（适度柔韧）
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>├─ Self Collision: OFF     │（减轻负载）
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>├─ Air Damping: 0.05       │（提高稳定性）
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>└─ Simulation Quality: Mid │（平衡型）
 </code></pre></div></p>
-<p><strong>衝突検出の最適化</strong>:
-- <strong>Layer設定</strong>: 衣装専用レイヤーで分離
-- <strong>Collision Thickness</strong>: 2-3mm（適度な厚み）
-- <strong>Internal Collision</strong>: 最小限に制限
-- <strong>Avatar Collision</strong>: 適切なマージン設定</p>
-<p><strong>最適化の実行</strong>:
-1. シミュレーション実行中にパフォーマンス監視
-2. FPS低下がないか常時チェック
-3. 必要に応じてパーティクル密度を調整
-4. 安定性とリアリティのバランスを最適化</p>
+<p><strong>碰撞检测优化</strong>：
+- <strong>Layer 设置</strong>：用服装专用 Layer 分离
+- <strong>Collision Thickness</strong>：2-3mm（适度厚度）
+- <strong>Internal Collision</strong>：控制在最低范围
+- <strong>Avatar Collision</strong>：设置合理余量</p>
+<p><strong>执行优化</strong>：
+1. 在模拟运行时监控性能
+2. 持续检查是否出现 FPS 下降
+3. 如有需要，调整粒子密度
+4. 平衡稳定性与真实感</p>
 </div>
-<h3 id="_17">プロ仕様のエクスポート設定<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<h3 id="_17">专业级导出设置<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 5-2: Unity統合用エクスポート</p>
-<p><strong>水着用特別エクスポート設定</strong>:</p>
-<p>水着のような複雑な衣装では、エクスポート設定が最終品質を左右します。</p>
-<p><strong>FBXエクスポート設定</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>水着専用エクスポート設定:
+<p class="admonition-title">步骤 5-2：用于 Unity 集成的导出</p>
+<p><strong>泳装专用导出设置</strong>：</p>
+<p>像泳装这种复杂服装，导出设置会直接影响最终质量。</p>
+<p><strong>FBX 导出设置</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>泳装专用导出设置:
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>┌─ Export Parameters ─┐
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>├─ Scale: 1.0         │（Unity標準）
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>├─ Format: FBX 2020   │（最新互換性）
-<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>├─ Weld Identical: ON │（最適化）
-<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>├─ Include Avatar: OFF│（衣装のみ）
-<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>├─ Texture Export: ON │（材質込み）
-<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>└─ Animation: Cloth   │（物理アニメ）
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>├─ Scale: 1.0         │（Unity 标准）
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>├─ Format: FBX 2020   │（最新兼容性）
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>├─ Weld Identical: ON │（优化）
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>├─ Include Avatar: OFF│（只导出服装）
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>├─ Texture Export: ON │（包含材质）
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>└─ Animation: Cloth   │（布料物理动画）
 </code></pre></div></p>
-<p><strong>テクスチャとマテリアル</strong>:
-- <strong>Base Color</strong>: 水着らしい鮮やかな色
-- <strong>Metallic</strong>: 0.1-0.3（軽い光沢）
-- <strong>Roughness</strong>: 0.2-0.4（サテン調）
-- <strong>Normal Map</strong>: 軽微な質感（オプション）</p>
-<p><strong>エクスポート実行</strong>:
-1. 最終シミュレーション状態で一時停止
+<p><strong>纹理与材质</strong>：
+- <strong>Base Color</strong>：鲜明且符合泳装气质的颜色
+- <strong>Metallic</strong>：0.1-0.3（轻微光泽）
+- <strong>Roughness</strong>：0.2-0.4（缎面感）
+- <strong>Normal Map</strong>：轻微材质细节（可选）</p>
+<p><strong>执行导出</strong>：
+1. 在最终模拟状态下暂停
 2. <strong>File</strong> → <strong>Export</strong> → <strong>FBX</strong>
-3. 設定確認後エクスポート実行
-4. 保存場所: <code>VRChat衣装制作/水着/Exports/</code>
-5. ファイル名: <code>Swimwear_[アバター名]_v1.fbx</code></p>
+3. 确认设置后执行导出
+4. 保存位置：<code>VRChat服装制作/水着/Exports/</code>
+5. 文件名：<code>Swimwear_[头像名]_v1.fbx</code></p>
 </div>
-<h3 id="unity">Unity統合の準備<a class="headerlink" href="#unity" title="Permanent link">&para;</a></h3>
+<h3 id="unity">为 Unity 集成做准备<a class="headerlink" href="#unity" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 5-3: Unity用ファイル整理</p>
-<p><strong>Unity統合のためのファイル準備</strong>:</p>
-<p><strong>ファイル構造の整理</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>水着プロジェクト構造:
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>VRChat衣装制作/水着/
+<p class="admonition-title">步骤 5-3：整理 Unity 用文件</p>
+<p><strong>为 Unity 集成准备文件</strong>：</p>
+<p><strong>整理文件结构</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>泳装项目结构:
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>VRChat服装制作/水着/
 <a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>├─ Projects/
-<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>│  └─ Swimwear_Master_v1.zprj    (Marvelous Designerプロジェクト)
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>│  └─ Swimwear_Master_v1.zprj    (Marvelous Designer 项目)
 <a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>├─ Exports/
-<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>│  ├─ Swimwear_Main_v1.fbx       (メイン水着)
-<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>│  └─ Textures/                  (テクスチャ群)
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>│  ├─ Swimwear_Main_v1.fbx       (主泳装)
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>│  └─ Textures/                  (纹理文件)
 <a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>├─ References/
-<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>│  ├─ measurements.txt           (測定値記録)
-<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>│  └─ progress_notes.md          (制作記録)
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>│  ├─ measurements.txt           (测量记录)
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>│  └─ progress_notes.md          (制作记录)
 <a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>└─ Unity_Ready/
-<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>   └─ [Unity統合後のファイル]
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>   └─ [Unity 集成后的文件]
 </code></pre></div></p>
-<p><strong>Unity統合チェックリスト</strong>:
-- [ ] FBXファイルが正常にエクスポート済み
-- [ ] すべてのテクスチャが含まれている
-- [ ] 物理設定が適切に保存されている
-- [ ] ファイル名が分かりやすく整理されている
-- [ ] バックアップが複数作成されている</p>
+<p><strong>Unity 集成检查清单</strong>：
+- [ ] FBX 文件已正常导出
+- [ ] 已包含全部纹理
+- [ ] 物理设置已正确保存
+- [ ] 文件名清晰易懂
+- [ ] 已制作多个备份</p>
 </div>
-<h2 id="_18">🏆 完成と達成確認<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
-<h3 id="_19">学習目標の完全達成確認<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<h2 id="_18">🏆 完成与成果确认<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="_19">确认学习目标完全达成<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
-<p class="admonition-title">高度スキル習得の確認</p>
-<p><strong>このガイドで完全習得したスキル</strong>:</p>
-<p><strong>🎯 設計・企画スキル</strong>
-- 体型に完璧にフィットする衣装の設計理論
-- 複雑な立体構造の企画と実装
-- VRChat用途を考慮した機能設計
-- 美しさと実用性の両立</p>
-<p><strong>🛠️ 高度技術スキル</strong>
-- ダーツ技法による立体構築
-- 伸縮性素材の高度な物理設定
-- 複雑な曲線パターンの制作
-- 多層構造（ライニング）の実装</p>
-<p><strong>🔧 調整・最適化スキル</strong>
-- タイトフィット特有の調整技法
-- VRChatパフォーマンス最適化
-- 部分的問題の特定と解決
-- プロレベルの仕上げ技術</p>
-<p><strong>💼 プロジェクト管理スキル</strong>
-- 複雑プロジェクトの段階的進行
-- 品質管理とチェックリスト運用
-- ファイル管理とバックアップ戦略
-- Unity統合への準備</p>
+<p class="admonition-title">高级技能掌握确认</p>
+<p><strong>本指南中完全掌握的技能</strong>：</p>
+<p><strong>🎯 设计与规划技能</strong>
+- 完美贴合体型服装的设计理论
+- 规划并实现复杂立体结构
+- 兼顾 VRChat 用途的功能设计
+- 平衡美观与实用性</p>
+<p><strong>🛠️ 高级技术技能</strong>
+- 用 Dart 技法进行立体构建
+- 为弹性面料做高级物理设置
+- 制作复杂曲线版型
+- 实现多层结构（Lining）</p>
+<p><strong>🔧 调整与优化技能</strong>
+- 紧身服装特有的调整方法
+- VRChat 性能优化
+- 定位并解决局部问题
+- 专业级收尾技术</p>
+<p><strong>💼 项目管理技能</strong>
+- 分阶段推进复杂项目
+- 做好质量管理与清单管理
+- 管理文件与备份策略
+- 为 Unity 集成做准备</p>
 </div>
-<h2 id="_20">🚀 次のステップと更なる発展<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
-<h3 id="_21">習得スキルの応用展開<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
+<h2 id="_20">🚀 下一步与进一步发展<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h2>
+<h3 id="_21">应用已掌握的技能<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">水着制作スキルの応用分野</p>
-<p><strong>直接的な応用</strong>:
-- <strong>ボディスーツ</strong>: 全身フィットの衣装制作
-- <strong>アンダーウェア</strong>: より複雑な下着類の制作
-- <strong>スポーツウェア</strong>: 動きやすさを重視した衣装
-- <strong>フォーマルドレス</strong>: 体型を美しく見せる高級衣装</p>
-<p><strong>技術的な応用</strong>:
-- <strong>他アバター対応</strong>: 異なる体型での同技術適用
-- <strong>カスタマイゼーション</strong>: 個人の好みに合わせた調整
-- <strong>商業制作</strong>: 高品質衣装の商業利用
-- <strong>教育・指導</strong>: 他の制作者への技術伝授</p>
+<p class="admonition-title">泳装制作技术的应用方向</p>
+<p><strong>直接应用</strong>：
+- <strong>紧身衣</strong>：制作全身贴合类服装
+- <strong>内衣</strong>：制作更复杂的贴身服饰
+- <strong>运动服</strong>：优先活动性的服装
+- <strong>正式礼服</strong>：能更好展现体型的高级服装</p>
+<p><strong>技术性应用</strong>：
+- <strong>适配其他头像</strong>：将同样技术应用到不同体型
+- <strong>自定义</strong>：按个人偏好进行调整
+- <strong>商业制作</strong>：制作高质量商用品
+- <strong>教育与指导</strong>：向其他制作者传授技术</p>
 </div>
-<h3 id="_22">推奨される継続学習<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<h3 id="_22">推荐的持续学习方向<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">更なる技術向上の道筋</p>
-<p><strong>1. Unity統合の完全マスター</strong>（強く推奨）
-作成した水着をVRChatで実際に活用
-<a class="md-button md-button--primary" href="../../unity/project-setup/">Unity統合ガイドに進む →</a></p>
-<p><strong>2. 高度な物理シミュレーション</strong>
-更に複雑で美しい動きの実現
-<a class="md-button" href="../../physics/optimization/">物理最適化を深める →</a></p>
-<p><strong>3. コミュニティ活動への参加</strong>
-作品共有と他の制作者との交流
-<a class="md-button" href="../../resources/community/">コミュニティ参加 →</a></p>
-<p><strong>4. 商業制作への発展</strong>（上級者向け）
-クオリティを活かした創作活動
-<a class="md-button" href="../../resources/advanced-resources/">高度なリソース →</a></p>
+<p class="admonition-title">进一步提升技术的路径</p>
+<p><strong>1. 完整掌握 Unity 集成</strong>（强烈推荐）
+将制作好的泳装实际用于 VRChat
+<a class="md-button md-button--primary" href="../../unity/project-setup/">前往 Unity 集成指南 →</a></p>
+<p><strong>2. 更高级的物理模拟</strong>
+实现更复杂、更优美的动作
+<a class="md-button" href="../../physics/optimization/">深入物理优化 →</a></p>
+<p><strong>3. 参与社区活动</strong>
+分享作品并与其他制作者交流
+<a class="md-button" href="../../resources/community/">参与社区 →</a></p>
+<p><strong>4. 发展商业制作</strong>（适合高级用户）
+发挥作品质量优势
+<a class="md-button" href="../../resources/advanced-resources/">高级资源 →</a></p>
 </div>
-<h2 id="_23">🔧 高度なトラブルシューティング<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
-<h3 id="_24">水着制作特有の問題と解決策<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<h2 id="_23">🔧 高级故障排查<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h2>
+<h3 id="_24">泳装制作常见问题与解决方案<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
 <details class="question">
-<summary>「水着がアバターを貫通してしまう」</summary>
-<p><strong>原因分析</strong>:
-- タイトフィット設定が適切でない
-- 物理演算の衝突検出が不十分
-- パターンサイズが不適切</p>
-<p><strong>段階的解決法</strong>:</p>
-<p><strong>Step 1: 基本設定の確認</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Collision設定チェック:
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>├─ Self Collision: OFF→ON変更
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>├─ Avatar Collision: ONで適切なマージン
-<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>├─ Collision Thickness: 3-5mmに調整
-<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>└─ Internal Collision: Layer分けで制御
+<summary>“泳装会穿透头像”</summary>
+<p><strong>原因分析</strong>：
+- 紧身设置不合适
+- 物理演算中的碰撞检测不足
+- 版型尺寸不合适</p>
+<p><strong>分阶段解决方法</strong>：</p>
+<p><strong>Step 1: 检查基础设置</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Collision 设置检查:
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>├─ Self Collision: OFF→ON
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>├─ Avatar Collision: ON，并设置合适余量
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>├─ Collision Thickness: 调到 3-5mm
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>└─ Internal Collision: 通过 Layer 控制
 </code></pre></div></p>
-<p><strong>Step 2: パターンサイズ調整</strong>
-- 全体を2-3%拡大してゆとり確保
-- 特に問題箇所の部分的調整
-- ダーツの深さ調整</p>
-<p><strong>Step 3: 物理設定の見直し</strong>
-- Bend値を0.1-0.3に調整（硬すぎる場合）
-- Stretch値を少し緩く（50-60%）
-- Simulation Qualityを一時的に高品質で確認</p>
+<p><strong>Step 2: 调整版型尺寸</strong>
+- 整体放大 2-3%，留出余量
+- 局部调整问题区域
+- 调整 Dart 深度</p>
+<p><strong>Step 3: 重新检查物理设置</strong>
+- 调整 Bend 到 0.1-0.3（如果过硬）
+- 将 Stretch 稍微放宽（50-60%）
+- 临时提高 Simulation Quality 进行确认</p>
 </details>
 <details class="question">
-<summary>「動作時に水着が不自然に変形する」</summary>
-<p><strong>原因分析</strong>:
-- 伸縮性設定が実際の水着素材と差異
-- 動作に対する追従性が不適切
-- 縫製ラインの制約が強すぎる</p>
-<p><strong>解決アプローチ</strong>:</p>
-<p><strong>物理特性の再調整</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>動作追従性向上設定:
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>├─ Stretch-Weft: 50-60%（より伸縮性を上げる）
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>├─ Stretch-Warp: 45-55%（縦方向も柔軟に）
-<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>├─ Shear: 35-45°（斜め方向の自由度）
-<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>└─ Air Damping: 0.02-0.05（動きの滑らかさ）
+<summary>“动作时泳装会不自然变形”</summary>
+<p><strong>原因分析</strong>：
+- 弹性设置与真实泳装材质不匹配
+- 对动作的跟随性不足
+- 缝合线约束过强</p>
+<p><strong>解决方法</strong>：</p>
+<p><strong>重新调整物理特性</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>提升动作跟随性的设置:
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>├─ Stretch-Weft: 50-60%（提高横向弹性）
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>├─ Stretch-Warp: 45-55%（纵向也更柔软）
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>├─ Shear: 35-45°（增加斜向自由度）
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>└─ Air Damping: 0.02-0.05（让动作更顺滑）
 </code></pre></div></p>
-<p><strong>縫製ラインの再検討</strong>:
-- Internal Lineの張力調整
-- 部分的な縫製ライン削除（過度な制約回避）
-- より自然な縫製順序の採用</p>
+<p><strong>重新评估缝合线</strong>：
+- 调整 Internal Line 的张力
+- 删除局部缝合线（避免过度约束）
+- 使用更自然的缝合顺序</p>
 </details>
 <details class="question">
-<summary>「VRChatでの性能問題（FPS低下）」</summary>
-<p><strong>パフォーマンス診断</strong>:</p>
-<p><strong>負荷の特定</strong>:
-- シミュレーション負荷が主原因の確認
-- ポリゴン数の確認（目標: &lt;2000）
-- テクスチャサイズの確認（目標: 1024x1024以下）</p>
-<p><strong>段階的軽量化</strong>:</p>
-<p><strong>Level 1: 基本軽量化</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>軽量化設定:
-<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>├─ Particle Distance: 15-20（粒子密度下げる）
+<summary>“VRChat 里性能有问题（FPS 下降）”</summary>
+<p><strong>性能诊断</strong>：</p>
+<p><strong>定位负载来源</strong>：
+- 确认主要原因是否是模拟负载
+- 确认多边形数量（目标：&lt;2000）
+- 确认纹理尺寸（目标：1024x1024 以下）</p>
+<p><strong>分阶段轻量化</strong>：</p>
+<p><strong>Level 1: 基础轻量化</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>轻量化设置:
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>├─ Particle Distance: 15-20（降低粒子密度）
 <a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>├─ Simulation Quality: Low-Medium
-<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>├─ Self Collision: OFF（軽量化）
-<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>└─ Update Frequency: 30fps（半分に）
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>├─ Self Collision: OFF（减轻负载）
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>└─ Update Frequency: 30fps（减半）
 </code></pre></div></p>
-<p><strong>Level 2: 高度な軽量化</strong>
-- 複雑なカーブの簡略化
-- 不必要なダーツの削除
-- テクスチャの解像度最適化
-- LOD（レベルオブディテール）の実装検討</p>
+<p><strong>Level 2: 高级轻量化</strong>
+- 简化复杂曲线
+- 删除不必要的 Dart
+- 优化纹理分辨率
+- 考虑实现 LOD（Level of Detail）</p>
 </details>
 <details class="question">
-<summary>「他のアバターに適用時のフィット問題」</summary>
-<p><strong>アバター間差異への対応</strong>:</p>
-<p><strong>測定値の比較分析</strong>:
-- 元アバターと新アバターの詳細測定
-- 体型の特徴的差異の特定
-- フィット問題箇所の優先順位付け</p>
-<p><strong>効率的な調整方法</strong>:</p>
-<p><strong>全体調整アプローチ</strong>:
-- Scale調整による基本フィット（90-110%範囲）
-- 主要部位の部分的調整
-- ダーツ位置と深さの再設定</p>
-<p><strong>部分調整アプローチ</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>部位別調整の優先順序:
-<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>1️⃣ バストエリア（最優先）
-<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>2️⃣ ウエストライン（形状重要）
-<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>3️⃣ ヒップライン（着心地）
-<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>4️⃣ 開口部（快適性）
+<summary>“换到其他头像时贴合有问题”</summary>
+<p><strong>应对头像差异</strong>：</p>
+<p><strong>对比分析测量值</strong>：
+- 详细测量原头像与新头像
+- 找出体型差异特征
+- 为贴合问题区域设定优先级</p>
+<p><strong>高效调整方法</strong>：</p>
+<p><strong>整体调整方式</strong>：
+- 通过 Scale 做基础适配（90-110% 范围）
+- 局部调整关键区域
+- 重设 Dart 位置与深度</p>
+<p><strong>局部调整方式</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>按部位调整优先级:
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>1️⃣ 胸部区域（最高优先级）
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>2️⃣ 腰线（形状关键）
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>3️⃣ 臀线（舒适性）
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>4️⃣ 开口部（舒适性）
 </code></pre></div></p>
 </details>
-<h2 id="_25">💎 クリエイティブな発展アイデア<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h2>
-<h3 id="_26">水着デザインのバリエーション展開<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<h2 id="_25">💎 创意拓展思路<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h2>
+<h3 id="_26">展开泳装设计变体<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">制作技術を活かした創造的展開</p>
-<p><strong>色・パターンのバリエーション</strong>:
-- <strong>グラデーション</strong>: 上から下への色変化
-- <strong>幾何学パターン</strong>: ストライプ、ドット、幾何学模様
-- <strong>メタリック調</strong>: 光沢感のある未来的デザイン
-- <strong>和風パターン</strong>: 日本的な美しい柄の統合</p>
-<p><strong>構造的バリエーション</strong>:
-- <strong>カバレッジ変更</strong>: より多く覆う/より露出するデザイン
-- <strong>ストラップアレンジ</strong>: 複雑で美しいストラップワーク
-- <strong>レイヤード</strong>: 透明感のある重ね着効果
-- <strong>アシンメトリー</strong>: 左右非対称の大胆なデザイン</p>
-<p><strong>機能的発展</strong>:
-- <strong>動的要素</strong>: 水中での特別な動きの演出
-- <strong>環境連動</strong>: VRChatワールドとの連携効果
-- <strong>季節対応</strong>: 夏用、リゾート用などの特化デザイン
-- <strong>アクセサリ統合</strong>: 帽子、サングラス等との完全統合</p>
+<p class="admonition-title">利用制作技术进行创意扩展</p>
+<p><strong>颜色与图案变体</strong>：
+- <strong>渐变</strong>：从上到下的颜色变化
+- <strong>几何图案</strong>：条纹、圆点、几何纹样
+- <strong>金属风</strong>：具有光泽的未来感设计
+- <strong>和风图案</strong>：融入日式图样</p>
+<p><strong>结构变体</strong>：
+- <strong>改变覆盖范围</strong>：做得更保守 / 更开放
+- <strong>肩带变化</strong>：更复杂、更优美的肩带设计
+- <strong>分层效果</strong>：加入透明叠穿效果
+- <strong>不对称</strong>：大胆的左右非对称设计</p>
+<p><strong>功能性拓展</strong>：
+- <strong>动态元素</strong>：表现水中动作的特殊效果
+- <strong>环境联动</strong>：与 VRChat 世界联动
+- <strong>季节适配</strong>：夏季、度假等专用设计
+- <strong>整合配件</strong>：与帽子、太阳镜等完全组合</p>
 </div>
-<h3 id="_27">プロフェッショナルな活用<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
-<p><strong>商業制作への発展可能性</strong>:</p>
+<h3 id="_27">专业化应用<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<p><strong>面向商业制作的发展可能</strong>：</p>
 <ol>
 <li>
-<p><strong>カスタム制作サービス</strong>
-   個別のアバターに合わせた高品質水着制作</p>
+<p><strong>定制制作服务</strong>
+   为单个头像制作高质量泳装</p>
 </li>
 <li>
-<p><strong>テンプレート販売</strong>
-   他の制作者が活用できる高品質ベースの提供</p>
+<p><strong>销售模板</strong>
+   提供其他制作者可使用的高质量基础模板</p>
 </li>
 <li>
-<p><strong>教育コンテンツ化</strong>
-   この技術を他の人に教える活動</p>
+<p><strong>制作教学内容</strong>
+   将这项技术教给其他人</p>
 </li>
 <li>
-<p><strong>VRChatイベント用衣装</strong>
-   特別なイベント用高品質衣装の制作</p>
+<p><strong>VRChat 活动服装</strong>
+   制作活动用的高质量专属服装</p>
 </li>
 </ol>
 <div class="admonition success">
-<p class="admonition-title">水着制作完全マスター達成！</p>
-<p>おめでとうございます！あなたは今、Marvelous Designerでの最も高度で技術的に挑戦的な衣装制作をマスターしました。</p>
-<p>この水着制作で習得した技術は、体にフィットするあらゆる衣装制作に応用でき、VRChat衣装制作者としての最高レベルのスキルを身につけたことになります。</p>
-<p><strong>あなたは今、完全なプロフェッショナルレベルの制作技術を保有しています。</strong></p>
-<p>自信を持って、より複雑で美しい衣装制作に挑戦し、または他の制作者との知識共有や商業活動など、幅広い創作活動に発展させてください！</p>
+<p class="admonition-title">泳装制作完全掌握达成！</p>
+<p>恭喜，你已经掌握了在 Marvelous Designer 中最具技术挑战性的服装制作之一。</p>
+<p>在泳装制作中掌握的技术，可以应用到所有贴身服装制作，这意味着你已经具备了 VRChat 服装制作者的顶级技能。</p>
+<p><strong>你现在已经拥有完整的专业级制作能力。</strong></p>
+<p>带着信心继续挑战更复杂、更精美的服装制作，或者将这项能力扩展到与其他制作者分享知识、开展商业活动等更广泛的创作方向。</p>
 </div>
-<h2 id="_28">🌟 完成作品ギャラリーと次への挑戦<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h2>
-<h3 id="_29">作品の記録と共有<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
-<p><strong>完成作品の適切な記録</strong>:</p>
+<h2 id="_28">🌟 成品展示与下一步挑战<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h2>
+<h3 id="_29">记录与分享作品<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<p><strong>正确记录完成作品</strong>：</p>
 <ul>
-<li><strong>多角度からのスクリーンショット撮影</strong></li>
-<li><strong>動作中の動画記録</strong>（VRChat内での実際の使用）</li>
-<li><strong>制作プロセスの記録</strong>（今後の参考用）</li>
-<li><strong>技術的な設定値の保存</strong>（他アバター適用用）</li>
+<li><strong>从多个角度截图</strong></li>
+<li><strong>记录动作中的视频</strong>（在 VRChat 中的实际使用）</li>
+<li><strong>记录制作流程</strong>（供未来参考）</li>
+<li><strong>保存技术设置参数</strong>（用于适配其他头像）</li>
 </ul>
-<p><strong>コミュニティでの共有</strong>:</p>
-<p>創作コミュニティでの作品共有は、制作者としての成長と他の制作者への貢献という意味で非常に価値があります。</p>
+<p><strong>在社区中分享</strong>：</p>
+<p>在创作社区中分享作品，对制作者成长与回馈其他制作者都非常有价值。</p>
 <ul>
-<li>技術的な成果の共有</li>
-<li>制作過程で得た知見の提供</li>
-<li>他の制作者との技術交流</li>
-<li>フィードバックの収集と向上</li>
+<li>分享技术成果</li>
+<li>提供制作过程中获得的经验</li>
+<li>与其他制作者交流技术</li>
+<li>收集反馈并继续优化</li>
 </ul>
-<p>この水着制作の完成により、あなたのMarvelous Designer技術は最高レベルに到達しました。これからは創造性と個性を活かした、オリジナリティ溢れる作品制作の時代です！</p>
+<p>通过完成这次泳装制作，你的 Marvelous Designer 技术已经达到顶级水平。接下来就是发挥创造力与个性，创作更具原创性的作品。</p>
 
 
 
@@ -3035,10 +3370,10 @@
     
       
   <span class="md-source-file__fact">
-    <span class="md-icon" title="最終更新日">
+    <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年8月10日 07:58:43 JST">2025年8月10日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年3月18日 20:55:00 CST">2026年3月18日</span>
   </span>
 
     
@@ -3047,8 +3382,6 @@
     
   </aside>
 
-
-  
 
 
 
@@ -3066,7 +3399,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  ページトップへ戻る
+  回到页面顶部
 </button>
         
       </main>
@@ -3084,14 +3417,15 @@
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
     
     
     <a href="https://github.com/username/vrchat-garment-guide" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -3108,10 +3442,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       

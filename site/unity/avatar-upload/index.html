@@ -1,18 +1,18 @@
 
 <!doctype html>
-<html lang="ja" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Marvelous DesignerとUnityを使ったVRChat衣装制作の完全初心者向けガイド">
+        <meta name="description" content="使用 Marvelous Designer 和 Unity 制作 VRChat 服装的简体中文入门指南">
       
       
         <meta name="author" content="VRChat Garment Creation Team">
       
       
-        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/unity/avatar-upload/">
+        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/zh-CN/unity/avatar-upload/">
       
       
         <link rel="prev" href="../fbx-to-vrchat-complete-guide/">
@@ -21,19 +21,22 @@
         <link rel="next" href="../../resources/useful-links/">
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>アバターアップロード - VRChat衣装制作完全ガイド</title>
+        <title>头像上传 - VRChat 服装制作完整指南</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,8 +50,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Noto Sans JP";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -57,18 +60,7 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
 
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
-
-    
     
     
   <meta name="google-site-verification" content="2MW4wZaZsAsSzYUYyh514GoRY2nDaBF1VcITV1P3xSk" />
@@ -93,7 +85,7 @@
       
         
         <a href="#vrchat" class="md-skip">
-          コンテンツにスキップ
+          跳转至
         </a>
       
     </div>
@@ -101,16 +93,12 @@
       
     </div>
     
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-      </div>
-    
     
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-header__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-header__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -124,13 +112,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            VRChat衣装制作完全ガイド
+            VRChat 服装制作完整指南
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              アバターアップロード
+              头像上传
             
           </span>
         </div>
@@ -143,9 +131,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -153,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -178,16 +166,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="検索">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -200,7 +188,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            検索を初期化
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -212,10 +200,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+        <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -233,7 +221,7 @@
         
           
             
-<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -249,7 +237,7 @@
   
     
   
-  ホーム
+  首页
 
       </a>
     </li>
@@ -268,7 +256,7 @@
           
   
   
-  環境設定
+  环境设置
 
         </a>
       </li>
@@ -288,7 +276,7 @@
           
   
   
-  基礎知識
+  基础知识
 
         </a>
       </li>
@@ -308,7 +296,7 @@
           
   
   
-  作業手順
+  工作流程
 
         </a>
       </li>
@@ -328,7 +316,7 @@
           
   
   
-  衣装別制作ガイド
+  分类服装制作指南
 
         </a>
       </li>
@@ -348,7 +336,7 @@
           
   
   
-  物理設定・最適化
+  物理设置与优化
 
         </a>
       </li>
@@ -368,7 +356,7 @@
           
   
   
-  最適化・品質向上
+  优化与质量提升
 
         </a>
       </li>
@@ -388,7 +376,7 @@
           
   
   
-  高度な技術・MD2025
+  高级技术与 MD2025
 
         </a>
       </li>
@@ -410,7 +398,7 @@
           
   
   
-  Unity統合
+  Unity 集成
 
         </a>
       </li>
@@ -430,7 +418,7 @@
           
   
   
-  リソース・参考資料
+  资源与参考资料
 
         </a>
       </li>
@@ -460,22 +448,22 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-nav__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-nav__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    VRChat衣装制作完全ガイド
+    VRChat 服装制作完整指南
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+      <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -497,9 +485,14 @@
   
   
   <span class="md-ellipsis">
-    ホーム
+    
+  
+    首页
+  
+
     
   </span>
+  
   
 
       </a>
@@ -537,9 +530,14 @@
   
   
   <span class="md-ellipsis">
-    環境設定
+    
+  
+    环境设置
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -548,7 +546,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            環境設定
+            
+  
+    环境设置
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -564,9 +566,14 @@
   
   
   <span class="md-ellipsis">
-    ソフトウェア確認
+    
+  
+    软件确认
+  
+
     
   </span>
+  
   
 
       </a>
@@ -587,9 +594,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designer初回起動
+    
+  
+    Marvelous Designer 首次启动
+  
+
     
   </span>
+  
   
 
       </a>
@@ -610,9 +622,14 @@
   
   
   <span class="md-ellipsis">
-    Unity・VRChat SDK設定
+    
+  
+    Unity 与 VRChat SDK 设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -658,9 +675,14 @@
   
   
   <span class="md-ellipsis">
-    基礎知識
+    
+  
+    基础知识
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -669,7 +691,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            基礎知識
+            
+  
+    基础知识
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -685,9 +711,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designerインターフェース
+    
+  
+    Marvelous Designer 界面
+  
+
     
   </span>
+  
   
 
       </a>
@@ -708,9 +739,14 @@
   
   
   <span class="md-ellipsis">
-    AI機能ガイド
+    
+  
+    AI 功能指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -731,9 +767,14 @@
   
   
   <span class="md-ellipsis">
-    3Dモデリング基本概念
+    
+  
+    3D 建模基础概念
+  
+
     
   </span>
+  
   
 
       </a>
@@ -754,9 +795,14 @@
   
   
   <span class="md-ellipsis">
-    制作工程全体像
+    
+  
+    制作流程全貌
+  
+
     
   </span>
+  
   
 
       </a>
@@ -777,9 +823,14 @@
   
   
   <span class="md-ellipsis">
-    ファイル形式の理解
+    
+  
+    文件格式的理解
+  
+
     
   </span>
+  
   
 
       </a>
@@ -800,9 +851,14 @@
   
   
   <span class="md-ellipsis">
-    専門用語集
+    
+  
+    术语表
+  
+
     
   </span>
+  
   
 
       </a>
@@ -848,9 +904,14 @@
   
   
   <span class="md-ellipsis">
-    作業手順
+    
+  
+    工作流程
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -859,7 +920,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            作業手順
+            
+  
+    工作流程
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -875,9 +940,14 @@
   
   
   <span class="md-ellipsis">
-    アバターの読み込み
+    
+  
+    导入头像
+  
+
     
   </span>
+  
   
 
       </a>
@@ -898,9 +968,14 @@
   
   
   <span class="md-ellipsis">
-    衣装のフィッティング
+    
+  
+    现有服装适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -921,9 +996,14 @@
   
   
   <span class="md-ellipsis">
-    モジュラー衣装システム
+    
+  
+    模块化服装系统
+  
+
     
   </span>
+  
   
 
       </a>
@@ -944,9 +1024,14 @@
   
   
   <span class="md-ellipsis">
-    非対応アバター改変
+    
+  
+    非兼容头像改造
+  
+
     
   </span>
+  
   
 
       </a>
@@ -967,9 +1052,14 @@
   
   
   <span class="md-ellipsis">
-    新規衣装制作手順
+    
+  
+    新建服装制作
+  
+
     
   </span>
+  
   
 
       </a>
@@ -990,9 +1080,14 @@
   
   
   <span class="md-ellipsis">
-    よくある問題と対処
+    
+  
+    常见问题与处理
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1038,9 +1133,14 @@
   
   
   <span class="md-ellipsis">
-    衣装別制作ガイド
+    
+  
+    分类服装制作指南
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1049,7 +1149,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            衣装別制作ガイド
+            
+  
+    分类服装制作指南
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1065,9 +1169,14 @@
   
   
   <span class="md-ellipsis">
-    Tシャツ（初心者向け）
+    
+  
+    T 恤（适合初学者）
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1088,9 +1197,14 @@
   
   
   <span class="md-ellipsis">
-    スカート
+    
+  
+    裙子
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1111,9 +1225,14 @@
   
   
   <span class="md-ellipsis">
-    ドレス
+    
+  
+    礼服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1134,9 +1253,14 @@
   
   
   <span class="md-ellipsis">
-    カジュアル服
+    
+  
+    休闲服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1157,9 +1281,14 @@
   
   
   <span class="md-ellipsis">
-    ワンピース
+    
+  
+    连衣裙
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1180,9 +1309,14 @@
   
   
   <span class="md-ellipsis">
-    水着
+    
+  
+    泳装
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1228,9 +1362,14 @@
   
   
   <span class="md-ellipsis">
-    物理設定・最適化
+    
+  
+    物理设置与优化
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1239,7 +1378,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            物理設定・最適化
+            
+  
+    物理设置与优化
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1255,9 +1398,14 @@
   
   
   <span class="md-ellipsis">
-    布の物理特性設定
+    
+  
+    布料物理特性设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1278,9 +1426,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス最適化
+    
+  
+    性能优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1326,9 +1479,14 @@
   
   
   <span class="md-ellipsis">
-    最適化・品質向上
+    
+  
+    优化与质量提升
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1337,7 +1495,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            最適化・品質向上
+            
+  
+    优化与质量提升
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1353,9 +1515,14 @@
   
   
   <span class="md-ellipsis">
-    Very Poor脱却完全ガイド
+    
+  
+    摆脱 Very Poor 完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1376,9 +1543,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス分析ツール
+    
+  
+    性能分析工具
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1399,9 +1571,14 @@
   
   
   <span class="md-ellipsis">
-    モバイル完全対応
+    
+  
+    移动端完全适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1447,9 +1624,14 @@
   
   
   <span class="md-ellipsis">
-    高度な技術・MD2025
+    
+  
+    高级技术与 MD2025
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1458,7 +1640,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            高度な技術・MD2025
+            
+  
+    高级技术与 MD2025
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1474,9 +1660,14 @@
   
   
   <span class="md-ellipsis">
-    MD2025新機能完全ガイド
+    
+  
+    MD2025 新功能完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1497,9 +1688,14 @@
   
   
   <span class="md-ellipsis">
-    EveryWear統合ワークフロー
+    
+  
+    EveryWear 集成工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1520,9 +1716,14 @@
   
   
   <span class="md-ellipsis">
-    IK-Joint最適化
+    
+  
+    IK-Joint 优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1571,9 +1772,14 @@
   
   
   <span class="md-ellipsis">
-    Unity統合
+    
+  
+    Unity 集成
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1582,7 +1788,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Unity統合
+            
+  
+    Unity 集成
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1598,9 +1808,14 @@
   
   
   <span class="md-ellipsis">
-    Unityプロジェクト設定
+    
+  
+    Unity 项目设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1621,9 +1836,14 @@
   
   
   <span class="md-ellipsis">
-    FBXからVRChatまでの完全ワークフロー
+    
+  
+    从 FBX 到 VRChat 的完整工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1653,9 +1873,14 @@
   
   
   <span class="md-ellipsis">
-    アバターアップロード
+    
+  
+    头像上传
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1666,9 +1891,14 @@
   
   
   <span class="md-ellipsis">
-    アバターアップロード
+    
+  
+    头像上传
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1677,7 +1907,7 @@
 
   
 
-<nav class="md-nav md-nav--secondary" aria-label="このページの内容">
+<nav class="md-nav md-nav--secondary" aria-label="本页内容">
   
   
   
@@ -1686,24 +1916,28 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      このページの内容
+      本页内容
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 アップロードプロセス概要
+      
+        🎯 上传流程概览
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎯 アップロードプロセス概要">
+    <nav class="md-nav" aria-label="🎯 上传流程概览">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#vrchat_1" class="md-nav__link">
     <span class="md-ellipsis">
-      VRChatアップロードの仕組み
+      
+        VRChat 上传机制
+      
     </span>
   </a>
   
@@ -1717,17 +1951,21 @@
         <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      🔍 ステップ1: 最終品質チェック
+      
+        🔍 步骤 1: 最终质量检查
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔍 ステップ1: 最終品質チェック">
+    <nav class="md-nav" aria-label="🔍 步骤 1: 最终质量检查">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      アバター状態の最終確認
+      
+        最终确认头像状态
+      
     </span>
   </a>
   
@@ -1736,7 +1974,9 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      アバター設定の最終調整
+      
+        最终调整头像设置
+      
     </span>
   </a>
   
@@ -1750,17 +1990,21 @@
         <li class="md-nav__item">
   <a href="#2-vrchat" class="md-nav__link">
     <span class="md-ellipsis">
-      📤 ステップ2: VRChatへのアップロード
+      
+        📤 步骤 2: 上传到 VRChat
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📤 ステップ2: VRChatへのアップロード">
+    <nav class="md-nav" aria-label="📤 步骤 2: 上传到 VRChat">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#build-publish" class="md-nav__link">
     <span class="md-ellipsis">
-      Build &amp; Publish の実行
+      
+        执行 Build &amp; Publish
+      
     </span>
   </a>
   
@@ -1769,7 +2013,9 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      アバター情報の設定
+      
+        设置头像信息
+      
     </span>
   </a>
   
@@ -1778,7 +2024,9 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      アップロード完了と確認
+      
+        上传完成与确认
+      
     </span>
   </a>
   
@@ -1792,17 +2040,21 @@
         <li class="md-nav__item">
   <a href="#3-vrchat" class="md-nav__link">
     <span class="md-ellipsis">
-      🎮 ステップ3: VRChat内での動作テスト
+      
+        🎮 步骤 3: 在 VRChat 中测试运行
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎮 ステップ3: VRChat内での動作テスト">
+    <nav class="md-nav" aria-label="🎮 步骤 3: 在 VRChat 中测试运行">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#vrchat_2" class="md-nav__link">
     <span class="md-ellipsis">
-      VRChatでのアバター選択
+      
+        在 VRChat 中选择头像
+      
     </span>
   </a>
   
@@ -1811,7 +2063,9 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      基本動作の確認
+      
+        确认基础动作
+      
     </span>
   </a>
   
@@ -1825,17 +2079,21 @@
         <li class="md-nav__item">
   <a href="#4" class="md-nav__link">
     <span class="md-ellipsis">
-      👥 ステップ4: 他者との相互確認（オプション）
+      
+        👥 步骤 4: 与他人互相确认（可选）
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="👥 ステップ4: 他者との相互確認（オプション）">
+    <nav class="md-nav" aria-label="👥 步骤 4: 与他人互相确认（可选）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      フレンドとの確認
+      
+        与好友一起确认
+      
     </span>
   </a>
   
@@ -1849,17 +2107,21 @@
         <li class="md-nav__item">
   <a href="#5" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 ステップ5: 問題対処と品質改善
+      
+        🔧 步骤 5: 处理问题与提升质量
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔧 ステップ5: 問題対処と品質改善">
+    <nav class="md-nav" aria-label="🔧 步骤 5: 处理问题与提升质量">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      よくある問題の対処
+      
+        处理常见问题
+      
     </span>
   </a>
   
@@ -1868,7 +2130,9 @@
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      バージョン管理と改善
+      
+        版本管理与改进
+      
     </span>
   </a>
   
@@ -1882,7 +2146,9 @@
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 完全達成チェックリスト
+      
+        ✅ 完整达成检查清单
+      
     </span>
   </a>
   
@@ -1891,17 +2157,21 @@
         <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      🎉 プロジェクト完全達成！
+      
+        🎉 项目完整达成！
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎉 プロジェクト完全達成！">
+    <nav class="md-nav" aria-label="🎉 项目完整达成！">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      習得したスキルの総まとめ
+      
+        已掌握技能总览
+      
     </span>
   </a>
   
@@ -1915,17 +2185,21 @@
         <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 次の挑戦と継続学習
+      
+        🚀 下一项挑战与持续学习
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🚀 次の挑戦と継続学習">
+    <nav class="md-nav" aria-label="🚀 下一项挑战与持续学习">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      スキルアップの方向性
+      
+        提升技能的方向
+      
     </span>
   </a>
   
@@ -1934,7 +2208,9 @@
           <li class="md-nav__item">
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      推奨次ステップ
+      
+        推荐的下一步
+      
     </span>
   </a>
   
@@ -1948,17 +2224,21 @@
         <li class="md-nav__item">
   <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 継続的なトラブルシューティング
+      
+        🔧 持续性的故障排查
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔧 継続的なトラブルシューティング">
+    <nav class="md-nav" aria-label="🔧 持续性的故障排查">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_17" class="md-nav__link">
     <span class="md-ellipsis">
-      長期運用での注意点
+      
+        长期使用时的注意点
+      
     </span>
   </a>
   
@@ -1972,17 +2252,21 @@
         <li class="md-nav__item">
   <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 参考リソースと継続学習
+      
+        📚 参考资源与持续学习
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📚 参考リソースと継続学習">
+    <nav class="md-nav" aria-label="📚 参考资源与持续学习">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
-      公式リソース
+      
+        官方资源
+      
     </span>
   </a>
   
@@ -1991,7 +2275,9 @@
           <li class="md-nav__item">
   <a href="#_20" class="md-nav__link">
     <span class="md-ellipsis">
-      コミュニティリソース
+      
+        社区资源
+      
     </span>
   </a>
   
@@ -2005,7 +2291,9 @@
         <li class="md-nav__item">
   <a href="#_21" class="md-nav__link">
     <span class="md-ellipsis">
-      💌 最後に
+      
+        💌 最后
+      
     </span>
   </a>
   
@@ -2057,9 +2345,14 @@
   
   
   <span class="md-ellipsis">
-    リソース・参考資料
+    
+  
+    资源与参考资料
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2068,7 +2361,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            リソース・参考資料
+            
+  
+    资源与参考资料
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2084,9 +2381,14 @@
   
   
   <span class="md-ellipsis">
-    有用なリンク集
+    
+  
+    实用链接集
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2107,9 +2409,14 @@
   
   
   <span class="md-ellipsis">
-    CLO-SET Connect・EveryWear
+    
+  
+    CLO-SET Connect 与 EveryWear
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2130,9 +2437,14 @@
   
   
   <span class="md-ellipsis">
-    コミュニティ情報
+    
+  
+    社区信息
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2153,9 +2465,14 @@
   
   
   <span class="md-ellipsis">
-    上級者向けリソース
+    
+  
+    进阶资源
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2176,9 +2493,14 @@
   
   
   <span class="md-ellipsis">
-    更新履歴
+    
+  
+    更新记录
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2204,6 +2526,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2213,399 +2536,399 @@
   
 
 
-<h1 id="vrchat">VRChatアバターアップロードとテスト手順<a class="headerlink" href="#vrchat" title="Permanent link">&para;</a></h1>
+<h1 id="vrchat">VRChat 头像上传与测试步骤<a class="headerlink" href="#vrchat" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
-<p class="admonition-title">ガイド情報</p>
-<p><strong>所要時間</strong>: 約45分 | <strong>難易度</strong>: 初心者向け | <strong>重要度</strong>: 最終ゴール達成</p>
+<p class="admonition-title">指南信息</p>
+<p><strong>预计耗时</strong>: 约 45 分钟 | <strong>难度</strong>: 适合初学者 | <strong>重要度</strong>: 达成最终目标</p>
 </div>
-<p><strong>このページの目的</strong>: Unity統合が完了したアバターを実際にVRChatにアップロードし、制作した衣装を着用してVRChat内で動作確認を行います。</p>
+<p><strong>本页目标</strong>: 将已经在 Unity 中集成完成的头像实际上传到 VRChat，并在 VRChat 内穿上自己制作的服装进行运行确认。</p>
 <div class="admonition success">
-<p class="admonition-title">このガイドの最終成果</p>
+<p class="admonition-title">本指南的最终成果</p>
 <ul>
-<li>✅ 制作した衣装をVRChat内で実際に着用</li>
-<li>✅ 他のユーザーから見える状態での動作確認</li>
-<li>✅ VRChat衣装制作の完全なワークフロー習得</li>
-<li>✅ 「作品を世界に公開する」という達成感</li>
+<li>✅ 在 VRChat 中实际穿上自己制作的服装</li>
+<li>✅ 确认其他用户也能看到你的成品</li>
+<li>✅ 掌握 VRChat 服装制作的完整工作流</li>
+<li>✅ 获得“把作品公开给世界”的成就感</li>
 </ul>
 </div>
 <div class="admonition info">
-<p class="admonition-title">事前準備</p>
+<p class="admonition-title">事前准备</p>
 <ul>
-<li><a href="../project-setup/">Unity統合プロジェクト設定</a>が完了済み</li>
-<li><a href="../fbx-to-vrchat-complete-guide/">FBXからVRChatまでの完全ワークフロー</a>が完了済み</li>
-<li>VRChatアカウントでログイン済み</li>
-<li>VRChat Trust Rankが「New User」以上</li>
-<li>Unity内でBuild &amp; Testが成功済み</li>
+<li><a href="../project-setup/">Unity 集成项目设置</a>已完成</li>
+<li><a href="../fbx-to-vrchat-complete-guide/">从 FBX 到 VRChat 的完整工作流</a>已完成</li>
+<li>已登录 VRChat 账号</li>
+<li>VRChat Trust Rank 已达到 “New User” 或更高</li>
+<li>已在 Unity 中成功执行 Build &amp; Test</li>
 </ul>
 </div>
-<h2 id="_1">🎯 アップロードプロセス概要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="vrchat_1">VRChatアップロードの仕組み<a class="headerlink" href="#vrchat_1" title="Permanent link">&para;</a></h3>
+<h2 id="_1">🎯 上传流程概览<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="vrchat_1">VRChat 上传机制<a class="headerlink" href="#vrchat_1" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">アップロードの全体像</p>
-<p><strong>ローカルテスト → アップロード → 公開確認</strong></p>
-<p><strong>1. 最終確認段階</strong>
-- Unity内での最終チェック
-- Performance基準の確認
-- アバター情報の設定</p>
-<p><strong>2. アップロード段階</strong>
-- VRChat SDK Build &amp; Publish
-- サムネイル画像の設定
-- 公開範囲の選択</p>
-<p><strong>3. 確認段階</strong>
-- VRChat内での動作テスト
-- 他者視点での見た目確認
-- 問題があれば修正・再アップロード</p>
+<p class="admonition-title">上传全貌</p>
+<p><strong>本地测试 → 上传 → 公开确认</strong></p>
+<p><strong>1. 最终确认阶段</strong>
+- 在 Unity 中做最后检查
+- 确认 Performance 标准
+- 设置头像信息</p>
+<p><strong>2. 上传阶段</strong>
+- 使用 VRChat SDK Build &amp; Publish
+- 设置缩略图
+- 选择公开范围</p>
+<p><strong>3. 确认阶段</strong>
+- 在 VRChat 中测试运行
+- 从他人视角确认外观
+- 如有问题则修正并重新上传</p>
 </div>
-<h2 id="1">🔍 ステップ1: 最終品質チェック<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<h3 id="_2">アバター状態の最終確認<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h2 id="1">🔍 步骤 1: 最终质量检查<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">最终确认头像状态<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 1-1: Unity内での最終チェック</p>
-<p><strong>見た目の最終確認</strong>:
-1. <strong>Scene View</strong> でアバターを360度確認
-2. 衣装のフィット感が良好であることを確認
-3. マテリアルとテクスチャが正しく表示されているか確認
-4. 不自然な貫通や浮きがないことを確認</p>
-<p><strong>Animation確認</strong>:
-1. <strong>Scene View</strong> でアバターを選択
-2. <strong>Inspector</strong> → <strong>Animator</strong> の状態確認
-3. 基本ポーズで不自然な変形がないことを確認</p>
+<p class="admonition-title">步骤 1-1: 在 Unity 中做最后检查</p>
+<p><strong>最终确认外观</strong>:
+1. 在 <strong>Scene View</strong> 中 360 度查看头像
+2. 确认服装贴合良好
+3. 确认材质和纹理显示正确
+4. 确认没有不自然的穿插或悬空</p>
+<p><strong>确认 Animation</strong>:
+1. 在 <strong>Scene View</strong> 中选择头像
+2. 在 <strong>Inspector</strong> → <strong>Animator</strong> 中确认状态
+3. 确认基础姿势下没有不自然变形</p>
 </div>
 <div class="admonition example">
-<p class="admonition-title">ステップ 1-2: VRChat SDK性能評価</p>
-<p><strong>Performance Ratingの確認</strong>:
-1. <strong>「VRChat SDK」</strong> → <strong>「Show Control Panel」</strong>
-2. <strong>「Builder」</strong> タブでアバターを選択
-3. <strong>Performance Rating</strong> を確認：</p>
-<p><strong>PC版の基準</strong>:
-- <strong>Excellent</strong>: 緑色 - 全ての項目が推奨範囲内
-- <strong>Good</strong>: 黄色 - ほぼ推奨範囲内
-- <strong>Medium</strong>: オレンジ色 - やや重い
-- <strong>Poor</strong>: 赤色 - 最適化が必要</p>
-<p><strong>Quest版対応の場合</strong>:
-- より厳格な基準（ポリゴン数7,500以下など）
-- Quest対応が不要な場合はPC版基準でOK</p>
+<p class="admonition-title">步骤 1-2: 使用 VRChat SDK 评估性能</p>
+<p><strong>确认 Performance Rating</strong>:
+1. <strong>“VRChat SDK”</strong> → <strong>“Show Control Panel”</strong>
+2. 在 <strong>“Builder”</strong> 标签页中选择头像
+3. 确认 <strong>Performance Rating</strong>：</p>
+<p><strong>PC 版标准</strong>:
+- <strong>Excellent</strong>: 绿色 - 所有项目都在推荐范围内
+- <strong>Good</strong>: 黄色 - 基本都在推荐范围内
+- <strong>Medium</strong>: 橙色 - 稍重
+- <strong>Poor</strong>: 红色 - 需要优化</p>
+<p><strong>如果要支持 Quest 版</strong>:
+- 标准会更严格（例如多边形数量需低于 7,500）
+- 如果不需要支持 Quest，可按 PC 版标准判断</p>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">Performance評価について</p>
-<p>「Poor」評価でもアップロードは可能ですが、他のユーザーからアバターが見えなくなる可能性があります。「Good」以上を目指しましょう。</p>
+<p class="admonition-title">关于 Performance 评估</p>
+<p>即使是 “Poor” 仍然可以上传，但其他用户有可能无法看到你的头像。建议尽量达到 “Good” 以上。</p>
 </div>
-<h3 id="_3">アバター設定の最終調整<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_3">最终调整头像设置<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 1-3: Avatar Descriptor最終設定</p>
-<p><strong>重要設定の確認</strong>:
-1. <strong>View Position</strong> が適切に設定されているか
-   - アバターの目の位置に緑の球がある
-   - 高さ: 1.6〜1.8m程度が一般的
-2. <strong>Lip Sync</strong> が設定されているか
-   - Jaw Bone が正しく選択されている
-3. <strong>Eye Look</strong> の設定（オプション）
-   - 目の動きを自然にしたい場合</p>
-<p><strong>アニメーション設定</strong>:
-- <strong>Playable Layers</strong> はデフォルトのままでOK
-- 特別な動作が不要であれば変更不要</p>
+<p class="admonition-title">步骤 1-3: Avatar Descriptor 最终设置</p>
+<p><strong>确认重要设置</strong>:
+1. <strong>View Position</strong> 是否设置正确
+   - 绿色球位于头像眼睛位置
+   - 高度一般约为 1.6～1.8m
+2. <strong>Lip Sync</strong> 是否已设置
+   - Jaw Bone 已被正确选中
+3. <strong>Eye Look</strong> 设置（可选）
+   - 如果希望眼球运动更自然</p>
+<p><strong>动画设置</strong>:
+- <strong>Playable Layers</strong> 保持默认即可
+- 如果不需要特殊动作，通常无需修改</p>
 </div>
-<h2 id="2-vrchat">📤 ステップ2: VRChatへのアップロード<a class="headerlink" href="#2-vrchat" title="Permanent link">&para;</a></h2>
-<h3 id="build-publish">Build &amp; Publish の実行<a class="headerlink" href="#build-publish" title="Permanent link">&para;</a></h3>
+<h2 id="2-vrchat">📤 步骤 2: 上传到 VRChat<a class="headerlink" href="#2-vrchat" title="Permanent link">&para;</a></h2>
+<h3 id="build-publish">执行 Build &amp; Publish<a class="headerlink" href="#build-publish" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 2-1: アップロード開始</p>
-<p><strong>Build &amp; Publish実行</strong>:
-1. VRChat SDK Control Panel で <strong>「Builder」</strong> タブ
-2. アップロードしたいアバターが選択されていることを確認
-3. <strong>「Build &amp; Publish for Windows」</strong> をクリック
-4. ビルドプロセスが開始されます（2-5分程度）</p>
-<p><strong>ビルド中の確認事項</strong>:
-- Console Window でエラーが出ていないか
-- プログレスバーが正常に進行しているか
-- Unity がフリーズしていないか</p>
+<p class="admonition-title">步骤 2-1: 开始上传</p>
+<p><strong>执行 Build &amp; Publish</strong>:
+1. 在 VRChat SDK Control Panel 中打开 <strong>“Builder”</strong> 标签页
+2. 确认选中了要上传的头像
+3. 点击 <strong>“Build &amp; Publish for Windows”</strong>
+4. 构建流程开始运行（约 2-5 分钟）</p>
+<p><strong>构建过程中的确认事项</strong>:
+- 查看 Console Window 是否出现错误
+- 确认进度条是否正常推进
+- 确认 Unity 没有卡死</p>
 </div>
 <div class="admonition tip">
-<p class="admonition-title">ビルド時間について</p>
-<p>初回ビルドは時間がかかりますが、2回目以降は短縮されます。気長にお待ちください。</p>
+<p class="admonition-title">关于构建时间</p>
+<p>首次构建会比较耗时，第二次以后通常会更快，请耐心等待。</p>
 </div>
-<h3 id="_4">アバター情報の設定<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_4">设置头像信息<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 2-2: アップロード情報入力</p>
-<p><strong>ビルド完了後に表示される設定画面</strong>:</p>
-<p><strong>基本情報</strong>:
-1. <strong>Avatar Name</strong>: わかりやすい名前を入力
-   - 例: 「MyAvatar_Tshirt」「カジュアル衣装_v1」
-2. <strong>Description</strong>: 簡単な説明を入力
-   - 例: 「手作りTシャツを着用したアバター」</p>
-<p><strong>サムネイル画像</strong>:
-1. <strong>「Take Picture」</strong> をクリック
-2. アバターが良く見える角度に調整
-3. 写真を撮影（VRChat内で表示されるアイコンになります）
-4. 気に入らない場合は <strong>「Retake」</strong> で撮り直し</p>
+<p class="admonition-title">步骤 2-2: 输入上传信息</p>
+<p><strong>构建完成后会显示设置界面</strong>:</p>
+<p><strong>基础信息</strong>:
+1. <strong>Avatar Name</strong>: 输入便于识别的名称
+   - 例如: <code>MyAvatar_Tshirt</code>、<code>カジュアル衣装_v1</code>
+2. <strong>Description</strong>: 输入简短说明
+   - 例如: “穿着手工 T 恤的头像”</p>
+<p><strong>缩略图</strong>:
+1. 点击 <strong>“Take Picture”</strong>
+2. 调整到能清楚展示头像的角度
+3. 拍摄图片（会作为 VRChat 内显示的图标）
+4. 如果不满意，可点击 <strong>“Retake”</strong> 重拍</p>
 </div>
 <div class="admonition example">
-<p class="admonition-title">ステップ 2-3: 公開設定と最終確認</p>
-<p><strong>公開範囲の設定</strong>:
-1. <strong>「Visibility」</strong> 設定：
-   - <strong>Private</strong>: 自分だけ使用可能（推奨・初回）
-   - <strong>Friends</strong>: フレンドも使用可能
-   - <strong>Public</strong>: 誰でも使用可能</p>
-<p><strong>最終確認</strong>:
-1. アバター名、説明が正しいか確認
-2. サムネイル画像が適切か確認
-3. <strong>「Upload」</strong> ボタンをクリック</p>
+<p class="admonition-title">步骤 2-3: 公开设置与最终确认</p>
+<p><strong>设置可见范围</strong>:
+1. <strong>“Visibility”</strong> 设置：
+   - <strong>Private</strong>: 仅自己可用（推荐首次使用）
+   - <strong>Friends</strong>: 好友也可使用
+   - <strong>Public</strong>: 任何人都可使用</p>
+<p><strong>最终确认</strong>:
+1. 确认头像名称和说明无误
+2. 确认缩略图合适
+3. 点击 <strong>“Upload”</strong></p>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">初回は Private を推奨</p>
-<p>最初は「Private」でアップロードし、動作確認後に公開範囲を広げることをお勧めします。</p>
+<p class="admonition-title">首次建议选择 Private</p>
+<p>建议第一次先用 “Private” 上传，确认运行正常后再逐步扩大公开范围。</p>
 </div>
-<h3 id="_5">アップロード完了と確認<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="_5">上传完成与确认<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 2-4: アップロード完了の確認</p>
-<p><strong>アップロード成功の確認</strong>:
-1. アップロード完了のメッセージが表示されます
-2. VRChat Web サイトにアバターが追加されます
-3. VRChatアプリから新しいアバターが選択可能になります</p>
-<p><strong>アップロード失敗の場合</strong>:
-- エラーメッセージを確認
-- 一般的な原因：ネットワーク接続、アカウント権限
-- しばらく時間をおいて再試行</p>
+<p class="admonition-title">步骤 2-4: 确认上传完成</p>
+<p><strong>确认上传成功</strong>:
+1. 会显示上传完成的消息
+2. VRChat 网站上会新增该头像
+3. 可在 VRChat 应用中选择这个新头像</p>
+<p><strong>上传失败时</strong>:
+- 确认错误消息
+- 常见原因：网络连接、账号权限
+- 稍等一段时间后重试</p>
 </div>
-<h2 id="3-vrchat">🎮 ステップ3: VRChat内での動作テスト<a class="headerlink" href="#3-vrchat" title="Permanent link">&para;</a></h2>
-<h3 id="vrchat_2">VRChatでのアバター選択<a class="headerlink" href="#vrchat_2" title="Permanent link">&para;</a></h3>
+<h2 id="3-vrchat">🎮 步骤 3: 在 VRChat 中测试运行<a class="headerlink" href="#3-vrchat" title="Permanent link">&para;</a></h2>
+<h3 id="vrchat_2">在 VRChat 中选择头像<a class="headerlink" href="#vrchat_2" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 3-1: VRChatアプリでの確認</p>
-<p><strong>VRChatを起動してアバター確認</strong>:
-1. <strong>VRChat</strong> アプリケーションを起動
-2. ログイン完了後、<strong>「Avatars」</strong> メニューを開く
-3. <strong>「Mine」</strong> タブで自分のアバター一覧を確認
-4. アップロードした新しいアバターが表示されることを確認</p>
-<p><strong>アバターの選択</strong>:
-1. 新しくアップロードしたアバターをクリック
-2. <strong>「Change to Avatar」</strong> で着用
-3. アバターが切り替わることを確認</p>
+<p class="admonition-title">步骤 3-1: 在 VRChat 应用中确认</p>
+<p><strong>启动 VRChat 并确认头像</strong>:
+1. 启动 <strong>VRChat</strong> 应用
+2. 登录后打开 <strong>“Avatars”</strong> 菜单
+3. 在 <strong>“Mine”</strong> 标签页中确认自己的头像列表
+4. 确认能看到刚上传的新头像</p>
+<p><strong>选择头像</strong>:
+1. 点击刚上传的新头像
+2. 通过 <strong>“Change to Avatar”</strong> 穿上它
+3. 确认头像已经切换</p>
 </div>
 <div class="admonition success">
-<p class="admonition-title">アバター着用成功！</p>
-<p>この瞬間、あなたが制作した衣装を実際にVRChatで着用することができました！</p>
+<p class="admonition-title">头像穿戴成功！</p>
+<p>到这一步，你已经能在 VRChat 中实际穿上自己制作的服装了。</p>
 </div>
-<h3 id="_6">基本動作の確認<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h3 id="_6">确认基础动作<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 3-2: 基本動作テスト</p>
-<p><strong>自分視点での確認</strong>:
-1. <strong>歩行</strong>: 移動時の衣装の動きを確認
-2. <strong>手の動き</strong>: 手を上げたり動かしたりして確認
-3. <strong>ジャンプ</strong>: ジャンプ時の衣装の挙動を確認
-4. <strong>座る</strong>: 椅子などに座った時の様子を確認</p>
-<p><strong>表情・動作の確認</strong>:
-1. <strong>Expression Menu</strong> で表情を変えてみる
-2. <strong>Emote</strong> で踊りやポーズを試してみる
-3. 衣装が不自然に動いていないか確認</p>
+<p class="admonition-title">步骤 3-2: 测试基础动作</p>
+<p><strong>从自己视角确认</strong>:
+1. <strong>步行</strong>: 确认移动时服装的动作
+2. <strong>手部动作</strong>: 抬手或挥手时确认表现
+3. <strong>跳跃</strong>: 确认跳跃时服装的行为
+4. <strong>坐下</strong>: 确认坐在椅子等物体上时的状态</p>
+<p><strong>确认表情与动作</strong>:
+1. 用 <strong>Expression Menu</strong> 切换表情
+2. 用 <strong>Emote</strong> 试试跳舞或摆姿势
+3. 确认服装没有出现不自然的动作</p>
 </div>
 <div class="admonition example">
-<p class="admonition-title">ステップ 3-3: 鏡での外観確認</p>
-<p><strong>鏡を使った外観チェック</strong>:
-1. VRChat内の鏡がある場所に移動
-2. 鏡で自分のアバターを色々な角度から確認：
-   - 正面、側面、背面の見た目
-   - 衣装のフィット感
-   - 色や質感の見え方
-   - 不自然な部分がないか</p>
-<p><strong>スクリーンショット撮影</strong>（記念に）:
-1. <strong>「Camera」</strong> メニューを開く
-2. 良い角度でスクリーンショットを撮影
-3. 制作過程の記録として保存</p>
+<p class="admonition-title">步骤 3-3: 通过镜子确认外观</p>
+<p><strong>用镜子检查外观</strong>:
+1. 前往 VRChat 中有镜子的地方
+2. 通过镜子从不同角度确认自己的头像：
+   - 正面、侧面、背面的外观
+   - 服装贴合程度
+   - 颜色与质感的显示效果
+   - 是否有不自然的部分</p>
+<p><strong>截图留念</strong>:
+1. 打开 <strong>“Camera”</strong> 菜单
+2. 以合适的角度拍摄截图
+3. 作为制作过程记录保存</p>
 </div>
-<h2 id="4">👥 ステップ4: 他者との相互確認（オプション）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<h3 id="_7">フレンドとの確認<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h2 id="4">👥 步骤 4: 与他人互相确认（可选）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h3 id="_7">与好友一起确认<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 4-1: 他者視点での確認</p>
-<p><strong>可能であれば実施</strong>:
-1. <strong>フレンドとの待ち合わせ</strong>: VRChat内でフレンドと合流
-2. <strong>相互確認</strong>: お互いのアバターを確認し合う
-3. <strong>動作確認</strong>: 一緒に動いて衣装の動きを確認
-4. <strong>フィードバック</strong>: 気づいた点があれば情報共有</p>
-<p><strong>確認ポイント</strong>:
-- 他の人から見た時の見た目
-- 動作時の衣装の自然さ
-- テクスチャやマテリアルの表示状況</p>
+<p class="admonition-title">步骤 4-1: 从他人视角确认</p>
+<p><strong>如果可以，建议执行</strong>:
+1. <strong>与好友会合</strong>: 在 VRChat 中和好友碰面
+2. <strong>互相确认</strong>: 彼此查看对方的头像
+3. <strong>动作确认</strong>: 一起行动，观察服装动作
+4. <strong>反馈</strong>: 如果发现问题，互相交流</p>
+<p><strong>确认要点</strong>:
+- 别人看到时的外观
+- 动作时服装是否自然
+- 纹理与材质显示是否正常</p>
 </div>
 <div class="admonition info">
-<p class="admonition-title">一人でも大丈夫</p>
-<p>フレンドがいない場合でも、鏡での確認で十分品質チェックは可能です。無理に他者との確認は不要です。</p>
+<p class="admonition-title">一个人也没问题</p>
+<p>即使没有好友，使用镜子检查也足以完成基础质量确认，不必勉强找人配合。</p>
 </div>
-<h2 id="5">🔧 ステップ5: 問題対処と品質改善<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
-<h3 id="_8">よくある問題の対処<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h2 id="5">🔧 步骤 5: 处理问题与提升质量<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h3 id="_8">处理常见问题<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 5-1: 見つかった問題への対処</p>
-<p><strong>衣装の動きが不自然な場合</strong>:
-1. Unity に戻って物理設定を調整
-2. Marvelous Designer で布の設定を見直し
-3. 再エクスポート → Unity統合 → 再アップロード</p>
-<p><strong>見た目に問題がある場合</strong>:
-1. マテリアル設定をUnityで調整
-2. テクスチャの品質や色を修正
-3. 必要に応じてMarvelous Designerで色を調整</p>
-<p><strong>パフォーマンス問題の場合</strong>:
-1. ポリゴン数の削減を検討
-2. テクスチャサイズの最適化
-3. 不要なマテリアルの統合</p>
+<p class="admonition-title">步骤 5-1: 处理发现的问题</p>
+<p><strong>如果服装动作不自然</strong>:
+1. 回到 Unity 调整物理设置
+2. 在 Marvelous Designer 中重新检查布料设置
+3. 重新导出 → Unity 集成 → 重新上传</p>
+<p><strong>如果外观有问题</strong>:
+1. 在 Unity 中调整材质设置
+2. 修正纹理质量或颜色
+3. 如有需要，在 Marvelous Designer 中调整颜色</p>
+<p><strong>如果有性能问题</strong>:
+1. 考虑减少多边形数量
+2. 优化纹理尺寸
+3. 合并不必要的材质</p>
 </div>
-<h3 id="_9">バージョン管理と改善<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h3 id="_9">版本管理与改进<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">ステップ 5-2: 継続的改善</p>
-<p><strong>バージョン管理の実践</strong>:
-1. <strong>問題点をメモ</strong>: 発見した問題点をリスト化
-2. <strong>改善版の制作</strong>: Unity/Marvelous Designerで修正
-3. <strong>新バージョンアップロード</strong>: 「v2」として別アバター作成</p>
-<p><strong>改善のサイクル</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>制作 → テスト → 問題発見 → 修正 → 再テスト → 完成
+<p class="admonition-title">步骤 5-2: 持续改进</p>
+<p><strong>版本管理实践</strong>:
+1. <strong>记录问题点</strong>: 列出发现的问题
+2. <strong>制作改进版</strong>: 在 Unity/Marvelous Designer 中修正
+3. <strong>上传新版本</strong>: 以 “v2” 等形式创建新头像</p>
+<p><strong>改进循环</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>制作 → 测试 → 发现问题 → 修正 → 再测试 → 完成
 </code></pre></div></p>
 </div>
-<h2 id="_10">✅ 完全達成チェックリスト<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h2 id="_10">✅ 完整达成检查清单<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
-<p class="admonition-title">VRChat衣装制作プロジェクト完全達成チェック</p>
-<p><strong>アップロード関連</strong>:
-- [ ] Unity内でBuild &amp; Publishが成功した
-- [ ] VRChatにアバターが正常にアップロードされた
-- [ ] サムネイル画像が適切に設定された
-- [ ] アバター名と説明が適切に入力された</p>
-<p><strong>VRChat内動作確認</strong>:
-- [ ] VRChat内でアバターを選択・着用できた
-- [ ] 基本動作（歩行、手の動き）が正常
-- [ ] 鏡で外観を確認し、満足のいく仕上がり
-- [ ] 衣装が想定通りに動作している</p>
-<p><strong>品質確認</strong>:
-- [ ] Performance Ratingが「Good」以上
-- [ ] 他者から見ても問題のない外観
-- [ ] 不自然な貫通や浮きがない
-- [ ] マテリアルと色が適切に表示</p>
-<p><strong>プロジェクト管理</strong>:
-- [ ] Unity プロジェクトが適切に保存されている
-- [ ] 必要に応じて改善点をメモした
-- [ ] バックアップが作成されている</p>
+<p class="admonition-title">VRChat 服装制作项目完整达成检查</p>
+<p><strong>上传相关</strong>:
+- [ ] 已在 Unity 中成功执行 Build &amp; Publish
+- [ ] 头像已正常上传到 VRChat
+- [ ] 缩略图设置正确
+- [ ] 头像名称和说明填写合适</p>
+<p><strong>VRChat 内运行确认</strong>:
+- [ ] 能在 VRChat 中选择并穿上头像
+- [ ] 基础动作（步行、手部动作）正常
+- [ ] 已在镜子中确认外观，成品令人满意
+- [ ] 服装按预期运行</p>
+<p><strong>质量确认</strong>:
+- [ ] Performance Rating 达到 “Good” 以上
+- [ ] 从他人视角看也没有明显问题
+- [ ] 没有不自然的穿插或悬空
+- [ ] 材质与颜色显示正确</p>
+<p><strong>项目管理</strong>:
+- [ ] Unity 项目已妥善保存
+- [ ] 已按需记录改进点
+- [ ] 已创建备份</p>
 </div>
-<h2 id="_11">🎉 プロジェクト完全達成！<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
-<h3 id="_12">習得したスキルの総まとめ<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h2 id="_11">🎉 项目完整达成！<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<h3 id="_12">已掌握技能总览<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
-<p class="admonition-title">VRChat衣装制作マスター達成！</p>
-<p><strong>あなたが習得したスキル</strong>:</p>
-<p><strong>🎨 デザインスキル</strong>
-- アバターに適した衣装設計
-- VRChatでの見た目を考慮したデザイン
-- 機能性と美観のバランス</p>
-<p><strong>🛠️ 技術スキル</strong>
-- Marvelous Designer での衣装制作
-- Unity でのアバター統合
-- VRChat SDK3 の操作
-- FBXファイルの取り扱い</p>
-<p><strong>⚙️ 最適化スキル</strong>
-- VRChatパフォーマンス基準の理解
-- ポリゴン数・テクスチャ最適化
-- 効率的なワークフローの確立</p>
-<p><strong>🧪 品質管理スキル</strong>
-- 多段階での品質チェック
-- 問題発見と解決能力
-- バージョン管理とファイル整理</p>
-<p><strong>🌐 実用化スキル</strong>
-- VRChatでの実際の運用
-- コミュニティでの作品公開
-- 継続的な改善とメンテナンス</p>
+<p class="admonition-title">达成 VRChat 服装制作高手阶段！</p>
+<p><strong>你已经掌握的技能</strong>:</p>
+<p><strong>🎨 设计技能</strong>
+- 为头像设计合适的服装
+- 兼顾 VRChat 内外观效果的设计
+- 平衡功能性与美观性</p>
+<p><strong>🛠️ 技术技能</strong>
+- 在 Marvelous Designer 中制作服装
+- 在 Unity 中集成头像
+- 操作 VRChat SDK3
+- 处理 FBX 文件</p>
+<p><strong>⚙️ 优化技能</strong>
+- 理解 VRChat 的性能标准
+- 优化多边形数量与纹理
+- 建立高效工作流</p>
+<p><strong>🧪 质量管理技能</strong>
+- 多阶段质量检查
+- 发现并解决问题
+- 版本管理与文件整理</p>
+<p><strong>🌐 实用化技能</strong>
+- 在 VRChat 中实际使用
+- 在社区公开作品
+- 持续改进与维护</p>
 </div>
-<h2 id="_13">🚀 次の挑戦と継続学習<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
-<h3 id="_14">スキルアップの方向性<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<h2 id="_13">🚀 下一项挑战与持续学习<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h3 id="_14">提升技能的方向<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">今後の学習選択肢</p>
-<p><strong>1. 制作技術の向上</strong>
-- より複雑な衣装（ドレス、スカートなど）への挑戦
-- 高度な物理設定とダイナミクス
-- テクスチャペイントとマテリアル作成</p>
-<p><strong>2. Unity技術の深化</strong>
-- Animation Override の活用
-- Expression Menu での衣装切り替え
-- Shader 作成とカスタマイズ</p>
-<p><strong>3. VRChatコミュニティへの参加</strong>
-- 作品の公開と フィードバック収集
-- 他のクリエイターとの交流
-- コラボレーション作品の制作</p>
-<p><strong>4. プロフェッショナル展開</strong>
-- 委託制作の受託
-- オリジナルブランドの展開
-- 教育コンテンツの作成</p>
+<p class="admonition-title">后续学习选项</p>
+<p><strong>1. 提升制作技术</strong>
+- 挑战更复杂的服装（连衣裙、裙子等）
+- 学习更高级的物理设置与动态效果
+- 学习纹理绘制与材质制作</p>
+<p><strong>2. 深化 Unity 技术</strong>
+- 使用 Animation Override
+- 在 Expression Menu 中切换服装
+- 创建与定制 Shader</p>
+<p><strong>3. 参与 VRChat 社区</strong>
+- 公开作品并收集反馈
+- 与其他创作者交流
+- 制作合作作品</p>
+<p><strong>4. 走向专业化</strong>
+- 接委托制作
+- 发展原创品牌
+- 制作教学内容</p>
 </div>
-<h3 id="_15">推奨次ステップ<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
-<p><a class="md-button md-button--primary" href="../../garments/dress/">より複雑な衣装制作に挑戦 →</a></p>
-<p><a class="md-button" href="../../physics/fabric-properties/">衣装物理学を深く学ぶ →</a></p>
-<p><a class="md-button" href="../../resources/community/">コミュニティ情報を見る →</a></p>
-<h2 id="_16">🔧 継続的なトラブルシューティング<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
-<h3 id="_17">長期運用での注意点<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<h3 id="_15">推荐的下一步<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p><a class="md-button md-button--primary" href="../../garments/dress/">挑战更复杂的服装制作 →</a></p>
+<p><a class="md-button" href="../../physics/fabric-properties/">深入学习服装物理 →</a></p>
+<p><a class="md-button" href="../../resources/community/">查看社区信息 →</a></p>
+<h2 id="_16">🔧 持续性的故障排查<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<h3 id="_17">长期使用时的注意点<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
 <details class="question">
-<summary>「アップロードしたアバターが見えない」</summary>
-<p><strong>対処法</strong>:</p>
+<summary>“上传的头像看不到”</summary>
+<p><strong>处理方法</strong>:</p>
 <ol>
-<li><strong>Avatar Display設定の確認</strong>:</li>
-<li>VRChat設定で他者のアバター表示が適切か確認</li>
+<li><strong>确认 Avatar Display 设置</strong>:</li>
+<li>在 VRChat 设置中确认他人头像显示相关设置</li>
 <li>
-<p>Performance設定で表示制限がかかっていないか確認</p>
+<p>确认是否因 Performance 设置而被隐藏</p>
 </li>
 <li>
-<p><strong>アバター再選択</strong>:</p>
+<p><strong>重新选择头像</strong>:</p>
 </li>
-<li>一度別のアバターに変更してから再度選択</li>
-<li>VRChatアプリの再起動</li>
+<li>先切换到其他头像，再重新选择当前头像</li>
+<li>重启 VRChat 应用</li>
 </ol>
 </details>
 <details class="question">
-<summary>「衣装が時々おかしく表示される」</summary>
-<p><strong>対処法</strong>:</p>
+<summary>“服装有时显示异常”</summary>
+<p><strong>处理方法</strong>:</p>
 <ol>
-<li><strong>ネットワーク問題</strong>:</li>
-<li>インターネット接続を確認</li>
+<li><strong>网络问题</strong>:</li>
+<li>确认互联网连接</li>
 <li>
-<p>VRChatサーバーの状況を確認</p>
+<p>确认 VRChat 服务器状态</p>
 </li>
 <li>
-<p><strong>キャッシュクリア</strong>:</p>
+<p><strong>清理缓存</strong>:</p>
 </li>
-<li>VRChatのキャッシュをクリア</li>
-<li>アバターデータの再ダウンロード</li>
+<li>清理 VRChat 缓存</li>
+<li>重新下载头像数据</li>
 </ol>
 </details>
 <details class="question">
-<summary>「新しいバージョンをアップロードしたい」</summary>
-<p><strong>対処法</strong>:</p>
+<summary>“我想上传新版本”</summary>
+<p><strong>处理方法</strong>:</p>
 <ol>
-<li><strong>既存アバターの更新</strong>:</li>
-<li>同じ名前でアップロードすると上書き更新</li>
+<li><strong>更新现有头像</strong>:</li>
+<li>使用相同名称上传时会覆盖更新</li>
 <li>
-<p>新しい名前だと新規アバターとして追加</p>
+<p>使用新名称则会作为新头像新增</p>
 </li>
 <li>
-<p><strong>バージョン管理</strong>:</p>
+<p><strong>版本管理</strong>:</p>
 </li>
-<li>「v1」「v2」などをアバター名に含める</li>
-<li>古いバージョンは削除するか非公開に</li>
+<li>在头像名称中加入 “v1”“v2”等版本号</li>
+<li>删除旧版本或将其设为非公开</li>
 </ol>
 </details>
-<h2 id="_18">📚 参考リソースと継続学習<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
-<h3 id="_19">公式リソース<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
-<p><strong>VRChat公式ドキュメント</strong>:
-- VRChat Creator Documentation: 最新のSDK情報
-- VRChat Community Guidelines: コミュニティルール
-- VRChat Performance Guidelines: パフォーマンス基準</p>
-<p><strong>Unity公式リソース</strong>:
-- Unity Learn: 無料の学習コンテンツ
-- Unity Documentation: 機能の詳細説明
-- Unity Asset Store: 便利なツールとアセット</p>
-<h3 id="_20">コミュニティリソース<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
-<p><strong>日本語コミュニティ</strong>:
-- VRChat 日本語 Discord: 情報交換とサポート
-- Twitter ハッシュタグ: #VRChat #VRChat衣装制作
-- YouTube チュートリアル: 視覚的な学習コンテンツ</p>
+<h2 id="_18">📚 参考资源与持续学习<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="_19">官方资源<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p><strong>VRChat 官方文档</strong>:
+- VRChat Creator Documentation: 最新 SDK 信息
+- VRChat Community Guidelines: 社区规则
+- VRChat Performance Guidelines: 性能标准</p>
+<p><strong>Unity 官方资源</strong>:
+- Unity Learn: 免费学习内容
+- Unity Documentation: 功能详细说明
+- Unity Asset Store: 方便使用的工具与 Asset</p>
+<h3 id="_20">社区资源<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<p><strong>日语社区</strong>:
+- VRChat 日语 Discord: 信息交流与支持
+- Twitter 话题标签: #VRChat #VRChat衣装制作
+- YouTube 教程: 更直观的学习内容</p>
 <div class="admonition success">
-<p class="admonition-title">おめでとうございます！</p>
-<p>あなたは今、VRChat衣装制作の完全なワークフローをマスターしました。この知識とスキルを基に、更なる創作活動を楽しんでください。</p>
-<p>VRChatの世界で、あなたの作品が多くの人に愛されることを願っています！</p>
+<p class="admonition-title">恭喜！</p>
+<p>你已经掌握了 VRChat 服装制作的完整工作流。请以这些知识和技能为基础，继续享受更深入的创作活动。</p>
+<p>希望你的作品能在 VRChat 的世界中被更多人喜爱。</p>
 </div>
-<h2 id="_21">💌 最後に<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
-<p><strong>このプロジェクトを完了したあなたへ</strong>:</p>
-<p>VRChat衣装制作の旅はここから始まります。今回学んだ基礎技術を土台に、あなただけの独創的な衣装を制作し、VRChatコミュニティに新たな価値を提供してください。</p>
-<p>制作過程で困った時は、いつでもこのガイドに戻って確認してください。そして、あなたの作品や経験を他の初心者と共有することで、コミュニティ全体の発展に貢献していただければ幸いです。</p>
-<p><strong>素晴らしい創作活動を！</strong> 🎨✨</p>
+<h2 id="_21">💌 最后<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h2>
+<p><strong>献给完成这个项目的你</strong>:</p>
+<p>VRChat 服装制作之旅从这里才算真正开始。请以这次学到的基础技术为起点，继续制作属于你自己的原创服装，并为 VRChat 社区带来新的价值。</p>
+<p>如果在制作过程中遇到困难，随时可以回到这份指南重新确认。也欢迎你把自己的作品与经验分享给其他初学者，为整个社区的发展贡献力量。</p>
+<p><strong>祝你创作愉快！</strong> 🎨✨</p>
 
 
 
@@ -2623,10 +2946,10 @@
     
       
   <span class="md-source-file__fact">
-    <span class="md-icon" title="最終更新日">
+    <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年8月12日 00:36:22 JST">2025年8月12日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年3月18日 20:55:00 CST">2026年3月18日</span>
   </span>
 
     
@@ -2635,8 +2958,6 @@
     
   </aside>
 
-
-  
 
 
 
@@ -2654,7 +2975,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  ページトップへ戻る
+  回到页面顶部
 </button>
         
       </main>
@@ -2672,14 +2993,15 @@
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
     
     
     <a href="https://github.com/username/vrchat-garment-guide" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -2696,10 +3018,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       

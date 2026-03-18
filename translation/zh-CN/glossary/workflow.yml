@@ -1,0 +1,1521 @@
+version: 1
+entries:
+  - source_term: ガイド
+    canonical_zh_cn: 指南
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 完全ガイド
+    canonical_zh_cn: 完整指南
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - README.md
+  - source_term: 設定
+    canonical_zh_cn: 设置
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: 確認
+    canonical_zh_cn: 确认
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: 初回起動
+    canonical_zh_cn: 首次启动
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 手順
+    canonical_zh_cn: 步骤
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/new-garment-creation.md
+  - source_term: 読み込み
+    canonical_zh_cn: 导入
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/avatar-import.md
+  - source_term: 作成
+    canonical_zh_cn: 制作
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/garments/t-shirt.md
+  - source_term: 制作
+    canonical_zh_cn: 制作
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 新規
+    canonical_zh_cn: 新建
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/new-garment-creation.md
+  - source_term: よくある問題
+    canonical_zh_cn: 常见问题
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/common-issues.md
+  - source_term: 対処
+    canonical_zh_cn: 处理方法
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/common-issues.md
+  - source_term: 最適化
+    canonical_zh_cn: 优化
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/physics/optimization.md
+  - source_term: パフォーマンス
+    canonical_zh_cn: 性能
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/optimization/performance-analysis.md
+  - source_term: 解析
+    canonical_zh_cn: 分析
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/optimization/performance-analysis.md
+  - source_term: 品質向上
+    canonical_zh_cn: 质量提升
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - mkdocs.yml
+  - source_term: 統合
+    canonical_zh_cn: 集成
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/unity/project-setup.md
+  - source_term: アップロード
+    canonical_zh_cn: 上传
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/unity/avatar-upload.md
+  - source_term: リソース
+    canonical_zh_cn: 资源
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - mkdocs.yml
+  - source_term: 参考資料
+    canonical_zh_cn: 参考资料
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - mkdocs.yml
+  - source_term: 更新履歴
+    canonical_zh_cn: 更新记录
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/update-log.md
+  - source_term: 有用なリンク集
+    canonical_zh_cn: 实用链接集
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/useful-links.md
+  - source_term: コミュニティ情報
+    canonical_zh_cn: 社区信息
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/community.md
+  - source_term: 上級者向けリソース
+    canonical_zh_cn: 进阶资源
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/advanced-resources.md
+  - source_term: ソフトウェア
+    canonical_zh_cn: 软件
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: インターフェース
+    canonical_zh_cn: 界面
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: 基本概念
+    canonical_zh_cn: 基础概念
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/basic-concepts.md
+  - source_term: 全体像
+    canonical_zh_cn: 全貌
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/workflow-overview.md
+  - source_term: ファイル形式
+    canonical_zh_cn: 文件格式
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/file-formats.md
+  - source_term: 専門用語集
+    canonical_zh_cn: 术语表
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: モジュラー衣装システム
+    canonical_zh_cn: 模块化服装系统
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/modular-garments.md
+  - source_term: 非対応アバター改変
+    canonical_zh_cn: 非兼容头像改造
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/avatar-modification.md
+  - source_term: 物理設定
+    canonical_zh_cn: 物理设置
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/physics/fabric-properties.md
+  - source_term: 高度な技術
+    canonical_zh_cn: 高级技术
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - mkdocs.yml
+  - source_term: 新機能
+    canonical_zh_cn: 新功能
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/advanced/md2025-features.md
+  - source_term: 完全対応
+    canonical_zh_cn: 完全适配
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/optimization/mobile-compatibility.md
+  - source_term: 脱却
+    canonical_zh_cn: 摆脱
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/optimization/very-poor-escape.md
+  - source_term: ステップ
+    canonical_zh_cn: 步骤
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 段階
+    canonical_zh_cn: 阶段
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 初心者
+    canonical_zh_cn: 初学者
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 中級者
+    canonical_zh_cn: 中级者
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - README.md
+  - source_term: 推奨
+    canonical_zh_cn: 推荐
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 所要時間
+    canonical_zh_cn: 预计耗时
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: メニュー
+    canonical_zh_cn: 菜单
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: ツール
+    canonical_zh_cn: 工具
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: ビューポート
+    canonical_zh_cn: 视口
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: オプション
+    canonical_zh_cn: 选项
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/advanced/everywear-integration.md
+  - source_term: 公式
+    canonical_zh_cn: 官方
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/community.md
+  - source_term: 予定
+    canonical_zh_cn: 计划
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - README.md
+  - source_term: 技術
+    canonical_zh_cn: 技术
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/advanced-resources.md
+  - source_term: 素材
+    canonical_zh_cn: 素材
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/useful-links.md
+  - source_term: モデリング
+    canonical_zh_cn: 建模
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/basic-concepts.md
+  - source_term: ライブラリ
+    canonical_zh_cn: 库
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/advanced/everywear-integration.md
+  - source_term: プリセット
+    canonical_zh_cn: 预设
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/physics/fabric-properties.md
+  - source_term: 導入
+    canonical_zh_cn: 引入
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/unity-vrchat-setup.md
+  - source_term: 実行
+    canonical_zh_cn: 执行
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/physics/optimization.md
+  - source_term: 体験
+    canonical_zh_cn: 体验
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 開発
+    canonical_zh_cn: 开发
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/unity-vrchat-setup.md
+  - source_term: 環境
+    canonical_zh_cn: 环境
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: 練習
+    canonical_zh_cn: 练习
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 学ぶ
+    canonical_zh_cn: 学习
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 進む
+    canonical_zh_cn: 前往
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 深く
+    canonical_zh_cn: 深入
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/physics/fabric-properties.md
+  - source_term: 自動
+    canonical_zh_cn: 自动
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/advanced/everywear-integration.md
+  - source_term: 手動
+    canonical_zh_cn: 手动
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/garment-fitting.md
+  - source_term: 高度
+    canonical_zh_cn: 高级
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/advanced/md2025-features.md
+  - source_term: 実践
+    canonical_zh_cn: 实战
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/avatar-import.md
+  - source_term: 基礎
+    canonical_zh_cn: 基础
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 応用
+    canonical_zh_cn: 应用
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/advanced-resources.md
+  - source_term: 関連
+    canonical_zh_cn: 相关
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/community.md
+  - source_term: 問題
+    canonical_zh_cn: 问题
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/common-issues.md
+  - source_term: 選択
+    canonical_zh_cn: 选择
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 表示
+    canonical_zh_cn: 显示
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 移動
+    canonical_zh_cn: 移动
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 起動
+    canonical_zh_cn: 启动
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: 作業
+    canonical_zh_cn: 操作
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/new-garment-creation.md
+  - source_term: 衣装
+    canonical_zh_cn: 服装
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 日本語
+    canonical_zh_cn: 日文
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 英語
+    canonical_zh_cn: 英文
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/ai-features.md
+  - source_term: 日常
+    canonical_zh_cn: 日常
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/garments/casual-wear.md
+  - source_term: ステップ
+    canonical_zh_cn: 步骤
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 段階
+    canonical_zh_cn: 阶段
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 実行
+    canonical_zh_cn: 执行
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 問題
+    canonical_zh_cn: 问题
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/common-issues.md
+  - source_term: 公式
+    canonical_zh_cn: 官方
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/useful-links.md
+  - source_term: 推奨
+    canonical_zh_cn: 推荐
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 初心者
+    canonical_zh_cn: 初学者
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 中級者
+    canonical_zh_cn: 中级
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - README.md
+  - source_term: 上級者
+    canonical_zh_cn: 高级
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - README.md
+  - source_term: 高度
+    canonical_zh_cn: 高级
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/advanced/md2025-features.md
+  - source_term: 画面
+    canonical_zh_cn: 界面
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: ウィンドウ
+    canonical_zh_cn: 窗口
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: ビューポート
+    canonical_zh_cn: 视口
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: プロパティ
+    canonical_zh_cn: 属性
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: パネル
+    canonical_zh_cn: 面板
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: ツール
+    canonical_zh_cn: 工具
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: メニュー
+    canonical_zh_cn: 菜单
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: ライブラリ
+    canonical_zh_cn: 资源库
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/modular-garments.md
+  - source_term: ライセンス
+    canonical_zh_cn: 许可证
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: システム要件
+    canonical_zh_cn: 系统要求
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - README.md
+  - source_term: 導入
+    canonical_zh_cn: 引入
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/unity-vrchat-setup.md
+  - source_term: 技術
+    canonical_zh_cn: 技术
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/advanced-resources.md
+  - source_term: 実践
+    canonical_zh_cn: 实践
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/garment-fitting.md
+  - source_term: 制御
+    canonical_zh_cn: 控制
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/unity/project-setup.md
+  - source_term: 自動
+    canonical_zh_cn: 自动
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 手動
+    canonical_zh_cn: 手动
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/optimization/performance-analysis.md
+  - source_term: 完了
+    canonical_zh_cn: 完成
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 開始
+    canonical_zh_cn: 开始
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 終了
+    canonical_zh_cn: 结束
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 保存
+    canonical_zh_cn: 保存
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 開く
+    canonical_zh_cn: 打开
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: 選択
+    canonical_zh_cn: 选择
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 表示
+    canonical_zh_cn: 显示
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 移動
+    canonical_zh_cn: 移动
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 回転
+    canonical_zh_cn: 旋转
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: ズーム
+    canonical_zh_cn: 缩放
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 調整
+    canonical_zh_cn: 调整
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: 理解
+    canonical_zh_cn: 理解
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 学ぶ
+    canonical_zh_cn: 学习
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 進む
+    canonical_zh_cn: 前往
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 活用
+    canonical_zh_cn: 活用
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/advanced/md2025-features.md
+  - source_term: 連携
+    canonical_zh_cn: 联动
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/advanced/everywear-integration.md
+  - source_term: 現在
+    canonical_zh_cn: 当前
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - README.md
+  - source_term: 更新版対応
+    canonical_zh_cn: 适配更新版
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/update-log.md
+  - source_term: 認識
+    canonical_zh_cn: 识别
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: プリセット
+    canonical_zh_cn: 预设
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: モジュラー
+    canonical_zh_cn: 模块化
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/modular-garments.md
+  - source_term: ブロック
+    canonical_zh_cn: 块
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: 企画
+    canonical_zh_cn: 规划
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/workflows/new-garment-creation.md
+  - source_term: デザイン
+    canonical_zh_cn: 设计
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/garments/casual-wear.md
+  - source_term: 向上
+    canonical_zh_cn: 提升
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/advanced-resources.md
+  - source_term: 構造
+    canonical_zh_cn: 结构
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/basic-concepts.md
+  - source_term: シンプル
+    canonical_zh_cn: 简单
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/garments/t-shirt.md
+  - source_term: 制限
+    canonical_zh_cn: 限制
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/optimization/mobile-compatibility.md
+  - source_term: 対応
+    canonical_zh_cn: 适配
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/optimization/mobile-compatibility.md
+  - source_term: 決定
+    canonical_zh_cn: 确定
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/physics/fabric-properties.md
+  - source_term: 監視
+    canonical_zh_cn: 监控
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/optimization/performance-analysis.md
+  - source_term: 深化
+    canonical_zh_cn: 深化
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/advanced-resources.md
+  - source_term: 複雑
+    canonical_zh_cn: 复杂
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/garments/dress.md
+  - source_term: 挑戦
+    canonical_zh_cn: 挑战
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 不足
+    canonical_zh_cn: 不足
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: 失敗
+    canonical_zh_cn: 失败
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: リスク
+    canonical_zh_cn: 风险
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: 低い
+    canonical_zh_cn: 低
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/garments/t-shirt.md
+  - source_term: 特殊
+    canonical_zh_cn: 特殊
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/garments/swimwear.md
+  - source_term: 素材
+    canonical_zh_cn: 材料
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/resources/useful-links.md
+  - source_term: 特性
+    canonical_zh_cn: 特性
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/physics/fabric-properties.md
+  - source_term: 現実
+    canonical_zh_cn: 现实
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/index.md
+  - source_term: ロードマップ
+    canonical_zh_cn: 路线图
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - README.md
+  - source_term: 内訳
+    canonical_zh_cn: 构成
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - README.md
+  - source_term: リギング
+    canonical_zh_cn: 绑定
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/basics/terminology.md
+  - source_term: 転送
+    canonical_zh_cn: 转移
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/unity/fbx-to-vrchat-complete-guide.md
+  - source_term: Trace and Optimize
+    canonical_zh_cn: Trace and Optimize
+    domain: workflow
+    preferred: true
+    source_type: repo_context
+    source_refs:
+      - docs/advanced/md2025-features.md
+  - source_term: VCC
+    canonical_zh_cn: VCC
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://vcc.docs.vrchat.com/
+  - source_term: Control Panel
+    canonical_zh_cn: Control Panel
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - https://creators.vrchat.com/sdk/control-panel/
+  - source_term: Modular Avatar
+    canonical_zh_cn: Modular Avatar
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/workflows/modular-garments.md
+  - source_term: Armature Link
+    canonical_zh_cn: Armature Link
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/workflows/modular-garments.md
+  - source_term: Rigging Transfer
+    canonical_zh_cn: Rigging Transfer
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/unity/fbx-to-vrchat-complete-guide.md
+  - source_term: Unity Stats Window
+    canonical_zh_cn: Unity Stats Window
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/optimization/performance-analysis.md
+  - source_term: Window
+    canonical_zh_cn: Window
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Project
+    canonical_zh_cn: Project
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Save
+    canonical_zh_cn: Save
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Edit
+    canonical_zh_cn: Edit
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: View
+    canonical_zh_cn: View
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Add
+    canonical_zh_cn: Add
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: Create
+    canonical_zh_cn: Create
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Import
+    canonical_zh_cn: Import
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/workflows/avatar-import.md
+  - source_term: Load
+    canonical_zh_cn: Load
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/workflows/avatar-import.md
+  - source_term: Reset
+    canonical_zh_cn: Reset
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Version
+    canonical_zh_cn: Version
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: Editor
+    canonical_zh_cn: Editor
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: Tool
+    canonical_zh_cn: Tool
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: Property
+    canonical_zh_cn: Property
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: Properties
+    canonical_zh_cn: Properties
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Settings
+    canonical_zh_cn: Settings
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: Mode
+    canonical_zh_cn: Mode
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: Support
+    canonical_zh_cn: Support
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/resources/useful-links.md
+  - source_term: Package
+    canonical_zh_cn: Package
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/resources/useful-links.md
+  - source_term: Panel
+    canonical_zh_cn: Panel
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: Stage
+    canonical_zh_cn: Stage
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/index.md
+  - source_term: Phase
+    canonical_zh_cn: Phase
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/advanced/everywear-integration.md
+  - source_term: Step
+    canonical_zh_cn: Step
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/index.md
+  - source_term: Test
+    canonical_zh_cn: Test
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Show
+    canonical_zh_cn: Show
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/resources/community.md
+  - source_term: Count
+    canonical_zh_cn: Count
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/optimization/performance-analysis.md
+  - source_term: Level
+    canonical_zh_cn: Level
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/index.md
+  - source_term: Color
+    canonical_zh_cn: Color
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: Layout
+    canonical_zh_cn: Layout
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Display
+    canonical_zh_cn: Display
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Control
+    canonical_zh_cn: Control
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/unity/avatar-upload.md
+  - source_term: Build
+    canonical_zh_cn: Build
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: Assets
+    canonical_zh_cn: Assets
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/resources/useful-links.md
+  - source_term: Export
+    canonical_zh_cn: Export
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/unity/fbx-to-vrchat-complete-guide.md
+  - source_term: Materials
+    canonical_zh_cn: Materials
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/resources/useful-links.md
+  - source_term: Animation
+    canonical_zh_cn: Animation
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/unity/avatar-upload.md
+  - source_term: Physical
+    canonical_zh_cn: Physical
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/physics/fabric-properties.md
+  - source_term: Optimization
+    canonical_zh_cn: Optimization
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/optimization/performance-analysis.md
+  - source_term: Rating
+    canonical_zh_cn: Rating
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/optimization/very-poor-escape.md
+  - source_term: Quest
+    canonical_zh_cn: Quest
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/optimization/mobile-compatibility.md
+  - source_term: Fabric
+    canonical_zh_cn: Fabric
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/physics/fabric-properties.md
+  - source_term: Pattern
+    canonical_zh_cn: Pattern
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Simulation
+    canonical_zh_cn: Simulation
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Garment
+    canonical_zh_cn: Garment
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Object
+    canonical_zh_cn: Object
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: Browser
+    canonical_zh_cn: Browser
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: Rectangle
+    canonical_zh_cn: Rectangle
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Circle
+    canonical_zh_cn: Circle
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: Polygon
+    canonical_zh_cn: Polygon
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: Curve
+    canonical_zh_cn: Curve
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/basics/md-interface.md
+  - source_term: New
+    canonical_zh_cn: New
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/software-check.md
+  - source_term: Apply
+    canonical_zh_cn: Apply
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Auto
+    canonical_zh_cn: Auto
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/setup/md-first-launch.md
+  - source_term: Bone
+    canonical_zh_cn: Bone
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/optimization/performance-analysis.md
+  - source_term: Collision
+    canonical_zh_cn: Collision
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/physics/fabric-properties.md
+  - source_term: Advanced
+    canonical_zh_cn: Advanced
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/advanced/md2025-features.md
+  - source_term: Standard
+    canonical_zh_cn: Standard
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/optimization/mobile-compatibility.md
+  - source_term: Quality
+    canonical_zh_cn: Quality
+    domain: workflow
+    preferred: true
+    source_type: official_en
+    source_refs:
+      - docs/physics/optimization.md

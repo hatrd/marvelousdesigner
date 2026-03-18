@@ -1,37 +1,40 @@
 
 <!doctype html>
-<html lang="ja" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Marvelous DesignerとUnityを使ったVRChat衣装制作の完全初心者向けガイド">
+        <meta name="description" content="使用 Marvelous Designer 和 Unity 制作 VRChat 服装的简体中文入门指南">
       
       
         <meta name="author" content="VRChat Garment Creation Team">
       
       
-        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/resources/update-log/">
+        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/zh-CN/resources/update-log/">
       
       
         <link rel="prev" href="../advanced-resources/">
       
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>更新履歴 - VRChat衣装制作完全ガイド</title>
+        <title>更新记录 - VRChat 服装制作完整指南</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -45,8 +48,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Noto Sans JP";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -55,18 +58,7 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
 
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
-
-    
     
     
   <meta name="google-site-verification" content="2MW4wZaZsAsSzYUYyh514GoRY2nDaBF1VcITV1P3xSk" />
@@ -91,7 +83,7 @@
       
         
         <a href="#_1" class="md-skip">
-          コンテンツにスキップ
+          跳转至
         </a>
       
     </div>
@@ -99,16 +91,12 @@
       
     </div>
     
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-      </div>
-    
     
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-header__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-header__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -122,13 +110,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            VRChat衣装制作完全ガイド
+            VRChat 服装制作完整指南
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              更新履歴
+              更新记录
             
           </span>
         </div>
@@ -141,9 +129,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -151,9 +139,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -176,16 +164,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="検索">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -198,7 +186,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            検索を初期化
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -210,10 +198,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+        <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -231,7 +219,7 @@
         
           
             
-<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -247,7 +235,7 @@
   
     
   
-  ホーム
+  首页
 
       </a>
     </li>
@@ -266,7 +254,7 @@
           
   
   
-  環境設定
+  环境设置
 
         </a>
       </li>
@@ -286,7 +274,7 @@
           
   
   
-  基礎知識
+  基础知识
 
         </a>
       </li>
@@ -306,7 +294,7 @@
           
   
   
-  作業手順
+  工作流程
 
         </a>
       </li>
@@ -326,7 +314,7 @@
           
   
   
-  衣装別制作ガイド
+  分类服装制作指南
 
         </a>
       </li>
@@ -346,7 +334,7 @@
           
   
   
-  物理設定・最適化
+  物理设置与优化
 
         </a>
       </li>
@@ -366,7 +354,7 @@
           
   
   
-  最適化・品質向上
+  优化与质量提升
 
         </a>
       </li>
@@ -386,7 +374,7 @@
           
   
   
-  高度な技術・MD2025
+  高级技术与 MD2025
 
         </a>
       </li>
@@ -406,7 +394,7 @@
           
   
   
-  Unity統合
+  Unity 集成
 
         </a>
       </li>
@@ -428,7 +416,7 @@
           
   
   
-  リソース・参考資料
+  资源与参考资料
 
         </a>
       </li>
@@ -458,22 +446,22 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-nav__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-nav__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    VRChat衣装制作完全ガイド
+    VRChat 服装制作完整指南
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+      <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -495,9 +483,14 @@
   
   
   <span class="md-ellipsis">
-    ホーム
+    
+  
+    首页
+  
+
     
   </span>
+  
   
 
       </a>
@@ -535,9 +528,14 @@
   
   
   <span class="md-ellipsis">
-    環境設定
+    
+  
+    环境设置
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -546,7 +544,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            環境設定
+            
+  
+    环境设置
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -562,9 +564,14 @@
   
   
   <span class="md-ellipsis">
-    ソフトウェア確認
+    
+  
+    软件确认
+  
+
     
   </span>
+  
   
 
       </a>
@@ -585,9 +592,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designer初回起動
+    
+  
+    Marvelous Designer 首次启动
+  
+
     
   </span>
+  
   
 
       </a>
@@ -608,9 +620,14 @@
   
   
   <span class="md-ellipsis">
-    Unity・VRChat SDK設定
+    
+  
+    Unity 与 VRChat SDK 设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -656,9 +673,14 @@
   
   
   <span class="md-ellipsis">
-    基礎知識
+    
+  
+    基础知识
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -667,7 +689,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            基礎知識
+            
+  
+    基础知识
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -683,9 +709,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designerインターフェース
+    
+  
+    Marvelous Designer 界面
+  
+
     
   </span>
+  
   
 
       </a>
@@ -706,9 +737,14 @@
   
   
   <span class="md-ellipsis">
-    AI機能ガイド
+    
+  
+    AI 功能指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -729,9 +765,14 @@
   
   
   <span class="md-ellipsis">
-    3Dモデリング基本概念
+    
+  
+    3D 建模基础概念
+  
+
     
   </span>
+  
   
 
       </a>
@@ -752,9 +793,14 @@
   
   
   <span class="md-ellipsis">
-    制作工程全体像
+    
+  
+    制作流程全貌
+  
+
     
   </span>
+  
   
 
       </a>
@@ -775,9 +821,14 @@
   
   
   <span class="md-ellipsis">
-    ファイル形式の理解
+    
+  
+    文件格式的理解
+  
+
     
   </span>
+  
   
 
       </a>
@@ -798,9 +849,14 @@
   
   
   <span class="md-ellipsis">
-    専門用語集
+    
+  
+    术语表
+  
+
     
   </span>
+  
   
 
       </a>
@@ -846,9 +902,14 @@
   
   
   <span class="md-ellipsis">
-    作業手順
+    
+  
+    工作流程
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -857,7 +918,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            作業手順
+            
+  
+    工作流程
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -873,9 +938,14 @@
   
   
   <span class="md-ellipsis">
-    アバターの読み込み
+    
+  
+    导入头像
+  
+
     
   </span>
+  
   
 
       </a>
@@ -896,9 +966,14 @@
   
   
   <span class="md-ellipsis">
-    衣装のフィッティング
+    
+  
+    现有服装适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -919,9 +994,14 @@
   
   
   <span class="md-ellipsis">
-    モジュラー衣装システム
+    
+  
+    模块化服装系统
+  
+
     
   </span>
+  
   
 
       </a>
@@ -942,9 +1022,14 @@
   
   
   <span class="md-ellipsis">
-    非対応アバター改変
+    
+  
+    非兼容头像改造
+  
+
     
   </span>
+  
   
 
       </a>
@@ -965,9 +1050,14 @@
   
   
   <span class="md-ellipsis">
-    新規衣装制作手順
+    
+  
+    新建服装制作
+  
+
     
   </span>
+  
   
 
       </a>
@@ -988,9 +1078,14 @@
   
   
   <span class="md-ellipsis">
-    よくある問題と対処
+    
+  
+    常见问题与处理
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1036,9 +1131,14 @@
   
   
   <span class="md-ellipsis">
-    衣装別制作ガイド
+    
+  
+    分类服装制作指南
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1047,7 +1147,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            衣装別制作ガイド
+            
+  
+    分类服装制作指南
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1063,9 +1167,14 @@
   
   
   <span class="md-ellipsis">
-    Tシャツ（初心者向け）
+    
+  
+    T 恤（适合初学者）
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1086,9 +1195,14 @@
   
   
   <span class="md-ellipsis">
-    スカート
+    
+  
+    裙子
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1109,9 +1223,14 @@
   
   
   <span class="md-ellipsis">
-    ドレス
+    
+  
+    礼服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1132,9 +1251,14 @@
   
   
   <span class="md-ellipsis">
-    カジュアル服
+    
+  
+    休闲服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1155,9 +1279,14 @@
   
   
   <span class="md-ellipsis">
-    ワンピース
+    
+  
+    连衣裙
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1178,9 +1307,14 @@
   
   
   <span class="md-ellipsis">
-    水着
+    
+  
+    泳装
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1226,9 +1360,14 @@
   
   
   <span class="md-ellipsis">
-    物理設定・最適化
+    
+  
+    物理设置与优化
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1237,7 +1376,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            物理設定・最適化
+            
+  
+    物理设置与优化
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1253,9 +1396,14 @@
   
   
   <span class="md-ellipsis">
-    布の物理特性設定
+    
+  
+    布料物理特性设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1276,9 +1424,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス最適化
+    
+  
+    性能优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1324,9 +1477,14 @@
   
   
   <span class="md-ellipsis">
-    最適化・品質向上
+    
+  
+    优化与质量提升
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1335,7 +1493,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            最適化・品質向上
+            
+  
+    优化与质量提升
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1351,9 +1513,14 @@
   
   
   <span class="md-ellipsis">
-    Very Poor脱却完全ガイド
+    
+  
+    摆脱 Very Poor 完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1374,9 +1541,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス分析ツール
+    
+  
+    性能分析工具
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1397,9 +1569,14 @@
   
   
   <span class="md-ellipsis">
-    モバイル完全対応
+    
+  
+    移动端完全适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1445,9 +1622,14 @@
   
   
   <span class="md-ellipsis">
-    高度な技術・MD2025
+    
+  
+    高级技术与 MD2025
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1456,7 +1638,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            高度な技術・MD2025
+            
+  
+    高级技术与 MD2025
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1472,9 +1658,14 @@
   
   
   <span class="md-ellipsis">
-    MD2025新機能完全ガイド
+    
+  
+    MD2025 新功能完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1495,9 +1686,14 @@
   
   
   <span class="md-ellipsis">
-    EveryWear統合ワークフロー
+    
+  
+    EveryWear 集成工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1518,9 +1714,14 @@
   
   
   <span class="md-ellipsis">
-    IK-Joint最適化
+    
+  
+    IK-Joint 优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1566,9 +1767,14 @@
   
   
   <span class="md-ellipsis">
-    Unity統合
+    
+  
+    Unity 集成
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1577,7 +1783,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Unity統合
+            
+  
+    Unity 集成
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1593,9 +1803,14 @@
   
   
   <span class="md-ellipsis">
-    Unityプロジェクト設定
+    
+  
+    Unity 项目设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1616,9 +1831,14 @@
   
   
   <span class="md-ellipsis">
-    FBXからVRChatまでの完全ワークフロー
+    
+  
+    从 FBX 到 VRChat 的完整工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1639,9 +1859,14 @@
   
   
   <span class="md-ellipsis">
-    アバターアップロード
+    
+  
+    头像上传
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1690,9 +1915,14 @@
   
   
   <span class="md-ellipsis">
-    リソース・参考資料
+    
+  
+    资源与参考资料
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1701,7 +1931,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            リソース・参考資料
+            
+  
+    资源与参考资料
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1717,9 +1951,14 @@
   
   
   <span class="md-ellipsis">
-    有用なリンク集
+    
+  
+    实用链接集
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1740,9 +1979,14 @@
   
   
   <span class="md-ellipsis">
-    CLO-SET Connect・EveryWear
+    
+  
+    CLO-SET Connect 与 EveryWear
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1763,9 +2007,14 @@
   
   
   <span class="md-ellipsis">
-    コミュニティ情報
+    
+  
+    社区信息
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1786,9 +2035,14 @@
   
   
   <span class="md-ellipsis">
-    上級者向けリソース
+    
+  
+    进阶资源
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1818,9 +2072,14 @@
   
   
   <span class="md-ellipsis">
-    更新履歴
+    
+  
+    更新记录
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1831,9 +2090,14 @@
   
   
   <span class="md-ellipsis">
-    更新履歴
+    
+  
+    更新记录
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1842,7 +2106,7 @@
 
   
 
-<nav class="md-nav md-nav--secondary" aria-label="このページの内容">
+<nav class="md-nav md-nav--secondary" aria-label="本页内容">
   
   
   
@@ -1851,24 +2115,28 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      このページの内容
+      本页内容
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      📅 バージョン履歴
+      
+        📅 版本历史
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📅 バージョン履歴">
+    <nav class="md-nav" aria-label="📅 版本历史">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#version-100-2025-08-08-" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 1.0.0 (2025-08-08) - 初回リリース
+      
+        Version 1.0.0 (2025-08-08) - 首次发布
+      
     </span>
   </a>
   
@@ -1877,7 +2145,9 @@
           <li class="md-nav__item">
   <a href="#version-101-2025-08-15" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 1.0.1 (予定: 2025-08-15)
+      
+        Version 1.0.1 (计划: 2025-08-15)
+      
     </span>
   </a>
   
@@ -1886,7 +2156,9 @@
           <li class="md-nav__item">
   <a href="#version-110-2025-09-01" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 1.1.0 (予定: 2025-09-01)
+      
+        Version 1.1.0 (计划: 2025-09-01)
+      
     </span>
   </a>
   
@@ -1895,7 +2167,9 @@
           <li class="md-nav__item">
   <a href="#version-120-2025-10-01" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 1.2.0 (予定: 2025-10-01)
+      
+        Version 1.2.0 (计划: 2025-10-01)
+      
     </span>
   </a>
   
@@ -1904,7 +2178,9 @@
           <li class="md-nav__item">
   <a href="#version-200-2025-12-01" class="md-nav__link">
     <span class="md-ellipsis">
-      Version 2.0.0 (予定: 2025-12-01)
+      
+        Version 2.0.0 (计划: 2025-12-01)
+      
     </span>
   </a>
   
@@ -1918,17 +2194,21 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      🔄 技術環境の変化・対応履歴
+      
+        🔄 技术环境变化与应对记录
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔄 技術環境の変化・対応履歴">
+    <nav class="md-nav" aria-label="🔄 技术环境变化与应对记录">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#sdk" class="md-nav__link">
     <span class="md-ellipsis">
-      ソフトウェア・SDK更新対応
+      
+        应对软件与 SDK 更新
+      
     </span>
   </a>
   
@@ -1937,7 +2217,9 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      プラットフォーム・インフラ更新
+      
+        平台与基础设施更新
+      
     </span>
   </a>
   
@@ -1951,17 +2233,21 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      🐛 既知の問題・制限事項
+      
+        🐛 已知问题与限制事项
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🐛 既知の問題・制限事項">
+    <nav class="md-nav" aria-label="🐛 已知问题与限制事项">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      現在の制限事項
+      
+        当前限制
+      
     </span>
   </a>
   
@@ -1970,7 +2256,9 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      改善予定・対応計画
+      
+        改进计划与处理安排
+      
     </span>
   </a>
   
@@ -1984,17 +2272,21 @@
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      📊 プロジェクト統計・メトリクス
+      
+        📊 项目统计与指标
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📊 プロジェクト統計・メトリクス">
+    <nav class="md-nav" aria-label="📊 项目统计与指标">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#v100" class="md-nav__link">
     <span class="md-ellipsis">
-      開発統計（v1.0.0時点）
+      
+        开发统计（截至 v1.0.0）
+      
     </span>
   </a>
   
@@ -2003,7 +2295,9 @@
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      今後の目標指標
+      
+        后续目标指标
+      
     </span>
   </a>
   
@@ -2017,17 +2311,21 @@
         <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      🤝 コントリビューション・協力者
+      
+        🤝 贡献与协作者
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🤝 コントリビューション・協力者">
+    <nav class="md-nav" aria-label="🤝 贡献与协作者">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      主要コントリビューター
+      
+        主要贡献者
+      
     </span>
   </a>
   
@@ -2036,7 +2334,9 @@
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      貢献方法・参加の仕組み
+      
+        贡献方式与参与机制
+      
     </span>
   </a>
   
@@ -2050,17 +2350,21 @@
         <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      🔮 長期ビジョン・ロードマップ
+      
+        🔮 长期愿景与路线图
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔮 長期ビジョン・ロードマップ">
+    <nav class="md-nav" aria-label="🔮 长期愿景与路线图">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#32028" class="md-nav__link">
+  <a href="#2028" class="md-nav__link">
     <span class="md-ellipsis">
-      3年後のビジョン（2028年）
+      
+        三年后的愿景（2028 年）
+      
     </span>
   </a>
   
@@ -2069,7 +2373,9 @@
           <li class="md-nav__item">
   <a href="#2025-2028" class="md-nav__link">
     <span class="md-ellipsis">
-      ロードマップ（2025-2028）
+      
+        路线图（2025-2028）
+      
     </span>
   </a>
   
@@ -2083,17 +2389,21 @@
         <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      📞 フィードバック・お問い合わせ
+      
+        📞 反馈与联系
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📞 フィードバック・お問い合わせ">
+    <nav class="md-nav" aria-label="📞 反馈与联系">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      フィードバック歓迎
+      
+        欢迎反馈
+      
     </span>
   </a>
   
@@ -2102,7 +2412,9 @@
           <li class="md-nav__item">
   <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      謝辞・感謝
+      
+        致谢与感谢
+      
     </span>
   </a>
   
@@ -2139,6 +2451,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2148,446 +2461,446 @@
   
 
 
-<h1 id="_1">プロジェクト更新履歴・開発ログ<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="_1">项目更新记录与开发日志<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
-<p class="admonition-title">更新ログ情報</p>
-<p><strong>開始日</strong>: 2025-08-08 | <strong>プロジェクト</strong>: VRChat衣装制作完全ガイド | <strong>形式</strong>: 日本語マークダウン</p>
+<p class="admonition-title">更新日志信息</p>
+<p><strong>开始日期</strong>: 2025-08-08 | <strong>项目</strong>: VRChat 服装制作完整指南 | <strong>形式</strong>: 日语 Markdown</p>
 </div>
-<p><strong>このページの目的</strong>: プロジェクトの発展過程、重要な更新、今後の計画を透明性を持って記録し、ユーザーと開発チームの情報共有を促進します。</p>
+<p><strong>本页目标</strong>: 以透明的方式记录项目的发展过程、重要更新与后续计划，促进用户与开发团队之间的信息共享。</p>
 <div class="admonition success">
-<p class="admonition-title">更新ログで確認できること</p>
+<p class="admonition-title">可以在更新日志中确认的内容</p>
 <ul>
-<li>✅ 各バージョンでの新機能・改善内容</li>
-<li>✅ ソフトウェア・技術環境の変化への対応</li>
-<li>✅ コミュニティからのフィードバック対応</li>
-<li>✅ 今後の開発計画・ロードマップ</li>
-<li>✅ 既知の問題・制限事項とその対応状況</li>
+<li>✅ 各版本的新功能与改进内容</li>
+<li>✅ 对软件与技术环境变化的应对</li>
+<li>✅ 对社区反馈的处理情况</li>
+<li>✅ 后续开发计划与路线图</li>
+<li>✅ 已知问题、限制事项及其处理状态</li>
 </ul>
 </div>
-<h2 id="_2">📅 バージョン履歴<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="version-100-2025-08-08-">Version 1.0.0 (2025-08-08) - 初回リリース<a class="headerlink" href="#version-100-2025-08-08-" title="Permanent link">&para;</a></h3>
+<h2 id="_2">📅 版本历史<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="version-100-2025-08-08-">Version 1.0.0 (2025-08-08) - 首次发布<a class="headerlink" href="#version-100-2025-08-08-" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
-<p class="admonition-title">🎉 プロジェクト完全版リリース</p>
-<p><strong>プロジェクト概要</strong>:
-- <strong>総開発期間</strong>: 継続的開発（初期版完成）
-- <strong>総ページ数</strong>: 20+ ページ
-- <strong>対象ユーザー</strong>: VRChat衣装制作初心者〜上級者
-- <strong>サポート言語</strong>: 日本語（メイン）</p>
-<p><strong>完成した主要コンテンツ</strong>:</p>
-<p><strong>📚 基礎学習セクション</strong>:
-- <code>requirements.md</code> - プロジェクト要件定義
-- <code>design.md</code> - 全体設計・技術仕様
-- <code>setup/software-check.md</code> - 必要ソフトウェア確認
-- <code>setup/md-first-launch.md</code> - Marvelous Designer初回起動
-- <code>setup/unity-vrchat-setup.md</code> - Unity・VRChat SDK環境構築
-- <code>basics/md-interface.md</code> - MD基本インターフェース解説</p>
-<p><strong>🛠️ 実践制作ガイド</strong>:
-- <code>workflows/avatar-import.md</code> - アバター読み込み手順
-- <code>workflows/garment-fitting.md</code> - 既存衣装フィッティング（初回成功体験）
-- <code>garments/t-shirt.md</code> - Tシャツ制作（初心者向け・基礎スキル構築）
-- <code>garments/skirt.md</code> - スカート制作（初級→中級・段階的複雑性）
-- <code>garments/dress.md</code> - ドレス制作（上級・技術集大成）</p>
-<p><strong>⚡ 技術最適化セクション</strong>:
-- <code>physics/fabric-properties.md</code> - 布の物理特性設定
-- <code>physics/optimization.md</code> - VRChatパフォーマンス最適化</p>
-<p><strong>🔧 Unity統合・実用化</strong>:
-- <code>unity/project-setup.md</code> - Unityプロジェクト設定
-- <code>unity/avatar-upload.md</code> - VRChatアバターアップロード</p>
-<p><strong>🆘 サポートセクション</strong>:
-- <code>workflows/common-issues.md</code> - よくある問題と対処法（包括的FAQ）</p>
-<p><strong>🌐 コミュニティ・リソース</strong>:
-- <code>resources/useful-links.md</code> - 有用リンク集・技術リソース
-- <code>resources/community.md</code> - 日本語コミュニティ・交流情報
-- <code>resources/advanced-resources.md</code> - 高度技術・プロフェッショナル展開
-- <code>resources/update-log.md</code> - このファイル（プロジェクト更新履歴）</p>
-<p><strong>🎨 サイト基盤</strong>:
-- MkDocs Material テーマ（日本語最適化）
-- カスタムCSS・JavaScript（進捗表示・UI改善）
-- GitHub Pages 自動デプロイ設定
-- レスポンシブデザイン（モバイル対応）</p>
-<p><strong>技術仕様（v1.0.0）</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">対象ソフトウェアバージョン</span><span class="p">:</span>
+<p class="admonition-title">🎉 项目完整版本发布</p>
+<p><strong>项目概览</strong>:
+- <strong>总开发周期</strong>: 持续开发（初始版完成）
+- <strong>总页数</strong>: 20+ 页
+- <strong>目标用户</strong>: VRChat 服装制作初学者到进阶用户
+- <strong>支持语言</strong>: 日语（主）</p>
+<p><strong>已完成的主要内容</strong>:</p>
+<p><strong>📚 基础学习部分</strong>:
+- <code>requirements.md</code> - 项目需求定义
+- <code>design.md</code> - 整体设计与技术规格
+- <code>setup/software-check.md</code> - 必要软件确认
+- <code>setup/md-first-launch.md</code> - Marvelous Designer 首次启动
+- <code>setup/unity-vrchat-setup.md</code> - Unity 与 VRChat SDK 环境搭建
+- <code>basics/md-interface.md</code> - MD 基础界面说明</p>
+<p><strong>🛠️ 实践制作指南</strong>:
+- <code>workflows/avatar-import.md</code> - 导入头像步骤
+- <code>workflows/garment-fitting.md</code> - 现有服装适配（第一次成功体验）
+- <code>garments/t-shirt.md</code> - T 恤制作（面向初学者，建立基础技能）
+- <code>garments/skirt.md</code> - 裙子制作（从初级到中级，逐步增加复杂度）
+- <code>garments/dress.md</code> - 连衣裙制作（高级，技术集大成）</p>
+<p><strong>⚡ 技术优化部分</strong>:
+- <code>physics/fabric-properties.md</code> - 布料物理属性设置
+- <code>physics/optimization.md</code> - VRChat 性能优化</p>
+<p><strong>🔧 Unity 集成与实用化</strong>:
+- <code>unity/project-setup.md</code> - Unity 项目设置
+- <code>unity/avatar-upload.md</code> - VRChat 头像上传</p>
+<p><strong>🆘 支持部分</strong>:
+- <code>workflows/common-issues.md</code> - 常见问题与处理方法（综合 FAQ）</p>
+<p><strong>🌐 社区与资源</strong>:
+- <code>resources/useful-links.md</code> - 实用链接集与技术资源
+- <code>resources/community.md</code> - 日语社区与交流信息
+- <code>resources/advanced-resources.md</code> - 进阶技术与专业化拓展
+- <code>resources/update-log.md</code> - 本文件（项目更新记录）</p>
+<p><strong>🎨 站点基础设施</strong>:
+- MkDocs Material 主题（日语优化）
+- 自定义 CSS 与 JavaScript（进度显示、UI 改进）
+- GitHub Pages 自动部署设置
+- 响应式设计（支持移动端）</p>
+<p><strong>技术规格（v1.0.0）</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">对象软件版本</span><span class="p">:</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Marvelous Designer</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2025 (最新版)</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Unity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2022.3.22f1 LTS</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VRChat SDK</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.5.x (2025年8月時点最新)</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VRChat SDK</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.5.x (截至 2025 年 8 月的最新版)</span>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">VRChat Creator Companion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">最新版</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nt">システム要件</span><span class="p">:</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nt">系统要求</span><span class="p">:</span>
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">Windows</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10/11 (64-bit)</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">メモリ</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">16GB以上推奨</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">GPU</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DirectX 11対応、VRAM 8GB以上推奨</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">ストレージ</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">50GB以上推奨（作業領域込み）</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">内存</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">推荐 16GB 以上</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">GPU</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">支持 DirectX 11，推荐 VRAM 8GB 以上</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">存储</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">推荐 50GB 以上（含工作空间）</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nt">学習進捗設計</span><span class="p">:</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nt">Phase 1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">環境構築・基礎理解 (2-3時間)</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nt">Phase 2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">初回成功体験・信頼感醸成 (3-4時間)</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nt">Phase 3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">基礎技術習得・スキル構築 (8-12時間)</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nt">Phase 4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">発展技術習得・応用力向上 (20-30時間)</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nt">Phase 5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">最適化・実用化・品質向上 (10-15時間)</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="nt">Phase 6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">コミュニティ参加・継続学習 (継続的)</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nt">学习进度设计</span><span class="p">:</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="nt">Phase 1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">环境搭建与基础理解 (2-3 小时)</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="nt">Phase 2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">第一次成功体验与建立信心 (3-4 小时)</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="nt">Phase 3</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">学习基础技术并建立技能 (8-12 小时)</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="nt">Phase 4</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">掌握进阶技术并提升应用能力 (20-30 小时)</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="nt">Phase 5</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">优化、实用化与质量提升 (10-15 小时)</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="nt">Phase 6</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">参与社区与持续学习 (持续进行)</span>
 </code></pre></div></p>
-<p><strong>特徴・革新点</strong>:
-- 😰→😊 初心者の不安解消を最優先にした段階的学習設計
-- 🎯 早期の成功体験による自信・モチベーション構築
-- 📈 基礎から上級まで一貫した技術進歩パス
-- 🔧 VRChat特有の制約・最適化に特化した実用的内容
-- 🇯🇵 日本語ユーザーに特化した文化的・言語的配慮
-- 🤝 コミュニティ・継続学習の重視</p>
+<p><strong>特点与创新点</strong>:
+- 😰→😊 以消除初学者不安为优先的分阶段学习设计
+- 🎯 通过早期成功体验建立自信与动力
+- 📈 从基础到高级的连贯技术成长路径
+- 🔧 聚焦 VRChat 特有约束与优化的实用内容
+- 🇯🇵 针对日语用户的文化与语言适配
+- 🤝 重视社区与持续学习</p>
 </div>
-<h3 id="version-101-2025-08-15">Version 1.0.1 (予定: 2025-08-15)<a class="headerlink" href="#version-101-2025-08-15" title="Permanent link">&para;</a></h3>
+<h3 id="version-101-2025-08-15">Version 1.0.1 (计划: 2025-08-15)<a class="headerlink" href="#version-101-2025-08-15" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">📝 初回フィードバック対応・小規模修正</p>
-<p><strong>予定修正内容</strong>:
-- ユーザーからの誤字・脱字・リンク修正
-- 説明不足箇所の補完・詳細化
-- スクリーンショット・図版の追加・更新
-- モバイル表示での軽微なUI改善</p>
-<p><strong>追加予定機能</strong>:
-- 各ページの推定所要時間表示の精緻化
-- 動画チュートリアルリンクの追加（外部）
-- よくある質問（FAQ）の追加項目</p>
+<p class="admonition-title">📝 首轮反馈处理与小规模修正</p>
+<p><strong>计划修正内容</strong>:
+- 根据用户反馈修正错字、漏字和链接
+- 补充说明不足的部分并细化内容
+- 增加或更新截图与图示
+- 轻微改善移动端显示 UI</p>
+<p><strong>计划新增功能</strong>:
+- 更精细地标注各页面预计耗时
+- 增加视频教程链接（外部）
+- 为 FAQ 增加更多条目</p>
 </div>
-<h3 id="version-110-2025-09-01">Version 1.1.0 (予定: 2025-09-01)<a class="headerlink" href="#version-110-2025-09-01" title="Permanent link">&para;</a></h3>
+<h3 id="version-110-2025-09-01">Version 1.1.0 (计划: 2025-09-01)<a class="headerlink" href="#version-110-2025-09-01" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">🆕 コンテンツ拡充・機能強化</p>
-<p><strong>新規追加予定</strong>:
-- <strong>衣装タイプ拡充</strong>:
-  - <code>garments/casual-wear.md</code> - カジュアルウェア制作
-  - <code>garments/one-piece.md</code> - ワンピース制作
-  - <code>garments/swimwear.md</code> - 水着・スポーツウェア制作</p>
+<p class="admonition-title">🆕 内容扩充与功能强化</p>
+<p><strong>计划新增内容</strong>:
+- <strong>扩充服装类型</strong>:
+  - <code>garments/casual-wear.md</code> - 休闲服制作
+  - <code>garments/one-piece.md</code> - 连衣裙制作
+  - <code>garments/swimwear.md</code> - 泳装与运动服制作</p>
 <ul>
-<li><strong>高度技術ガイド</strong>:</li>
-<li><code>physics/simulation-settings.md</code> - 詳細シミュレーション設定</li>
-<li><code>unity/vrchat-sdk3.md</code> - VRChat SDK3高度活用</li>
+<li><strong>高级技术指南</strong>:</li>
+<li><code>physics/simulation-settings.md</code> - 详细模拟设置</li>
+<li><code>unity/vrchat-sdk3.md</code> - VRChat SDK3 高级使用</li>
 <li>
-<p><code>advanced/automation.md</code> - 作業自動化・効率化テクニック</p>
+<p><code>advanced/automation.md</code> - 作业自动化与提效技巧</p>
 </li>
 <li>
-<p><strong>実用的ツール</strong>:</p>
+<p><strong>实用工具</strong>:</p>
 </li>
-<li>設定値計算機（JavaScript）</li>
-<li>パフォーマンス評価ツール</li>
-<li>プロジェクト管理テンプレート</li>
+<li>参数计算器（JavaScript）</li>
+<li>性能评估工具</li>
+<li>项目管理模板</li>
 </ul>
-<p><strong>改善予定</strong>:
-- 全ページの相互リンク最適化
-- 検索機能の強化
-- タグ・カテゴリ分類の改善</p>
+<p><strong>计划改进</strong>:
+- 优化全站页面之间的交叉链接
+- 强化搜索功能
+- 改进标签与分类体系</p>
 </div>
-<h3 id="version-120-2025-10-01">Version 1.2.0 (予定: 2025-10-01)<a class="headerlink" href="#version-120-2025-10-01" title="Permanent link">&para;</a></h3>
+<h3 id="version-120-2025-10-01">Version 1.2.0 (计划: 2025-10-01)<a class="headerlink" href="#version-120-2025-10-01" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">🌍 国際化・多言語対応</p>
-<p><strong>多言語展開</strong>:
-- 英語版の基本ページ翻訳
-- 韓国語・中国語（繁体字）の主要ページ翻訳
-- 多言語切り替え機能の実装</p>
-<p><strong>国際対応</strong>:
-- 海外ソフトウェア版数への対応情報追加
-- 国際的なコミュニティ情報の拡充
-- 文化的配慮・グローバル標準への調整</p>
+<p class="admonition-title">🌍 国际化与多语言支持</p>
+<p><strong>多语言拓展</strong>:
+- 翻译英文版基础页面
+- 翻译韩语与中文（繁体）主要页面
+- 实现多语言切换功能</p>
+<p><strong>国际支持</strong>:
+- 增加海外软件版本差异说明
+- 扩充国际社区信息
+- 依据全球标准进行文化适配</p>
 </div>
-<h3 id="version-200-2025-12-01">Version 2.0.0 (予定: 2025-12-01)<a class="headerlink" href="#version-200-2025-12-01" title="Permanent link">&para;</a></h3>
+<h3 id="version-200-2025-12-01">Version 2.0.0 (计划: 2025-12-01)<a class="headerlink" href="#version-200-2025-12-01" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
-<p class="admonition-title">🚀 メジャーアップデート・プラットフォーム拡張</p>
-<p><strong>大型機能追加</strong>:
-- <strong>インタラクティブ学習機能</strong>:
-  - ブラウザ内での3Dプレビュー
-  - ステップバイステップガイドの動的表示
-  - 進捗トラッキング・達成度可視化</p>
+<p class="admonition-title">🚀 重大更新与平台扩展</p>
+<p><strong>大型功能追加</strong>:
+- <strong>交互式学习功能</strong>:
+  - 浏览器内 3D 预览
+  - 分步骤指南动态显示
+  - 进度跟踪与达成度可视化</p>
 <ul>
-<li><strong>コミュニティ機能統合</strong>:</li>
-<li>ユーザー投稿・作品共有システム</li>
-<li>評価・フィードバックシステム</li>
+<li><strong>社区功能整合</strong>:</li>
+<li>用户投稿与作品分享系统</li>
+<li>评分与反馈系统</li>
 <li>
-<p>メンター・学習パートナーマッチング</p>
+<p>导师与学习伙伴匹配</p>
 </li>
 <li>
-<p><strong>AI支援機能</strong>:</p>
+<p><strong>AI 辅助功能</strong>:</p>
 </li>
-<li>AI駆動の質問応答システム</li>
-<li>パーソナライズされた学習パス推奨</li>
-<li>自動最適設定提案</li>
+<li>AI 驱动的问答系统</li>
+<li>个性化学习路径推荐</li>
+<li>自动提供最佳设置建议</li>
 </ul>
-<p><strong>プラットフォーム拡張</strong>:
-- モバイルアプリ版（iOS/Android）
-- PWA（Progressive Web App）対応
-- オフライン学習機能</p>
+<p><strong>平台扩展</strong>:
+- 移动应用版（iOS/Android）
+- 支持 PWA（Progressive Web App）
+- 离线学习功能</p>
 </div>
-<h2 id="_3">🔄 技術環境の変化・対応履歴<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="sdk">ソフトウェア・SDK更新対応<a class="headerlink" href="#sdk" title="Permanent link">&para;</a></h3>
+<h2 id="_3">🔄 技术环境变化与应对记录<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="sdk">应对软件与 SDK 更新<a class="headerlink" href="#sdk" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">外部依存技術の変化への追随</p>
-<p><strong>Marvelous Designer アップデート対応</strong>:
+<p class="admonition-title">跟进外部依赖技术变化</p>
+<p><strong>应对 Marvelous Designer 更新</strong>:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>MD 2025.0.1 (2025-08-08):
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>✅ 新機能確認・ドキュメント更新
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>✅ 既存手順の互換性確認
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>✅ パフォーマンス改善情報の反映
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>✅ 确认新功能并更新文档
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>✅ 验证现有步骤兼容性
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>✅ 反映性能改进信息
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>MD 2025.1.0 (予定対応):
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>📋 新機能の活用方法解説追加
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>📋 廃止予定機能の代替手段案内
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>📋 操作手順の変更点更新
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>MD 2025.1.0 (计划应对):
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>📋 补充新功能使用说明
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>📋 提供即将废弃功能的替代方案
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>📋 更新操作步骤变更点
 </code></pre></div></p>
-<p><strong>Unity・VRChat SDK更新対応</strong>:
+<p><strong>应对 Unity 与 VRChat SDK 更新</strong>:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Unity 2022.3.22f1 → 2022.3.23f1:
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>✅ LTS安定版での検証完了
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>✅ 既存プロジェクト互換性確認
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>✅ 已完成 LTS 稳定版验证
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>✅ 已确认现有项目兼容性
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>VRChat SDK 3.5.x → 3.6.x (予定):
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>📋 新機能・変更点の検証
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>📋 最適化手法の更新
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>📋 パフォーマンス基準の見直し
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>VRChat SDK 3.5.x → 3.6.x (计划):
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>📋 验证新功能与变更点
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>📋 更新优化方法
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>📋 重新评估性能标准
 </code></pre></div></p>
 </div>
-<h3 id="_4">プラットフォーム・インフラ更新<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h3 id="_4">平台与基础设施更新<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">基盤技術の進歩・改善</p>
-<p><strong>MkDocs・GitHub Pages</strong>:
-- MkDocs Material テーマ定期更新
-- GitHub Actions ワークフロー最適化
-- CDN・パフォーマンス改善</p>
-<p><strong>ブラウザ対応</strong>:
-- 主要ブラウザ最新版での表示確認
-- モバイルブラウザ互換性維持
-- アクセシビリティ基準の向上</p>
+<p class="admonition-title">基础技术的进步与改善</p>
+<p><strong>MkDocs 与 GitHub Pages</strong>:
+- 定期更新 MkDocs Material 主题
+- 优化 GitHub Actions 工作流
+- 改进 CDN 与性能</p>
+<p><strong>浏览器支持</strong>:
+- 在主流浏览器最新版本中确认显示效果
+- 保持移动浏览器兼容性
+- 提升无障碍标准</p>
 </div>
-<h2 id="_5">🐛 既知の問題・制限事項<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<h3 id="_6">現在の制限事項<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h2 id="_5">🐛 已知问题与限制事项<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="_6">当前限制<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
-<p class="admonition-title">現在把握している問題・制限</p>
-<p><strong>技術的制限</strong>:
-- 一部ブラウザでの3D表示機能未対応
-- 大容量画像の読み込み速度課題
-- モバイル版での一部機能制限</p>
-<p><strong>コンテンツ面</strong>:
-- 動画コンテンツの不足（外部リンク依存）
-- より高度な技術（シェーダー等）の解説不足
-- 特殊な体型・アバターへの対応情報不足</p>
-<p><strong>多言語対応</strong>:
-- 完全な多言語対応は未実装
-- 文化的な表現・配慮の差異
-- 各国の法的・技術的環境差への対応不足</p>
+<p class="admonition-title">当前已知问题与限制</p>
+<p><strong>技术限制</strong>:
+- 部分浏览器尚不支持 3D 显示功能
+- 大图加载速度仍有问题
+- 移动版部分功能受限</p>
+<p><strong>内容方面</strong>:
+- 视频内容不足（依赖外部链接）
+- 对更高级技术（如 Shader）的讲解不足
+- 对特殊体型与头像的适配信息不足</p>
+<p><strong>多语言支持</strong>:
+- 尚未实现完整多语言支持
+- 各语言之间存在表达与文化差异
+- 对各国法律与技术环境差异的适配仍不足</p>
 </div>
-<h3 id="_7">改善予定・対応計画<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="_7">改进计划与处理安排<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">問題解決への取り組み</p>
-<p><strong>短期対応（〜3ヶ月）</strong>:
-- 緊急度の高いバグ・誤情報の修正
-- ユーザビリティ向上のための改善
-- 基本的なアクセシビリティ対応</p>
-<p><strong>中期対応（3〜6ヶ月）</strong>:
-- 主要な機能追加・コンテンツ拡充
-- パフォーマンス・品質の全面改善
-- 多言語対応の段階的実装</p>
-<p><strong>長期対応（6ヶ月〜）</strong>:
-- プラットフォーム拡張・新技術対応
-- AI機能・高度な自動化実装
-- コミュニティ機能・社会的価値向上</p>
+<p class="admonition-title">解决问题的推进方式</p>
+<p><strong>短期应对（～3 个月）</strong>:
+- 修正高优先级 Bug 与错误信息
+- 改善可用性
+- 完成基础无障碍支持</p>
+<p><strong>中期应对（3～6 个月）</strong>:
+- 扩充主要功能与内容
+- 全面提升性能与质量
+- 分阶段落实多语言支持</p>
+<p><strong>长期应对（6 个月以上）</strong>:
+- 平台扩展与支持新技术
+- 落实 AI 功能与高级自动化
+- 提升社区功能与社会价值</p>
 </div>
-<h2 id="_8">📊 プロジェクト統計・メトリクス<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<h3 id="v100">開発統計（v1.0.0時点）<a class="headerlink" href="#v100" title="Permanent link">&para;</a></h3>
+<h2 id="_8">📊 项目统计与指标<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="v100">开发统计（截至 v1.0.0）<a class="headerlink" href="#v100" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">プロジェクト規模・投入リソース</p>
-<p><strong>コンテンツ統計</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>総ページ数: 20+ ページ
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>総文字数: 約 200,000 文字
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>コードサンプル: 50+ 例
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>図・表・チェックリスト: 100+ 項目
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>外部リンク: 200+ 個
+<p class="admonition-title">项目规模与投入资源</p>
+<p><strong>内容统计</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>总页数: 20+ 页
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>总字数: 约 200,000 字
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>代码示例: 50+ 个
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>图表与检查清单: 100+ 项
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>外部链接: 200+ 个
 <a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>ファイル構成:
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>- マークダウンファイル: 20+ 個
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>- CSS・JavaScript: 2 個
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>- 設定ファイル: 3 個
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>- ドキュメント: 5 個
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>文件构成:
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>- Markdown 文件: 20+ 个
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>- CSS 与 JavaScript: 2 个
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>- 配置文件: 3 个
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>- 文档文件: 5 个
 </code></pre></div></p>
-<p><strong>技術投入</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>開発時間: 約 40-50 時間（継続的）
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>使用技術:
+<p><strong>技术投入</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>开发时间: 约 40-50 小时（持续中）
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>使用技术:
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>- MkDocs Material
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>- Markdown + HTML
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>- CSS3 + JavaScript ES6
 <a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>- GitHub Pages + GitHub Actions
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>- Git バージョン管理
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>- Git 版本管理
 <a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>品質保証:
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>- 全ページ内容確認・校正
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>- リンク切れ・誤情報の確認
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>- 複数ブラウザでの表示確認
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>- モバイル・タブレット表示確認
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>质量保证:
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>- 确认并校对全部页面内容
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>- 检查失效链接与错误信息
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>- 在多个浏览器中确认显示
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>- 确认移动端与平板显示效果
 </code></pre></div></p>
 </div>
-<h3 id="_9">今後の目標指標<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h3 id="_9">后续目标指标<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
-<p class="admonition-title">達成を目指すメトリクス</p>
-<p><strong>2025年目標</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>利用者数: 1,000+ ユニークユーザー/月
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>GitHub Stars: 100+ スター
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>コミュニティ参加: 500+ メンバー
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>言語対応: 3言語（日・英・韓）
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>コンテンツ: 30+ ページ
+<p class="admonition-title">目标达成指标</p>
+<p><strong>2025 年目标</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>用户数: 1,000+ 独立用户/月
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>GitHub Stars: 100+ Stars
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>社区参与: 500+ 成员
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>语言支持: 3 种语言（日/英/韩）
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>内容规模: 30+ 页
 </code></pre></div></p>
-<p><strong>品質目標</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ユーザー満足度: 4.5/5.0 以上
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>完走率: 80% 以上（基礎コースまで）
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>エラー・問題報告: 月5件以下
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>更新頻度: 月2回以上
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>レスポンス時間: 3秒以内（全ページ）
+<p><strong>质量目标</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>用户满意度: 4.5/5.0 以上
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>完成率: 80% 以上（至少完成基础课程）
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>错误与问题报告: 每月不超过 5 件
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>更新频率: 每月至少 2 次
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>响应时间: 所有页面 3 秒以内
 </code></pre></div></p>
 </div>
-<h2 id="_10">🤝 コントリビューション・協力者<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
-<h3 id="_11">主要コントリビューター<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h2 id="_10">🤝 贡献与协作者<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h3 id="_11">主要贡献者<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
-<p class="admonition-title">プロジェクトへの貢献者</p>
-<p><strong>開発チーム</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>プロジェクトリード: Claude (AI Assistant)
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>技術監修: コミュニティメンバー（匿名）
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>デザイン・UI: Material Design チーム
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>品質保証: オープンソースコミュニティ
+<p class="admonition-title">对项目做出贡献的人</p>
+<p><strong>开发团队</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>项目负责人: Claude (AI Assistant)
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>技术监修: 社区成员（匿名）
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>设计与 UI: Material Design 团队
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>质量保证: 开源社区
 </code></pre></div></p>
-<p><strong>コミュニティ貢献</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>内容レビュー: VRChatクリエイターコミュニティ
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>多言語翻訳: 国際コミュニティボランティア
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>テクニカルサポート: Discord サポートメンバー
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>フィードバック: 全利用者
+<p><strong>社区贡献</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>内容评审: VRChat 创作者社区
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>多语言翻译: 国际社区志愿者
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>技术支持: Discord 支持成员
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>反馈提供: 所有使用者
 </code></pre></div></p>
 </div>
-<h3 id="_12">貢献方法・参加の仕組み<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h3 id="_12">贡献方式与参与机制<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">プロジェクトに参加する方法</p>
-<p><strong>GitHub での貢献</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>1. Issues: バグ報告・機能要望
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>2. Pull Requests: コンテンツ改善・修正
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>3. Discussions: アイデア・提案・議論
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>4. Wiki: 追加情報・FAQ・Tips
+<p class="admonition-title">如何参与项目</p>
+<p><strong>通过 GitHub 贡献</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>1. Issues: 提交 Bug 报告与功能需求
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>2. Pull Requests: 改进或修正文档内容
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>3. Discussions: 提出想法、建议与讨论
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>4. Wiki: 补充信息、FAQ 与 Tips
 </code></pre></div></p>
-<p><strong>コミュニティでの貢献</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>1. 利用体験・感想の共有
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>2. 改善提案・新機能アイデア
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>3. 他のユーザーサポート・質問回答
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>4. 作品・成果の共有・インスピレーション提供
+<p><strong>通过社区贡献</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>1. 分享使用体验与感想
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>2. 提出改进建议与新功能创意
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>3. 帮助其他用户并回答问题
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>4. 分享作品与成果，提供灵感
 </code></pre></div></p>
-<p><strong>専門的な貢献</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>1. 技術記事・チュートリアルの執筆
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>2. 多言語翻訳・ローカライゼーション
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>3. 動画・マルチメディアコンテンツ制作
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>4. コミュニティイベント・勉強会の開催
+<p><strong>专业贡献</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>1. 撰写技术文章与教程
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>2. 参与多语言翻译与本地化
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>3. 制作视频与多媒体内容
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>4. 举办社区活动与学习会
 </code></pre></div></p>
 </div>
-<h2 id="_13">🔮 長期ビジョン・ロードマップ<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
-<h3 id="32028">3年後のビジョン（2028年）<a class="headerlink" href="#32028" title="Permanent link">&para;</a></h3>
+<h2 id="_13">🔮 长期愿景与路线图<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<h3 id="2028">三年后的愿景（2028 年）<a class="headerlink" href="#2028" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
-<p class="admonition-title">🌟 目指す未来像</p>
-<p><strong>プロジェクトの理想像</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>グローバルスタンダード:
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>- VRChat衣装制作の世界標準リファレンス
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>- 10言語以上での提供
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>- 月間 10,000+ ユーザーの利用
+<p class="admonition-title">🌟 目标中的未来图景</p>
+<p><strong>项目理想状态</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>全球标准:
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>- 成为 VRChat 服装制作的全球标准参考
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>- 提供 10 种以上语言版本
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>- 月活用户达到 10,000+
 <a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>教育プラットフォーム:
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>- 大学・専門学校での公式教材採用
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>- プロフェッショナル認定制度の確立
-<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>- 企業研修・人材育成での活用
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>教育平台:
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>- 被大学与专门学校采用为正式教材
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>- 建立专业认证制度
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>- 用于企业培训与人才培养
 <a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
-<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>技術・イノベーション:
-<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>- AI支援による個別化学習システム
-<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>- VR/AR環境での直接学習・実習
-<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>- 新技術・新プラットフォームへの迅速対応
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>技术与创新:
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>- AI 辅助的个性化学习系统
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>- 在 VR/AR 环境中直接学习与实训
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>- 快速适配新技术与新平台
 <a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>
-<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>コミュニティ・文化:
-<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>- 30,000+ メンバーの活発なコミュニティ
-<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>- 年間 100+ 名のプロクリエイター輩出
-<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>- VRChatファッション文化の国際的普及
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>社区与文化:
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>- 30,000+ 成员的活跃社区
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>- 每年培养 100+ 名专业创作者
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>- 推动 VRChat 时尚文化国际传播
 </code></pre></div></p>
-<p><strong>社会的影響・価値</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>経済価値:
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>- VRChat衣装産業の市場規模拡大支援
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>- 新規雇用・キャリア機会の創出
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>- 日本発の技術・文化の国際展開
+<p><strong>社会影响与价值</strong>:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>经济价值:
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>- 支持扩大 VRChat 服装产业规模
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>- 创造新的就业与职业机会
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>- 推动日本技术与文化走向国际
 <a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>教育価値:
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>- デジタルクリエイティブ教育の標準化
-<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>- 技術と芸術の融合分野の発展
-<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>- 生涯学習・リスキリングの支援
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>教育价值:
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>- 推动数字创意教育标准化
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>- 发展技术与艺术融合领域
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>- 支持终身学习与技能再培训
 <a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
-<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>文化価値:
-<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>- バーチャルファッションの芸術的価値確立
-<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>- 多様性・包括性の促進
-<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>- 新しい表現・コミュニケーション様式の創造
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>文化价值:
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>- 确立虚拟时尚的艺术价值
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>- 推动多样性与包容性
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>- 创造新的表达方式与沟通方式
 </code></pre></div></p>
 </div>
-<h3 id="2025-2028">ロードマップ（2025-2028）<a class="headerlink" href="#2025-2028" title="Permanent link">&para;</a></h3>
+<h3 id="2025-2028">路线图（2025-2028）<a class="headerlink" href="#2025-2028" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">段階的発展計画</p>
-<p><strong>2025年: 基盤確立期</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Q3: v1.1.0 - コンテンツ拡充
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>Q4: v1.2.0 - 多言語対応開始
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>目標: 日本国内での認知度確立・コミュニティ形成
+<p class="admonition-title">分阶段发展计划</p>
+<p><strong>2025 年: 夯实基础期</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Q3: v1.1.0 - 扩充内容
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>Q4: v1.2.0 - 启动多语言支持
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>目标: 在日本国内建立认知度并形成社区
 </code></pre></div></p>
-<p><strong>2026年: 国際展開期</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Q1: v2.0.0 - メジャーアップデート
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>Q2-Q4: 海外市場進出・パートナーシップ
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>目標: アジア太平洋地域での確固たる地位確立
+<p><strong>2026 年: 国际拓展期</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Q1: v2.0.0 - 重大更新
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>Q2-Q4: 进入海外市场并建立合作关系
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>目标: 在亚太地区建立稳固地位
 </code></pre></div></p>
-<p><strong>2027年: イノベーション期</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Q1-Q2: AI・新技術の本格導入
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>Q3-Q4: プラットフォーム拡張・エコシステム構築
-<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>目標: 技術革新のリーダーシップ確立
+<p><strong>2027 年: 创新期</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>Q1-Q2: 正式引入 AI 与新技术
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>Q3-Q4: 扩展平台并构建生态系统
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>目标: 建立技术创新领导地位
 </code></pre></div></p>
-<p><strong>2028年: 成熟・影響期</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>通年: グローバルスタンダード化
-<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>通年: 社会的影響・価値の最大化
-<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>目標: 分野を定義する不動の地位確立
+<p><strong>2028 年: 成熟与影响期</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>全年: 推动全球标准化
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>全年: 最大化社会影响与价值
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>目标: 确立该领域不可动摇的地位
 </code></pre></div></p>
 </div>
-<h2 id="_14">📞 フィードバック・お問い合わせ<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
-<h3 id="_15">フィードバック歓迎<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<h2 id="_14">📞 反馈与联系<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h3 id="_15">欢迎反馈<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">皆様の声をお聞かせください</p>
-<p><strong>歓迎するフィードバック</strong>:
-- 内容の正確性・最新性に関する指摘
-- 分かりやすさ・説明方法の改善提案
-- 新しいコンテンツ・機能の要望
-- 技術的な問題・バグの報告
-- 利用体験・成功事例の共有</p>
-<p><strong>フィードバック方法</strong>:
+<p class="admonition-title">欢迎告诉我们你的想法</p>
+<p><strong>欢迎的反馈内容</strong>:
+- 指出内容准确性与时效性问题
+- 提出提升易懂性与说明方式的建议
+- 提出新内容与新功能需求
+- 报告技术问题与 Bug
+- 分享使用体验与成功案例</p>
+<p><strong>反馈方式</strong>:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>GitHub Issues:
-<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>- バグ報告・機能要望
-<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>- 公開討論・コミュニティ参加歓迎
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>- Bug 报告与功能需求
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>- 欢迎公开讨论与社区参与
 <a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
-<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>Discord コミュニティ:
-<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>- カジュアルな意見交換
-<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>- リアルタイムでの質問・相談
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>Discord 社区:
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>- 轻松交流想法
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>- 实时提问与咨询
 <a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>
-<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>Twitter・SNS:
-<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>- 作品・成果の共有
-<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>- 日常的な情報交換
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>Twitter 与 SNS:
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>- 分享作品与成果
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>- 日常信息交流
 <a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
-<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>メール・DM:
-<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>- プライベートな相談・提案
-<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>- 協業・パートナーシップの相談
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>邮件与私信:
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>- 私下咨询与提案
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>- 合作与伙伴关系洽谈
 </code></pre></div></p>
 </div>
-<h3 id="_16">謝辞・感謝<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<h3 id="_16">致谢与感谢<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
-<p class="admonition-title">💖 すべての関係者への感謝</p>
-<p><strong>このプロジェクトは多くの方々の支援により実現しています</strong>:</p>
+<p class="admonition-title">💖 感谢所有相关人员</p>
+<p><strong>本项目离不开众多人的支持</strong>:</p>
 <ul>
-<li><strong>VRChatクリエイターコミュニティ</strong>: 貴重な知識・経験・情熱の共有</li>
-<li><strong>ソフトウェア開発者</strong>: Marvelous Designer、Unity、VRChatの素晴らしいツール提供</li>
-<li><strong>オープンソースコミュニティ</strong>: MkDocs、GitHub、その他の基盤技術</li>
-<li><strong>教育・学習者</strong>: フィードバック・改善提案・利用による価値実証</li>
-<li><strong>国際コミュニティ</strong>: 多様な視点・文化的豊かさの提供</li>
+<li><strong>VRChat 创作者社区</strong>: 分享宝贵知识、经验与热情</li>
+<li><strong>软件开发者</strong>: 提供 Marvelous Designer、Unity、VRChat 这些优秀工具</li>
+<li><strong>开源社区</strong>: 提供 MkDocs、GitHub 及其他基础技术</li>
+<li><strong>教育者与学习者</strong>: 通过反馈、改进建议与实际使用验证项目价值</li>
+<li><strong>国际社区</strong>: 提供多元视角与文化丰富性</li>
 </ul>
-<p>皆様の協力なしには、このプロジェクトは実現できませんでした。
-心からの感謝を申し上げます。</p>
-<p>そして、これからもより良いリソースを作り続けるため、
-皆様の継続的なご支援・ご協力をお願いいたします。</p>
-<p>共に、VRChatの世界をより美しく、より楽しく、より豊かにしていきましょう！</p>
+<p>没有大家的协作，这个项目无法实现。
+在此致以衷心感谢。</p>
+<p>未来也希望持续获得大家的支持与协作，
+共同打造更好的资源。</p>
+<p>一起让 VRChat 的世界变得更美、更有趣，也更加丰富。</p>
 </div>
 <hr />
-<p><em>最終更新: 2025-08-08</em>
-<em>このログは継続的に更新され、プロジェクトの透明性と継続的改善を支援します。</em></p>
+<p><em>最后更新: 2025-08-08</em>
+<em>本日志将持续更新，以支持项目透明度与持续改进。</em></p>
 
 
 
@@ -2605,10 +2918,10 @@
     
       
   <span class="md-source-file__fact">
-    <span class="md-icon" title="最終更新日">
+    <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年8月10日 07:58:43 JST">2025年8月10日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年3月18日 20:55:00 CST">2026年3月18日</span>
   </span>
 
     
@@ -2617,8 +2930,6 @@
     
   </aside>
 
-
-  
 
 
 
@@ -2636,7 +2947,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  ページトップへ戻る
+  回到页面顶部
 </button>
         
       </main>
@@ -2654,14 +2965,15 @@
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
     
     
     <a href="https://github.com/username/vrchat-garment-guide" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -2678,10 +2990,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       

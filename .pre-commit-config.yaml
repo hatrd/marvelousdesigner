@@ -32,7 +32,7 @@ repos:
         description: "改行ずれ・Markdown変換エラーなどを検出（docs/のみ）"
         entry: /usr/bin/python3 scripts/pre_commit_wrapper.py quality_check
         language: system
-        files: ^docs/.*\.md$
+        files: ^docs/(?!zh-CN/).+\.md$
         require_serial: true
         
       - id: japanese-text-check
@@ -40,7 +40,7 @@ repos:
         description: "日本語文書の特殊な問題をチェック（docs/のみ）"
         entry: /usr/bin/python3 scripts/pre_commit_wrapper.py japanese_text_check
         language: system
-        files: ^docs/.*\.md$
+        files: ^docs/(?!zh-CN/).+\.md$
         require_serial: true
         
       - id: link-check
@@ -48,6 +48,6 @@ repos:
         description: "Markdownファイル間のリンクをチェック（pre-commit時は軽量）"
         entry: /usr/bin/python3 scripts/link_check.py --pre-commit
         language: system
-        files: ^docs/.*\.md$
+        files: ^docs/(?!zh-CN/).+\.md$
         pass_filenames: false
         require_serial: true

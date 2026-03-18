@@ -1,18 +1,18 @@
 
 <!doctype html>
-<html lang="ja" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Marvelous DesignerとUnityを使ったVRChat衣装制作の完全初心者向けガイド">
+        <meta name="description" content="使用 Marvelous Designer 和 Unity 制作 VRChat 服装的简体中文入门指南">
       
       
         <meta name="author" content="VRChat Garment Creation Team">
       
       
-        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/basics/ai-features/">
+        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/zh-CN/basics/ai-features/">
       
       
         <link rel="prev" href="../md-interface/">
@@ -21,19 +21,22 @@
         <link rel="next" href="../basic-concepts/">
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>AI機能ガイド - VRChat衣装制作完全ガイド</title>
+        <title>AI 功能指南 - VRChat 服装制作完整指南</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,8 +50,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Noto Sans JP";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -57,18 +60,7 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
 
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
-
-    
     
     
   <meta name="google-site-verification" content="2MW4wZaZsAsSzYUYyh514GoRY2nDaBF1VcITV1P3xSk" />
@@ -93,7 +85,7 @@
       
         
         <a href="#marvelous-designer-ai" class="md-skip">
-          コンテンツにスキップ
+          跳转至
         </a>
       
     </div>
@@ -101,16 +93,12 @@
       
     </div>
     
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-      </div>
-    
     
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-header__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-header__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -124,13 +112,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            VRChat衣装制作完全ガイド
+            VRChat 服装制作完整指南
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              AI機能ガイド
+              AI 功能指南
             
           </span>
         </div>
@@ -143,9 +131,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -153,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -178,16 +166,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="検索">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -200,7 +188,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            検索を初期化
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -212,10 +200,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+        <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -233,7 +221,7 @@
         
           
             
-<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -249,7 +237,7 @@
   
     
   
-  ホーム
+  首页
 
       </a>
     </li>
@@ -268,7 +256,7 @@
           
   
   
-  環境設定
+  环境设置
 
         </a>
       </li>
@@ -290,7 +278,7 @@
           
   
   
-  基礎知識
+  基础知识
 
         </a>
       </li>
@@ -310,7 +298,7 @@
           
   
   
-  作業手順
+  工作流程
 
         </a>
       </li>
@@ -330,7 +318,7 @@
           
   
   
-  衣装別制作ガイド
+  分类服装制作指南
 
         </a>
       </li>
@@ -350,7 +338,7 @@
           
   
   
-  物理設定・最適化
+  物理设置与优化
 
         </a>
       </li>
@@ -370,7 +358,7 @@
           
   
   
-  最適化・品質向上
+  优化与质量提升
 
         </a>
       </li>
@@ -390,7 +378,7 @@
           
   
   
-  高度な技術・MD2025
+  高级技术与 MD2025
 
         </a>
       </li>
@@ -410,7 +398,7 @@
           
   
   
-  Unity統合
+  Unity 集成
 
         </a>
       </li>
@@ -430,7 +418,7 @@
           
   
   
-  リソース・参考資料
+  资源与参考资料
 
         </a>
       </li>
@@ -460,22 +448,22 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-nav__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-nav__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    VRChat衣装制作完全ガイド
+    VRChat 服装制作完整指南
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+      <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -497,9 +485,14 @@
   
   
   <span class="md-ellipsis">
-    ホーム
+    
+  
+    首页
+  
+
     
   </span>
+  
   
 
       </a>
@@ -537,9 +530,14 @@
   
   
   <span class="md-ellipsis">
-    環境設定
+    
+  
+    环境设置
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -548,7 +546,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            環境設定
+            
+  
+    环境设置
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -564,9 +566,14 @@
   
   
   <span class="md-ellipsis">
-    ソフトウェア確認
+    
+  
+    软件确认
+  
+
     
   </span>
+  
   
 
       </a>
@@ -587,9 +594,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designer初回起動
+    
+  
+    Marvelous Designer 首次启动
+  
+
     
   </span>
+  
   
 
       </a>
@@ -610,9 +622,14 @@
   
   
   <span class="md-ellipsis">
-    Unity・VRChat SDK設定
+    
+  
+    Unity 与 VRChat SDK 设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -661,9 +678,14 @@
   
   
   <span class="md-ellipsis">
-    基礎知識
+    
+  
+    基础知识
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -672,7 +694,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            基礎知識
+            
+  
+    基础知识
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -688,9 +714,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designerインターフェース
+    
+  
+    Marvelous Designer 界面
+  
+
     
   </span>
+  
   
 
       </a>
@@ -720,9 +751,14 @@
   
   
   <span class="md-ellipsis">
-    AI機能ガイド
+    
+  
+    AI 功能指南
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -733,9 +769,14 @@
   
   
   <span class="md-ellipsis">
-    AI機能ガイド
+    
+  
+    AI 功能指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -744,7 +785,7 @@
 
   
 
-<nav class="md-nav md-nav--secondary" aria-label="このページの内容">
+<nav class="md-nav md-nav--secondary" aria-label="本页内容">
   
   
   
@@ -753,14 +794,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      このページの内容
+      本页内容
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#ai" class="md-nav__link">
     <span class="md-ellipsis">
-      AI機能の概要
+      
+        AI 功能概述
+      
     </span>
   </a>
   
@@ -769,35 +812,43 @@
         <li class="md-nav__item">
   <a href="#ai_1" class="md-nav__link">
     <span class="md-ellipsis">
-      利用可能なAI機能
+      
+        可用的 AI 功能
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="利用可能なAI機能">
+    <nav class="md-nav" aria-label="可用的 AI 功能">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ai_2" class="md-nav__link">
+  <a href="#ai-beta" class="md-nav__link">
     <span class="md-ellipsis">
-      🎨 AIテクスチャジェネレーター（ベータ版）
+      
+        🎨 AI 纹理生成器（Beta）
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ai_3" class="md-nav__link">
+  <a href="#ai-beta_1" class="md-nav__link">
     <span class="md-ellipsis">
-      🖼 AIグラフィックジェネレーター（ベータ版）
+      
+        🖼 AI 图形生成器（Beta）
+      
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pbr" class="md-nav__link">
+  <a href="#pbr-map" class="md-nav__link">
     <span class="md-ellipsis">
-      🏗 PBRマップジェネレーター
+      
+        🏗 PBR Map 生成器
+      
     </span>
   </a>
   
@@ -811,17 +862,21 @@
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      実践的な使用例
+      
+        实际使用示例
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="実践的な使用例">
+    <nav class="md-nav" aria-label="实际使用示例">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      初心者向け：デニムジャケット作成
+      
+        面向初学者：制作牛仔夹克
+      
     </span>
   </a>
   
@@ -830,7 +885,9 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      中級者向け：オリジナルドレス
+      
+        面向中级用户：原创礼服
+      
     </span>
   </a>
   
@@ -844,17 +901,21 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      注意点とベストプラクティス
+      
+        注意事项与最佳实践
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="注意点とベストプラクティス">
+    <nav class="md-nav" aria-label="注意事项与最佳实践">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚠️ 重要な制限事項
+      
+        ⚠️ 重要限制
+      
     </span>
   </a>
   
@@ -863,7 +924,9 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      💡 効果的な使用のコツ
+      
+        💡 高效使用技巧
+      
     </span>
   </a>
   
@@ -877,17 +940,21 @@
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      トラブルシューティング
+      
+        故障排查
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="トラブルシューティング">
+    <nav class="md-nav" aria-label="故障排查">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      よくある問題と対処法
+      
+        常见问题与处理方法
+      
     </span>
   </a>
   
@@ -901,7 +968,9 @@
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      次のステップ
+      
+        下一步
+      
     </span>
   </a>
   
@@ -928,9 +997,14 @@
   
   
   <span class="md-ellipsis">
-    3Dモデリング基本概念
+    
+  
+    3D 建模基础概念
+  
+
     
   </span>
+  
   
 
       </a>
@@ -951,9 +1025,14 @@
   
   
   <span class="md-ellipsis">
-    制作工程全体像
+    
+  
+    制作流程全貌
+  
+
     
   </span>
+  
   
 
       </a>
@@ -974,9 +1053,14 @@
   
   
   <span class="md-ellipsis">
-    ファイル形式の理解
+    
+  
+    文件格式的理解
+  
+
     
   </span>
+  
   
 
       </a>
@@ -997,9 +1081,14 @@
   
   
   <span class="md-ellipsis">
-    専門用語集
+    
+  
+    术语表
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1045,9 +1134,14 @@
   
   
   <span class="md-ellipsis">
-    作業手順
+    
+  
+    工作流程
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1056,7 +1150,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            作業手順
+            
+  
+    工作流程
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1072,9 +1170,14 @@
   
   
   <span class="md-ellipsis">
-    アバターの読み込み
+    
+  
+    导入头像
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1095,9 +1198,14 @@
   
   
   <span class="md-ellipsis">
-    衣装のフィッティング
+    
+  
+    现有服装适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1118,9 +1226,14 @@
   
   
   <span class="md-ellipsis">
-    モジュラー衣装システム
+    
+  
+    模块化服装系统
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1141,9 +1254,14 @@
   
   
   <span class="md-ellipsis">
-    非対応アバター改変
+    
+  
+    非兼容头像改造
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1164,9 +1282,14 @@
   
   
   <span class="md-ellipsis">
-    新規衣装制作手順
+    
+  
+    新建服装制作
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1187,9 +1310,14 @@
   
   
   <span class="md-ellipsis">
-    よくある問題と対処
+    
+  
+    常见问题与处理
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1235,9 +1363,14 @@
   
   
   <span class="md-ellipsis">
-    衣装別制作ガイド
+    
+  
+    分类服装制作指南
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1246,7 +1379,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            衣装別制作ガイド
+            
+  
+    分类服装制作指南
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1262,9 +1399,14 @@
   
   
   <span class="md-ellipsis">
-    Tシャツ（初心者向け）
+    
+  
+    T 恤（适合初学者）
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1285,9 +1427,14 @@
   
   
   <span class="md-ellipsis">
-    スカート
+    
+  
+    裙子
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1308,9 +1455,14 @@
   
   
   <span class="md-ellipsis">
-    ドレス
+    
+  
+    礼服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1331,9 +1483,14 @@
   
   
   <span class="md-ellipsis">
-    カジュアル服
+    
+  
+    休闲服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1354,9 +1511,14 @@
   
   
   <span class="md-ellipsis">
-    ワンピース
+    
+  
+    连衣裙
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1377,9 +1539,14 @@
   
   
   <span class="md-ellipsis">
-    水着
+    
+  
+    泳装
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1425,9 +1592,14 @@
   
   
   <span class="md-ellipsis">
-    物理設定・最適化
+    
+  
+    物理设置与优化
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1436,7 +1608,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            物理設定・最適化
+            
+  
+    物理设置与优化
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1452,9 +1628,14 @@
   
   
   <span class="md-ellipsis">
-    布の物理特性設定
+    
+  
+    布料物理特性设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1475,9 +1656,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス最適化
+    
+  
+    性能优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1523,9 +1709,14 @@
   
   
   <span class="md-ellipsis">
-    最適化・品質向上
+    
+  
+    优化与质量提升
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1534,7 +1725,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            最適化・品質向上
+            
+  
+    优化与质量提升
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1550,9 +1745,14 @@
   
   
   <span class="md-ellipsis">
-    Very Poor脱却完全ガイド
+    
+  
+    摆脱 Very Poor 完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1573,9 +1773,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス分析ツール
+    
+  
+    性能分析工具
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1596,9 +1801,14 @@
   
   
   <span class="md-ellipsis">
-    モバイル完全対応
+    
+  
+    移动端完全适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1644,9 +1854,14 @@
   
   
   <span class="md-ellipsis">
-    高度な技術・MD2025
+    
+  
+    高级技术与 MD2025
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1655,7 +1870,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            高度な技術・MD2025
+            
+  
+    高级技术与 MD2025
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1671,9 +1890,14 @@
   
   
   <span class="md-ellipsis">
-    MD2025新機能完全ガイド
+    
+  
+    MD2025 新功能完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1694,9 +1918,14 @@
   
   
   <span class="md-ellipsis">
-    EveryWear統合ワークフロー
+    
+  
+    EveryWear 集成工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1717,9 +1946,14 @@
   
   
   <span class="md-ellipsis">
-    IK-Joint最適化
+    
+  
+    IK-Joint 优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1765,9 +1999,14 @@
   
   
   <span class="md-ellipsis">
-    Unity統合
+    
+  
+    Unity 集成
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1776,7 +2015,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Unity統合
+            
+  
+    Unity 集成
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1792,9 +2035,14 @@
   
   
   <span class="md-ellipsis">
-    Unityプロジェクト設定
+    
+  
+    Unity 项目设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1815,9 +2063,14 @@
   
   
   <span class="md-ellipsis">
-    FBXからVRChatまでの完全ワークフロー
+    
+  
+    从 FBX 到 VRChat 的完整工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1838,9 +2091,14 @@
   
   
   <span class="md-ellipsis">
-    アバターアップロード
+    
+  
+    头像上传
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1886,9 +2144,14 @@
   
   
   <span class="md-ellipsis">
-    リソース・参考資料
+    
+  
+    资源与参考资料
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1897,7 +2160,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            リソース・参考資料
+            
+  
+    资源与参考资料
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1913,9 +2180,14 @@
   
   
   <span class="md-ellipsis">
-    有用なリンク集
+    
+  
+    实用链接集
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1936,9 +2208,14 @@
   
   
   <span class="md-ellipsis">
-    CLO-SET Connect・EveryWear
+    
+  
+    CLO-SET Connect 与 EveryWear
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1959,9 +2236,14 @@
   
   
   <span class="md-ellipsis">
-    コミュニティ情報
+    
+  
+    社区信息
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1982,9 +2264,14 @@
   
   
   <span class="md-ellipsis">
-    上級者向けリソース
+    
+  
+    进阶资源
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2005,9 +2292,14 @@
   
   
   <span class="md-ellipsis">
-    更新履歴
+    
+  
+    更新记录
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2033,6 +2325,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2042,219 +2335,219 @@
   
 
 
-<h1 id="marvelous-designer-ai">Marvelous Designer AI機能ガイド<a class="headerlink" href="#marvelous-designer-ai" title="Permanent link">&para;</a></h1>
-<h2 id="ai">AI機能の概要<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h2>
-<p>Marvelous Designer 2024.1から導入された<strong>AI機能</strong>は、テクスチャ作成やグラフィック生成を大幅に効率化する革新的なツールです。初心者でも簡単に美しい衣装デザインを作成できるよう設計されています。</p>
+<h1 id="marvelous-designer-ai">Marvelous Designer AI 功能指南<a class="headerlink" href="#marvelous-designer-ai" title="Permanent link">&para;</a></h1>
+<h2 id="ai">AI 功能概述<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h2>
+<p>自 Marvelous Designer 2024.1 起引入的 <strong>AI 功能</strong>，是能够大幅提升纹理制作与图形生成效率的创新工具。它的设计目标是让初学者也能轻松制作出美观的服装设计。</p>
 <div class="admonition info">
-<p class="admonition-title">対応バージョン</p>
+<p class="admonition-title">支持版本</p>
 <ul>
-<li><strong>Marvelous Designer 2024.1以降</strong>で利用可能</li>
-<li><strong>ベータ版機能</strong>のため、今後のアップデートで仕様が変更される可能性があります</li>
-<li><strong>日本語プロンプト</strong>は現在未対応（英語のみ）</li>
+<li>可在 <strong>Marvelous Designer 2024.1 及以上版本</strong> 中使用</li>
+<li>由于属于 <strong>Beta 功能</strong>，后续更新中规格可能发生变化</li>
+<li>当前 <strong>不支持日语提示词</strong>（仅支持英文）</li>
 </ul>
 </div>
-<h2 id="ai_1">利用可能なAI機能<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h2>
-<h3 id="ai_2">🎨 AIテクスチャジェネレーター（ベータ版）<a class="headerlink" href="#ai_2" title="Permanent link">&para;</a></h3>
-<p>キーワードを入力するだけで、様々な布地テクスチャを自動生成できる機能です。</p>
-<p><strong>主な特徴：</strong>
-- <strong>キーワード入力</strong>：「leather」「denim」「silk」などの英単語でテクスチャを生成
-- <strong>リアルタイムプレビュー</strong>：3Dガーメント上で即座に確認可能
-- <strong>シームレステクスチャ</strong>：継ぎ目のない美しいテクスチャを自動生成
-- <strong>パラメータ調整</strong>：布地の種類、内容タイプ、パターンサイズを調整可能</p>
+<h2 id="ai_1">可用的 AI 功能<a class="headerlink" href="#ai_1" title="Permanent link">&para;</a></h2>
+<h3 id="ai-beta">🎨 AI 纹理生成器（Beta）<a class="headerlink" href="#ai-beta" title="Permanent link">&para;</a></h3>
+<p>只需输入关键词，就能自动生成各种布料纹理的功能。</p>
+<p><strong>主要特点：</strong>
+- <strong>关键词输入</strong>: 使用 <code>leather</code>、<code>denim</code>、<code>silk</code> 等英文单词生成纹理
+- <strong>实时预览</strong>: 可立即在 3D Garment 上确认效果
+- <strong>无缝纹理</strong>: 自动生成没有接缝的精美纹理
+- <strong>参数调整</strong>: 可调整布料类型、内容类型、版型尺寸</p>
 <p><strong>使用方法：</strong></p>
 <ol>
 <li>
-<p><strong>ファブリック選択</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>衣装 &gt; ファブリック &gt; 使用したいファブリックを選択
+<p><strong>选择 Fabric</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>服装 &gt; Fabric &gt; 选择想使用的 Fabric
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>AI機能アクセス</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ファブリックプロパティウィンドウ &gt; 基本パラメータボタンの隣
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>&gt; 「AIテクスチャジェネレーター（ベータ）」ボタンをクリック
+<p><strong>进入 AI 功能</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Fabric 属性窗口 &gt; 基本参数按钮旁边
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>&gt; 点击“AI 纹理生成器（Beta）”按钮
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>テクスチャ生成</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>- ダイアログボックス上部でオプション設定
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>- テキストプロンプト欄に英語キーワード入力
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>- 生成された画像が下部に表示される
+<p><strong>生成纹理</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>- 在对话框顶部设置选项
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>- 在文本提示词栏中输入英文关键词
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>- 生成的图像会显示在底部
 </code></pre></div></p>
 </li>
 </ol>
-<p><strong>プロンプト例：</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cotton fabric        # コットン生地
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>leather texture      # レザーテクスチャ
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>silk pattern        # シルクパターン
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>denim material      # デニム素材
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>knit wool          # ウールニット
+<p><strong>提示词示例：</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>cotton fabric        # 棉布面料
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>leather texture      # 皮革纹理
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>silk pattern        # 丝绸图案
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>denim material      # 牛仔布材质
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>knit wool          # 羊毛针织
 </code></pre></div></p>
-<h3 id="ai_3">🖼 AIグラフィックジェネレーター（ベータ版）<a class="headerlink" href="#ai_3" title="Permanent link">&para;</a></h3>
-<p>パターンにグラフィック画像を簡単に適用できる機能です。</p>
-<p><strong>主な特徴：</strong>
-- <strong>キーワード生成</strong>：テキスト入力で多様なグラフィックを生成
-- <strong>パターン適用</strong>：生成されたグラフィックを直接パターンに適用
-- <strong>履歴機能</strong>：生成したグラフィックを履歴から再利用可能
-- <strong>変形調整</strong>：回転、スケール、配置を自由に調整</p>
+<h3 id="ai-beta_1">🖼 AI 图形生成器（Beta）<a class="headerlink" href="#ai-beta_1" title="Permanent link">&para;</a></h3>
+<p>可将图形图像轻松应用到版型上的功能。</p>
+<p><strong>主要特点：</strong>
+- <strong>关键词生成</strong>: 通过文本输入生成多种图形
+- <strong>版型应用</strong>: 生成后的图形可直接应用到版型
+- <strong>历史记录功能</strong>: 可从历史记录中重复使用已生成的图形
+- <strong>变形调整</strong>: 可自由调整旋转、缩放与位置</p>
 <p><strong>使用方法：</strong></p>
 <ol>
 <li>
-<p><strong>パターン準備</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>2Dパターンウィンドウ &gt; グラフィックを適用したいパターンを選択
+<p><strong>准备版型</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>2D 版型窗口 &gt; 选择要应用图形的版型
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>AI機能呼び出し</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>パターン右クリック &gt; 「AIグラフィックジェネレーター」選択
+<p><strong>调用 AI 功能</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>右键点击版型 &gt; 选择“AI 图形生成器”
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>グラフィック生成</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>- コンテンツタイプ設定
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>- テキストプロンプト入力（英語）
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>- 生成されたグラフィックから選択
+<p><strong>生成图形</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>- 设置内容类型
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>- 输入文本提示词（英文）
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>- 从生成的图形中进行选择
 </code></pre></div></p>
 </li>
 </ol>
-<p><strong>プロンプト例：</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>floral pattern      # 花柄
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>geometric design    # 幾何学模様
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>logo print         # ロゴプリント
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>stripe pattern     # ストライプ柄
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>star design        # 星柄デザイン
+<p><strong>提示词示例：</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>floral pattern      # 花卉图案
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>geometric design    # 几何图案
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>logo print         # Logo 印花
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>stripe pattern     # 条纹图案
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>star design        # 星形图案设计
 </code></pre></div></p>
-<h3 id="pbr">🏗 PBRマップジェネレーター<a class="headerlink" href="#pbr" title="Permanent link">&para;</a></h3>
-<p>テクスチャ画像からPBRマップを自動生成する機能です。</p>
-<p><strong>生成される要素：</strong>
-- <strong>ノーマルマップ</strong>：表面の凹凸表現
-- <strong>ディスプレイスメントマップ</strong>：立体的な形状変化
-- <strong>オパシティマップ</strong>：透明度の制御
-- <strong>ラフネスマップ</strong>：表面の粗さ
-- <strong>メタルネスマップ</strong>：金属感の表現</p>
-<p><strong>適用箇所：</strong>
-- トリム（縁取り）
-- ボタンホール
-- ステッチ（縫い目）
-- 衣装のしわ・パッカリング</p>
-<h2 id="_1">実践的な使用例<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="_2">初心者向け：デニムジャケット作成<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="pbr-map">🏗 PBR Map 生成器<a class="headerlink" href="#pbr-map" title="Permanent link">&para;</a></h3>
+<p>可根据纹理图像自动生成 PBR Map 的功能。</p>
+<p><strong>可生成的内容：</strong>
+- <strong>Normal Map</strong>: 表现表面凹凸
+- <strong>Displacement Map</strong>: 表现立体形状变化
+- <strong>Opacity Map</strong>: 控制透明度
+- <strong>Roughness Map</strong>: 表现表面粗糙度
+- <strong>Metalness Map</strong>: 表现金属质感</p>
+<p><strong>适用位置：</strong>
+- Trim（包边）
+- Button Hole
+- Stitch（缝线）
+- 服装的褶皱与起皱</p>
+<h2 id="_1">实际使用示例<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">面向初学者：制作牛仔夹克<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p><strong>ベーステクスチャ</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>プロンプト: &quot;dark blue denim texture&quot;
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>→ 濃紺デニムの基本テクスチャを生成
+<p><strong>基础纹理</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>提示词: &quot;dark blue denim texture&quot;
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>→ 生成深蓝色牛仔布的基础纹理
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>ステッチ追加</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>PBRジェネレーター使用
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>→ リアルなステッチ効果を自動追加
+<p><strong>添加缝线</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>使用 PBR 生成器
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>→ 自动添加逼真的缝线效果
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>グラフィック適用</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>プロンプト: &quot;vintage logo patch&quot;
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>→ 胸部分にヴィンテージロゴを配置
+<p><strong>应用图形</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>提示词: &quot;vintage logo patch&quot;
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>→ 在胸前位置放置复古 Logo
 </code></pre></div></p>
 </li>
 </ol>
-<h3 id="_3">中級者向け：オリジナルドレス<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="_3">面向中级用户：原创礼服<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
-<p><strong>シルクベース</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>プロンプト: &quot;elegant silk fabric pearl white&quot;
+<p><strong>丝绸底材</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>提示词: &quot;elegant silk fabric pearl white&quot;
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>レース模様</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>プロンプト: &quot;delicate lace pattern overlay&quot;
+<p><strong>蕾丝图案</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>提示词: &quot;delicate lace pattern overlay&quot;
 </code></pre></div></p>
 </li>
 <li>
-<p><strong>質感調整</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>PBRマップで光沢感とドレープ感を調整
+<p><strong>质感调整</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>通过 PBR Map 调整光泽感与垂坠感
 </code></pre></div></p>
 </li>
 </ol>
-<h2 id="_4">注意点とベストプラクティス<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="_5">⚠️ 重要な制限事項<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<p><strong>言語制限：</strong>
-- 現在<strong>英語プロンプトのみ対応</strong>
-- 日本語入力は正しく動作しない可能性があります</p>
-<p><strong>生成時間：</strong>
-- 利用者が多い時間帯は<strong>生成に時間がかかる</strong>場合があります
-- 平日の日中や深夜の利用を推奨します</p>
-<p><strong>履歴管理：</strong>
-- <strong>Marvelous Designerを閉じると履歴が消去</strong>されます
-- 気に入ったテクスチャは<strong>すぐに保存</strong>してください</p>
-<p><strong>ベータ版の注意：</strong>
-- 今後のアップデートで<strong>機能や操作方法が変更</strong>される可能性があります
-- 重要なプロジェクトでは<strong>バックアップを必ず取得</strong>してください</p>
-<h3 id="_6">💡 効果的な使用のコツ<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
-<p><strong>プロンプト作成：</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>具体的: &quot;red cotton&quot; ✅ &quot;fabric&quot; ❌
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>形容詞追加: &quot;soft velvet texture&quot; ✅ &quot;velvet&quot; △
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>複数キーワード: &quot;denim blue distressed vintage&quot; ✅
+<h2 id="_4">注意事项与最佳实践<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">⚠️ 重要限制<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><strong>语言限制：</strong>
+- 当前 <strong>仅支持英文提示词</strong>
+- 输入日文时可能无法正常工作</p>
+<p><strong>生成时间：</strong>
+- 在使用人数较多的时段，<strong>生成可能耗时较长</strong>
+- 建议在工作日白天或深夜使用</p>
+<p><strong>历史记录管理：</strong>
+- <strong>关闭 Marvelous Designer 后，历史记录会被清除</strong>
+- 喜欢的纹理请 <strong>立即保存</strong></p>
+<p><strong>Beta 版注意事项：</strong>
+- 后续更新中，<strong>功能或操作方式可能发生变化</strong>
+- 用于重要项目时，<strong>请务必先做备份</strong></p>
+<h3 id="_6">💡 高效使用技巧<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><strong>编写提示词：</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>具体: &quot;red cotton&quot; ✅ &quot;fabric&quot; ❌
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>补充形容词: &quot;soft velvet texture&quot; ✅ &quot;velvet&quot; △
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>多个关键词: &quot;denim blue distressed vintage&quot; ✅
 </code></pre></div></p>
-<p><strong>テクスチャ選択：</strong>
-- 複数の候補から<strong>最適なものを選択</strong>
-- <strong>微調整は後から</strong>PBRジェネレーターで実施
-- <strong>テスト適用</strong>してから本格的に使用</p>
-<p><strong>ワークフロー統合：</strong>
-1. AIでベーステクスチャ生成
-2. 手動で細部調整
-3. PBRマップで質感向上
-4. 最終的な微調整</p>
-<h2 id="_7">トラブルシューティング<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<h3 id="_8">よくある問題と対処法<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p><strong>选择纹理：</strong>
+- 从多个候选中 <strong>挑选最合适的结果</strong>
+- <strong>细调可在之后</strong> 通过 PBR 生成器完成
+- 先 <strong>测试应用</strong>，再正式使用</p>
+<p><strong>工作流集成：</strong>
+1. 用 AI 生成基础纹理
+2. 手动调整细节
+3. 用 PBR Map 提升质感
+4. 做最终微调</p>
+<h2 id="_7">故障排查<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="_8">常见问题与处理方法<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
 <details class="question">
-<summary>「テクスチャが生成されない」</summary>
-<p><strong>確認事項：</strong>
-- ファブリックタイプが正しく設定されているか
-- テキストプロンプトが英語で入力されているか
-- インターネット接続が安定しているか</p>
-<p><strong>対処法：</strong>
-- 時間をおいて再試行
-- より簡潔なプロンプトに変更
-- ソフトウェアの再起動</p>
+<summary>“纹理无法生成”</summary>
+<p><strong>检查项：</strong>
+- Fabric 类型是否设置正确
+- 文本提示词是否以英文输入
+- 网络连接是否稳定</p>
+<p><strong>处理方法：</strong>
+- 间隔一段时间后重试
+- 改用更简洁的提示词
+- 重启软件</p>
 </details>
 <details class="question">
-<summary>「生成されたテクスチャの品質が低い」</summary>
-<p><strong>改善方法：</strong>
-- より具体的なプロンプトを使用
-- 異なるファブリックタイプで試行
-- 生成オプションのパラメータを調整</p>
+<summary>“生成出的纹理质量较低”</summary>
+<p><strong>改进方法：</strong>
+- 使用更具体的提示词
+- 尝试不同的 Fabric 类型
+- 调整生成选项中的参数</p>
 </details>
 <details class="question">
-<summary>「履歴からテクスチャが消えた」</summary>
+<summary>“历史记录中的纹理消失了”</summary>
 <p><strong>原因：</strong>
-- Marvelous Designerを閉じると履歴が自動削除される</p>
-<p><strong>予防策：</strong>
-- 気に入ったテクスチャは即座に保存
-- 定期的なプロジェクト保存を実行</p>
+- 关闭 Marvelous Designer 后，历史记录会被自动删除</p>
+<p><strong>预防方法：</strong>
+- 喜欢的纹理立即保存
+- 定期保存项目</p>
 </details>
-<h2 id="_9">次のステップ<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<p>AI機能に慣れてきたら、以下の発展的な技術に挑戦してみましょう：</p>
+<h2 id="_9">下一步<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>熟悉 AI 功能后，可以继续尝试以下进阶技术：</p>
 <ol>
-<li><strong><a href="../../physics/fabric-properties/">物理設定との組み合わせ</a></strong></li>
+<li><strong><a href="../../physics/fabric-properties/">与物理设置结合使用</a></strong></li>
 <li>
-<p>AIテクスチャに適した物理パラメータの設定</p>
+<p>设置适合 AI 纹理的物理参数</p>
 </li>
 <li>
-<p><strong><a href="../../unity/project-setup/">Unity統合での活用</a></strong></p>
+<p><strong><a href="../../unity/project-setup/">在 Unity 集成中使用</a></strong></p>
 </li>
 <li>
-<p>VRChat向けの最適化されたテクスチャ使用法</p>
+<p>面向 VRChat 的优化纹理使用方式</p>
 </li>
 <li>
-<p><strong><a href="../../resources/advanced-resources/">上級者向けリソース</a></strong></p>
+<p><strong><a href="../../resources/advanced-resources/">进阶资源</a></strong></p>
 </li>
-<li>プロ級の仕上がりを目指すテクニック集</li>
+<li>以专业级完成度为目标的技巧合集</li>
 </ol>
 <hr />
 <div class="admonition tip">
-<p class="admonition-title">学習のポイント</p>
-<p>AI機能は<strong>創作の出発点</strong>として捉えましょう。生成されたテクスチャやグラフィックを基に、あなたの個性や創意工夫を加えることで、本当にオリジナルな衣装が完成します。</p>
+<p class="admonition-title">学习要点</p>
+<p>请把 AI 功能视为<strong>创作的起点</strong>。以生成的纹理和图形为基础，再加入你的个性与创意，才能完成真正原创的服装。</p>
 </div>
 
 
@@ -2273,10 +2566,10 @@
     
       
   <span class="md-source-file__fact">
-    <span class="md-icon" title="最終更新日">
+    <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年8月10日 07:58:43 JST">2025年8月10日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年3月18日 20:54:59 CST">2026年3月18日</span>
   </span>
 
     
@@ -2285,8 +2578,6 @@
     
   </aside>
 
-
-  
 
 
 
@@ -2304,7 +2595,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  ページトップへ戻る
+  回到页面顶部
 </button>
         
       </main>
@@ -2322,14 +2613,15 @@
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
     
     
     <a href="https://github.com/username/vrchat-garment-guide" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -2346,10 +2638,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       

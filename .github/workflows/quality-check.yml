@@ -314,6 +314,8 @@ jobs:
                   
                   # Markdownファイルをチェック
                   for md_file in docs_dir.rglob('*.md'):
+                      if 'docs/zh-CN/' in md_file.as_posix():
+                          continue
                       self.check_file(str(md_file))
                   
                   # MkDocsをビルド

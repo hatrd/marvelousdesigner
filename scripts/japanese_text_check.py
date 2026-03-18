@@ -382,7 +382,10 @@ class JapaneseTextChecker:
                 print(f"❌ 指定されたファイルが見つかりません: {target_file}")
                 return False
         else:
-            target_files = list(docs_dir.rglob('*.md'))
+            target_files = [
+                path for path in docs_dir.rglob('*.md')
+                if 'docs/zh-CN/' not in path.as_posix()
+            ]
         
         self.log(f"{len(target_files)}個のファイルをチェック中...")
         

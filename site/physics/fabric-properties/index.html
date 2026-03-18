@@ -1,18 +1,18 @@
 
 <!doctype html>
-<html lang="ja" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Marvelous DesignerとUnityを使ったVRChat衣装制作の完全初心者向けガイド">
+        <meta name="description" content="使用 Marvelous Designer 和 Unity 制作 VRChat 服装的简体中文入门指南">
       
       
         <meta name="author" content="VRChat Garment Creation Team">
       
       
-        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/physics/fabric-properties/">
+        <link rel="canonical" href="https://username.github.io/vrchat-garment-guide/zh-CN/physics/fabric-properties/">
       
       
         <link rel="prev" href="../../garments/swimwear/">
@@ -21,19 +21,22 @@
         <link rel="next" href="../optimization/">
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>布の物理特性設定 - VRChat衣装制作完全ガイド</title>
+        <title>布料物理特性设置 - VRChat 服装制作完整指南</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -47,8 +50,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Noto Sans JP";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Noto Sans SC";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -57,18 +60,7 @@
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
 
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
-
-    
     
     
   <meta name="google-site-verification" content="2MW4wZaZsAsSzYUYyh514GoRY2nDaBF1VcITV1P3xSk" />
@@ -93,7 +85,7 @@
       
         
         <a href="#_1" class="md-skip">
-          コンテンツにスキップ
+          跳转至
         </a>
       
     </div>
@@ -101,16 +93,12 @@
       
     </div>
     
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-      </div>
-    
     
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-header__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-header__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -124,13 +112,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            VRChat衣装制作完全ガイド
+            VRChat 服装制作完整指南
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              布の物理特性設定
+              布料物理特性设置
             
           </span>
         </div>
@@ -143,9 +131,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ダークモードに切り替え"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到深色模式"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="ダークモードに切り替え" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="切换到深色模式" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -153,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="ライトモードに切り替え"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="切换到浅色模式"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="ライトモードに切り替え" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="切换到浅色模式" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -178,16 +166,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="検索">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -200,7 +188,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            検索を初期化
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -212,10 +200,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+        <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -233,7 +221,7 @@
         
           
             
-<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -249,7 +237,7 @@
   
     
   
-  ホーム
+  首页
 
       </a>
     </li>
@@ -268,7 +256,7 @@
           
   
   
-  環境設定
+  环境设置
 
         </a>
       </li>
@@ -288,7 +276,7 @@
           
   
   
-  基礎知識
+  基础知识
 
         </a>
       </li>
@@ -308,7 +296,7 @@
           
   
   
-  作業手順
+  工作流程
 
         </a>
       </li>
@@ -328,7 +316,7 @@
           
   
   
-  衣装別制作ガイド
+  分类服装制作指南
 
         </a>
       </li>
@@ -350,7 +338,7 @@
           
   
   
-  物理設定・最適化
+  物理设置与优化
 
         </a>
       </li>
@@ -370,7 +358,7 @@
           
   
   
-  最適化・品質向上
+  优化与质量提升
 
         </a>
       </li>
@@ -390,7 +378,7 @@
           
   
   
-  高度な技術・MD2025
+  高级技术与 MD2025
 
         </a>
       </li>
@@ -410,7 +398,7 @@
           
   
   
-  Unity統合
+  Unity 集成
 
         </a>
       </li>
@@ -430,7 +418,7 @@
           
   
   
-  リソース・参考資料
+  资源与参考资料
 
         </a>
       </li>
@@ -460,22 +448,22 @@
 
   
 
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="VRChat衣装制作完全ガイド" class="md-nav__button md-logo" aria-label="VRChat衣装制作完全ガイド" data-md-component="logo">
+    <a href="../.." title="VRChat 服装制作完整指南" class="md-nav__button md-logo" aria-label="VRChat 服装制作完整指南" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    VRChat衣装制作完全ガイド
+    VRChat 服装制作完整指南
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/username/vrchat-garment-guide" title="リポジトリへ" class="md-source" data-md-component="source">
+      <a href="https://github.com/username/vrchat-garment-guide" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     vrchat-garment-guide
@@ -497,9 +485,14 @@
   
   
   <span class="md-ellipsis">
-    ホーム
+    
+  
+    首页
+  
+
     
   </span>
+  
   
 
       </a>
@@ -537,9 +530,14 @@
   
   
   <span class="md-ellipsis">
-    環境設定
+    
+  
+    环境设置
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -548,7 +546,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            環境設定
+            
+  
+    环境设置
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -564,9 +566,14 @@
   
   
   <span class="md-ellipsis">
-    ソフトウェア確認
+    
+  
+    软件确认
+  
+
     
   </span>
+  
   
 
       </a>
@@ -587,9 +594,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designer初回起動
+    
+  
+    Marvelous Designer 首次启动
+  
+
     
   </span>
+  
   
 
       </a>
@@ -610,9 +622,14 @@
   
   
   <span class="md-ellipsis">
-    Unity・VRChat SDK設定
+    
+  
+    Unity 与 VRChat SDK 设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -658,9 +675,14 @@
   
   
   <span class="md-ellipsis">
-    基礎知識
+    
+  
+    基础知识
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -669,7 +691,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            基礎知識
+            
+  
+    基础知识
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -685,9 +711,14 @@
   
   
   <span class="md-ellipsis">
-    Marvelous Designerインターフェース
+    
+  
+    Marvelous Designer 界面
+  
+
     
   </span>
+  
   
 
       </a>
@@ -708,9 +739,14 @@
   
   
   <span class="md-ellipsis">
-    AI機能ガイド
+    
+  
+    AI 功能指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -731,9 +767,14 @@
   
   
   <span class="md-ellipsis">
-    3Dモデリング基本概念
+    
+  
+    3D 建模基础概念
+  
+
     
   </span>
+  
   
 
       </a>
@@ -754,9 +795,14 @@
   
   
   <span class="md-ellipsis">
-    制作工程全体像
+    
+  
+    制作流程全貌
+  
+
     
   </span>
+  
   
 
       </a>
@@ -777,9 +823,14 @@
   
   
   <span class="md-ellipsis">
-    ファイル形式の理解
+    
+  
+    文件格式的理解
+  
+
     
   </span>
+  
   
 
       </a>
@@ -800,9 +851,14 @@
   
   
   <span class="md-ellipsis">
-    専門用語集
+    
+  
+    术语表
+  
+
     
   </span>
+  
   
 
       </a>
@@ -848,9 +904,14 @@
   
   
   <span class="md-ellipsis">
-    作業手順
+    
+  
+    工作流程
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -859,7 +920,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            作業手順
+            
+  
+    工作流程
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -875,9 +940,14 @@
   
   
   <span class="md-ellipsis">
-    アバターの読み込み
+    
+  
+    导入头像
+  
+
     
   </span>
+  
   
 
       </a>
@@ -898,9 +968,14 @@
   
   
   <span class="md-ellipsis">
-    衣装のフィッティング
+    
+  
+    现有服装适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -921,9 +996,14 @@
   
   
   <span class="md-ellipsis">
-    モジュラー衣装システム
+    
+  
+    模块化服装系统
+  
+
     
   </span>
+  
   
 
       </a>
@@ -944,9 +1024,14 @@
   
   
   <span class="md-ellipsis">
-    非対応アバター改変
+    
+  
+    非兼容头像改造
+  
+
     
   </span>
+  
   
 
       </a>
@@ -967,9 +1052,14 @@
   
   
   <span class="md-ellipsis">
-    新規衣装制作手順
+    
+  
+    新建服装制作
+  
+
     
   </span>
+  
   
 
       </a>
@@ -990,9 +1080,14 @@
   
   
   <span class="md-ellipsis">
-    よくある問題と対処
+    
+  
+    常见问题与处理
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1038,9 +1133,14 @@
   
   
   <span class="md-ellipsis">
-    衣装別制作ガイド
+    
+  
+    分类服装制作指南
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1049,7 +1149,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            衣装別制作ガイド
+            
+  
+    分类服装制作指南
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1065,9 +1169,14 @@
   
   
   <span class="md-ellipsis">
-    Tシャツ（初心者向け）
+    
+  
+    T 恤（适合初学者）
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1088,9 +1197,14 @@
   
   
   <span class="md-ellipsis">
-    スカート
+    
+  
+    裙子
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1111,9 +1225,14 @@
   
   
   <span class="md-ellipsis">
-    ドレス
+    
+  
+    礼服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1134,9 +1253,14 @@
   
   
   <span class="md-ellipsis">
-    カジュアル服
+    
+  
+    休闲服
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1157,9 +1281,14 @@
   
   
   <span class="md-ellipsis">
-    ワンピース
+    
+  
+    连衣裙
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1180,9 +1309,14 @@
   
   
   <span class="md-ellipsis">
-    水着
+    
+  
+    泳装
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1231,9 +1365,14 @@
   
   
   <span class="md-ellipsis">
-    物理設定・最適化
+    
+  
+    物理设置与优化
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1242,7 +1381,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            物理設定・最適化
+            
+  
+    物理设置与优化
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1267,9 +1410,14 @@
   
   
   <span class="md-ellipsis">
-    布の物理特性設定
+    
+  
+    布料物理特性设置
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1280,9 +1428,14 @@
   
   
   <span class="md-ellipsis">
-    布の物理特性設定
+    
+  
+    布料物理特性设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1291,7 +1444,7 @@
 
   
 
-<nav class="md-nav md-nav--secondary" aria-label="このページの内容">
+<nav class="md-nav md-nav--secondary" aria-label="本页内容">
   
   
   
@@ -1300,24 +1453,28 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      このページの内容
+      本页内容
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      🎯 物理設定の重要性
+      
+        🎯 物理设置的重要性
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎯 物理設定の重要性">
+    <nav class="md-nav" aria-label="🎯 物理设置的重要性">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#vrchat" class="md-nav__link">
     <span class="md-ellipsis">
-      VRChatにおける物理設定の影響
+      
+        物理设置对 VRChat 的影响
+      
     </span>
   </a>
   
@@ -1331,17 +1488,21 @@
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      📐 物理特性パラメータの基礎理解
+      
+        📐 物理特性参数基础理解
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📐 物理特性パラメータの基礎理解">
+    <nav class="md-nav" aria-label="📐 物理特性参数基础理解">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      主要パラメータ一覧
+      
+        主要参数一览
+      
     </span>
   </a>
   
@@ -1350,7 +1511,9 @@
           <li class="md-nav__item">
   <a href="#vrchat_1" class="md-nav__link">
     <span class="md-ellipsis">
-      VRChat最適化の基本方針
+      
+        VRChat 优化的基本方针
+      
     </span>
   </a>
   
@@ -1364,17 +1527,21 @@
         <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      🧵 衣装タイプ別推奨設定
+      
+        🧵 按服装类型划分的推荐设置
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧵 衣装タイプ別推奨設定">
+    <nav class="md-nav" aria-label="🧵 按服装类型划分的推荐设置">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#t" class="md-nav__link">
     <span class="md-ellipsis">
-      Tシャツ・カジュアルトップス
+      
+        T 恤与休闲上装
+      
     </span>
   </a>
   
@@ -1383,7 +1550,9 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      スカート・ドレス
+      
+        裙子与连衣裙
+      
     </span>
   </a>
   
@@ -1392,7 +1561,9 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      水着・タイトフィット衣装
+      
+        泳装与紧身服装
+      
     </span>
   </a>
   
@@ -1406,17 +1577,21 @@
         <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ 実践的な調整ワークフロー
+      
+        ⚙️ 实践性的调整工作流
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="⚙️ 実践的な調整ワークフロー">
+    <nav class="md-nav" aria-label="⚙️ 实践性的调整工作流">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      ステップ1: ベースライン設定
+      
+        步骤 1：建立基线设置
+      
     </span>
   </a>
   
@@ -1425,7 +1600,9 @@
           <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      ステップ2: 細部調整
+      
+        步骤 2：细节微调
+      
     </span>
   </a>
   
@@ -1434,7 +1611,9 @@
           <li class="md-nav__item">
   <a href="#3-vrchat" class="md-nav__link">
     <span class="md-ellipsis">
-      ステップ3: VRChat最適化
+      
+        步骤 3：面向 VRChat 的优化
+      
     </span>
   </a>
   
@@ -1448,17 +1627,21 @@
         <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      🎨 実用的な調整テクニック
+      
+        🎨 实用调整技巧
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎨 実用的な調整テクニック">
+    <nav class="md-nav" aria-label="🎨 实用调整技巧">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      問題別調整方法
+      
+        按问题分类的调整方法
+      
     </span>
   </a>
   
@@ -1467,7 +1650,9 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      材質感別の表現技法
+      
+        按材质感区分的表现方法
+      
     </span>
   </a>
   
@@ -1481,17 +1666,21 @@
         <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      📊 設定管理とバージョン管理
+      
+        📊 设置管理与版本管理
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📊 設定管理とバージョン管理">
+    <nav class="md-nav" aria-label="📊 设置管理与版本管理">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_13" class="md-nav__link">
     <span class="md-ellipsis">
-      設定の保存・再利用
+      
+        保存与复用设置
+      
     </span>
   </a>
   
@@ -1505,7 +1694,9 @@
         <li class="md-nav__item">
   <a href="#_14" class="md-nav__link">
     <span class="md-ellipsis">
-      ✅ 物理設定チェックリスト
+      
+        ✅ 物理设置检查清单
+      
     </span>
   </a>
   
@@ -1514,17 +1705,21 @@
         <li class="md-nav__item">
   <a href="#_15" class="md-nav__link">
     <span class="md-ellipsis">
-      🔧 トラブルシューティング
+      
+        🔧 故障排查
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🔧 トラブルシューティング">
+    <nav class="md-nav" aria-label="🔧 故障排查">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_16" class="md-nav__link">
     <span class="md-ellipsis">
-      物理設定関連の問題解決
+      
+        物理设置相关问题的解决方法
+      
     </span>
   </a>
   
@@ -1538,7 +1733,9 @@
         <li class="md-nav__item">
   <a href="#_17" class="md-nav__link">
     <span class="md-ellipsis">
-      🌟 次のステップ
+      
+        🌟 下一步
+      
     </span>
   </a>
   
@@ -1547,17 +1744,21 @@
         <li class="md-nav__item">
   <a href="#_18" class="md-nav__link">
     <span class="md-ellipsis">
-      📚 理解を深めるための補足
+      
+        📚 深入理解的补充内容
+      
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📚 理解を深めるための補足">
+    <nav class="md-nav" aria-label="📚 深入理解的补充内容">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_19" class="md-nav__link">
     <span class="md-ellipsis">
-      物理シミュレーションの科学
+      
+        物理模拟背后的原理
+      
     </span>
   </a>
   
@@ -1566,7 +1767,9 @@
           <li class="md-nav__item">
   <a href="#vrchat_2" class="md-nav__link">
     <span class="md-ellipsis">
-      VRChatの技術的制約
+      
+        VRChat 的技术限制
+      
     </span>
   </a>
   
@@ -1598,9 +1801,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス最適化
+    
+  
+    性能优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1646,9 +1854,14 @@
   
   
   <span class="md-ellipsis">
-    最適化・品質向上
+    
+  
+    优化与质量提升
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1657,7 +1870,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            最適化・品質向上
+            
+  
+    优化与质量提升
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1673,9 +1890,14 @@
   
   
   <span class="md-ellipsis">
-    Very Poor脱却完全ガイド
+    
+  
+    摆脱 Very Poor 完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1696,9 +1918,14 @@
   
   
   <span class="md-ellipsis">
-    パフォーマンス分析ツール
+    
+  
+    性能分析工具
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1719,9 +1946,14 @@
   
   
   <span class="md-ellipsis">
-    モバイル完全対応
+    
+  
+    移动端完全适配
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1767,9 +1999,14 @@
   
   
   <span class="md-ellipsis">
-    高度な技術・MD2025
+    
+  
+    高级技术与 MD2025
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1778,7 +2015,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            高度な技術・MD2025
+            
+  
+    高级技术与 MD2025
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1794,9 +2035,14 @@
   
   
   <span class="md-ellipsis">
-    MD2025新機能完全ガイド
+    
+  
+    MD2025 新功能完整指南
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1817,9 +2063,14 @@
   
   
   <span class="md-ellipsis">
-    EveryWear統合ワークフロー
+    
+  
+    EveryWear 集成工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1840,9 +2091,14 @@
   
   
   <span class="md-ellipsis">
-    IK-Joint最適化
+    
+  
+    IK-Joint 优化
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1888,9 +2144,14 @@
   
   
   <span class="md-ellipsis">
-    Unity統合
+    
+  
+    Unity 集成
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1899,7 +2160,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Unity統合
+            
+  
+    Unity 集成
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1915,9 +2180,14 @@
   
   
   <span class="md-ellipsis">
-    Unityプロジェクト設定
+    
+  
+    Unity 项目设置
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1938,9 +2208,14 @@
   
   
   <span class="md-ellipsis">
-    FBXからVRChatまでの完全ワークフロー
+    
+  
+    从 FBX 到 VRChat 的完整工作流
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1961,9 +2236,14 @@
   
   
   <span class="md-ellipsis">
-    アバターアップロード
+    
+  
+    头像上传
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2009,9 +2289,14 @@
   
   
   <span class="md-ellipsis">
-    リソース・参考資料
+    
+  
+    资源与参考资料
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2020,7 +2305,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
-            リソース・参考資料
+            
+  
+    资源与参考资料
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2036,9 +2325,14 @@
   
   
   <span class="md-ellipsis">
-    有用なリンク集
+    
+  
+    实用链接集
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2059,9 +2353,14 @@
   
   
   <span class="md-ellipsis">
-    CLO-SET Connect・EveryWear
+    
+  
+    CLO-SET Connect 与 EveryWear
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2082,9 +2381,14 @@
   
   
   <span class="md-ellipsis">
-    コミュニティ情報
+    
+  
+    社区信息
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2105,9 +2409,14 @@
   
   
   <span class="md-ellipsis">
-    上級者向けリソース
+    
+  
+    进阶资源
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2128,9 +2437,14 @@
   
   
   <span class="md-ellipsis">
-    更新履歴
+    
+  
+    更新记录
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2156,6 +2470,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2165,81 +2480,81 @@
   
 
 
-<h1 id="_1">布の物理特性設定ガイド<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h1 id="_1">布料物理特性设置指南<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
-<p class="admonition-title">ガイド情報</p>
-<p><strong>所要時間</strong>: 約60分 | <strong>難易度</strong>: 中級者向け | <strong>重要度</strong>: 品質向上の鍵</p>
+<p class="admonition-title">指南信息</p>
+<p><strong>预计用时</strong>：约 60 分钟 | <strong>难度</strong>：适合中级用户 | <strong>重要度</strong>：质量提升的关键</p>
 </div>
-<p><strong>このページの目的</strong>: Marvelous Designerでの布の物理特性を理解し、VRChatに最適化された美しく動く衣装を制作します。</p>
+<p><strong>本页目标</strong>：理解 Marvelous Designer 中的布料物理特性，制作适合 VRChat、运动效果自然美观的服装。</p>
 <div class="admonition success">
-<p class="admonition-title">このガイドで実現すること</p>
+<p class="admonition-title">本指南将帮助你实现</p>
 <ul>
-<li>✅ 自然で美しい布の動きの理解</li>
-<li>✅ VRChatでの軽量化と品質のベストバランス</li>
-<li>✅ 各種衣装タイプ別の最適設定マスター</li>
-<li>✅ パフォーマンス問題の予防と解決</li>
+<li>✅ 理解自然且美观的布料动态</li>
+<li>✅ 在 VRChat 中兼顾轻量化与质量的最佳平衡</li>
+<li>✅ 掌握不同服装类型的推荐设置</li>
+<li>✅ 预防并解决性能问题</li>
 </ul>
 </div>
 <div class="admonition info">
-<p class="admonition-title">事前準備</p>
+<p class="admonition-title">事前准备</p>
 <ul>
-<li><a href="../../garments/t-shirt/">Tシャツ制作ガイド</a>などで基本的な衣装制作を体験済み</li>
-<li>Marvelous Designerの基本操作に慣れている</li>
-<li>VRChatでのパフォーマンス概念を理解している</li>
+<li>已通过 <a href="../../garments/t-shirt/">T 恤制作指南</a> 等内容体验过基础服装制作</li>
+<li>已熟悉 Marvelous Designer 的基础操作</li>
+<li>已理解 VRChat 中的性能概念</li>
 </ul>
 </div>
-<h2 id="_2">🎯 物理設定の重要性<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="vrchat">VRChatにおける物理設定の影響<a class="headerlink" href="#vrchat" title="Permanent link">&para;</a></h3>
+<h2 id="_2">🎯 物理设置的重要性<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="vrchat">物理设置对 VRChat 的影响<a class="headerlink" href="#vrchat" title="Permanent link">&para;</a></h3>
 <div class="admonition info">
-<p class="admonition-title">物理設定がVRChatに与える影響</p>
-<p><strong>パフォーマンスへの影響</strong>:
-- シミュレーション精度 ↔️ 処理負荷のトレードオフ
-- 他のユーザーからの見え方に直接影響
-- フレームレート・安定性への影響</p>
-<p><strong>見た目への影響</strong>:
-- 布の自然な動き・重力感
-- アバターの動作との協調性
-- リアリティと美観のバランス</p>
-<p><strong>体験への影響</strong>:
-- アバター操作時の違和感の有無
-- 他者との交流時の印象
-- VRChat内での存在感</p>
+<p class="admonition-title">物理设置会如何影响 VRChat</p>
+<p><strong>对性能的影响</strong>：
+- 模拟精度 ↔️ 处理负载之间的权衡
+- 直接影响其他用户看到的效果
+- 影响帧率与稳定性</p>
+<p><strong>对外观的影响</strong>：
+- 布料是否有自然的运动和重力感
+- 与头像动作的协调程度
+- 真实感与美观之间的平衡</p>
+<p><strong>对体验的影响</strong>：
+- 操作头像时是否会产生违和感
+- 与他人互动时给人的印象
+- 在 VRChat 中的存在感</p>
 </div>
-<h2 id="_3">📐 物理特性パラメータの基礎理解<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="_4">主要パラメータ一覧<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<h2 id="_3">📐 物理特性参数基础理解<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">主要参数一览<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">Marvelous Designer Physical Property 主要項目</p>
-<p><strong>基本物理特性</strong>:
-1. <strong>Particle Distance</strong> - シミュレーション精度（最重要）
-2. <strong>Bend</strong> - 折り曲げ抵抗（布の硬さ）
-3. <strong>Stretch</strong> - 伸縮抵抗（布の伸び）
-4. <strong>Shear</strong> - せん断抵抗（布のねじれ）</p>
-<p><strong>材質特性</strong>:
-5. <strong>Air Resistance</strong> - 空気抵抗
-6. <strong>Density</strong> - 密度（重さ）
-7. <strong>Thickness</strong> - 厚み
-8. <strong>Friction</strong> - 摩擦係数</p>
-<p><strong>シミュレーション品質</strong>:
-9. <strong>Self Collision</strong> - 自己衝突検出
-10. <strong>Collision Thickness</strong> - 衝突検出厚み</p>
+<p class="admonition-title">Marvelous Designer Physical Property 主要项目</p>
+<p><strong>基础物理特性</strong>：
+1. <strong>Particle Distance</strong> - 模拟精度（最重要）
+2. <strong>Bend</strong> - 抗弯折性（布料硬度）
+3. <strong>Stretch</strong> - 抗拉伸性（布料延展）
+4. <strong>Shear</strong> - 抗剪切性（布料扭转）</p>
+<p><strong>材质特性</strong>：
+5. <strong>Air Resistance</strong> - 空气阻力
+6. <strong>Density</strong> - 密度（重量）
+7. <strong>Thickness</strong> - 厚度
+8. <strong>Friction</strong> - 摩擦系数</p>
+<p><strong>模拟质量</strong>：
+9. <strong>Self Collision</strong> - 自碰撞检测
+10. <strong>Collision Thickness</strong> - 碰撞检测厚度</p>
 </div>
-<h3 id="vrchat_1">VRChat最適化の基本方針<a class="headerlink" href="#vrchat_1" title="Permanent link">&para;</a></h3>
+<h3 id="vrchat_1">VRChat 优化的基本方针<a class="headerlink" href="#vrchat_1" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
-<p class="admonition-title">VRChat最適化の鉄則</p>
-<p><strong>軽量化優先項目</strong>:
-- ✅ <strong>Particle Distance</strong>: 8-12 (精度と軽量化のバランス)
-- ✅ <strong>Self Collision</strong>: 必要最小限に限定
-- ✅ <strong>Simulation Quality</strong>: Medium推奨</p>
-<p><strong>品質保持項目</strong>:
-- ✅ <strong>Bend/Stretch/Shear</strong>: 自然な動きのために調整
-- ✅ <strong>Density</strong>: 重力感のために適切に設定
-- ✅ <strong>Air Resistance</strong>: 微調整で動きの美しさを向上</p>
+<p class="admonition-title">VRChat 优化的基本原则</p>
+<p><strong>优先轻量化的项目</strong>：
+- ✅ <strong>Particle Distance</strong>：8-12（精度与轻量化的平衡）
+- ✅ <strong>Self Collision</strong>：仅在必要范围内启用
+- ✅ <strong>Simulation Quality</strong>：推荐使用 Medium</p>
+<p><strong>优先保证质量的项目</strong>：
+- ✅ <strong>Bend/Stretch/Shear</strong>：为获得自然动态进行调整
+- ✅ <strong>Density</strong>：为体现重力感进行合理设置
+- ✅ <strong>Air Resistance</strong>：通过微调提升动态美感</p>
 </div>
-<h2 id="_5">🧵 衣装タイプ別推奨設定<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<h3 id="t">Tシャツ・カジュアルトップス<a class="headerlink" href="#t" title="Permanent link">&para;</a></h3>
+<h2 id="_5">🧵 按服装类型划分的推荐设置<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="t">T 恤与休闲上装<a class="headerlink" href="#t" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">Tシャツ最適設定</p>
-<p><strong>基本設定 (Cotton Base)</strong>:
+<p class="admonition-title">T 恤最佳设置</p>
+<p><strong>基础设置（Cotton Base）</strong>：
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Fabric Preset: Cotton
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Particle Distance: 8-10
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Bend: 0.2-0.4
@@ -2248,264 +2563,264 @@
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Air Resistance: 0.05-0.1
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Density: 0.2-0.3
 </code></pre></div></p>
-<p><strong>調整ポイント</strong>:
-- <strong>ゆったりフィット</strong>: Bend 0.2, Density 0.2
-- <strong>タイトフィット</strong>: Bend 0.4, Density 0.3
-- <strong>薄手素材感</strong>: Thickness 0.5mm
-- <strong>厚手素材感</strong>: Thickness 1.0-1.5mm</p>
+<p><strong>调整要点</strong>：
+- <strong>宽松贴合</strong>：Bend 0.2，Density 0.2
+- <strong>紧身贴合</strong>：Bend 0.4，Density 0.3
+- <strong>轻薄材质感</strong>：Thickness 0.5mm
+- <strong>厚实材质感</strong>：Thickness 1.0-1.5mm</p>
 </div>
-<h3 id="_6">スカート・ドレス<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h3 id="_6">裙子与连衣裙<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">スカート最適設定</p>
-<p><strong>フレアスカート</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Fabric Preset: Silk (軽やか) / Cotton (普通)
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Particle Distance: 6-8 (動きの美しさ重視)
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Bend: 0.1-0.3 (軽やかな動き)
+<p class="admonition-title">裙装最佳设置</p>
+<p><strong>伞裙</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Fabric Preset: Silk (轻盈) / Cotton (普通)
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Particle Distance: 6-8 (优先保证动态美感)
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Bend: 0.1-0.3 (轻盈的动态)
 <a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Stretch: 0.05-0.1
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Shear: 0.05-0.1
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Air Resistance: 0.1-0.2 (風による動き)
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Air Resistance: 0.1-0.2 (受风带动的动态)
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>Density: 0.15-0.25
 </code></pre></div></p>
-<p><strong>プリーツスカート</strong>:
+<p><strong>百褶裙</strong>：
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Particle Distance: 8-10
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Bend: 0.3-0.5 (プリーツ保持)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Bend: 0.3-0.5 (保持褶皱)
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Stretch: 0.2-0.3
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>Shear: 0.2-0.3
 <a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Air Resistance: 0.05-0.1
 <a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Density: 0.2-0.3
 </code></pre></div></p>
 </div>
-<h3 id="_7">水着・タイトフィット衣装<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="_7">泳装与紧身服装<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">水着・レオタード最適設定</p>
-<p><strong>基本設定</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Fabric Preset: Custom (専用設定)
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Particle Distance: 10-12 (安定性重視)
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Bend: 0.4-0.6 (フィット感)
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Stretch: 0.3-0.5 (伸縮性)
+<p class="admonition-title">泳装与紧身衣最佳设置</p>
+<p><strong>基础设置</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Fabric Preset: Custom (专用设置)
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Particle Distance: 10-12 (优先稳定性)
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Bend: 0.4-0.6 (贴合感)
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>Stretch: 0.3-0.5 (弹性)
 <a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Shear: 0.3-0.5
 <a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>Air Resistance: 0.01-0.03 (最小)
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>Density: 0.3-0.4 (密着感)
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>Density: 0.3-0.4 (贴身感)
 </code></pre></div></p>
-<p><strong>特殊調整</strong>:
-- <strong>Self Collision</strong>: 無効化（貫通防止より軽量化）
-- <strong>Collision Thickness</strong>: 最小値
-- <strong>Friction</strong>: 0.2-0.4 (肌との摩擦)</p>
+<p><strong>特殊调整</strong>：
+- <strong>Self Collision</strong>：禁用（相比防穿模，更优先轻量化）
+- <strong>Collision Thickness</strong>：最小值
+- <strong>Friction</strong>：0.2-0.4（与皮肤的摩擦）</p>
 </div>
-<h2 id="_8">⚙️ 実践的な調整ワークフロー<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
-<h3 id="1">ステップ1: ベースライン設定<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<h2 id="_8">⚙️ 实践性的调整工作流<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="1">步骤 1：建立基线设置<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">調整開始時の基本手順</p>
-<p><strong>1. プリセットの選択</strong>:
-1. 衣装タイプに近い <strong>Fabric Preset</strong> を選択
-2. <strong>Cotton</strong> (万能), <strong>Silk</strong> (軽やか), <strong>Denim</strong> (硬め)
-3. プリセット適用後、個別調整を開始</p>
-<p><strong>2. Particle Distance の決定</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>高品質 (6-8): ドレス、重要な見せ場衣装
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>標準 (8-10): 通常のカジュアル衣装
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>軽量化 (10-12): 複数衣装レイヤード時
+<p class="admonition-title">开始调整时的基本步骤</p>
+<p><strong>1. 选择预设</strong>：
+1. 选择与服装类型接近的 <strong>Fabric Preset</strong>
+2. <strong>Cotton</strong>（通用）、<strong>Silk</strong>（轻盈）、<strong>Denim</strong>（偏硬）
+3. 应用预设后，再开始单独微调</p>
+<p><strong>2. 确定 Particle Distance</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>高质量 (6-8): 礼服、重点展示服装
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>标准 (8-10): 普通休闲服装
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>轻量化 (10-12): 多层服装叠穿时
 </code></pre></div></p>
-<p><strong>3. 基本シミュレーションテスト</strong>:
-- アバターに着用させて基本動作確認
-- 歩行、手の動き、座る動作での確認</p>
+<p><strong>3. 进行基础模拟测试</strong>：
+- 让衣服穿到头像上，确认基础动作
+- 通过行走、手部动作、坐下动作进行检查</p>
 </div>
-<h3 id="2">ステップ2: 細部調整<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h3 id="2">步骤 2：细节微调<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">見た目と動きの最適化</p>
-<p><strong>Bend（硬さ）の調整</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>0.1-0.2: 軽やか、風に舞うような動き
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>0.2-0.4: 自然な布の動き (推奨範囲)
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>0.4-0.6: やや硬め、形状保持重視
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>0.6+: 硬い布、特殊衣装用
+<p class="admonition-title">优化外观与动态</p>
+<p><strong>Bend（硬度）调整</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>0.1-0.2: 轻盈，像随风飘动一样
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>0.2-0.4: 自然的布料动态（推荐范围）
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>0.4-0.6: 略硬，更重视形状保持
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>0.6+: 硬质布料，用于特殊服装
 </code></pre></div></p>
-<p><strong>Density（重さ）の調整</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>0.1-0.2: 軽い布（シフォン、シルク系）
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>0.2-0.3: 標準的な布 (推奨)
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>0.3-0.4: やや重い布（デニム、厚手コットン）
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>0.4+: 重い布（コート、特殊衣装）
+<p><strong>Density（重量）调整</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>0.1-0.2: 轻质布料（雪纺、丝绸类）
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>0.2-0.3: 标准布料（推荐）
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>0.3-0.4: 略重的布料（牛仔布、厚棉布）
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>0.4+: 重布料（大衣、特殊服装）
 </code></pre></div></p>
-<p><strong>Air Resistance（空気抵抗）の調整</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>0.01-0.05: 最小限（水着、タイトフィット）
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>0.05-0.1: 標準 (通常衣装)
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>0.1-0.2: やや大きめ（ふわっとした動き）
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>0.2+: 大きめ（ドレス、特殊効果）
-</code></pre></div></p>
-</div>
-<h3 id="3-vrchat">ステップ3: VRChat最適化<a class="headerlink" href="#3-vrchat" title="Permanent link">&para;</a></h3>
-<div class="admonition example">
-<p class="admonition-title">パフォーマンス最適化の実践</p>
-<p><strong>Self Collision の最適化</strong>:
-1. <strong>基本方針</strong>: 可能な限り無効化
-2. <strong>有効化が必要な場合</strong>:
-   - ロングスカート、ドレスの重なり部分のみ
-   - 袖と身体の重なり部分（必要に応じて）
-3. <strong>Collision Thickness</strong>: 最小値（0.5mm-1mm）</p>
-<p><strong>Simulation Quality の調整</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Low: 動作確認・テスト用
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>Medium: VRChat推奨設定
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>High: 最終調整・スクリーンショット用のみ
-</code></pre></div></p>
-<p><strong>最適化確認項目</strong>:
-- Unity でのFPS影響チェック
-- VRChat SDK Performance Rating 確認
-- Build &amp; Test での動作確認</p>
-</div>
-<h2 id="_9">🎨 実用的な調整テクニック<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<h3 id="_10">問題別調整方法<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
-<div class="admonition example">
-<p class="admonition-title">よくある問題の物理設定による解決</p>
-<p><strong>「布が硬すぎる・不自然」</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Bend を下げる: 0.5 → 0.2-0.3
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>Shear を下げる: 0.5 → 0.1-0.2
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>Air Resistance を上げる: 0.05 → 0.1
-</code></pre></div></p>
-<p><strong>「布が軽すぎる・浮く」</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>Density を上げる: 0.2 → 0.3-0.4
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>Air Resistance を下げる: 0.1 → 0.05
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>Bend を適度に設定: 0.2-0.3
-</code></pre></div></p>
-<p><strong>「動きが激しすぎる・暴れる」</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Particle Distance を上げる: 6 → 8-10
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>Bend を上げる: 0.2 → 0.3-0.4
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>Damping を有効化・調整
-</code></pre></div></p>
-<p><strong>「貫通が多い」</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Collision Thickness を調整: 1mm → 2-3mm
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>Self Collision を部分的に有効化
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>Particle Distance を下げる (品質向上)
+<p><strong>Air Resistance（空气阻力）调整</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>0.01-0.05: 最小（泳装、紧身服装）
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>0.05-0.1: 标准（普通服装）
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>0.1-0.2: 略大（蓬松轻柔的动态）
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>0.2+: 较大（礼服、特殊效果）
 </code></pre></div></p>
 </div>
-<h3 id="_11">材質感別の表現技法<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h3 id="3-vrchat">步骤 3：面向 VRChat 的优化<a class="headerlink" href="#3-vrchat" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">リアルな材質感の表現</p>
-<p><strong>シルク・サテン系</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Bend: 0.1-0.2 (しなやか)
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>Density: 0.15-0.2 (軽やか)
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>Air Resistance: 0.1-0.15 (風に舞う)
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>Friction: 0.1-0.2 (滑らか)
+<p class="admonition-title">性能优化实战</p>
+<p><strong>Self Collision 的优化</strong>：
+1. <strong>基本方针</strong>：能禁用就尽量禁用
+2. <strong>需要启用的情况</strong>：
+   - 仅长裙、礼服的重叠区域
+   - 袖子与身体的重叠区域（按需）
+3. <strong>Collision Thickness</strong>：最小值（0.5mm-1mm）</p>
+<p><strong>Simulation Quality 的调整</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>Low: 用于动作确认和测试
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>Medium: VRChat 推荐设置
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>High: 仅用于最终微调和截图
 </code></pre></div></p>
-<p><strong>デニム・厚手コットン系</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Bend: 0.4-0.6 (硬め)
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>Density: 0.3-0.4 (重め)
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>Air Resistance: 0.05 (風の影響小)
-<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>Friction: 0.3-0.4 (粗い質感)
+<p><strong>优化确认项目</strong>：
+- 检查对 Unity 中 FPS 的影响
+- 确认 VRChat SDK Performance Rating
+- 在 Build &amp; Test 中检查实际表现</p>
+</div>
+<h2 id="_9">🎨 实用调整技巧<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="_10">按问题分类的调整方法<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">通过物理设置解决常见问题</p>
+<p><strong>“布料太硬，不自然”</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>降低 Bend: 0.5 → 0.2-0.3
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>降低 Shear: 0.5 → 0.1-0.2
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>提高 Air Resistance: 0.05 → 0.1
 </code></pre></div></p>
-<p><strong>レザー・革系</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Bend: 0.6-0.8 (硬い)
-<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>Stretch: 0.4-0.6 (伸びにくい)
-<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>Density: 0.4-0.5 (重い)
+<p><strong>“布料太轻，像飘起来一样”</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>提高 Density: 0.2 → 0.3-0.4
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>降低 Air Resistance: 0.1 → 0.05
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>将 Bend 设为适中: 0.2-0.3
+</code></pre></div></p>
+<p><strong>“动作太激烈，晃动过头”</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>提高 Particle Distance: 6 → 8-10
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>提高 Bend: 0.2 → 0.3-0.4
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>启用并调整 Damping
+</code></pre></div></p>
+<p><strong>“穿模很多”</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>调整 Collision Thickness: 1mm → 2-3mm
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>局部启用 Self Collision
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>降低 Particle Distance（提升质量）
+</code></pre></div></p>
+</div>
+<h3 id="_11">按材质感区分的表现方法<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<div class="admonition example">
+<p class="admonition-title">表现真实材质感的方法</p>
+<p><strong>丝绸、缎面类</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>Bend: 0.1-0.2 (柔顺)
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>Density: 0.15-0.2 (轻盈)
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>Air Resistance: 0.1-0.15 (像被风带动一样)
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>Friction: 0.1-0.2 (顺滑)
+</code></pre></div></p>
+<p><strong>牛仔布、厚棉布类</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Bend: 0.4-0.6 (偏硬)
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>Density: 0.3-0.4 (偏重)
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>Air Resistance: 0.05 (受风影响小)
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>Friction: 0.3-0.4 (粗糙质感)
+</code></pre></div></p>
+<p><strong>皮革类</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Bend: 0.6-0.8 (硬)
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>Stretch: 0.4-0.6 (不易拉伸)
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>Density: 0.4-0.5 (重)
 <a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>Air Resistance: 0.01-0.03 (最小)
 </code></pre></div></p>
 </div>
-<h2 id="_12">📊 設定管理とバージョン管理<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
-<h3 id="_13">設定の保存・再利用<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h2 id="_12">📊 设置管理与版本管理<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h3 id="_13">保存与复用设置<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
 <div class="admonition example">
-<p class="admonition-title">効率的な設定管理</p>
-<p><strong>プリセットの作成</strong>:
-1. 満足のいく設定が完成したらプリセット保存
+<p class="admonition-title">高效管理设置</p>
+<p><strong>创建预设</strong>：
+1. 完成满意的设置后保存为预设
 2. <strong>「File」</strong> → <strong>「Export」</strong> → <strong>「Physical Property」</strong>
-3. 用途別ファイル名: 「VRChat_Tshirt_v1.phy」</p>
-<p><strong>プリセットの活用</strong>:
-- 衣装タイプ別プリセット作成
-- プロジェクト間での設定共有
-- チーム作業での設定統一</p>
-<p><strong>設定記録の推奨形式</strong>:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>衣装名: カジュアルTシャツ
-<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>最終更新: 2025-08-08
+3. 可按用途命名文件，例如：「VRChat_Tshirt_v1.phy」</p>
+<p><strong>预设的用法</strong>：
+- 按服装类型创建预设
+- 在不同项目之间共享设置
+- 在团队协作中统一设置</p>
+<p><strong>推荐的设置记录格式</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>服装名称: 休闲 T 恤
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>最后更新: 2025-08-08
 <a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>Particle Distance: 8
 <a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>Bend: 0.3, Stretch: 0.15, Shear: 0.15
 <a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>Density: 0.25, Air Resistance: 0.08
 <a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>VRChat Performance: Good
-<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>特記事項: 軽量化重視、Self Collision無効
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>备注: 优先轻量化，Self Collision 已禁用
 </code></pre></div></p>
 </div>
-<h2 id="_14">✅ 物理設定チェックリスト<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h2 id="_14">✅ 物理设置检查清单<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
-<p class="admonition-title">VRChat最適化物理設定完了チェック</p>
-<p><strong>基本設定</strong>:
-- [ ] 適切なFabric Presetから開始
-- [ ] Particle Distanceが8-12の範囲
-- [ ] Bend/Stretch/Shearが自然な範囲
-- [ ] DensityとAir Resistanceのバランス調整完了</p>
-<p><strong>最適化設定</strong>:
-- [ ] Self Collisionは必要最小限
-- [ ] Collision Thicknessが適切
-- [ ] Simulation QualityがMedium以下
-- [ ] 不要な高負荷設定を無効化</p>
-<p><strong>品質確認</strong>:
-- [ ] アバター基本動作で自然な動き
-- [ ] 座る・手を上げる動作で問題なし
-- [ ] 他のアバターとの干渉が最小限
-- [ ] VRChat Build &amp; Testでエラーなし</p>
-<p><strong>パフォーマンス</strong>:
-- [ ] Unity Scene ViewでFPS影響最小限
-- [ ] VRChat SDK Performance Rating Good以上
-- [ ] 複数衣装重ね着時も安定動作
-- [ ] 設定内容を記録・保存済み</p>
+<p class="admonition-title">VRChat 优化物理设置完成检查</p>
+<p><strong>基础设置</strong>：
+- [ ] 已从合适的 Fabric Preset 开始
+- [ ] Particle Distance 位于 8-12 范围内
+- [ ] Bend/Stretch/Shear 处于自然范围
+- [ ] 已调好 Density 与 Air Resistance 的平衡</p>
+<p><strong>优化设置</strong>：
+- [ ] Self Collision 已控制在最低必要范围
+- [ ] Collision Thickness 设置合适
+- [ ] Simulation Quality 为 Medium 或更低
+- [ ] 已禁用不必要的高负载设置</p>
+<p><strong>质量确认</strong>：
+- [ ] 头像基础动作下动态自然
+- [ ] 坐下、抬手等动作无问题
+- [ ] 与其他头像的干涉降到最低
+- [ ] VRChat Build &amp; Test 中无错误</p>
+<p><strong>性能</strong>：
+- [ ] 对 Unity Scene View 中 FPS 的影响最小
+- [ ] VRChat SDK Performance Rating 达到 Good 或更高
+- [ ] 多件服装叠穿时也能稳定运行
+- [ ] 已记录并保存设置内容</p>
 </div>
-<h2 id="_15">🔧 トラブルシューティング<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
-<h3 id="_16">物理設定関連の問題解決<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<h2 id="_15">🔧 故障排查<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<h3 id="_16">物理设置相关问题的解决方法<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
 <details class="question">
-<summary>「シミュレーションが不安定・爆発する」</summary>
-<p><strong>対処法</strong>:</p>
+<summary>“模拟不稳定，或者会炸开”</summary>
+<p><strong>处理方法</strong>：</p>
 <ol>
-<li><strong>Particle Distanceを上げる</strong>: 6 → 10-12</li>
-<li><strong>Time Stepを調整</strong>: Edit → Preferences → Simulation</li>
-<li><strong>極端な値をリセット</strong>: 全パラメータを標準値に戻す</li>
-<li><strong>Self Collisionを無効化</strong>: 一時的に全て無効にして確認</li>
+<li><strong>提高 Particle Distance</strong>：6 → 10-12</li>
+<li><strong>调整 Time Step</strong>：Edit → Preferences → Simulation</li>
+<li><strong>重置极端数值</strong>：把所有参数恢复到标准值</li>
+<li><strong>禁用 Self Collision</strong>：先临时全部禁用再确认</li>
 </ol>
 </details>
 <details class="question">
-<summary>「VRChatでパフォーマンスが悪い」</summary>
-<p><strong>対処法</strong>:</p>
+<summary>“在 VRChat 里性能很差”</summary>
+<p><strong>处理方法</strong>：</p>
 <ol>
-<li><strong>Particle Distance増加</strong>: 最低8以上に設定</li>
-<li><strong>Self Collision最小化</strong>: 本当に必要な部分のみ有効</li>
-<li><strong>Simulation Quality下げる</strong>: High → Medium → Low</li>
-<li><strong>複雑な形状の簡略化</strong>: 不要なパターンを統合</li>
+<li><strong>增大 Particle Distance</strong>：至少设为 8 以上</li>
+<li><strong>最小化 Self Collision</strong>：只在确实必要的区域启用</li>
+<li><strong>降低 Simulation Quality</strong>：High → Medium → Low</li>
+<li><strong>简化复杂形状</strong>：合并不必要的版型</li>
 </ol>
 </details>
 <details class="question">
-<summary>「布の動きが期待と違う」</summary>
-<p><strong>対処法</strong>:</p>
+<summary>“布料动态和预期不一样”</summary>
+<p><strong>处理方法</strong>：</p>
 <ol>
-<li><strong>段階的調整</strong>: 一つずつパラメータを変更して確認</li>
-<li><strong>リファレンス観察</strong>: 実際の布や他の作品を参考に</li>
-<li><strong>プリセット再試行</strong>: 異なるFabric Presetから開始</li>
-<li><strong>Air Resistanceの調整</strong>: 動きの雰囲気を大きく左右</li>
+<li><strong>逐步调整</strong>：每次只改一个参数并确认结果</li>
+<li><strong>观察参考</strong>：参考真实布料或其他作品</li>
+<li><strong>重新尝试预设</strong>：从不同的 Fabric Preset 重新开始</li>
+<li><strong>调整 Air Resistance</strong>：它会明显影响动态氛围</li>
 </ol>
 </details>
-<h2 id="_17">🌟 次のステップ<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
-<p>物理特性設定をマスターしました！</p>
-<p>次は、より詳細なシミュレーション設定や最適化テクニックを学びましょう：</p>
-<p><a class="md-button md-button--primary" href="simulation-settings.md">シミュレーション詳細設定 →</a></p>
-<p><a class="md-button" href="../optimization/">パフォーマンス最適化ガイド →</a></p>
-<p>または、学習した知識を活用して高度な衣装制作に挑戦：</p>
-<p><a class="md-button" href="../../garments/dress/">ドレス制作ガイド →</a></p>
-<h2 id="_18">📚 理解を深めるための補足<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
-<h3 id="_19">物理シミュレーションの科学<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
-<p><strong>布の物理的特性</strong>:
-- <strong>張力</strong>: 布が引っ張られる力への抵抗
-- <strong>せん断</strong>: 布がねじられる力への抵抗
-- <strong>曲げ</strong>: 布が折り曲げられる力への抵抗
-- <strong>質量</strong>: 重力と慣性に影響する物理量</p>
-<p><strong>シミュレーションの近似</strong>:
-- Particle Distance = 解像度（細かいほど正確、重いほど高負荷）
-- Time Step = 時間刻み（細かいほど安定、重いほど高負荷）
-- Iteration = 計算回数（多いほど正確、重いほど高負荷）</p>
-<h3 id="vrchat_2">VRChatの技術的制約<a class="headerlink" href="#vrchat_2" title="Permanent link">&para;</a></h3>
-<p><strong>ネットワーク同期</strong>:
-- 物理演算結果は各クライアントで独立計算
-- 精度が高すぎると同期ずれの原因
-- 安定性・再現性が品質より重要</p>
-<p><strong>パフォーマンス制約</strong>:
-- 他のユーザーのPC性能への配慮必要
-- モバイル・Quest対応も考慮
-- 「良い」は「完璧」の敵</p>
+<h2 id="_17">🌟 下一步<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h2>
+<p>你已经掌握了物理特性设置。</p>
+<p>接下来可以学习更细致的模拟设置和优化技巧：</p>
+<p><a class="md-button md-button--primary" href="../optimization/">性能优化指南 →</a></p>
+<p><a class="md-button" href="../optimization/">性能优化指南 →</a></p>
+<p>或者把学到的知识用于更高级的服装制作：</p>
+<p><a class="md-button" href="../../garments/dress/">礼服制作指南 →</a></p>
+<h2 id="_18">📚 深入理解的补充内容<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h2>
+<h3 id="_19">物理模拟背后的原理<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<p><strong>布料的物理特性</strong>：
+- <strong>张力</strong>：布料抵抗拉扯的能力
+- <strong>剪切</strong>：布料抵抗扭转的能力
+- <strong>弯曲</strong>：布料抵抗折弯的能力
+- <strong>质量</strong>：影响重力和惯性的物理量</p>
+<p><strong>模拟中的近似关系</strong>：
+- Particle Distance = 分辨率（越细越准确，越细负载越高）
+- Time Step = 时间步长（越细越稳定，越细负载越高）
+- Iteration = 计算次数（越多越准确，越多负载越高）</p>
+<h3 id="vrchat_2">VRChat 的技术限制<a class="headerlink" href="#vrchat_2" title="Permanent link">&para;</a></h3>
+<p><strong>网络同步</strong>：
+- 物理运算结果由各客户端独立计算
+- 精度过高会导致同步偏差
+- 稳定性与可复现性比极致质量更重要</p>
+<p><strong>性能限制</strong>：
+- 需要考虑其他用户电脑性能的承受能力
+- 也要兼顾移动端与 Quest 适配
+- 实用的“足够好”往往比追求“完美”更重要</p>
 <div class="admonition success">
-<p class="admonition-title">物理特性設定マスター完了！</p>
-<p>おめでとうございます！VRChatに最適化された美しい布の動きを作る技術を習得しました。この知識は、どんな衣装制作にも応用できる重要な基盤です。</p>
-<p>実際の制作で様々な設定を試して、あなた独自の「最適解」を見つけてください！</p>
+<p class="admonition-title">你已完成物理特性设置进阶掌握！</p>
+<p>恭喜。你已经掌握了为 VRChat 制作优美布料动态并兼顾优化的关键方法。这些知识是所有服装制作都能复用的重要基础。</p>
+<p>请在实际制作中多尝试不同设置，逐步找到最适合你作品的“最佳解”。</p>
 </div>
 
 
@@ -2524,10 +2839,10 @@
     
       
   <span class="md-source-file__fact">
-    <span class="md-icon" title="最終更新日">
+    <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年8月10日 07:58:43 JST">2025年8月10日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2026年3月18日 20:55:00 CST">2026年3月18日</span>
   </span>
 
     
@@ -2536,8 +2851,6 @@
     
   </aside>
 
-
-  
 
 
 
@@ -2555,7 +2868,7 @@
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
-  ページトップへ戻る
+  回到页面顶部
 </button>
         
       </main>
@@ -2573,14 +2886,15 @@
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
     
     
     <a href="https://github.com/username/vrchat-garment-guide" target="_blank" rel="noopener" title="GitHub Repository" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -2597,10 +2911,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": {"default": "latest", "provider": "mike"}}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.highlight", "search.suggest", "content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
       

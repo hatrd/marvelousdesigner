@@ -17,7 +17,12 @@ def main():
     files = sys.argv[2:]
     
     # docs/ 配下のファイルのみにフィルタ
-    docs_files = [f for f in files if f.startswith('docs/') and f.endswith('.md')]
+    docs_files = [
+        f for f in files
+        if f.startswith('docs/')
+        and not f.startswith('docs/zh-CN/')
+        and f.endswith('.md')
+    ]
     
     if not docs_files:
         print(f"✅ {script_name}: 対象ファイルなし（docs/配下の.mdファイルのみ処理）")

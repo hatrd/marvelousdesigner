@@ -1,0 +1,39 @@
+source_path,target_path,title,section
+docs/advanced/everywear-integration.md,docs/zh-CN/advanced/everywear-integration.md,EveryWear完全統合ガイド - VRChat最適化の決定版,advanced
+docs/advanced/ik-joint-mapping.md,docs/zh-CN/advanced/ik-joint-mapping.md,IK-Joint最適化完全ガイド - 自然な動作実現の技術,advanced
+docs/advanced/md2025-features.md,docs/zh-CN/advanced/md2025-features.md,Marvelous Designer 2025新機能完全ガイド - VRChat制作効率を劇的向上,advanced
+docs/basics/ai-features.md,docs/zh-CN/basics/ai-features.md,Marvelous Designer AI機能ガイド,basics
+docs/basics/basic-concepts.md,docs/zh-CN/basics/basic-concepts.md,3Dモデリング基本概念,basics
+docs/basics/file-formats.md,docs/zh-CN/basics/file-formats.md,ファイル形式の理解,basics
+docs/basics/md-interface.md,docs/zh-CN/basics/md-interface.md,Marvelous Designer 基本インターフェースガイド,basics
+docs/basics/terminology.md,docs/zh-CN/basics/terminology.md,専門用語集,basics
+docs/basics/workflow-overview.md,docs/zh-CN/basics/workflow-overview.md,制作工程全体像,basics
+docs/garments/casual-wear.md,docs/zh-CN/garments/casual-wear.md,カジュアル服制作ガイド（中級）,garments
+docs/garments/dress.md,docs/zh-CN/garments/dress.md,ドレス制作ガイド（上級）,garments
+docs/garments/one-piece.md,docs/zh-CN/garments/one-piece.md,ワンピース制作ガイド（上級中級）,garments
+docs/garments/skirt.md,docs/zh-CN/garments/skirt.md,スカート制作ガイド（初級→中級）,garments
+docs/garments/swimwear.md,docs/zh-CN/garments/swimwear.md,水着制作ガイド（中級～上級）,garments
+docs/garments/t-shirt.md,docs/zh-CN/garments/t-shirt.md,Tシャツ制作ガイド（初心者向け）,garments
+docs/index.md,docs/zh-CN/index.md,VRChat衣装制作完全ガイド,index.md
+docs/optimization/mobile-compatibility.md,docs/zh-CN/optimization/mobile-compatibility.md,モバイル完全対応ガイド - Quest/Picoユーザーと繋がろう,optimization
+docs/optimization/performance-analysis.md,docs/zh-CN/optimization/performance-analysis.md,パフォーマンス分析ツール完全活用法,optimization
+docs/optimization/very-poor-escape.md,docs/zh-CN/optimization/very-poor-escape.md,Very Poor脱却完全ガイド - アバター軽量化で仲間はずれから卒業！,optimization
+docs/physics/fabric-properties.md,docs/zh-CN/physics/fabric-properties.md,布の物理特性設定ガイド,physics
+docs/physics/optimization.md,docs/zh-CN/physics/optimization.md,VRChatパフォーマンス最適化ガイド,physics
+docs/resources/advanced-resources.md,docs/zh-CN/resources/advanced-resources.md,高度技術リソース・プロフェッショナル展開,resources
+docs/resources/clo-set-connect.md,docs/zh-CN/resources/clo-set-connect.md,CLO-SET Connect & EveryWearプラットフォーム,resources
+docs/resources/community.md,docs/zh-CN/resources/community.md,コミュニティ情報,resources
+docs/resources/update-log.md,docs/zh-CN/resources/update-log.md,プロジェクト更新履歴・開発ログ,resources
+docs/resources/useful-links.md,docs/zh-CN/resources/useful-links.md,有用リンク集・技術リソース,resources
+docs/setup/md-first-launch.md,docs/zh-CN/setup/md-first-launch.md,Marvelous Designer 初回起動ガイド,setup
+docs/setup/software-check.md,docs/zh-CN/setup/software-check.md,ソフトウェア確認ガイド,setup
+docs/setup/unity-vrchat-setup.md,docs/zh-CN/setup/unity-vrchat-setup.md,Unity・VRChat SDK設定ガイド,setup
+docs/unity/avatar-upload.md,docs/zh-CN/unity/avatar-upload.md,VRChatアバターアップロードとテスト手順,unity
+docs/unity/fbx-to-vrchat-complete-guide.md,docs/zh-CN/unity/fbx-to-vrchat-complete-guide.md,FBXからVRChatまでの完全ワークフローガイド,unity
+docs/unity/project-setup.md,docs/zh-CN/unity/project-setup.md,Unity統合プロジェクト設定ガイド,unity
+docs/workflows/avatar-import.md,docs/zh-CN/workflows/avatar-import.md,アバターの読み込みガイド,workflows
+docs/workflows/avatar-modification.md,docs/zh-CN/workflows/avatar-modification.md,VRChat非対応アバター改変実践ガイド,workflows
+docs/workflows/common-issues.md,docs/zh-CN/workflows/common-issues.md,よくある問題と対処法（FAQ）,workflows
+docs/workflows/garment-fitting.md,docs/zh-CN/workflows/garment-fitting.md,既存衣装のフィッティング実践ガイド,workflows
+docs/workflows/modular-garments.md,docs/zh-CN/workflows/modular-garments.md,モジュラー衣装システム,workflows
+docs/workflows/new-garment-creation.md,docs/zh-CN/workflows/new-garment-creation.md,新規衣装制作手順,workflows
