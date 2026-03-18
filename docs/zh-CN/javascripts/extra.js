@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initProgressCheckboxes();
     improveSearch();
     addTargetBlankToExternalLinks();
+    initLanguageSwitch();
 });
 
 function initProgressCheckboxes() {
@@ -52,6 +53,64 @@ function enhanceStepNavigation() {
     steps.forEach(function(step, index) {
         step.setAttribute('id', `step-${index + 1}`);
     });
+}
+
+function initLanguageSwitch() {
+    const headerOptions = document.querySelector('.md-header__options');
+    if (!headerOptions || headerOptions.querySelector('.md-language-switch')) {
+        return;
+    }
+
+    const switchConfig = getLanguageSwitchConfig();
+    const wrapper = document.createElement('div');
+    wrapper.className = 'md-header__option';
+
+    const link = document.createElement('a');
+    link.className = 'md-header__button md-icon md-language-switch';
+    link.href = switchConfig.href;
+    link.textContent = switchConfig.label;
+    link.setAttribute('aria-label', switchConfig.title);
+    link.setAttribute('title', switchConfig.title);
+
+    wrapper.appendChild(link);
+
+    const paletteOption = headerOptions
+        .querySelector('[data-md-component="palette"]')
+        ?.closest('.md-header__option');
+
+    if (paletteOption && paletteOption.nextSibling) {
+        headerOptions.insertBefore(wrapper, paletteOption.nextSibling);
+    } else {
+        headerOptions.appendChild(wrapper);
+    }
+}
+
+function getLanguageSwitchConfig() {
+    const pathname = window.location.pathname;
+    const isChinesePage = /\/zh-CN(\/|$)/.test(pathname);
+    const targetPath = isChinesePage
+        ? pathname.replace(/\/zh-CN(\/|$)/, '/')
+        : insertLanguageSegment(pathname, 'zh-CN');
+
+    return {
+        href: `${window.location.origin}${targetPath}${window.location.search}${window.location.hash}`,
+        label: isChinesePage ? '日' : '中',
+        title: isChinesePage ? '切换到日文页面' : '日本語ページに切り替え'
+    };
+}
+
+function insertLanguageSegment(pathname, languageSegment) {
+    const hasTrailingSlash = pathname.endsWith('/');
+    const trimmedPath = pathname.replace(/\/+$/, '');
+    const segments = trimmedPath.split('/').filter(Boolean);
+
+    if (segments.length === 0) {
+        return `/${languageSegment}/`;
+    }
+
+    const targetSegments = [segments[0], languageSegment].concat(segments.slice(1));
+    const targetPath = `/${targetSegments.join('/')}`;
+    return hasTrailingSlash ? `${targetPath}/` : targetPath;
 }
 
 window.addEventListener('load', function() {
