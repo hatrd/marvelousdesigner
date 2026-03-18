@@ -71,8 +71,8 @@ function enhanceStepNavigation() {
 }
 
 function initLanguageSwitch() {
-    const headerOptions = document.querySelector('.md-header__options');
-    if (!headerOptions || headerOptions.querySelector('.md-language-switch')) {
+    const headerInner = document.querySelector('.md-header__inner');
+    if (!headerInner || headerInner.querySelector('.md-language-switch')) {
         return;
     }
 
@@ -89,14 +89,15 @@ function initLanguageSwitch() {
 
     wrapper.appendChild(link);
 
-    const paletteOption = headerOptions
-        .querySelector('[data-md-component="palette"]')
-        ?.closest('.md-header__option');
+    const paletteOption = headerInner.querySelector('[data-md-component="palette"]');
+    const searchButton = headerInner.querySelector('label[for="__search"]');
 
-    if (paletteOption && paletteOption.nextSibling) {
-        headerOptions.insertBefore(wrapper, paletteOption.nextSibling);
+    if (paletteOption) {
+        paletteOption.insertAdjacentElement('afterend', wrapper);
+    } else if (searchButton) {
+        headerInner.insertBefore(wrapper, searchButton);
     } else {
-        headerOptions.appendChild(wrapper);
+        headerInner.appendChild(wrapper);
     }
 }
 
