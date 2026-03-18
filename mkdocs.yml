@@ -1,9 +1,13 @@
 site_name: VRChat衣装制作完全ガイド
 site_description: Marvelous DesignerとUnityを使ったVRChat衣装制作の完全初心者向けガイド
 site_author: VRChat Garment Creation Team
-site_url: https://username.github.io/vrchat-garment-guide
+site_url: !ENV [SITE_URL_ROOT, 'https://hatrd.github.io/marvelousdesigner/']
 
 # 日本語対応テーマ設定
+exclude_docs: |
+  zh-CN/
+  zh-CN/**
+
 theme:
   name: material
   language: ja
@@ -97,6 +101,7 @@ plugins:
       type: date
       locale: ja
       timezone: Asia/Tokyo
+      enable_parallel_processing: false
 
 # Markdown拡張機能
 markdown_extensions:
@@ -137,7 +142,7 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/username/vrchat-garment-guide
+      link: !ENV [REPO_URL, 'https://github.com/hatrd/marvelousdesigner']
       name: GitHub Repository
   version:
     provider: mike
@@ -150,6 +155,6 @@ extra:
 copyright: Copyright &copy; 2024-2025 VRChat Garment Creation Guide
 
 # リポジトリ情報（GitHub Pages用）
-repo_url: https://github.com/username/vrchat-garment-guide
-repo_name: vrchat-garment-guide
-edit_uri: edit/main/docs/
+repo_url: !ENV [REPO_URL, 'https://github.com/hatrd/marvelousdesigner']
+repo_name: !ENV [REPO_NAME, 'hatrd/marvelousdesigner']
+edit_uri: !ENV [EDIT_URI_JA, 'edit/main/docs/']

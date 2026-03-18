@@ -1,7 +1,7 @@
 site_name: VRChat 服装制作完整指南
 site_description: 使用 Marvelous Designer 和 Unity 制作 VRChat 服装的简体中文入门指南
 site_author: VRChat Garment Creation Team
-site_url: https://username.github.io/vrchat-garment-guide/zh-CN/
+site_url: !ENV [SITE_URL_ZH_CN, 'https://hatrd.github.io/marvelousdesigner/zh-CN/']
 docs_dir: docs/zh-CN
 
 theme:
@@ -131,11 +131,11 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/username/vrchat-garment-guide
+      link: !ENV [REPO_URL, 'https://github.com/hatrd/marvelousdesigner']
       name: GitHub Repository
 
 copyright: Copyright &copy; 2024-2025 VRChat Garment Creation Guide
 
-repo_url: https://github.com/username/vrchat-garment-guide
-repo_name: vrchat-garment-guide
-edit_uri: edit/main/docs/zh-CN/
+repo_url: !ENV [REPO_URL, 'https://github.com/hatrd/marvelousdesigner']
+repo_name: !ENV [REPO_NAME, 'hatrd/marvelousdesigner']
+edit_uri: !ENV [EDIT_URI_ZH_CN, 'edit/main/docs/zh-CN/']
