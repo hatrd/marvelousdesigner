@@ -86,7 +86,7 @@ function initLanguageSwitch() {
     button.setAttribute('aria-label', switchConfig.title);
     button.setAttribute('title', switchConfig.title);
     button.setAttribute('aria-expanded', 'false');
-    button.innerHTML = `${getGlobeIcon()}${getChevronIcon()}`;
+    button.innerHTML = getGlobeIcon();
 
     const menu = document.createElement('div');
     menu.className = 'md-language-switch__menu';
@@ -170,11 +170,7 @@ function closeLanguageMenu(wrapper, button, menu) {
 }
 
 function getGlobeIcon() {
-    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m6.93 9h-3.09a15.7 15.7 0 0 0-1.38-5A8.03 8.03 0 0 1 18.93 11M12 4c.83 0 2.43 2.05 2.93 7H9.07C9.57 6.05 11.17 4 12 4M9.54 6a15.7 15.7 0 0 0-1.38 5H5.07A8.03 8.03 0 0 1 9.54 6M4.26 13h3.9a15.7 15.7 0 0 0 1.38 5 8.03 8.03 0 0 1-5.28-5M12 20c-.83 0-2.43-2.05-2.93-7h5.86c-.5 4.95-2.1 7-2.93 7m2.46-2a15.7 15.7 0 0 0 1.38-5h3.9a8.03 8.03 0 0 1-5.28 5Z"/></svg>';
-}
-
-function getChevronIcon() {
-    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5z"/></svg>';
+    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-10 10a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m6.92 6h-3.95a15.5 15.5 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8M12 4.04c.83 1.2 1.51 2.51 2.02 3.96H9.98A15.6 15.6 0 0 1 12 4.04M4.26 14A8.07 8.07 0 0 1 4 12c0-.7.09-1.37.26-2h4.16c-.09.65-.14 1.31-.14 2s.05 1.35.14 2M5.08 16h3.95c.36 1.3.82 2.5 1.38 3.56A8.03 8.03 0 0 1 5.08 16M8.04 12c0-.68.06-1.35.16-2h7.6c.1.65.16 1.32.16 2s-.06 1.35-.16 2H8.2A13.8 13.8 0 0 1 8.04 12m3.96 7.96A15.6 15.6 0 0 1 9.98 16h4.04A15.6 15.6 0 0 1 12 19.96M13.59 19.56c.56-1.06 1.02-2.26 1.38-3.56h3.95a8.03 8.03 0 0 1-5.33 3.56M15.58 14c.09-.65.14-1.31.14-2s-.05-1.35-.14-2h4.16c.17.63.26 1.3.26 2s-.09 1.37-.26 2z"/></svg>';
 }
 
 function insertLanguageSegment(pathname, languageSegment) {
