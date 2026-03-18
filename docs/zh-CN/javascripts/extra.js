@@ -63,16 +63,24 @@ function initLanguageSwitch() {
 
     const switchConfig = getLanguageSwitchConfig();
     const wrapper = document.createElement('div');
-    wrapper.className = 'md-header__option';
+    wrapper.className = 'md-header__option md-language-switch';
 
-    const link = document.createElement('a');
-    link.className = 'md-header__button md-icon md-language-switch';
-    link.href = switchConfig.href;
-    link.textContent = switchConfig.label;
-    link.setAttribute('aria-label', switchConfig.title);
-    link.setAttribute('title', switchConfig.title);
+    const button = document.createElement('button');
+    button.className = 'md-header__button md-icon md-language-switch__toggle';
+    button.type = 'button';
+    button.setAttribute('aria-label', switchConfig.title);
+    button.setAttribute('title', switchConfig.title);
+    button.setAttribute('aria-expanded', 'false');
+    button.innerHTML = `${getGlobeIcon()}${getChevronIcon()}`;
 
-    wrapper.appendChild(link);
+    const menu = document.createElement('div');
+    menu.className = 'md-language-switch__menu';
+    menu.setAttribute('hidden', '');
+    menu.appendChild(createLanguageOption('日本語', switchConfig.currentLanguage === 'ja' ? null : switchConfig.jaHref, switchConfig.currentLanguage === 'ja'));
+    menu.appendChild(createLanguageOption('简体中文', switchConfig.currentLanguage === 'zh-CN' ? null : switchConfig.zhHref, switchConfig.currentLanguage === 'zh-CN'));
+
+    wrapper.appendChild(button);
+    wrapper.appendChild(menu);
 
     const paletteOption = headerInner.querySelector('[data-md-component="palette"]');
     const searchButton = headerInner.querySelector('label[for="__search"]');
@@ -84,20 +92,74 @@ function initLanguageSwitch() {
     } else {
         headerInner.appendChild(wrapper);
     }
+
+    button.addEventListener('click', function(event) {
+        event.stopPropagation();
+        const isOpen = wrapper.classList.toggle('is-open');
+        button.setAttribute('aria-expanded', String(isOpen));
+        menu.hidden = !isOpen;
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!wrapper.contains(event.target)) {
+            closeLanguageMenu(wrapper, button, menu);
+        }
+    });
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeLanguageMenu(wrapper, button, menu);
+        }
+    });
 }
 
 function getLanguageSwitchConfig() {
     const pathname = window.location.pathname;
     const isChinesePage = /\/zh-CN(\/|$)/.test(pathname);
-    const targetPath = isChinesePage
+    const jaPath = isChinesePage
         ? pathname.replace(/\/zh-CN(\/|$)/, '/')
+        : pathname;
+    const zhPath = isChinesePage
+        ? pathname
         : insertLanguageSegment(pathname, 'zh-CN');
 
     return {
-        href: `${window.location.origin}${targetPath}${window.location.search}${window.location.hash}`,
-        label: isChinesePage ? '日' : '中',
-        title: isChinesePage ? '切换到日文页面' : '日本語ページに切り替え'
+        currentLanguage: isChinesePage ? 'zh-CN' : 'ja',
+        jaHref: buildLanguageHref(jaPath),
+        zhHref: buildLanguageHref(zhPath),
+        title: isChinesePage ? '切换语言' : '言語を切り替え'
     };
+}
+
+function buildLanguageHref(pathname) {
+    return `${window.location.origin}${pathname}${window.location.search}${window.location.hash}`;
+}
+
+function createLanguageOption(label, href, isCurrent) {
+    const element = document.createElement(isCurrent ? 'span' : 'a');
+    element.className = 'md-language-switch__option';
+    if (isCurrent) {
+        element.classList.add('is-current');
+        element.setAttribute('aria-current', 'page');
+    } else {
+        element.href = href;
+    }
+    element.textContent = label;
+    return element;
+}
+
+function closeLanguageMenu(wrapper, button, menu) {
+    wrapper.classList.remove('is-open');
+    button.setAttribute('aria-expanded', 'false');
+    menu.hidden = true;
+}
+
+function getGlobeIcon() {
+    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m6.93 9h-3.09a15.7 15.7 0 0 0-1.38-5A8.03 8.03 0 0 1 18.93 11M12 4c.83 0 2.43 2.05 2.93 7H9.07C9.57 6.05 11.17 4 12 4M9.54 6a15.7 15.7 0 0 0-1.38 5H5.07A8.03 8.03 0 0 1 9.54 6M4.26 13h3.9a15.7 15.7 0 0 0 1.38 5 8.03 8.03 0 0 1-5.28-5M12 20c-.83 0-2.43-2.05-2.93-7h5.86c-.5 4.95-2.1 7-2.93 7m2.46-2a15.7 15.7 0 0 0 1.38-5h3.9a8.03 8.03 0 0 1-5.28 5Z"/></svg>';
+}
+
+function getChevronIcon() {
+    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5z"/></svg>';
 }
 
 function insertLanguageSegment(pathname, languageSegment) {
